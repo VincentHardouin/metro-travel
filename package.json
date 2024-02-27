@@ -1,0 +1,36 @@
+{
+  "name": "metro-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html assets/*",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentHardouin/metro-travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentHardouin/metro-travel/issues"
+  },
+  "homepage": "https://github.com/VincentHardouin/metro-travel#readme",
+  "devDependencies": {
+    "d3": "^7.8.5",
+    "parcel": "^2.11.0",
+    "parcel-transformer-geojson": "^0.0.4",
+    "simpledotcss": "^2.2.1"
+  },
+  "parcel": {
+    "transformers": {
+      "*.geojson": [
+        "json"
+      ]
+    }
+  }
+}
