@@ -12,11 +12,19 @@ metros.features
   const properties = s.properties;
   const stationName = properties.name;
 
+  const currentCoordinates = s.geometry.coordinates;
+  const currentLine = s.properties['@relations']?.at(0)?.reltags.ref;
+
   if (stations.has(stationName)) {
     const station = stations.get(stationName);
-    station.properties.coordinates.push(s.geometry.coordinates);
+    station.properties.coordinates.push(currentCoordinates);
+    if (currentLine) station.properties.lines.add(currentLine)
   } else {
-    s.properties.coordinates = [s.geometry.coordinates];
+    s.properties.coordinates = [currentCoordinates];
+    s.properties.lines = new Set();
+
+    if (currentLine) s.properties.lines.add(currentLine);
+
     stations.set(stationName, s);
   }
 });
@@ -29,8 +37,8 @@ const outputGeojson = {
 };
 
 stations.forEach((s, key) => {
+  s.properties.lines = Array.from(s.properties.lines);
   outputGeojson.features.push(s);
 });
 
-
-fs.writeFileSync('station_connections.geojson', JSON.stringify(outputGeojson, null, 2));
+fs.writeFileSync('stations.geojson', JSON.stringify(outputGeojson, null, 2));
