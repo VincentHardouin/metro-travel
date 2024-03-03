@@ -22,55 +22,67 @@ lines.forEach((line) => {
     });
 
     if (station) {
-      if (station.properties.inLineIndex) {
-        station.properties.inLineIndex[lineName] = index;
-      } else {
-        station.properties.inLineIndex = {
-          [lineName]: index
-        };
-      }
+      _addInLineIndex(station, lineName, index);
+    }
+  });
+
+  const sortedStations = lineStations.filter((s) => {
+    return s.properties.inLineIndex;
+  }).sort((a, b) => {
+    return a.properties.inLineIndex[lineName] - b.properties.inLineIndex[lineName];
+  });
+
+  sortedStations.forEach((station, index) => {
+    if (index < sortedStations.length - 1) {
+      const nextStation = sortedStations[index + 1];
+      _addAdjacentStations(station, lineName, nextStation.properties.name);
+    }
+
+    if (index > 0) {
+      const previousStation = sortedStations[index - 1];
+      _addAdjacentStations(station, lineName, previousStation.properties.name);
     }
   });
 });
 
-for (const station of stations) {
-  const stationName = station.properties.name;
-
-  if (!station.properties.inLineIndex) {
-    console.log(`Station ${stationName} is not on any line`);
-    continue;
+function _addInLineIndex(station, lineName, index) {
+  station.properties.inLineIndex = station.properties.inLineIndex || {};
+  if (!station.properties.inLineIndex[lineName]) {
+    station.properties.inLineIndex[lineName] = index;
   }
-
-  Object.keys(station.properties.inLineIndex).forEach((lineName) => {
-    const lineIndex = station.properties.inLineIndex[lineName];
-
-    const nextStation = stations.find((s) => {
-      return s.properties.lines.includes(lineName) && s.properties.inLineIndex && s.properties.inLineIndex[lineName] === lineIndex + 1;
-    });
-    const previousStation = stations.find((s) => {
-      return s.properties.lines.includes(lineName) && s.properties.inLineIndex && s.properties.inLineIndex[lineName] === lineIndex - 1;
-    });
-
-    if (nextStation) {
-      if (station.properties.adjacentStations) {
-        station.properties.adjacentStations[lineName].push(nextStation.properties.name);
-      } else {
-        station.properties.adjacentStations = {
-          [lineName]: [nextStation.properties.name]
-        }
-      }
-    }
-
-    if (previousStation) {
-      if (station.properties.adjacentStations) {
-        station.properties.adjacentStations[lineName].push(previousStation.properties.name);
-      } else {
-        station.properties.adjacentStations = {
-          [lineName]: [previousStation.properties.name]
-        };
-      }
-    }
-  });
 }
 
-fs.writeFileSync('stations.geojson', JSON.stringify(stations, null, 2));
+function _addAdjacentStations(station, lineName, stationName) {
+  station.properties.adjacentStations = station.properties.adjacentStations || {};
+  if (station.properties.adjacentStations[lineName]) {
+    station.properties.adjacentStations[lineName].add(stationName);
+  } else {
+    station.properties.adjacentStations[lineName] = new Set();
+    station.properties.adjacentStations[lineName].add(stationName);
+  }
+}
+
+
+stations.forEach((station) => {
+  if (!station.properties.adjacentStations) {
+    console.log('Station is missing adjacentStations', station.properties.name);
+  }
+  if (station.properties.adjacentStations) {
+    const adjacentStations = {}
+    Object.keys(station.properties.adjacentStations).forEach((lineName)=> {
+      adjacentStations[lineName] = Array.from(station.properties.adjacentStations[lineName]);
+    });
+    station.properties.adjacentStations = adjacentStations;
+  }
+});
+
+const outputGeojson = {
+  type: 'FeatureCollection',
+  features: []
+};
+
+stations.forEach((s) => {
+  outputGeojson.features.push(s);
+});
+
+fs.writeFileSync('stations.geojson', JSON.stringify(outputGeojson, null, 2));

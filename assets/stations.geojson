@@ -78,7 +78,15 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 0
+        },
+        "adjacentStations": {
+          "13": [
+            "Malakoff - Rue Étienne Dolet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -148,7 +156,16 @@
         ],
         "lines": [
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "14": 40
+        },
+        "adjacentStations": {
+          "14": [
+            "Saint-Lazare",
+            "Porte de Clichy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -221,7 +238,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 251
+        },
+        "adjacentStations": {
+          "1": [
+            "Porte Maillot",
+            "Charles de Gaulle - Étoile"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -296,7 +322,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 206
+        },
+        "adjacentStations": {
+          "1": [
+            "Charles de Gaulle - Étoile",
+            "Franklin D. Roosevelt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -381,7 +416,26 @@
           "1",
           "12",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 184,
+          "8": 90,
+          "12": 134
+        },
+        "adjacentStations": {
+          "1": [
+            "Champs-Élysées - Clemenceau",
+            "Tuileries"
+          ],
+          "8": [
+            "Madeleine",
+            "Invalides"
+          ],
+          "12": [
+            "Madeleine",
+            "Assemblée Nationale"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -456,7 +510,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 166
+        },
+        "adjacentStations": {
+          "1": [
+            "Palais Royal - Musée du Louvre",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -529,7 +592,26 @@
           "1",
           "5",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 97,
+          "5": 231,
+          "8": 157
+        },
+        "adjacentStations": {
+          "1": [
+            "Saint-Paul",
+            "Gare de Lyon"
+          ],
+          "5": [
+            "Quai de la Rapée",
+            null
+          ],
+          "8": [
+            "Ledru-Rollin",
+            "Chemin Vert"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -592,7 +674,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 19
+        },
+        "adjacentStations": {
+          "1": [
+            "Nation",
+            "Saint-Mandé"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -686,7 +777,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 6
+        },
+        "adjacentStations": {
+          "9": [
+            "Porte de Saint-Cloud",
+            "Billancourt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -776,7 +876,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 15
+        },
+        "adjacentStations": {
+          "12": [
+            "Convention",
+            "Corentin Celton"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -839,7 +948,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 66
+        },
+        "adjacentStations": {
+          "6": [
+            "Bir-Hakeim",
+            "Trocadéro"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -904,7 +1022,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 209
+        },
+        "adjacentStations": {
+          "6": [
+            "Place d'Italie",
+            "Glacière"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -968,7 +1095,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 311
+        },
+        "adjacentStations": {
+          "1": [
+            "Bérault",
+            "La Défense - Grande Arche"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1032,7 +1168,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 8
+        },
+        "adjacentStations": {
+          "1": [
+            "Saint-Mandé",
+            "Château de Vincennes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1119,7 +1264,16 @@
         ],
         "lines": [
           "7bis"
-        ]
+        ],
+        "inLineIndex": {
+          "7bis": 26
+        },
+        "adjacentStations": {
+          "7bis": [
+            "Botzaris",
+            "Bolivar"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1205,7 +1359,16 @@
         ],
         "lines": [
           "7bis"
-        ]
+        ],
+        "inLineIndex": {
+          "7bis": 13
+        },
+        "adjacentStations": {
+          "7bis": [
+            "Buttes Chaumont",
+            "Jaurès"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1268,7 +1431,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 12
+        },
+        "adjacentStations": {
+          "1": [
+            "Porte de Vincennes",
+            "Bérault"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1361,7 +1533,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 165
+        },
+        "adjacentStations": {
+          "2": [
+            "Père Lachaise",
+            "Couronnes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1454,7 +1635,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 182
+        },
+        "adjacentStations": {
+          "2": [
+            "Alexandre Dumas",
+            "Père Lachaise"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1547,7 +1737,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 162
+        },
+        "adjacentStations": {
+          "2": [
+            "Ménilmontant",
+            "Belleville"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1642,7 +1841,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 158
+        },
+        "adjacentStations": {
+          "2": [
+            "Belleville",
+            "Jaurès"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1734,7 +1942,26 @@
           "7bis",
           "5",
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 150,
+          "5": 109,
+          "7bis": 10
+        },
+        "adjacentStations": {
+          "2": [
+            "Colonel Fabien",
+            "Stalingrad"
+          ],
+          "5": [
+            "Stalingrad",
+            "Laumière"
+          ],
+          "7bis": [
+            "Bolivar",
+            "Louis Blanc"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1795,7 +2022,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 88
+        },
+        "adjacentStations": {
+          "2": [
+            "Barbès - Rochechouart",
+            "Pigalle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1857,7 +2093,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 204
+        },
+        "adjacentStations": {
+          "3": [
+            "Porte de Bagnolet",
+            "Pont de Levallois - Bécon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -1943,7 +2188,20 @@
         "lines": [
           "3",
           "3bis"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 182,
+          "3bis": 17
+        },
+        "adjacentStations": {
+          "3": [
+            "Porte de Bagnolet",
+            "Père Lachaise"
+          ],
+          "3bis": [
+            "Pelleport"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2041,7 +2299,31 @@
           "12",
           "3",
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 87,
+          "12": 177,
+          "13": 180,
+          "14": 73
+        },
+        "adjacentStations": {
+          "3": [
+            "Havre - Caumartin",
+            "Europe"
+          ],
+          "12": [
+            "Trinité d'Estienne d'Orves",
+            "Madeleine"
+          ],
+          "13": [
+            "Liège",
+            "Miromesnil"
+          ],
+          "14": [
+            "Madeleine",
+            "Pont Cardinet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2132,7 +2414,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 26
+        },
+        "adjacentStations": {
+          "3": [
+            "Pereire",
+            "Louise Michel"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2220,7 +2511,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 100
+        },
+        "adjacentStations": {
+          "13": [
+            "Varenne",
+            "Duroc"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2308,7 +2608,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 102
+        },
+        "adjacentStations": {
+          "13": [
+            "Invalides",
+            "Saint-François-Xavier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2402,7 +2711,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 302
+        },
+        "adjacentStations": {
+          "12": [
+            "Porte de la Chapelle",
+            "Marcadet - Poissonniers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2498,7 +2816,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 191
+        },
+        "adjacentStations": {
+          "5": [
+            "République",
+            "Gare de L'Est"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2589,7 +2916,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 3
+        },
+        "adjacentStations": {
+          "3": [
+            "Louise Michel",
+            "Pont de Levallois - Bécon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2684,7 +3020,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 238
+        },
+        "adjacentStations": {
+          "9": [
+            "Mairie de Montreuil",
+            "Robespierre"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2778,7 +3123,15 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 243
+        },
+        "adjacentStations": {
+          "9": [
+            "Croix de Chavaux"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2875,7 +3228,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 207
+        },
+        "adjacentStations": {
+          "3": [
+            "Anatole France",
+            "Gallieni"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -2966,7 +3328,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 8
+        },
+        "adjacentStations": {
+          "3": [
+            "Porte de Champerret",
+            "Anatole France"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3061,7 +3432,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 237
+        },
+        "adjacentStations": {
+          "9": [
+            "Croix de Chavaux",
+            "Porte de Montreuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3156,7 +3536,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 196
+        },
+        "adjacentStations": {
+          "9": [
+            "Nation",
+            "Charonne"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3239,7 +3628,21 @@
         "lines": [
           "8",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 108,
+          "9": 143
+        },
+        "adjacentStations": {
+          "8": [
+            "Grands Boulevards",
+            "Opéra"
+          ],
+          "9": [
+            "Grands Boulevards",
+            "Chaussée d'Antin - La Fayette"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3334,7 +3737,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 130
+        },
+        "adjacentStations": {
+          "9": [
+            "Havre - Caumartin",
+            "Miromesnil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3395,7 +3807,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 257
+        },
+        "adjacentStations": {
+          "5": [
+            "Gare d'Austerlitz",
+            "Bastille"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3496,7 +3917,21 @@
         "lines": [
           "10",
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 157,
+          "10": 129
+        },
+        "adjacentStations": {
+          "4": [
+            "Saint-Germain-des-Prés",
+            "Saint-Michel"
+          ],
+          "10": [
+            "Cluny-La Sorbonne",
+            "Mabillon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3563,7 +3998,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 161
+        },
+        "adjacentStations": {
+          "6": [
+            "Raspail",
+            "Montparnasse-Bienvenüe"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3658,7 +4102,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 68
+        },
+        "adjacentStations": {
+          "9": [
+            "Alma-Marceau",
+            "Trocadéro"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3754,7 +4207,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 59
+        },
+        "adjacentStations": {
+          "9": [
+            "Trocadéro",
+            "La Muette"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3851,7 +4313,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 28
+        },
+        "adjacentStations": {
+          "9": [
+            "Rue de la Pompe",
+            "Ranelagh"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -3946,7 +4417,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 27
+        },
+        "adjacentStations": {
+          "9": [
+            "La Muette",
+            "Jasmin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4041,7 +4521,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 24
+        },
+        "adjacentStations": {
+          "9": [
+            "Ranelagh",
+            "Michel-Ange - Auteuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4136,7 +4625,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 13
+        },
+        "adjacentStations": {
+          "9": [
+            "Michel-Ange - Molitor",
+            "Porte de Saint-Cloud"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4232,7 +4730,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 8
+        },
+        "adjacentStations": {
+          "9": [
+            "Exelmans",
+            "Marcel Sembat"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4327,7 +4834,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 74
+        },
+        "adjacentStations": {
+          "9": [
+            "Franklin D. Roosevelt",
+            "Iéna"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4422,7 +4938,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 108
+        },
+        "adjacentStations": {
+          "9": [
+            "Miromesnil",
+            "Franklin D. Roosevelt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4519,7 +5044,26 @@
           "12",
           "14",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 98,
+          "12": 147,
+          "14": 83
+        },
+        "adjacentStations": {
+          "8": [
+            "Opéra",
+            "Concorde"
+          ],
+          "12": [
+            "Saint-Lazare",
+            "Concorde"
+          ],
+          "14": [
+            "Pyramides",
+            "Saint-Lazare"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4619,7 +5163,22 @@
         "lines": [
           "13",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 66,
+          "13": 115
+        },
+        "adjacentStations": {
+          "8": [
+            "Concorde",
+            "La Motte-Picquet - Grenelle"
+          ],
+          "13": [
+            "Champs-Élysées - Clemenceau",
+            "Varenne",
+            "Champs-Elysées - Clémenceau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4714,7 +5273,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 153
+        },
+        "adjacentStations": {
+          "8": [
+            "Bastille",
+            "République"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4808,7 +5376,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 170
+        },
+        "adjacentStations": {
+          "8": [
+            "Reuilly — Diderot",
+            "Bastille"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4901,7 +5478,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 238
+        },
+        "adjacentStations": {
+          "8": [
+            "Créteil-L'Échat (Hopital Henri Mondor)",
+            "Daumesnil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -4963,7 +5549,15 @@
         ],
         "lines": [
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "14": 196
+        },
+        "adjacentStations": {
+          "14": [
+            "Bibliothèque François Mitterrand"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5056,7 +5650,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 310
+        },
+        "adjacentStations": {
+          "12": [
+            "Front Populaire",
+            "Marx Dormoy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5150,7 +5753,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 2
+        },
+        "adjacentStations": {
+          "4": [
+            "Marcadet - Poissonniers",
+            "Porte de Clignancourt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5233,7 +5845,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 14
+        },
+        "adjacentStations": {
+          "4": [
+            "Barbès - Rochechouart",
+            "Marcadet - Poissonniers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5303,7 +5924,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 80
+        },
+        "adjacentStations": {
+          "4": [
+            "Les Halles",
+            "Réaumur - Sébastopol"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5377,7 +6007,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 60
+        },
+        "adjacentStations": {
+          "4": [
+            "Strasbourg - Saint-Denis",
+            "Gare de L'Est"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5447,7 +6086,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 94
+        },
+        "adjacentStations": {
+          "4": [
+            "Châtelet",
+            "Étienne Marcel"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5548,7 +6196,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 65
+        },
+        "adjacentStations": {
+          "13": [
+            "Montparnasse-Bienvenüe",
+            "Pernety"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5637,7 +6294,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 46
+        },
+        "adjacentStations": {
+          "13": [
+            "Pernety",
+            "Porte de Vanves"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5726,7 +6392,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 48
+        },
+        "adjacentStations": {
+          "13": [
+            "Gaîté",
+            "Plaisance"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5816,7 +6491,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 35
+        },
+        "adjacentStations": {
+          "13": [
+            "Porte de Vanves",
+            "Malakoff - Rue Étienne Dolet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5902,7 +6586,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 105
+        },
+        "adjacentStations": {
+          "5": [
+            "Jaurès",
+            "Ourcq"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -5988,7 +6681,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 100
+        },
+        "adjacentStations": {
+          "5": [
+            "Laumière",
+            "Porte de Pantin (Parc de la Villette)"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6073,7 +6775,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 94
+        },
+        "adjacentStations": {
+          "5": [
+            "Ourcq",
+            "Hoche"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6158,7 +6869,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 84
+        },
+        "adjacentStations": {
+          "5": [
+            "Porte de Pantin (Parc de la Villette)",
+            "Église de Pantin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6294,7 +7014,20 @@
         "lines": [
           "7",
           "7bis"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 195,
+          "7bis": 1
+        },
+        "adjacentStations": {
+          "7": [
+            "Stalingrad",
+            "Château Landon"
+          ],
+          "7bis": [
+            "Jaurès"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6433,7 +7166,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 202
+        },
+        "adjacentStations": {
+          "7": [
+            "Crimée",
+            "Stalingrad"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6572,7 +7314,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 203
+        },
+        "adjacentStations": {
+          "7": [
+            "Corentin Cariou",
+            "Riquet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6712,7 +7463,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 206
+        },
+        "adjacentStations": {
+          "7": [
+            "Porte de la Villette",
+            "Crimée"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6851,7 +7611,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 207
+        },
+        "adjacentStations": {
+          "7": [
+            "Aubervilliers - Pantin - Quatre Chemins",
+            "Corentin Cariou"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -6942,7 +7711,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 162
+        },
+        "adjacentStations": {
+          "7": [
+            "Cadet",
+            "Chaussée d'Antin - La Fayette"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7033,7 +7811,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 163
+        },
+        "adjacentStations": {
+          "7": [
+            "Poissonnière",
+            "Le Peletier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7176,7 +7963,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 114
+        },
+        "adjacentStations": {
+          "7": [
+            "Palais Royal - Musée du Louvre",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7317,7 +8113,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 97
+        },
+        "adjacentStations": {
+          "7": [
+            "Pont Marie",
+            "Jussieu"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7456,7 +8261,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 102
+        },
+        "adjacentStations": {
+          "7": [
+            "Châtelet",
+            "Sully - Morland"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7597,7 +8411,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 47
+        },
+        "adjacentStations": {
+          "7": [
+            "Jussieu",
+            "Censier - Daubenton"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7737,7 +8560,17 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 45
+        },
+        "adjacentStations": {
+          "7": [
+            "Place Monge",
+            "Les Gobelins",
+            "Le Kremlin-Bicêtre"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -7877,7 +8710,18 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 34
+        },
+        "adjacentStations": {
+          "7": [
+            "Censier - Daubenton",
+            "Place d'Italie",
+            "Le Kremlin-Bicêtre",
+            "Villejuif - Léo Lagrange"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8026,7 +8870,16 @@
         ],
         "lines": [
           "3bis"
-        ]
+        ],
+        "inLineIndex": {
+          "3bis": 10
+        },
+        "adjacentStations": {
+          "3bis": [
+            "Pelleport",
+            "Porte des Lilas"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8112,7 +8965,16 @@
         ],
         "lines": [
           "3bis"
-        ]
+        ],
+        "inLineIndex": {
+          "3bis": 12
+        },
+        "adjacentStations": {
+          "3bis": [
+            "Gambetta",
+            "Saint-Fargeau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8175,7 +9037,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 313
+        },
+        "adjacentStations": {
+          "5": [
+            "Place d'Italie",
+            "Saint-Marcel"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8246,7 +9117,16 @@
         ],
         "lines": [
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "14": 12
+        },
+        "adjacentStations": {
+          "14": [
+            "Porte de Clichy",
+            "Mairie de Saint-Ouen"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8387,7 +9267,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 14
+        },
+        "adjacentStations": {
+          "7": [
+            "Place d'Italie",
+            "Maison Blanche"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8528,7 +9417,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 11
+        },
+        "adjacentStations": {
+          "7": [
+            "Tolbiac",
+            "Porte d'Italie"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8623,7 +9521,17 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 10
+        },
+        "adjacentStations": {
+          "7": [
+            "Maison Blanche",
+            "Porte de Choisy",
+            "Villejuif - Paul Vaillant-Couturier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8713,7 +9621,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 308
+        },
+        "adjacentStations": {
+          "13": [
+            "Asnières-Gennevilliers–Les Courtilles",
+            "Saint-Denis - Université"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8794,7 +9711,15 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 322
+        },
+        "adjacentStations": {
+          "13": [
+            "Les Agnettes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -8930,7 +9855,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 218
+        },
+        "adjacentStations": {
+          "7": [
+            "La Courneuve - 8 mai 1945",
+            "Aubervilliers - Pantin - Quatre Chemins"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9068,7 +10002,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 213
+        },
+        "adjacentStations": {
+          "7": [
+            "Fort d'Aubervilliers",
+            "Porte de la Villette"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9205,7 +10148,15 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 221
+        },
+        "adjacentStations": {
+          "7": [
+            "Fort d'Aubervilliers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9289,7 +10240,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 32
+        },
+        "adjacentStations": {
+          "7": [
+            "Les Gobelins",
+            "Place d'Italie"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9372,7 +10332,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 1
+        },
+        "adjacentStations": {
+          "7": [
+            "Pierre et Marie Curie",
+            "Mairie d'Ivry"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9456,7 +10425,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 9
+        },
+        "adjacentStations": {
+          "7": [
+            "Porte d'Italie",
+            "Porte de Choisy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9542,7 +10520,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 37
+        },
+        "adjacentStations": {
+          "7": [
+            "Censier - Daubenton",
+            "Les Gobelins"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9681,7 +10668,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 194
+        },
+        "adjacentStations": {
+          "7": [
+            "Louis Blanc",
+            "Gare de L'Est"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9742,7 +10738,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 109
+        },
+        "adjacentStations": {
+          "2": [
+            "Stalingrad",
+            "Barbès - Rochechouart"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9828,7 +10833,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 78
+        },
+        "adjacentStations": {
+          "5": [
+            "Hoche",
+            "Bobigny - Pantin - Raymond Queneau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9898,7 +10912,15 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 1
+        },
+        "adjacentStations": {
+          "5": [
+            "Bobigny - Pantin - Raymond Queneau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -9988,7 +11010,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 193
+        },
+        "adjacentStations": {
+          "13": [
+            "Place de Clichy",
+            "Saint-Lazare"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10081,7 +11112,17 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 8
+        },
+        "adjacentStations": {
+          "7": [
+            "Porte d'Italie",
+            "Porte d'Ivry",
+            "Villejuif - Paul Vaillant-Couturier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10164,7 +11205,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 5
+        },
+        "adjacentStations": {
+          "7": [
+            "Porte de Choisy",
+            "Pierre et Marie Curie"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10256,7 +11306,17 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 2
+        },
+        "adjacentStations": {
+          "7": [
+            "Porte d'Ivry",
+            "Mairie d'Ivry",
+            "Villejuif - Louis Aragon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10341,7 +11401,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 0
+        },
+        "adjacentStations": {
+          "7": [
+            "Pierre et Marie Curie",
+            "Villejuif - Louis Aragon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10434,7 +11503,21 @@
         "lines": [
           "4",
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 8,
+          "12": 284
+        },
+        "adjacentStations": {
+          "4": [
+            "Château Rouge",
+            "Simplon"
+          ],
+          "12": [
+            "Marx Dormoy",
+            "Jules Joffrin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10505,7 +11588,26 @@
           "2",
           "7",
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 117,
+          "5": 124,
+          "7": 199
+        },
+        "adjacentStations": {
+          "2": [
+            "Jaurès",
+            "La Chapelle"
+          ],
+          "5": [
+            "Gare du Nord",
+            "Jaurès"
+          ],
+          "7": [
+            "Riquet",
+            "Louis Blanc"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10606,7 +11708,21 @@
         "lines": [
           "4",
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 97,
+          "4": 19
+        },
+        "adjacentStations": {
+          "2": [
+            "La Chapelle",
+            "Anvers"
+          ],
+          "4": [
+            "Gare du Nord",
+            "Château Rouge"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10691,7 +11807,26 @@
           "4",
           "7",
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 55,
+          "5": 173,
+          "7": 183
+        },
+        "adjacentStations": {
+          "4": [
+            "Château d'Eau",
+            "Gare du Nord"
+          ],
+          "5": [
+            "Jacques Bonsergent",
+            "Gare du Nord"
+          ],
+          "7": [
+            "Château Landon",
+            "Poissonnière"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10754,7 +11889,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 112
+        },
+        "adjacentStations": {
+          "6": [
+            "Pasteur",
+            "Cambronne"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10817,7 +11961,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 105
+        },
+        "adjacentStations": {
+          "6": [
+            "Sèvres-Lecourbe",
+            "La Motte-Picquet - Grenelle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10890,7 +12043,25 @@
           "6",
           "8",
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 97,
+          "8": 39,
+          "10": 69
+        },
+        "adjacentStations": {
+          "6": [
+            "Cambronne",
+            "Dupleix"
+          ],
+          "8": [
+            "Invalides"
+          ],
+          "10": [
+            "Ségur",
+            "Avenue Émile Zola"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -10953,7 +12124,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 90
+        },
+        "adjacentStations": {
+          "6": [
+            "La Motte-Picquet - Grenelle",
+            "Bir-Hakeim"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11016,7 +12196,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 72
+        },
+        "adjacentStations": {
+          "6": [
+            "Dupleix",
+            "Passy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11090,7 +12279,21 @@
         "lines": [
           "14",
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 58,
+          "14": 145
+        },
+        "adjacentStations": {
+          "1": [
+            "Bastille",
+            "Reuilly - Diderot"
+          ],
+          "14": [
+            "Bercy",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11184,7 +12387,15 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 0
+        },
+        "adjacentStations": {
+          "4": [
+            "Simplon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11254,7 +12465,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 309
+        },
+        "adjacentStations": {
+          "1": [
+            "Esplanade de La Défense",
+            "Château de Vincennes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11341,7 +12561,16 @@
         ],
         "lines": [
           "7bis"
-        ]
+        ],
+        "inLineIndex": {
+          "7bis": 40
+        },
+        "adjacentStations": {
+          "7bis": [
+            "Place des Fêtes",
+            "Buttes Chaumont"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11414,7 +12643,19 @@
         "lines": [
           "7bis",
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 129
+        },
+        "adjacentStations": {
+          "11": [
+            "Télégraphe",
+            "Jourdain"
+          ],
+          "7bis": [
+            "Botzaris"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11497,7 +12738,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 40
+        },
+        "adjacentStations": {
+          "2": [
+            "Monceau",
+            "Ternes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11581,7 +12831,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 329
+        },
+        "adjacentStations": {
+          "12": [
+            "Aimé Césaire",
+            "Porte de la Chapelle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11666,7 +12925,30 @@
           "9",
           "1",
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 38,
+          "2": 219,
+          "6": 382,
+          "9": 209
+        },
+        "adjacentStations": {
+          "1": [
+            "Reuilly - Diderot",
+            "Porte de Vincennes"
+          ],
+          "2": [
+            "Avron"
+          ],
+          "6": [
+            "Picpus",
+            "Charles de Gaulle - Étoile"
+          ],
+          "9": [
+            "Buzenval",
+            "Rue des Boulets"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11754,7 +13036,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 70
+        },
+        "adjacentStations": {
+          "5": [
+            "Église de Pantin",
+            "Bobigny - Pablo Picasso"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11831,7 +13122,21 @@
         "lines": [
           "4",
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 37,
+          "5": 143
+        },
+        "adjacentStations": {
+          "4": [
+            "Gare de L'Est",
+            "Barbès - Rochechouart"
+          ],
+          "5": [
+            "Gare de L'Est",
+            "Stalingrad"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -11918,7 +13223,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 339
+        },
+        "adjacentStations": {
+          "12": [
+            "Mairie d'Aubervilliers",
+            "Front Populaire"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12005,7 +13319,15 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 346
+        },
+        "adjacentStations": {
+          "12": [
+            "Aimé Césaire"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12076,7 +13398,21 @@
         "lines": [
           "14",
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 299,
+          "14": 153
+        },
+        "adjacentStations": {
+          "6": [
+            "Dugommier",
+            "Quai de la Gare"
+          ],
+          "14": [
+            "Cour Saint-Émilion",
+            "Gare de Lyon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12140,7 +13476,16 @@
         ],
         "lines": [
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "14": 189
+        },
+        "adjacentStations": {
+          "14": [
+            "Olympiades",
+            "Cour Saint-Émilion"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12233,7 +13578,37 @@
           "4",
           "11",
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 162,
+          "4": 109,
+          "7": 108,
+          "11": 175,
+          "14": 115
+        },
+        "adjacentStations": {
+          "1": [
+            "Louvre - Rivoli",
+            "Hôtel de Ville"
+          ],
+          "4": [
+            "Cité",
+            "Les Halles"
+          ],
+          "7": [
+            "Pont Neuf",
+            "Pont Marie"
+          ],
+          "11": [
+            "Hôtel de Ville",
+            "Mairie des Lilas",
+            "Porte des Lilas"
+          ],
+          "14": [
+            "Gare de Lyon",
+            "Pyramides"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12304,7 +13679,16 @@
         ],
         "lines": [
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "14": 176
+        },
+        "adjacentStations": {
+          "14": [
+            "Bibliothèque François Mitterrand",
+            "Bercy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12375,7 +13759,21 @@
         "lines": [
           "14",
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 136,
+          "14": 96
+        },
+        "adjacentStations": {
+          "7": [
+            "Opéra",
+            "Palais Royal - Musée du Louvre"
+          ],
+          "14": [
+            "Châtelet",
+            "Madeleine"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12453,7 +13851,21 @@
         "lines": [
           "1",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 200,
+          "9": 86
+        },
+        "adjacentStations": {
+          "1": [
+            "George V",
+            "Champs-Élysées - Clemenceau"
+          ],
+          "9": [
+            "Saint-Philippe du Roule",
+            "Alma-Marceau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12529,7 +13941,21 @@
         "lines": [
           "5",
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 292,
+          "10": 207
+        },
+        "adjacentStations": {
+          "5": [
+            "Saint-Marcel",
+            "Quai de la Rapée"
+          ],
+          "10": [
+            "Jussieu",
+            "Porte d'Auteuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12621,7 +14047,26 @@
           "7",
           "3",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 103,
+          "7": 142,
+          "8": 102
+        },
+        "adjacentStations": {
+          "3": [
+            "Quatre Septembre",
+            "Havre - Caumartin"
+          ],
+          "7": [
+            "Chaussée d'Antin - La Fayette",
+            "Pyramides"
+          ],
+          "8": [
+            "Richelieu - Drouot",
+            "Madeleine"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12714,7 +14159,21 @@
         "lines": [
           "2",
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 159,
+          "11": 84
+        },
+        "adjacentStations": {
+          "2": [
+            "Couronnes",
+            "Colonel Fabien"
+          ],
+          "11": [
+            "Pyrénées",
+            "Goncourt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12782,7 +14241,22 @@
         "lines": [
           "1",
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 195,
+          "13": 130
+        },
+        "adjacentStations": {
+          "1": [
+            "Franklin D. Roosevelt",
+            "Concorde"
+          ],
+          "13": [
+            "Miromesnil",
+            "Invalides",
+            "Champs-Elysées - Clémenceau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12855,7 +14329,21 @@
         "lines": [
           "1",
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 155,
+          "11": 17
+        },
+        "adjacentStations": {
+          "1": [
+            "Châtelet",
+            "Saint-Paul"
+          ],
+          "11": [
+            "Rambuteau",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -12924,7 +14412,21 @@
         "lines": [
           "1",
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 171,
+          "7": 131
+        },
+        "adjacentStations": {
+          "1": [
+            "Tuileries",
+            "Louvre - Rivoli"
+          ],
+          "7": [
+            "Pyramides",
+            "Pont Neuf"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13016,7 +14518,21 @@
         "lines": [
           "2",
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 79,
+          "12": 235
+        },
+        "adjacentStations": {
+          "2": [
+            "Anvers",
+            "Blanche"
+          ],
+          "12": [
+            "Abbesses",
+            "Saint-Georges"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13108,7 +14624,21 @@
         "lines": [
           "2",
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 58,
+          "13": 196
+        },
+        "adjacentStations": {
+          "2": [
+            "Blanche",
+            "Rome"
+          ],
+          "13": [
+            "La Fourche",
+            "Liège"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13196,7 +14726,21 @@
         "lines": [
           "2",
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 174,
+          "3": 161
+        },
+        "adjacentStations": {
+          "2": [
+            "Philippe Auguste",
+            "Ménilmontant"
+          ],
+          "3": [
+            "Gambetta",
+            "Rue Saint-Maur"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13282,7 +14826,21 @@
         "lines": [
           "3",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 97,
+          "9": 134
+        },
+        "adjacentStations": {
+          "3": [
+            "Opéra",
+            "Saint-Lazare"
+          ],
+          "9": [
+            "Chaussée d'Antin - La Fayette",
+            "Saint-Augustin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13342,7 +14900,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 68
+        },
+        "adjacentStations": {
+          "4": [
+            "Étienne Marcel",
+            "Strasbourg - Saint-Denis"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13439,7 +15006,27 @@
           "2",
           "6",
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 230,
+          "2": 25,
+          "6": 365
+        },
+        "adjacentStations": {
+          "1": [
+            "Argentine",
+            "George V"
+          ],
+          "2": [
+            "Ternes",
+            "Victor Hugo"
+          ],
+          "6": [
+            "Kléber",
+            "Nation",
+            "Picpus"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13506,7 +15093,21 @@
         "lines": [
           "6",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 37,
+          "9": 63
+        },
+        "adjacentStations": {
+          "6": [
+            "Passy",
+            "Boissière"
+          ],
+          "9": [
+            "Iéna",
+            "Rue de la Pompe"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13544,7 +15145,22 @@
         "lines": [
           "7",
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 63,
+          "10": 165
+        },
+        "adjacentStations": {
+          "7": [
+            "Sully - Morland",
+            "Place Monge"
+          ],
+          "10": [
+            "Gare d'Austerlitz",
+            "Cardinal Lemoine",
+            "Église d'Auteuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13636,7 +15252,21 @@
         "lines": [
           "10",
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 108,
+          "12": 102
+        },
+        "adjacentStations": {
+          "10": [
+            "Mabillon",
+            "Vaneau"
+          ],
+          "12": [
+            "Rue du Bac",
+            "Rennes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13719,7 +15349,15 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 0
+        },
+        "adjacentStations": {
+          "12": [
+            "Corentin Celton"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13802,7 +15440,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 9
+        },
+        "adjacentStations": {
+          "12": [
+            "Porte de Versailles",
+            "Mairie d'Issy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13889,7 +15536,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 11
+        },
+        "adjacentStations": {
+          "13": [
+            "Malakoff - Plateau de Vanves",
+            "Châtillon-Montrouge"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -13974,7 +15630,15 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 0
+        },
+        "adjacentStations": {
+          "9": [
+            "Billancourt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14035,7 +15699,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 3
+        },
+        "adjacentStations": {
+          "9": [
+            "Marcel Sembat",
+            "Pont de Sèvres"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14118,7 +15791,15 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 1
+        },
+        "adjacentStations": {
+          "10": [
+            "Boulogne - Jean Jaurès"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14201,7 +15882,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 11
+        },
+        "adjacentStations": {
+          "10": [
+            "Michel-Ange - Molitor",
+            "Boulogne - Pont de Saint-Cloud"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14291,7 +15981,21 @@
         "lines": [
           "9",
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 15,
+          "10": 34
+        },
+        "adjacentStations": {
+          "9": [
+            "Michel-Ange - Auteuil",
+            "Exelmans"
+          ],
+          "10": [
+            "Chardon-Lagache",
+            "Boulogne - Jean Jaurès"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14347,7 +16051,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 40
+        },
+        "adjacentStations": {
+          "10": [
+            "Mirabeau",
+            "Michel-Ange - Molitor"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14403,7 +16116,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 194
+        },
+        "adjacentStations": {
+          "10": [
+            "Gare d'Austerlitz",
+            "Michel-Ange - Auteuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14493,7 +16215,21 @@
         "lines": [
           "9",
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 18,
+          "10": 187
+        },
+        "adjacentStations": {
+          "9": [
+            "Jasmin",
+            "Michel-Ange - Molitor"
+          ],
+          "10": [
+            "Porte d'Auteuil",
+            "Église d'Auteuil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14525,7 +16261,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 43
+        },
+        "adjacentStations": {
+          "10": [
+            "Javel - André Citroën",
+            "Chardon-Lagache"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14608,7 +16353,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 57
+        },
+        "adjacentStations": {
+          "10": [
+            "Charles Michels",
+            "Mirabeau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14664,7 +16418,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 173
+        },
+        "adjacentStations": {
+          "10": [
+            "Michel-Ange - Auteuil",
+            "Jussieu"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14749,7 +16512,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 41
+        },
+        "adjacentStations": {
+          "13": [
+            "Plaisance",
+            "Malakoff - Plateau de Vanves"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14832,7 +16604,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 31
+        },
+        "adjacentStations": {
+          "12": [
+            "Vaugirard",
+            "Porte de Versailles"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14915,7 +16696,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 37
+        },
+        "adjacentStations": {
+          "12": [
+            "Volontaires",
+            "Convention"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -14998,7 +16788,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 59
+        },
+        "adjacentStations": {
+          "10": [
+            "Avenue Émile Zola",
+            "Javel - André Citroën"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15081,7 +16880,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 61
+        },
+        "adjacentStations": {
+          "10": [
+            "La Motte-Picquet - Grenelle",
+            "Charles Michels"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15164,7 +16972,15 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 0
+        },
+        "adjacentStations": {
+          "2": [
+            "Victor Hugo"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15247,7 +17063,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 13
+        },
+        "adjacentStations": {
+          "2": [
+            "Charles de Gaulle - Étoile",
+            "Porte Dauphine"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15318,7 +17143,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 31
+        },
+        "adjacentStations": {
+          "6": [
+            "Boissière",
+            "Charles de Gaulle - Étoile"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15381,7 +17215,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 35
+        },
+        "adjacentStations": {
+          "6": [
+            "Trocadéro",
+            "Kléber"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15451,7 +17294,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 265
+        },
+        "adjacentStations": {
+          "1": [
+            "Les Sablons",
+            "Argentine"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15534,7 +17386,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 36
+        },
+        "adjacentStations": {
+          "2": [
+            "Courcelles",
+            "Charles de Gaulle - Étoile"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15599,7 +17460,15 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 414
+        },
+        "adjacentStations": {
+          "8": [
+            "Créteil-Préfecture"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15663,7 +17532,15 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 283
+        },
+        "adjacentStations": {
+          "4": [
+            "Barbara"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15723,7 +17600,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 271
+        },
+        "adjacentStations": {
+          "4": [
+            "Bagneux-Lucie Aubrac",
+            "Mairie de Montrouge"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15783,7 +17669,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 254
+        },
+        "adjacentStations": {
+          "4": [
+            "Barbara",
+            "Porte d'Orléans"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15843,7 +17738,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 239
+        },
+        "adjacentStations": {
+          "4": [
+            "Mairie de Montrouge",
+            "Alésia"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15903,7 +17807,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 233
+        },
+        "adjacentStations": {
+          "4": [
+            "Porte d'Orléans",
+            "Mouton-Duvernet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -15963,7 +17876,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 228
+        },
+        "adjacentStations": {
+          "4": [
+            "Alésia",
+            "Denfert-Rochereau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16035,7 +17957,21 @@
         "lines": [
           "6",
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 224,
+          "6": 178
+        },
+        "adjacentStations": {
+          "4": [
+            "Mouton-Duvernet",
+            "Raspail"
+          ],
+          "6": [
+            "Saint-Jacques",
+            "Raspail"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16104,7 +18040,21 @@
         "lines": [
           "4",
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 216,
+          "6": 168
+        },
+        "adjacentStations": {
+          "4": [
+            "Denfert-Rochereau",
+            "Vavin"
+          ],
+          "6": [
+            "Denfert-Rochereau",
+            "Edgar Quinet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16196,7 +18146,21 @@
         "lines": [
           "12",
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 127,
+          "12": 48
+        },
+        "adjacentStations": {
+          "6": [
+            "Montparnasse-Bienvenüe",
+            "Sèvres-Lecourbe"
+          ],
+          "12": [
+            "Falguière",
+            "Volontaires"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16279,7 +18243,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 45
+        },
+        "adjacentStations": {
+          "12": [
+            "Pasteur",
+            "Vaugirard"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16362,7 +18335,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 79
+        },
+        "adjacentStations": {
+          "10": [
+            "Duroc",
+            "La Motte-Picquet - Grenelle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16454,7 +18436,21 @@
         "lines": [
           "10",
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 92,
+          "13": 90
+        },
+        "adjacentStations": {
+          "10": [
+            "Vaneau",
+            "Ségur"
+          ],
+          "13": [
+            "Saint-François-Xavier",
+            "Montparnasse-Bienvenüe"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16524,7 +18520,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 56
+        },
+        "adjacentStations": {
+          "12": [
+            "Montparnasse-Bienvenüe",
+            "Pasteur"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16615,7 +18620,31 @@
           "4",
           "12",
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 196,
+          "6": 141,
+          "12": 74,
+          "13": 71
+        },
+        "adjacentStations": {
+          "4": [
+            "Vavin",
+            "Saint-Placide"
+          ],
+          "6": [
+            "Edgar Quinet",
+            "Pasteur"
+          ],
+          "12": [
+            "Notre-Dame des Champs",
+            "Falguière"
+          ],
+          "13": [
+            "Duroc",
+            "Gaîté"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16675,7 +18704,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 206
+        },
+        "adjacentStations": {
+          "4": [
+            "Raspail",
+            "Montparnasse-Bienvenüe"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16735,7 +18773,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 178
+        },
+        "adjacentStations": {
+          "4": [
+            "Montparnasse-Bienvenüe",
+            "Saint-Sulpice"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16795,7 +18842,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 93
+        },
+        "adjacentStations": {
+          "12": [
+            "Rennes",
+            "Montparnasse-Bienvenüe"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16878,7 +18934,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 101
+        },
+        "adjacentStations": {
+          "10": [
+            "Sèvres-Babylone",
+            "Duroc"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16938,7 +19003,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 174
+        },
+        "adjacentStations": {
+          "4": [
+            "Saint-Placide",
+            "Saint-Germain-des-Prés"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -16998,7 +19072,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 97
+        },
+        "adjacentStations": {
+          "12": [
+            "Sèvres-Babylone",
+            "Notre-Dame des Champs"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17061,7 +19144,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 188
+        },
+        "adjacentStations": {
+          "6": [
+            "Glacière",
+            "Denfert-Rochereau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17124,7 +19216,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 191
+        },
+        "adjacentStations": {
+          "6": [
+            "Corvisart",
+            "Saint-Jacques"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17201,7 +19302,26 @@
           "6",
           "5",
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 353,
+          "6": 230,
+          "7": 25
+        },
+        "adjacentStations": {
+          "5": [
+            "Campo-Formio"
+          ],
+          "6": [
+            "Nationale",
+            "Corvisart"
+          ],
+          "7": [
+            "Les Gobelins",
+            "Tolbiac",
+            "Villejuif - Léo Lagrange"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17290,7 +19410,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 121
+        },
+        "adjacentStations": {
+          "10": [
+            "Odéon",
+            "Sèvres-Babylone"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17350,7 +19479,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 163
+        },
+        "adjacentStations": {
+          "4": [
+            "Saint-Sulpice",
+            "Odéon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17410,7 +19548,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 147
+        },
+        "adjacentStations": {
+          "4": [
+            "Odéon",
+            "Cité"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17493,7 +19640,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 132
+        },
+        "adjacentStations": {
+          "10": [
+            "Maubert - Mutualité",
+            "Odéon"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17576,7 +19732,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 141
+        },
+        "adjacentStations": {
+          "10": [
+            "Jussieu",
+            "Maubert - Mutualité"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17659,7 +19824,16 @@
         ],
         "lines": [
           "10"
-        ]
+        ],
+        "inLineIndex": {
+          "10": 133
+        },
+        "adjacentStations": {
+          "10": [
+            "Cardinal Lemoine",
+            "Cluny-La Sorbonne"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17731,7 +19905,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 106
+        },
+        "adjacentStations": {
+          "12": [
+            "Solférino",
+            "Sèvres-Babylone"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17814,7 +19997,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 118
+        },
+        "adjacentStations": {
+          "12": [
+            "Assemblée Nationale",
+            "Rue du Bac"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17897,7 +20089,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 120
+        },
+        "adjacentStations": {
+          "12": [
+            "Concorde",
+            "Solférino"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -17960,7 +20161,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 174
+        },
+        "adjacentStations": {
+          "1": [
+            "Concorde",
+            "Palais Royal - Musée du Louvre"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18053,7 +20263,21 @@
         "lines": [
           "13",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 122,
+          "13": 152
+        },
+        "adjacentStations": {
+          "9": [
+            "Saint-Augustin",
+            "Saint-Philippe du Roule"
+          ],
+          "13": [
+            "Saint-Lazare",
+            "Champs-Élysées - Clemenceau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18135,7 +20359,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 127
+        },
+        "adjacentStations": {
+          "13": [
+            "Champs-Élysées - Clemenceau",
+            "Invalides"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18216,7 +20449,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 79
+        },
+        "adjacentStations": {
+          "3": [
+            "Saint-Lazare",
+            "Villiers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18299,7 +20541,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 184
+        },
+        "adjacentStations": {
+          "12": [
+            "Notre-Dame de Lorette",
+            "Saint-Lazare"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18373,7 +20624,16 @@
         ],
         "lines": [
           "4"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 126
+        },
+        "adjacentStations": {
+          "4": [
+            "Saint-Michel",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18435,7 +20695,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 122
+        },
+        "adjacentStations": {
+          "3": [
+            "Arts et Métiers",
+            "Sentier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18504,7 +20773,21 @@
         "lines": [
           "3",
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 128,
+          "11": 36
+        },
+        "adjacentStations": {
+          "3": [
+            "Temple",
+            "Réaumur Sébastopol"
+          ],
+          "11": [
+            "République",
+            "Rambuteau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18564,7 +20847,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 21
+        },
+        "adjacentStations": {
+          "11": [
+            "Arts et Métiers",
+            "Hôtel de Ville"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18658,7 +20950,21 @@
         "lines": [
           "9",
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 160,
+          "9": 139
+        },
+        "adjacentStations": {
+          "7": [
+            "Le Peletier",
+            "Opéra"
+          ],
+          "9": [
+            "Richelieu - Drouot",
+            "Havre - Caumartin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18739,7 +21045,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 110
+        },
+        "adjacentStations": {
+          "3": [
+            "Bourse",
+            "Opéra"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18828,7 +21143,21 @@
         "lines": [
           "8",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 118,
+          "9": 152
+        },
+        "adjacentStations": {
+          "8": [
+            "Bonne Nouvelle",
+            "Richelieu - Drouot"
+          ],
+          "9": [
+            "Bonne Nouvelle",
+            "Richelieu - Drouot"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18909,7 +21238,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 113
+        },
+        "adjacentStations": {
+          "3": [
+            "Sentier",
+            "Quatre Septembre"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -18969,7 +21307,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 208
+        },
+        "adjacentStations": {
+          "12": [
+            "Pigalle",
+            "Notre-Dame de Lorette"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19052,7 +21399,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 188
+        },
+        "adjacentStations": {
+          "12": [
+            "Saint-Georges",
+            "Trinité d'Estienne d'Orves"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19121,7 +21477,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 118
+        },
+        "adjacentStations": {
+          "3": [
+            "Réaumur Sébastopol",
+            "Bourse"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19210,7 +21575,21 @@
         "lines": [
           "8",
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 122,
+          "9": 155
+        },
+        "adjacentStations": {
+          "8": [
+            "Strasbourg - Saint-Denis",
+            "Grands Boulevards"
+          ],
+          "9": [
+            "Strasbourg - Saint-Denis",
+            "Grands Boulevards"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19280,7 +21659,26 @@
           "4",
           "9",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "4": 63,
+          "8": 124,
+          "9": 157
+        },
+        "adjacentStations": {
+          "4": [
+            "Réaumur - Sébastopol",
+            "Château d'Eau"
+          ],
+          "8": [
+            "République",
+            "Bonne Nouvelle"
+          ],
+          "9": [
+            "République",
+            "Bonne Nouvelle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19372,7 +21770,16 @@
         ],
         "lines": [
           "7"
-        ]
+        ],
+        "inLineIndex": {
+          "7": 166
+        },
+        "adjacentStations": {
+          "7": [
+            "Gare de L'Est",
+            "Cadet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19435,7 +21842,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 239
+        },
+        "adjacentStations": {
+          "6": [
+            "Chevaleret",
+            "Place d'Italie"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19496,7 +21912,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 310
+        },
+        "adjacentStations": {
+          "5": [
+            "Campo-Formio",
+            "Gare d'Austerlitz"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19559,7 +21984,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 243
+        },
+        "adjacentStations": {
+          "6": [
+            "Quai de la Gare",
+            "Nationale"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19622,7 +22056,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 261
+        },
+        "adjacentStations": {
+          "6": [
+            "Bercy",
+            "Chevaleret"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19685,7 +22128,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 50
+        },
+        "adjacentStations": {
+          "1": [
+            "Gare de Lyon",
+            "Nation"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19748,7 +22200,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 310
+        },
+        "adjacentStations": {
+          "6": [
+            "Daumesnil",
+            "Bercy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19816,7 +22277,21 @@
         "lines": [
           "6",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 315,
+          "8": 205
+        },
+        "adjacentStations": {
+          "6": [
+            "Bel-Air",
+            "Dugommier"
+          ],
+          "8": [
+            "Liberté",
+            "Reuilly — Diderot"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19899,7 +22374,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 191
+        },
+        "adjacentStations": {
+          "8": [
+            "Daumesnil",
+            "Ledru-Rollin"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -19982,7 +22466,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 192
+        },
+        "adjacentStations": {
+          "2": [
+            "Nation",
+            "Alexandre Dumas"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20045,7 +22538,17 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 357
+        },
+        "adjacentStations": {
+          "6": [
+            "Nation",
+            "Bel-Air",
+            "Charles de Gaulle - Étoile"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20108,7 +22611,16 @@
         ],
         "lines": [
           "6"
-        ]
+        ],
+        "inLineIndex": {
+          "6": 337
+        },
+        "adjacentStations": {
+          "6": [
+            "Picpus",
+            "Daumesnil"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20193,7 +22705,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 222
+        },
+        "adjacentStations": {
+          "9": [
+            "Maraîchers",
+            "Nation"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20278,7 +22799,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 224
+        },
+        "adjacentStations": {
+          "9": [
+            "Porte de Montreuil",
+            "Buzenval"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20363,7 +22893,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 231
+        },
+        "adjacentStations": {
+          "9": [
+            "Robespierre",
+            "Maraîchers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20427,7 +22966,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 152
+        },
+        "adjacentStations": {
+          "1": [
+            "Hôtel de Ville",
+            "Bastille"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20487,7 +23035,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 134
+        },
+        "adjacentStations": {
+          "3": [
+            "République",
+            "Arts et Métiers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20572,7 +23129,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 188
+        },
+        "adjacentStations": {
+          "9": [
+            "Saint-Ambroise",
+            "République"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20656,7 +23222,16 @@
         ],
         "lines": [
           "5"
-        ]
+        ],
+        "inLineIndex": {
+          "5": 211
+        },
+        "adjacentStations": {
+          "5": [
+            "Bastille",
+            "République"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20741,7 +23316,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 191
+        },
+        "adjacentStations": {
+          "9": [
+            "Charonne",
+            "Saint-Ambroise"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20826,7 +23410,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 194
+        },
+        "adjacentStations": {
+          "9": [
+            "Rue des Boulets",
+            "Voltaire"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20907,7 +23500,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 155
+        },
+        "adjacentStations": {
+          "3": [
+            "Rue Saint-Maur",
+            "République"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -20992,7 +23594,16 @@
         ],
         "lines": [
           "9"
-        ]
+        ],
+        "inLineIndex": {
+          "9": 190
+        },
+        "adjacentStations": {
+          "9": [
+            "Voltaire",
+            "Oberkampf"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21073,7 +23684,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 156
+        },
+        "adjacentStations": {
+          "3": [
+            "Père Lachaise",
+            "Parmentier"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21181,7 +23801,36 @@
           "5",
           "9",
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 150,
+          "5": 199,
+          "8": 141,
+          "9": 174,
+          "11": 68
+        },
+        "adjacentStations": {
+          "3": [
+            "Parmentier",
+            "Temple"
+          ],
+          "5": [
+            null,
+            "Jacques Bonsergent"
+          ],
+          "8": [
+            "Chemin Vert",
+            "Strasbourg - Saint-Denis"
+          ],
+          "9": [
+            "Oberkampf",
+            "Strasbourg - Saint-Denis"
+          ],
+          "11": [
+            "Goncourt",
+            "Arts et Métiers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21241,7 +23890,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 76
+        },
+        "adjacentStations": {
+          "11": [
+            "Belleville",
+            "République"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21301,7 +23959,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 97
+        },
+        "adjacentStations": {
+          "11": [
+            "Jourdain",
+            "Belleville"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21384,7 +24051,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 189
+        },
+        "adjacentStations": {
+          "2": [
+            "Avron",
+            "Philippe Auguste"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21466,7 +24142,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 191
+        },
+        "adjacentStations": {
+          "3": [
+            "Gallieni",
+            "Gambetta"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21526,7 +24211,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 111
+        },
+        "adjacentStations": {
+          "11": [
+            "Place des Fêtes",
+            "Pyrénées"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21586,7 +24280,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 152
+        },
+        "adjacentStations": {
+          "11": [
+            "Porte des Lilas",
+            "Place des Fêtes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21663,7 +24366,21 @@
         "lines": [
           "11",
           "3bis"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 163,
+          "3bis": 0
+        },
+        "adjacentStations": {
+          "11": [
+            "Mairie des Lilas",
+            "Télégraphe",
+            "Châtelet"
+          ],
+          "3bis": [
+            "Saint-Fargeau"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21723,7 +24440,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 373
+        },
+        "adjacentStations": {
+          "8": [
+            "Créteil-Pointe du Lac",
+            "Créteil-Université"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21783,7 +24509,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 329
+        },
+        "adjacentStations": {
+          "8": [
+            "Créteil-Préfecture",
+            "Créteil-L'Échat (Hopital Henri Mondor)"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21843,7 +24578,16 @@
         ],
         "lines": [
           "8"
-        ]
+        ],
+        "inLineIndex": {
+          "8": 293
+        },
+        "adjacentStations": {
+          "8": [
+            "Créteil-Université",
+            "Liberté"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21903,7 +24647,16 @@
         ],
         "lines": [
           "11"
-        ]
+        ],
+        "inLineIndex": {
+          "11": 176
+        },
+        "adjacentStations": {
+          "11": [
+            "Porte des Lilas",
+            "Châtelet"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -21970,7 +24723,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 302
+        },
+        "adjacentStations": {
+          "1": [
+            "La Défense - Grande Arche",
+            "Pont de Neuilly"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22043,7 +24805,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 283
+        },
+        "adjacentStations": {
+          "1": [
+            "Esplanade de La Défense",
+            "Les Sablons"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22115,7 +24886,16 @@
         ],
         "lines": [
           "1"
-        ]
+        ],
+        "inLineIndex": {
+          "1": 279
+        },
+        "adjacentStations": {
+          "1": [
+            "Pont de Neuilly",
+            "Porte Maillot"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22196,7 +24976,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 44
+        },
+        "adjacentStations": {
+          "3": [
+            "Wagram",
+            "Porte de Champerret"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22277,7 +25066,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 48
+        },
+        "adjacentStations": {
+          "3": [
+            "Malesherbes",
+            "Pereire"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22340,7 +25138,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 238
+        },
+        "adjacentStations": {
+          "13": [
+            "Mairie de Saint-Ouen",
+            "Garibaldi"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22407,7 +25214,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 293
+        },
+        "adjacentStations": {
+          "13": [
+            "Saint-Denis-Université",
+            "Basilique de Saint-Denis"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22488,7 +25304,16 @@
         ],
         "lines": [
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "3": 52
+        },
+        "adjacentStations": {
+          "3": [
+            "Villiers",
+            "Wagram"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22571,7 +25396,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 41
+        },
+        "adjacentStations": {
+          "2": [
+            "Villiers",
+            "Courcelles"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22631,7 +25465,21 @@
         "lines": [
           "2",
           "3"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 45,
+          "3": 67
+        },
+        "adjacentStations": {
+          "2": [
+            "Rome",
+            "Monceau"
+          ],
+          "3": [
+            "Europe",
+            "Malesherbes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22714,7 +25562,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 50
+        },
+        "adjacentStations": {
+          "2": [
+            "Place de Clichy",
+            "Villiers"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22804,7 +25661,17 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 205
+        },
+        "adjacentStations": {
+          "13": [
+            "Guy Môquet",
+            "Place de Clichy",
+            "Brochant"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22863,7 +25730,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 216
+        },
+        "adjacentStations": {
+          "13": [
+            "Guy Môquet",
+            "La Fourche"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22923,7 +25799,17 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 216
+        },
+        "adjacentStations": {
+          "13": [
+            "Porte de Clichy",
+            "La Fourche",
+            "Brochant"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -22994,7 +25880,21 @@
         "lines": [
           "13",
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 220,
+          "14": 31
+        },
+        "adjacentStations": {
+          "13": [
+            "Porte de Saint-Ouen",
+            "Guy Môquet"
+          ],
+          "14": [
+            "Pont Cardinet",
+            "Saint-Ouen"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23054,7 +25954,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 222
+        },
+        "adjacentStations": {
+          "13": [
+            "Garibaldi",
+            "Porte de Clichy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23114,7 +26023,17 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 228
+        },
+        "adjacentStations": {
+          "13": [
+            "Mairie de Saint-Ouen",
+            "Porte de Saint-Ouen",
+            "Mairie de Clichy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23197,7 +26116,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 248
+        },
+        "adjacentStations": {
+          "12": [
+            "Lamarck - Caulaincourt",
+            "Pigalle"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23280,7 +26208,16 @@
         ],
         "lines": [
           "2"
-        ]
+        ],
+        "inLineIndex": {
+          "2": 68
+        },
+        "adjacentStations": {
+          "2": [
+            "Pigalle",
+            "Place de Clichy"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23363,7 +26300,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 261
+        },
+        "adjacentStations": {
+          "12": [
+            "Jules Joffrin",
+            "Abbesses"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23446,7 +26392,16 @@
         ],
         "lines": [
           "12"
-        ]
+        ],
+        "inLineIndex": {
+          "12": 279
+        },
+        "adjacentStations": {
+          "12": [
+            "Marcadet - Poissonniers",
+            "Lamarck - Caulaincourt"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23525,7 +26480,21 @@
         "lines": [
           "13",
           "14"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 241,
+          "14": 5
+        },
+        "adjacentStations": {
+          "13": [
+            "Carrefour Pleyel",
+            "Garibaldi",
+            "Mairie de Clichy"
+          ],
+          "14": [
+            "Saint-Ouen"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23592,7 +26561,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 252
+        },
+        "adjacentStations": {
+          "13": [
+            "Saint-Denis - Porte de Paris",
+            "Mairie de Saint-Ouen"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23662,7 +26640,16 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 271
+        },
+        "adjacentStations": {
+          "13": [
+            "Basilique de Saint-Denis",
+            "Carrefour Pleyel"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23797,7 +26784,18 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 277
+        },
+        "adjacentStations": {
+          "13": [
+            "Saint-Denis - Université",
+            "Saint-Denis - Porte de Paris",
+            "Saint-Denis-Université",
+            "Gabriel Péri"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23868,7 +26866,17 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 300
+        },
+        "adjacentStations": {
+          "13": [
+            "Saint-Denis - Université",
+            "Basilique de Saint-Denis",
+            "Gabriel Péri"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
@@ -23935,7 +26943,17 @@
         ],
         "lines": [
           "13"
-        ]
+        ],
+        "inLineIndex": {
+          "13": 305
+        },
+        "adjacentStations": {
+          "13": [
+            "Basilique de Saint-Denis",
+            "Saint-Denis-Université",
+            "Les Agnettes"
+          ]
+        }
       },
       "geometry": {
         "type": "Point",
