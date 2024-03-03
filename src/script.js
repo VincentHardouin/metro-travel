@@ -74,8 +74,8 @@ function drawStation(station) {
       })
       .on('mousemove', function (event) {
         const [x, y] = d3.pointer(event)
-        tooltip.style('top', (y - 10) + 'px')
-          .style('left', (x + 10) + 'px');
+        tooltip.style('top', (event.pageY - 10) + 'px')
+          .style('left', (event.pageX + 10) + 'px');
       })
       .on('mouseout', function () {
         tooltip.style('visibility', 'hidden');
