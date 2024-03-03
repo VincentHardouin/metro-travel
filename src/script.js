@@ -54,28 +54,39 @@ function addStation(stationName) {
   }
   const station = stations.find(d => d.properties.name === stationName);
 
-  svg.append('circle')
-    .attr('class', 'metro-station')
-    .attr('cx', projection(station.geometry.coordinates)[0])
-    .attr('cy', projection(station.geometry.coordinates)[1])
-    .attr('r', 3)
-    .style("fill", "red")
-    .on('mouseover', function (e, d) {
-      tooltip.style('visibility', 'visible');
-      tooltip.html(station.properties.name);
-    })
-    .on('mousemove', function (event) {
-      const [x, y] = d3.pointer(event)
-      tooltip.style('top', (y - 10) + 'px')
-        .style('left', (x + 10) + 'px');
-    })
-    .on('mouseout', function () {
-      tooltip.style('visibility', 'hidden');
-    });
-
+  drawStation(station);
   addPathBetweenStations(station, addedStations, lines);
 
   addedStations.set(stationName, station);
+}
+
+function drawStation(station) {
+  for (const coordinates of station.properties.coordinates) {
+    svg.append('circle')
+      .attr('class', 'metro-station')
+      .attr('cx', projection(coordinates)[0])
+      .attr('cy', projection(coordinates)[1])
+      .attr('r', 3)
+      .style("fill", "#0d47a1")
+      .on('mouseover', function (e, d) {
+        tooltip.style('visibility', 'visible');
+        tooltip.html(station.properties.name);
+      })
+      .on('mousemove', function (event) {
+        const [x, y] = d3.pointer(event)
+        tooltip.style('top', (y - 10) + 'px')
+          .style('left', (x + 10) + 'px');
+      })
+      .on('mouseout', function () {
+        tooltip.style('visibility', 'hidden');
+      });
+  }
+
+  svg.append('path')
+    .attr('d', d3.line()(station.properties.coordinates.map(c => projection(c))))
+    .attr('stroke', '#0d47a1')
+    .attr('stroke-width', 2)
+    .attr('fill', 'none');
 }
 
 function addPathBetweenStations(newStation, addedStations, lines) {
