@@ -519,6 +519,10 @@
           [
             2.3691871,
             48.8536788
+          ],
+          [
+            2.3686803,
+            48.8520225
           ]
         ],
         "lines": [
@@ -535,6 +539,69 @@
         ]
       },
       "id": "node/27371876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/27371900",
+        "name": "Porte de Vincennes",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "wheelchair": "no",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "3328692",
+            "reltags": {
+              "bicycle:conditional": "yes @ (Su 05:30-16:30)",
+              "colour": "#ffbe00",
+              "from": "La Défense (Grande Arche)",
+              "line": "subway",
+              "name": "Ligne 1 : La Défense (Grande Arche) → Château de Vincennes",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "1",
+              "ref:FR:RATP": "1001100010001",
+              "ref:structurae": "10000240",
+              "route": "subway",
+              "short_name": "M1",
+              "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
+              "to": "Château de Vincennes",
+              "twitter": "Ligne1_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q13224",
+              "wikipedia": "fr:Ligne 1 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.4080861,
+            48.8473335
+          ],
+          [
+            2.4080898,
+            48.8473598
+          ]
+        ],
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4080861,
+          48.8473335
+        ]
+      },
+      "id": "node/27371900"
     },
     {
       "type": "Feature",
@@ -957,6 +1024,10 @@
           [
             2.4292592,
             48.8454296
+          ],
+          [
+            2.4292641,
+            48.8454503
           ]
         ],
         "lines": [
@@ -5491,6 +5562,274 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/264712432",
+        "name": "Plaisance",
+        "name:ru": "Плезанс",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "wheelchair": "no",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123799",
+            "reltags": {
+              "colour": "#82c8e6",
+              "colour:back": "#99D5E3",
+              "colour:text": "#202C38",
+              "from": "Saint-Denis - Université",
+              "line": "subway",
+              "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon - Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731235",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "(Asnières-Genevilliers) Les Courtilles",
+              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon-Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3140286,
+            48.8317757
+          ],
+          [
+            2.3140548,
+            48.8317522
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3140286,
+          48.8317757
+        ]
+      },
+      "id": "node/264712432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/264712433",
+        "name": "Pernety",
+        "name:ru": "Пернети",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "wheelchair": "no",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123799",
+            "reltags": {
+              "colour": "#82c8e6",
+              "colour:back": "#99D5E3",
+              "colour:text": "#202C38",
+              "from": "Saint-Denis - Université",
+              "line": "subway",
+              "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon - Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731235",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "(Asnières-Genevilliers) Les Courtilles",
+              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon-Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3181876,
+            48.83399
+          ],
+          [
+            2.3182034,
+            48.833981
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3181876,
+          48.83399
+        ]
+      },
+      "id": "node/264712433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/264717964",
+        "name": "Malakoff - Plateau de Vanves",
+        "name:ru": "Малакофф — Плато-де-Ванв",
+        "public_transport": "stop_position",
+        "source": "STIF - 12/2016",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123799",
+            "reltags": {
+              "colour": "#82c8e6",
+              "colour:back": "#99D5E3",
+              "colour:text": "#202C38",
+              "from": "Saint-Denis - Université",
+              "line": "subway",
+              "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon - Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731235",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "(Asnières-Genevilliers) Les Courtilles",
+              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon-Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.2984833,
+            48.8225032
+          ],
+          [
+            2.2985252,
+            48.8224984
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2984833,
+          48.8225032
+        ]
+      },
+      "id": "node/264717964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/264772256",
         "name": "Laumière",
         "public_transport": "stop_position",
@@ -9573,6 +9912,96 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/331514770",
+        "name": "Liège",
+        "name:ru": "Льеж",
+        "old_name": "Berlin",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "wheelchair": "no",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123799",
+            "reltags": {
+              "colour": "#82c8e6",
+              "colour:back": "#99D5E3",
+              "colour:text": "#202C38",
+              "from": "Saint-Denis - Université",
+              "line": "subway",
+              "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon - Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731235",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "(Asnières-Genevilliers) Les Courtilles",
+              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon-Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3270241,
+            48.8796037
+          ],
+          [
+            2.3270703,
+            48.8796039
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3270241,
+          48.8796037
+        ]
+      },
+      "id": "node/331514770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/472985883",
         "STIF:zone": "1",
         "name": "Porte de Choisy",
@@ -11416,6 +11845,93 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/3047470635",
+        "STIF:zone": "1",
+        "name": "Aimé Césaire",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q766186",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123775",
+            "reltags": {
+              "colour": "#00643c",
+              "from": "Mairie d'Aubervilliers",
+              "name": "Ligne 12 : Mairie d'Aubervilliers → Mairie d'Issy",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "old_name": "Ligne A du Nord-Sud",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "12",
+              "ref:FR:RATP": "1001100120001",
+              "route": "subway",
+              "short_name": "M12",
+              "to": "Mairie d'Issy",
+              "twitter": "Ligne12_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50757",
+              "wikipedia": "fr:Ligne 12 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731178",
+            "reltags": {
+              "colour": "#00643c",
+              "from": "Mairie d'Issy",
+              "name": "Ligne 12 : Mairie d'Issy → Mairie d'Aubervilliers",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "old_name": "Ligne A du Nord-Sud",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "12",
+              "ref:FR:RATP": "1001100120001",
+              "route": "subway",
+              "short_name": "M12",
+              "to": "Mairie d'Aubervilliers",
+              "twitter": "Ligne12_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50757",
+              "wikipedia": "fr:Ligne 12 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3778513,
+            48.9082256
+          ]
+        ],
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3778513,
+          48.9082256
+        ]
+      },
+      "id": "node/3047470635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/3047470637",
         "STIF:zone": "1",
         "name": "Mairie d'Aubervilliers",
@@ -12023,6 +12539,98 @@
         ]
       },
       "id": "node/3419908162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3701328038",
+        "name": "Opéra",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123652",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "La Courneuve - 8 mai 1945",
+              "name": "Ligne 7 :  La Courneuve - 8 mai 1945 → Mairie d'Ivry",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "ref:FR:RATP": "1001100070001",
+              "route": "subway",
+              "short_name": "M7",
+              "stops": "38",
+              "to": "Mairie d'Ivry",
+              "twitter": "Ligne7_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50748",
+              "wikipedia": "fr:Ligne 7 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "3328812",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "La Courneuve - 8 mai 1945",
+              "name": "Ligne 7 : La Courneuve - 8 mai 1945 → Villejuif - Louis Aragon",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "route": "subway",
+              "short_name": "M7",
+              "to": "Villejuif - Louis Aragon",
+              "type": "route",
+              "wikidata": "Q50748",
+              "wikipedia": "en:Paris Métro Line 7"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3325073,
+            48.8698034
+          ],
+          [
+            2.3317456,
+            48.8711001
+          ],
+          [
+            2.3312817,
+            48.8704386
+          ],
+          [
+            2.3324248,
+            48.8701384
+          ]
+        ],
+        "lines": [
+          "7",
+          "3",
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3325073,
+          48.8698034
+        ]
+      },
+      "id": "node/3701328038"
     },
     {
       "type": "Feature",
@@ -12845,21 +13453,19 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4058783117",
+        "@id": "node/4058783114",
         "name": "Trocadéro",
         "public_transport": "stop_position",
-        "railway": "stop",
         "subway": "yes",
         "@relations": [
           {
             "role": "stop",
-            "rel": "123782",
+            "rel": "123912",
             "reltags": {
-              "air_conditioning": "yes",
-              "colour": "#d2d200",
-              "from": "Pont de Sèvres",
+              "colour": "#82dc73",
+              "from": "Charles de Gaulle-Étoile",
               "line": "subway",
-              "name": "Ligne 9 : Pont de Sèvres → Mairie de Montreuil",
+              "name": "Ligne 6 : Charles de Gaulle-Étoile → Nation",
               "network": "Métro de Paris",
               "network:wikidata": "Q50716",
               "network:wikipedia": "fr:Métro de Paris",
@@ -12867,48 +13473,27 @@
               "operator:wikidata": "Q643290",
               "operator:wikipedia": "fr:Régie autonome des transports parisiens",
               "public_transport:version": "2",
-              "ref": "9",
-              "ref:FR:RATP": "1001100090001",
+              "railway:track_ref": "2",
+              "ref": "6",
+              "ref:FR:RATP": "1001100060001",
               "route": "subway",
-              "short_name": "M9",
-              "to": "Mairie de Montreuil",
-              "twitter": "Ligne9_RATP",
+              "short_name": "M6",
+              "start_date": "1909-03-01",
+              "to": "Nation",
+              "twitter": "Ligne6_RATP",
               "type": "route",
+              "via": "Montparnasse-Bienvenüe",
               "wheelchair": "no",
-              "wikidata": "Q50753",
-              "wikipedia": "fr:Ligne 9 du métro de Paris"
-            }
-          },
-          {
-            "role": "stop",
-            "rel": "3328716",
-            "reltags": {
-              "air_conditioning": "yes",
-              "colour": "#d2d200",
-              "from": "Mairie de Montreuil",
-              "line": "subway",
-              "name": "Ligne 9 : Mairie de Montreuil → Pont de Sèvres",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "9",
-              "ref:FR:RATP": "1001100090001",
-              "route": "subway",
-              "short_name": "M9",
-              "to": "Pont de Sèvres",
-              "twitter": "Ligne9_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50753",
-              "wikipedia": "fr:Ligne 9 du métro de Paris"
+              "wikidata": "Q50746",
+              "wikipedia": "fr:Ligne 6 du métro de Paris"
             }
           }
         ],
         "coordinates": [
+          [
+            2.2874564,
+            48.8633639
+          ],
           [
             2.2870231,
             48.8630685
@@ -12919,18 +13504,18 @@
           ]
         ],
         "lines": [
-          "9",
-          "6"
+          "6",
+          "9"
         ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.2870231,
-          48.8630685
+          2.2874564,
+          48.8633639
         ]
       },
-      "id": "node/4058783117"
+      "id": "node/4058783114"
     },
     {
       "type": "Feature",
@@ -13227,6 +13812,93 @@
         ]
       },
       "id": "node/11607222425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10779612522",
+        "name": "Malakoff - Rue Étienne Dolet",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123799",
+            "reltags": {
+              "colour": "#82c8e6",
+              "colour:back": "#99D5E3",
+              "colour:text": "#202C38",
+              "from": "Saint-Denis - Université",
+              "line": "subway",
+              "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon - Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731235",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "(Asnières-Genevilliers) Les Courtilles",
+              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Châtillon-Montrouge",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.2973061,
+            48.8150671
+          ],
+          [
+            2.2968176,
+            48.8155896
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2973061,
+          48.8150671
+        ]
+      },
+      "id": "node/10779612522"
     },
     {
       "type": "Feature",
@@ -14006,6 +14678,91 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/8919667631",
+        "name": "Porte de Vanves",
+        "public_transport": "stop_position",
+        "subway": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "7731233",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "Châtillon-Montrouge",
+              "line": "subway",
+              "name": "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "Saint-Denis-Université",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "limited",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "7731234",
+            "reltags": {
+              "colour": "#82c8e6",
+              "from": "Châtillon-Montrouge",
+              "name": "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "13",
+              "ref:FR:RATP": "1001100130001",
+              "route": "subway",
+              "short_name": "M13",
+              "to": "(Asnières-Genevilliers) Les Courtilles",
+              "twitter": "Ligne13_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50759",
+              "wikipedia": "fr:Ligne 13 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.3053279,
+            48.8276519
+          ],
+          [
+            2.3053062,
+            48.8276683
+          ]
+        ],
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3053279,
+          48.8276519
+        ]
+      },
+      "id": "node/8919667631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/11607222424",
         "name": "Convention",
         "public_transport": "stop_position",
@@ -14634,6 +15391,76 @@
         ]
       },
       "id": "node/11607885202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5108167781",
+        "layer": "-2",
+        "level": "-2",
+        "location": "underground",
+        "name": "Porte Maillot",
+        "network": "Métro de Paris;RATP",
+        "operator": "RATP",
+        "public_transport": "stop_position",
+        "ref": "1",
+        "start_date": "1936-11-15",
+        "subway": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123784",
+            "reltags": {
+              "air_conditioning": "yes",
+              "bicycle:conditional": "yes @ (Su 05:30-16:30)",
+              "colour": "#ffbe00",
+              "from": "Château de Vincennes",
+              "line": "subway",
+              "name": "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "1",
+              "ref:FR:RATP": "1001100010001",
+              "ref:structurae": "10000240",
+              "route": "subway",
+              "short_name": "M1",
+              "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
+              "to": "La Défense (Grande Arche)",
+              "twitter": "Ligne1_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q13224",
+              "wikipedia": "fr:Ligne 1 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.2814369,
+            48.8781955
+          ],
+          [
+            2.2824531,
+            48.877686
+          ]
+        ],
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2814369,
+          48.8781955
+        ]
+      },
+      "id": "node/5108167781"
     },
     {
       "type": "Feature",
@@ -17322,92 +18149,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4317660726",
-        "name": "Opéra",
-        "public_transport": "stop_position",
-        "railway": "stop",
-        "subway": "yes",
-        "@relations": [
-          {
-            "role": "stop",
-            "rel": "123789",
-            "reltags": {
-              "colour": "#6e6e00",
-              "from": "Pont de Levallois",
-              "name": "Ligne 3 : Pont de Levallois - Bécon → Gallieni",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "3",
-              "ref:FR:RATP": "1001100030001",
-              "route": "subway",
-              "short_name": "M3",
-              "stops": "25",
-              "to": "Gallieni",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50741"
-            }
-          },
-          {
-            "role": "stop",
-            "rel": "7731250",
-            "reltags": {
-              "colour": "#6e6e00",
-              "from": "Gallieni",
-              "name": "Ligne 3 : Gallieni → Pont de Levallois - Bécon",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "3",
-              "ref:FR:RATP": "1001100030001",
-              "route": "subway",
-              "short_name": "M3",
-              "stops": "25",
-              "to": "Pont de Levallois",
-              "twitter": "Ligne3_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50741",
-              "wikipedia": "fr:Ligne 3 du métro de Paris"
-            }
-          }
-        ],
-        "coordinates": [
-          [
-            2.3317456,
-            48.8711001
-          ],
-          [
-            2.3324248,
-            48.8701384
-          ]
-        ],
-        "lines": [
-          "3",
-          "7"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3317456,
-          48.8711001
-        ]
-      },
-      "id": "node/4317660726"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/11607170216",
         "name": "Europe",
         "public_transport": "stop_position",
@@ -19466,67 +20207,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9413758376",
-        "name": "Porte de Vincennes",
-        "public_transport": "stop_position",
-        "railway": "stop",
-        "subway": "yes",
-        "wheelchair": "no",
-        "@relations": [
-          {
-            "role": "stop",
-            "rel": "123784",
-            "reltags": {
-              "air_conditioning": "yes",
-              "bicycle:conditional": "yes @ (Su 05:30-16:30)",
-              "colour": "#ffbe00",
-              "from": "Château de Vincennes",
-              "line": "subway",
-              "name": "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "1",
-              "ref:FR:RATP": "1001100010001",
-              "ref:structurae": "10000240",
-              "route": "subway",
-              "short_name": "M1",
-              "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
-              "to": "La Défense (Grande Arche)",
-              "twitter": "Ligne1_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q13224",
-              "wikipedia": "fr:Ligne 1 du métro de Paris"
-            }
-          }
-        ],
-        "coordinates": [
-          [
-            2.4080898,
-            48.8473598
-          ]
-        ],
-        "lines": [
-          "1"
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.4080898,
-          48.8473598
-        ]
-      },
-      "id": "node/9413758376"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/11608175570",
         "name": "Maraîchers",
         "public_transport": "stop_position",
@@ -21237,6 +21917,73 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/5139949032",
+        "STIF:zone": "1",
+        "layer": "-2",
+        "name": "Esplanade de La Défense",
+        "public_transport": "stop_position",
+        "ref": "1",
+        "ref:FR:RATP": "1913",
+        "subway": "yes",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123784",
+            "reltags": {
+              "air_conditioning": "yes",
+              "bicycle:conditional": "yes @ (Su 05:30-16:30)",
+              "colour": "#ffbe00",
+              "from": "Château de Vincennes",
+              "line": "subway",
+              "name": "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "1",
+              "ref:FR:RATP": "1001100010001",
+              "ref:structurae": "10000240",
+              "route": "subway",
+              "short_name": "M1",
+              "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
+              "to": "La Défense (Grande Arche)",
+              "twitter": "Ligne1_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q13224",
+              "wikipedia": "fr:Ligne 1 du métro de Paris"
+            }
+          }
+        ],
+        "coordinates": [
+          [
+            2.2496022,
+            48.8882638
+          ],
+          [
+            2.2506536,
+            48.8878105
+          ]
+        ],
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2496022,
+          48.8882638
+        ]
+      },
+      "id": "node/5139949032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/5108167811",
         "STIF:zone": "1",
         "layer": "-2",
@@ -21544,23 +22291,23 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6242344827",
+        "@id": "node/4573025351",
+        "level": "-2",
         "name": "Mairie de Clichy",
         "network": "Métro de Paris;RATP",
         "operator": "RATP",
         "public_transport": "stop_position",
-        "railway": "stop",
-        "ref": "2",
         "start_date": "1980-05-09",
         "subway": "yes",
+        "tactile_paving": "no",
         "@relations": [
           {
             "role": "stop",
-            "rel": "7731235",
+            "rel": "7731234",
             "reltags": {
               "colour": "#82c8e6",
-              "from": "(Asnières-Genevilliers) Les Courtilles",
-              "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
+              "from": "Châtillon-Montrouge",
+              "name": "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles",
               "network": "Métro de Paris",
               "network:wikidata": "Q50716",
               "network:wikipedia": "fr:Métro de Paris",
@@ -21572,7 +22319,7 @@
               "ref:FR:RATP": "1001100130001",
               "route": "subway",
               "short_name": "M13",
-              "to": "Châtillon-Montrouge",
+              "to": "(Asnières-Genevilliers) Les Courtilles",
               "twitter": "Ligne13_RATP",
               "type": "route",
               "wheelchair": "no",
@@ -21582,6 +22329,10 @@
           }
         ],
         "coordinates": [
+          [
+            2.3056627,
+            48.9036038
+          ],
           [
             2.3061978,
             48.9029769
@@ -21594,11 +22345,11 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3061978,
-          48.9029769
+          2.3056627,
+          48.9036038
         ]
       },
-      "id": "node/6242344827"
+      "id": "node/4573025351"
     },
     {
       "type": "Feature",

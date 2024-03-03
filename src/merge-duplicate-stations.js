@@ -7,7 +7,7 @@ const stations = new Map()
 metros.features
   .filter(d => {
     return d.properties.railway === 'stop' ||
-      (d.properties.public_transport === 'stop_position' && d.properties["type:RATP"] === 'metro')
+      (d.properties.public_transport === 'stop_position' && (d.properties["type:RATP"] === 'metro' || d.properties.subway === 'yes'))
   }).forEach(s => {
   const properties = s.properties;
   const stationName = properties.name;
