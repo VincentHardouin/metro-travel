@@ -7,7 +7,7 @@ const lines = linesData.features;
 const stations = stationsData.features;
 
 lines.forEach((line) => {
-  const lineName = line.properties.ref;
+  const lineName = line.properties.name;
   const lineStations = stations.filter((station) => {
     return station.properties.lines.includes(lineName);
   });
@@ -80,6 +80,7 @@ const outputGeojson = {
   type: 'FeatureCollection',
   features: []
 };
+
 
 stations.forEach((s) => {
   outputGeojson.features.push(s);

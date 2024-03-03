@@ -23,10 +23,7 @@ for (const s of metros) {
   }
 
   relations.forEach((relation) => {
-    const lineRef = relation.reltags.ref;
-    const lineFrom = relation.reltags.from;
-    const lineTo = relation.reltags.to;
-    const currentLine = `${lineRef} - ${lineFrom} -> ${lineTo}`;
+    const currentLine = relation.reltags.name;
 
     if (stations.has(stationName)) {
       const station = stations.get(stationName);

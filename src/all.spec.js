@@ -12,6 +12,12 @@ describe('Metro data', () => {
     test('should have 16 lines', () => {
       expect(new Set(lines.map(l => l.properties.ref)).size).toBe(16)
     })
+
+    test('all lines should have name', () => {
+      lines.forEach(l => {
+        expect(l.properties.name).toBeDefined()
+      })
+    })
   })
 
   describe('stations', () => {
