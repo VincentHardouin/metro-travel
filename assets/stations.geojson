@@ -77,16 +77,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 0
-        },
-        "adjacentStations": {
-          "13": [
-            "Malakoff - Rue Étienne Dolet"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -155,17 +150,9 @@
           ]
         ],
         "lines": [
-          "14"
-        ],
-        "inLineIndex": {
-          "14": 40
-        },
-        "adjacentStations": {
-          "14": [
-            "Saint-Lazare",
-            "Porte de Clichy"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -237,17 +224,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 251
-        },
-        "adjacentStations": {
-          "1": [
-            "Porte Maillot",
-            "Charles de Gaulle - Étoile"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -321,17 +300,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 206
-        },
-        "adjacentStations": {
-          "1": [
-            "Charles de Gaulle - Étoile",
-            "Franklin D. Roosevelt"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -413,29 +384,13 @@
           ]
         ],
         "lines": [
-          "1",
-          "12",
-          "8"
-        ],
-        "inLineIndex": {
-          "1": 184,
-          "8": 90,
-          "12": 134
-        },
-        "adjacentStations": {
-          "1": [
-            "Champs-Élysées - Clemenceau",
-            "Tuileries"
-          ],
-          "8": [
-            "Madeleine",
-            "Invalides"
-          ],
-          "12": [
-            "Madeleine",
-            "Assemblée Nationale"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -509,17 +464,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 166
-        },
-        "adjacentStations": {
-          "1": [
-            "Palais Royal - Musée du Louvre",
-            "Châtelet"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -589,29 +536,13 @@
           ]
         ],
         "lines": [
-          "1",
-          "5",
-          "8"
-        ],
-        "inLineIndex": {
-          "1": 97,
-          "5": 231,
-          "8": 157
-        },
-        "adjacentStations": {
-          "1": [
-            "Saint-Paul",
-            "Gare de Lyon"
-          ],
-          "5": [
-            "Quai de la Rapée",
-            null
-          ],
-          "8": [
-            "Ledru-Rollin",
-            "Chemin Vert"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -673,17 +604,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 19
-        },
-        "adjacentStations": {
-          "1": [
-            "Nation",
-            "Saint-Mandé"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -776,17 +699,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 6
-        },
-        "adjacentStations": {
-          "9": [
-            "Porte de Saint-Cloud",
-            "Billancourt"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -875,17 +790,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 15
-        },
-        "adjacentStations": {
-          "12": [
-            "Convention",
-            "Corentin Celton"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -947,17 +854,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 66
-        },
-        "adjacentStations": {
-          "6": [
-            "Bir-Hakeim",
-            "Trocadéro"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1021,17 +920,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 209
-        },
-        "adjacentStations": {
-          "6": [
-            "Place d'Italie",
-            "Glacière"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1094,17 +985,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 311
-        },
-        "adjacentStations": {
-          "1": [
-            "Bérault",
-            "La Défense - Grande Arche"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1167,17 +1050,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 8
-        },
-        "adjacentStations": {
-          "1": [
-            "Saint-Mandé",
-            "Château de Vincennes"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1263,17 +1138,8 @@
           ]
         ],
         "lines": [
-          "7bis"
-        ],
-        "inLineIndex": {
-          "7bis": 26
-        },
-        "adjacentStations": {
-          "7bis": [
-            "Botzaris",
-            "Bolivar"
-          ]
-        }
+          "7bis - Louis Blanc -> Louis Blanc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1358,17 +1224,8 @@
           ]
         ],
         "lines": [
-          "7bis"
-        ],
-        "inLineIndex": {
-          "7bis": 13
-        },
-        "adjacentStations": {
-          "7bis": [
-            "Buttes Chaumont",
-            "Jaurès"
-          ]
-        }
+          "7bis - Louis Blanc -> Louis Blanc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1430,17 +1287,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 12
-        },
-        "adjacentStations": {
-          "1": [
-            "Porte de Vincennes",
-            "Bérault"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1532,17 +1381,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 165
-        },
-        "adjacentStations": {
-          "2": [
-            "Père Lachaise",
-            "Couronnes"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1634,17 +1475,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 182
-        },
-        "adjacentStations": {
-          "2": [
-            "Alexandre Dumas",
-            "Père Lachaise"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1736,17 +1569,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 162
-        },
-        "adjacentStations": {
-          "2": [
-            "Ménilmontant",
-            "Belleville"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1840,17 +1665,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 158
-        },
-        "adjacentStations": {
-          "2": [
-            "Belleville",
-            "Jaurès"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1939,29 +1756,12 @@
           ]
         ],
         "lines": [
-          "7bis",
-          "5",
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 150,
-          "5": 109,
-          "7bis": 10
-        },
-        "adjacentStations": {
-          "2": [
-            "Colonel Fabien",
-            "Stalingrad"
-          ],
-          "5": [
-            "Stalingrad",
-            "Laumière"
-          ],
-          "7bis": [
-            "Bolivar",
-            "Louis Blanc"
-          ]
-        }
+          "7bis - Louis Blanc -> Louis Blanc",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "2 - Porte Dauphine -> Nation",
+          "2 - Nation -> Porte Dauphine"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2021,17 +1821,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 88
-        },
-        "adjacentStations": {
-          "2": [
-            "Barbès - Rochechouart",
-            "Pigalle"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2092,17 +1884,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 204
-        },
-        "adjacentStations": {
-          "3": [
-            "Porte de Bagnolet",
-            "Pont de Levallois - Bécon"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2186,22 +1970,11 @@
           ]
         ],
         "lines": [
-          "3",
-          "3bis"
-        ],
-        "inLineIndex": {
-          "3": 182,
-          "3bis": 17
-        },
-        "adjacentStations": {
-          "3": [
-            "Porte de Bagnolet",
-            "Père Lachaise"
-          ],
-          "3bis": [
-            "Pelleport"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois",
+          "3bis - Porte des Lilas -> Gambetta",
+          "3bis - Gambetta -> Porte des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2282,10 +2055,6 @@
             48.8753076
           ],
           [
-            2.3260923,
-            48.875445
-          ],
-          [
             2.324136,
             48.8756052
           ],
@@ -2295,35 +2064,17 @@
           ]
         ],
         "lines": [
-          "14",
-          "12",
-          "3",
-          "13"
-        ],
-        "inLineIndex": {
-          "3": 87,
-          "12": 177,
-          "13": 180,
-          "14": 73
-        },
-        "adjacentStations": {
-          "3": [
-            "Havre - Caumartin",
-            "Europe"
-          ],
-          "12": [
-            "Trinité d'Estienne d'Orves",
-            "Madeleine"
-          ],
-          "13": [
-            "Liège",
-            "Miromesnil"
-          ],
-          "14": [
-            "Madeleine",
-            "Pont Cardinet"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "14 - Olympiades -> Mairie de Saint-Ouen",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2413,17 +2164,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 26
-        },
-        "adjacentStations": {
-          "3": [
-            "Pereire",
-            "Louise Michel"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2510,17 +2253,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 100
-        },
-        "adjacentStations": {
-          "13": [
-            "Varenne",
-            "Duroc"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2607,17 +2344,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 102
-        },
-        "adjacentStations": {
-          "13": [
-            "Invalides",
-            "Saint-François-Xavier"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2710,17 +2441,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 302
-        },
-        "adjacentStations": {
-          "12": [
-            "Porte de la Chapelle",
-            "Marcadet - Poissonniers"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2815,17 +2538,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 191
-        },
-        "adjacentStations": {
-          "5": [
-            "République",
-            "Gare de L'Est"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -2915,17 +2630,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 3
-        },
-        "adjacentStations": {
-          "3": [
-            "Louise Michel",
-            "Pont de Levallois - Bécon"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3019,17 +2726,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 238
-        },
-        "adjacentStations": {
-          "9": [
-            "Mairie de Montreuil",
-            "Robespierre"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3122,16 +2821,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 243
-        },
-        "adjacentStations": {
-          "9": [
-            "Croix de Chavaux"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3227,17 +2919,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 207
-        },
-        "adjacentStations": {
-          "3": [
-            "Anatole France",
-            "Gallieni"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3327,17 +3011,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 8
-        },
-        "adjacentStations": {
-          "3": [
-            "Porte de Champerret",
-            "Anatole France"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3431,17 +3107,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 237
-        },
-        "adjacentStations": {
-          "9": [
-            "Croix de Chavaux",
-            "Porte de Montreuil"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3535,17 +3203,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 196
-        },
-        "adjacentStations": {
-          "9": [
-            "Nation",
-            "Charonne"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3626,23 +3286,11 @@
           ]
         ],
         "lines": [
-          "8",
-          "9"
-        ],
-        "inLineIndex": {
-          "8": 108,
-          "9": 143
-        },
-        "adjacentStations": {
-          "8": [
-            "Grands Boulevards",
-            "Opéra"
-          ],
-          "9": [
-            "Grands Boulevards",
-            "Chaussée d'Antin - La Fayette"
-          ]
-        }
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "8 - Créteil - Pointe du Lac -> Balard"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3736,17 +3384,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 130
-        },
-        "adjacentStations": {
-          "9": [
-            "Havre - Caumartin",
-            "Miromesnil"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3806,17 +3446,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 257
-        },
-        "adjacentStations": {
-          "5": [
-            "Gare d'Austerlitz",
-            "Bastille"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3915,23 +3547,11 @@
           ]
         ],
         "lines": [
-          "10",
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 157,
-          "10": 129
-        },
-        "adjacentStations": {
-          "4": [
-            "Saint-Germain-des-Prés",
-            "Saint-Michel"
-          ],
-          "10": [
-            "Cluny-La Sorbonne",
-            "Mabillon"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3997,17 +3617,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 161
-        },
-        "adjacentStations": {
-          "6": [
-            "Raspail",
-            "Montparnasse-Bienvenüe"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4101,17 +3713,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 68
-        },
-        "adjacentStations": {
-          "9": [
-            "Alma-Marceau",
-            "Trocadéro"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4206,17 +3810,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 59
-        },
-        "adjacentStations": {
-          "9": [
-            "Trocadéro",
-            "La Muette"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4312,17 +3908,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 28
-        },
-        "adjacentStations": {
-          "9": [
-            "Rue de la Pompe",
-            "Ranelagh"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4416,17 +4004,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 27
-        },
-        "adjacentStations": {
-          "9": [
-            "La Muette",
-            "Jasmin"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4520,17 +4100,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 24
-        },
-        "adjacentStations": {
-          "9": [
-            "Ranelagh",
-            "Michel-Ange - Auteuil"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4624,17 +4196,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 13
-        },
-        "adjacentStations": {
-          "9": [
-            "Michel-Ange - Molitor",
-            "Porte de Saint-Cloud"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4729,17 +4293,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 8
-        },
-        "adjacentStations": {
-          "9": [
-            "Exelmans",
-            "Marcel Sembat"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4833,17 +4389,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 74
-        },
-        "adjacentStations": {
-          "9": [
-            "Franklin D. Roosevelt",
-            "Iéna"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -4937,17 +4485,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 108
-        },
-        "adjacentStations": {
-          "9": [
-            "Miromesnil",
-            "Franklin D. Roosevelt"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5041,29 +4581,13 @@
           ]
         ],
         "lines": [
-          "12",
-          "14",
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 98,
-          "12": 147,
-          "14": 83
-        },
-        "adjacentStations": {
-          "8": [
-            "Opéra",
-            "Concorde"
-          ],
-          "12": [
-            "Saint-Lazare",
-            "Concorde"
-          ],
-          "14": [
-            "Pyramides",
-            "Saint-Lazare"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5161,24 +4685,13 @@
           ]
         ],
         "lines": [
-          "13",
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 66,
-          "13": 115
-        },
-        "adjacentStations": {
-          "8": [
-            "Concorde",
-            "La Motte-Picquet - Grenelle"
-          ],
-          "13": [
-            "Champs-Élysées - Clemenceau",
-            "Varenne",
-            "Champs-Elysées - Clémenceau"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5272,17 +4785,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 153
-        },
-        "adjacentStations": {
-          "8": [
-            "Bastille",
-            "République"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5375,17 +4880,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 170
-        },
-        "adjacentStations": {
-          "8": [
-            "Reuilly — Diderot",
-            "Bastille"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5477,17 +4974,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 238
-        },
-        "adjacentStations": {
-          "8": [
-            "Créteil-L'Échat (Hopital Henri Mondor)",
-            "Daumesnil"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5548,16 +5037,9 @@
           ]
         ],
         "lines": [
-          "14"
-        ],
-        "inLineIndex": {
-          "14": 196
-        },
-        "adjacentStations": {
-          "14": [
-            "Bibliothèque François Mitterrand"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5649,17 +5131,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 310
-        },
-        "adjacentStations": {
-          "12": [
-            "Front Populaire",
-            "Marx Dormoy"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5752,17 +5226,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 2
-        },
-        "adjacentStations": {
-          "4": [
-            "Marcadet - Poissonniers",
-            "Porte de Clignancourt"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5844,17 +5310,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 14
-        },
-        "adjacentStations": {
-          "4": [
-            "Barbès - Rochechouart",
-            "Marcadet - Poissonniers"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -5923,17 +5381,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 80
-        },
-        "adjacentStations": {
-          "4": [
-            "Les Halles",
-            "Réaumur - Sébastopol"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6006,17 +5456,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 60
-        },
-        "adjacentStations": {
-          "4": [
-            "Strasbourg - Saint-Denis",
-            "Gare de L'Est"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6085,17 +5527,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 94
-        },
-        "adjacentStations": {
-          "4": [
-            "Châtelet",
-            "Étienne Marcel"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6195,17 +5629,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 65
-        },
-        "adjacentStations": {
-          "13": [
-            "Montparnasse-Bienvenüe",
-            "Pernety"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6293,17 +5721,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 46
-        },
-        "adjacentStations": {
-          "13": [
-            "Pernety",
-            "Porte de Vanves"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6391,17 +5813,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 48
-        },
-        "adjacentStations": {
-          "13": [
-            "Gaîté",
-            "Plaisance"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6490,17 +5906,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 35
-        },
-        "adjacentStations": {
-          "13": [
-            "Porte de Vanves",
-            "Malakoff - Rue Étienne Dolet"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6585,17 +5995,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 105
-        },
-        "adjacentStations": {
-          "5": [
-            "Jaurès",
-            "Ourcq"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6680,17 +6082,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 100
-        },
-        "adjacentStations": {
-          "5": [
-            "Laumière",
-            "Porte de Pantin (Parc de la Villette)"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6774,17 +6168,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 94
-        },
-        "adjacentStations": {
-          "5": [
-            "Ourcq",
-            "Hoche"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -6868,17 +6254,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 84
-        },
-        "adjacentStations": {
-          "5": [
-            "Porte de Pantin (Parc de la Villette)",
-            "Église de Pantin"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7012,22 +6390,12 @@
           ]
         ],
         "lines": [
-          "7",
-          "7bis"
-        ],
-        "inLineIndex": {
-          "7": 195,
-          "7bis": 1
-        },
-        "adjacentStations": {
-          "7": [
-            "Stalingrad",
-            "Château Landon"
-          ],
-          "7bis": [
-            "Jaurès"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "7bis - Louis Blanc -> Louis Blanc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7165,17 +6533,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 202
-        },
-        "adjacentStations": {
-          "7": [
-            "Crimée",
-            "Stalingrad"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7313,17 +6675,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 203
-        },
-        "adjacentStations": {
-          "7": [
-            "Corentin Cariou",
-            "Riquet"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7462,17 +6818,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 206
-        },
-        "adjacentStations": {
-          "7": [
-            "Porte de la Villette",
-            "Crimée"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7610,17 +6960,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 207
-        },
-        "adjacentStations": {
-          "7": [
-            "Aubervilliers - Pantin - Quatre Chemins",
-            "Corentin Cariou"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7710,17 +7054,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 162
-        },
-        "adjacentStations": {
-          "7": [
-            "Cadet",
-            "Chaussée d'Antin - La Fayette"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7810,17 +7148,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 163
-        },
-        "adjacentStations": {
-          "7": [
-            "Poissonnière",
-            "Le Peletier"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -7962,17 +7294,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 114
-        },
-        "adjacentStations": {
-          "7": [
-            "Palais Royal - Musée du Louvre",
-            "Châtelet"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8112,17 +7438,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 97
-        },
-        "adjacentStations": {
-          "7": [
-            "Pont Marie",
-            "Jussieu"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8260,17 +7580,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 102
-        },
-        "adjacentStations": {
-          "7": [
-            "Châtelet",
-            "Sully - Morland"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8410,17 +7724,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 47
-        },
-        "adjacentStations": {
-          "7": [
-            "Jussieu",
-            "Censier - Daubenton"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8559,18 +7867,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 45
-        },
-        "adjacentStations": {
-          "7": [
-            "Place Monge",
-            "Les Gobelins",
-            "Le Kremlin-Bicêtre"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8709,19 +8010,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 34
-        },
-        "adjacentStations": {
-          "7": [
-            "Censier - Daubenton",
-            "Place d'Italie",
-            "Le Kremlin-Bicêtre",
-            "Villejuif - Léo Lagrange"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8783,7 +8076,7 @@
           ]
         ],
         "lines": [
-          "7bis"
+          "7bis - Louis Blanc -> Louis Blanc"
         ]
       },
       "geometry": {
@@ -8869,17 +8162,9 @@
           ]
         ],
         "lines": [
-          "3bis"
-        ],
-        "inLineIndex": {
-          "3bis": 10
-        },
-        "adjacentStations": {
-          "3bis": [
-            "Pelleport",
-            "Porte des Lilas"
-          ]
-        }
+          "3bis - Porte des Lilas -> Gambetta",
+          "3bis - Gambetta -> Porte des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -8964,17 +8249,9 @@
           ]
         ],
         "lines": [
-          "3bis"
-        ],
-        "inLineIndex": {
-          "3bis": 12
-        },
-        "adjacentStations": {
-          "3bis": [
-            "Gambetta",
-            "Saint-Fargeau"
-          ]
-        }
+          "3bis - Porte des Lilas -> Gambetta",
+          "3bis - Gambetta -> Porte des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9036,17 +8313,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 313
-        },
-        "adjacentStations": {
-          "5": [
-            "Place d'Italie",
-            "Saint-Marcel"
-          ]
-        }
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9116,17 +8385,9 @@
           ]
         ],
         "lines": [
-          "14"
-        ],
-        "inLineIndex": {
-          "14": 12
-        },
-        "adjacentStations": {
-          "14": [
-            "Porte de Clichy",
-            "Mairie de Saint-Ouen"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9266,17 +8527,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 14
-        },
-        "adjacentStations": {
-          "7": [
-            "Place d'Italie",
-            "Maison Blanche"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9416,17 +8671,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 11
-        },
-        "adjacentStations": {
-          "7": [
-            "Tolbiac",
-            "Porte d'Italie"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9520,18 +8769,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 10
-        },
-        "adjacentStations": {
-          "7": [
-            "Maison Blanche",
-            "Porte de Choisy",
-            "Villejuif - Paul Vaillant-Couturier"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9620,17 +8860,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 308
-        },
-        "adjacentStations": {
-          "13": [
-            "Asnières-Gennevilliers–Les Courtilles",
-            "Saint-Denis - Université"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9710,16 +8942,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 322
-        },
-        "adjacentStations": {
-          "13": [
-            "Les Agnettes"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -9854,17 +9079,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 218
-        },
-        "adjacentStations": {
-          "7": [
-            "La Courneuve - 8 mai 1945",
-            "Aubervilliers - Pantin - Quatre Chemins"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10001,17 +9220,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 213
-        },
-        "adjacentStations": {
-          "7": [
-            "Fort d'Aubervilliers",
-            "Porte de la Villette"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10147,16 +9360,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 221
-        },
-        "adjacentStations": {
-          "7": [
-            "Fort d'Aubervilliers"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10239,17 +9447,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 32
-        },
-        "adjacentStations": {
-          "7": [
-            "Les Gobelins",
-            "Place d'Italie"
-          ]
-        }
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10331,17 +9531,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 1
-        },
-        "adjacentStations": {
-          "7": [
-            "Pierre et Marie Curie",
-            "Mairie d'Ivry"
-          ]
-        }
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10424,17 +9616,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 9
-        },
-        "adjacentStations": {
-          "7": [
-            "Porte d'Italie",
-            "Porte de Choisy"
-          ]
-        }
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10519,17 +9703,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 37
-        },
-        "adjacentStations": {
-          "7": [
-            "Censier - Daubenton",
-            "Les Gobelins"
-          ]
-        }
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10667,17 +9843,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 194
-        },
-        "adjacentStations": {
-          "7": [
-            "Louis Blanc",
-            "Gare de L'Est"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10737,17 +9907,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 109
-        },
-        "adjacentStations": {
-          "2": [
-            "Stalingrad",
-            "Barbès - Rochechouart"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10832,17 +9994,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 78
-        },
-        "adjacentStations": {
-          "5": [
-            "Hoche",
-            "Bobigny - Pantin - Raymond Queneau"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -10904,23 +10058,12 @@
           [
             2.4492007,
             48.9060505
-          ],
-          [
-            2.4491965,
-            48.9066928
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 1
-        },
-        "adjacentStations": {
-          "5": [
-            "Bobigny - Pantin - Raymond Queneau"
-          ]
-        }
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11009,17 +10152,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 193
-        },
-        "adjacentStations": {
-          "13": [
-            "Place de Clichy",
-            "Saint-Lazare"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11111,18 +10248,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 8
-        },
-        "adjacentStations": {
-          "7": [
-            "Porte d'Italie",
-            "Porte d'Ivry",
-            "Villejuif - Paul Vaillant-Couturier"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11204,17 +10332,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 5
-        },
-        "adjacentStations": {
-          "7": [
-            "Porte de Choisy",
-            "Pierre et Marie Curie"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11305,18 +10425,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 2
-        },
-        "adjacentStations": {
-          "7": [
-            "Porte d'Ivry",
-            "Mairie d'Ivry",
-            "Villejuif - Louis Aragon"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11400,17 +10511,9 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 0
-        },
-        "adjacentStations": {
-          "7": [
-            "Pierre et Marie Curie",
-            "Villejuif - Louis Aragon"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11494,30 +10597,14 @@
           [
             2.3507565,
             48.8912909
-          ],
-          [
-            2.3497296,
-            48.8914837
           ]
         ],
         "lines": [
-          "4",
-          "12"
-        ],
-        "inLineIndex": {
-          "4": 8,
-          "12": 284
-        },
-        "adjacentStations": {
-          "4": [
-            "Château Rouge",
-            "Simplon"
-          ],
-          "12": [
-            "Marx Dormoy",
-            "Jules Joffrin"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11585,29 +10672,15 @@
           ]
         ],
         "lines": [
-          "2",
-          "7",
-          "5"
-        ],
-        "inLineIndex": {
-          "2": 117,
-          "5": 124,
-          "7": 199
-        },
-        "adjacentStations": {
-          "2": [
-            "Jaurès",
-            "La Chapelle"
-          ],
-          "5": [
-            "Gare du Nord",
-            "Jaurès"
-          ],
-          "7": [
-            "Riquet",
-            "Louis Blanc"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "2 - Porte Dauphine -> Nation",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11706,23 +10779,11 @@
           ]
         ],
         "lines": [
-          "4",
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 97,
-          "4": 19
-        },
-        "adjacentStations": {
-          "2": [
-            "La Chapelle",
-            "Anvers"
-          ],
-          "4": [
-            "Gare du Nord",
-            "Château Rouge"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11804,29 +10865,15 @@
           ]
         ],
         "lines": [
-          "4",
-          "7",
-          "5"
-        ],
-        "inLineIndex": {
-          "4": 55,
-          "5": 173,
-          "7": 183
-        },
-        "adjacentStations": {
-          "4": [
-            "Château d'Eau",
-            "Gare du Nord"
-          ],
-          "5": [
-            "Jacques Bonsergent",
-            "Gare du Nord"
-          ],
-          "7": [
-            "Château Landon",
-            "Poissonnière"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11888,17 +10935,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 112
-        },
-        "adjacentStations": {
-          "6": [
-            "Pasteur",
-            "Cambronne"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -11960,17 +10999,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 105
-        },
-        "adjacentStations": {
-          "6": [
-            "Sèvres-Lecourbe",
-            "La Motte-Picquet - Grenelle"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12040,28 +11071,13 @@
           ]
         ],
         "lines": [
-          "6",
-          "8",
-          "10"
-        ],
-        "inLineIndex": {
-          "6": 97,
-          "8": 39,
-          "10": 69
-        },
-        "adjacentStations": {
-          "6": [
-            "Cambronne",
-            "Dupleix"
-          ],
-          "8": [
-            "Invalides"
-          ],
-          "10": [
-            "Ségur",
-            "Avenue Émile Zola"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12123,17 +11139,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 90
-        },
-        "adjacentStations": {
-          "6": [
-            "La Motte-Picquet - Grenelle",
-            "Bir-Hakeim"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12195,17 +11203,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 72
-        },
-        "adjacentStations": {
-          "6": [
-            "Dupleix",
-            "Passy"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12277,23 +11277,11 @@
           ]
         ],
         "lines": [
-          "14",
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 58,
-          "14": 145
-        },
-        "adjacentStations": {
-          "1": [
-            "Bastille",
-            "Reuilly - Diderot"
-          ],
-          "14": [
-            "Bercy",
-            "Châtelet"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12386,16 +11374,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 0
-        },
-        "adjacentStations": {
-          "4": [
-            "Simplon"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12464,17 +11445,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 309
-        },
-        "adjacentStations": {
-          "1": [
-            "Esplanade de La Défense",
-            "Château de Vincennes"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12560,17 +11533,8 @@
           ]
         ],
         "lines": [
-          "7bis"
-        ],
-        "inLineIndex": {
-          "7bis": 40
-        },
-        "adjacentStations": {
-          "7bis": [
-            "Place des Fêtes",
-            "Buttes Chaumont"
-          ]
-        }
+          "7bis - Louis Blanc -> Louis Blanc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12641,21 +11605,10 @@
           ]
         ],
         "lines": [
-          "7bis",
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 129
-        },
-        "adjacentStations": {
-          "11": [
-            "Télégraphe",
-            "Jourdain"
-          ],
-          "7bis": [
-            "Botzaris"
-          ]
-        }
+          "7bis - Louis Blanc -> Louis Blanc",
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12737,17 +11690,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 40
-        },
-        "adjacentStations": {
-          "2": [
-            "Monceau",
-            "Ternes"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12830,17 +11775,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 329
-        },
-        "adjacentStations": {
-          "12": [
-            "Aimé Césaire",
-            "Porte de la Chapelle"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -12921,34 +11858,15 @@
           ]
         ],
         "lines": [
-          "6",
-          "9",
-          "1",
-          "2"
-        ],
-        "inLineIndex": {
-          "1": 38,
-          "2": 219,
-          "6": 382,
-          "9": 209
-        },
-        "adjacentStations": {
-          "1": [
-            "Reuilly - Diderot",
-            "Porte de Vincennes"
-          ],
-          "2": [
-            "Avron"
-          ],
-          "6": [
-            "Picpus",
-            "Charles de Gaulle - Étoile"
-          ],
-          "9": [
-            "Buzenval",
-            "Rue des Boulets"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13035,17 +11953,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 70
-        },
-        "adjacentStations": {
-          "5": [
-            "Église de Pantin",
-            "Bobigny - Pablo Picasso"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13120,23 +12030,11 @@
           ]
         ],
         "lines": [
-          "4",
-          "5"
-        ],
-        "inLineIndex": {
-          "4": 37,
-          "5": 143
-        },
-        "adjacentStations": {
-          "4": [
-            "Gare de L'Est",
-            "Barbès - Rochechouart"
-          ],
-          "5": [
-            "Gare de L'Est",
-            "Stalingrad"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13222,17 +12120,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 339
-        },
-        "adjacentStations": {
-          "12": [
-            "Mairie d'Aubervilliers",
-            "Front Populaire"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13318,16 +12208,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 346
-        },
-        "adjacentStations": {
-          "12": [
-            "Aimé Césaire"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13396,23 +12279,11 @@
           ]
         ],
         "lines": [
-          "14",
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 299,
-          "14": 153
-        },
-        "adjacentStations": {
-          "6": [
-            "Dugommier",
-            "Quai de la Gare"
-          ],
-          "14": [
-            "Cour Saint-Émilion",
-            "Gare de Lyon"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13475,17 +12346,9 @@
           ]
         ],
         "lines": [
-          "14"
-        ],
-        "inLineIndex": {
-          "14": 189
-        },
-        "adjacentStations": {
-          "14": [
-            "Olympiades",
-            "Cour Saint-Émilion"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13573,42 +12436,19 @@
           ]
         ],
         "lines": [
-          "14",
-          "7",
-          "4",
-          "11",
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 162,
-          "4": 109,
-          "7": 108,
-          "11": 175,
-          "14": 115
-        },
-        "adjacentStations": {
-          "1": [
-            "Louvre - Rivoli",
-            "Hôtel de Ville"
-          ],
-          "4": [
-            "Cité",
-            "Les Halles"
-          ],
-          "7": [
-            "Pont Neuf",
-            "Pont Marie"
-          ],
-          "11": [
-            "Hôtel de Ville",
-            "Mairie des Lilas",
-            "Porte des Lilas"
-          ],
-          "14": [
-            "Gare de Lyon",
-            "Pyramides"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "11 - Châtelet -> Mairie des Lilas",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "14 - Olympiades -> Mairie de Saint-Ouen",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13678,17 +12518,9 @@
           ]
         ],
         "lines": [
-          "14"
-        ],
-        "inLineIndex": {
-          "14": 176
-        },
-        "adjacentStations": {
-          "14": [
-            "Bibliothèque François Mitterrand",
-            "Bercy"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13757,23 +12589,13 @@
           ]
         ],
         "lines": [
-          "14",
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 136,
-          "14": 96
-        },
-        "adjacentStations": {
-          "7": [
-            "Opéra",
-            "Palais Royal - Musée du Louvre"
-          ],
-          "14": [
-            "Châtelet",
-            "Madeleine"
-          ]
-        }
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13849,23 +12671,11 @@
           ]
         ],
         "lines": [
-          "1",
-          "9"
-        ],
-        "inLineIndex": {
-          "1": 200,
-          "9": 86
-        },
-        "adjacentStations": {
-          "1": [
-            "George V",
-            "Champs-Élysées - Clemenceau"
-          ],
-          "9": [
-            "Saint-Philippe du Roule",
-            "Alma-Marceau"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -13939,23 +12749,11 @@
           ]
         ],
         "lines": [
-          "5",
-          "10"
-        ],
-        "inLineIndex": {
-          "5": 292,
-          "10": 207
-        },
-        "adjacentStations": {
-          "5": [
-            "Saint-Marcel",
-            "Quai de la Rapée"
-          ],
-          "10": [
-            "Jussieu",
-            "Porte d'Auteuil"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14044,29 +12842,15 @@
           ]
         ],
         "lines": [
-          "7",
-          "3",
-          "8"
-        ],
-        "inLineIndex": {
-          "3": 103,
-          "7": 142,
-          "8": 102
-        },
-        "adjacentStations": {
-          "3": [
-            "Quatre Septembre",
-            "Havre - Caumartin"
-          ],
-          "7": [
-            "Chaussée d'Antin - La Fayette",
-            "Pyramides"
-          ],
-          "8": [
-            "Richelieu - Drouot",
-            "Madeleine"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14157,23 +12941,11 @@
           ]
         ],
         "lines": [
-          "2",
-          "11"
-        ],
-        "inLineIndex": {
-          "2": 159,
-          "11": 84
-        },
-        "adjacentStations": {
-          "2": [
-            "Couronnes",
-            "Colonel Fabien"
-          ],
-          "11": [
-            "Pyrénées",
-            "Goncourt"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14239,24 +13011,11 @@
           ]
         ],
         "lines": [
-          "1",
-          "13"
-        ],
-        "inLineIndex": {
-          "1": 195,
-          "13": 130
-        },
-        "adjacentStations": {
-          "1": [
-            "Franklin D. Roosevelt",
-            "Concorde"
-          ],
-          "13": [
-            "Miromesnil",
-            "Invalides",
-            "Champs-Elysées - Clémenceau"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14327,23 +13086,11 @@
           ]
         ],
         "lines": [
-          "1",
-          "11"
-        ],
-        "inLineIndex": {
-          "1": 155,
-          "11": 17
-        },
-        "adjacentStations": {
-          "1": [
-            "Châtelet",
-            "Saint-Paul"
-          ],
-          "11": [
-            "Rambuteau",
-            "Châtelet"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14410,23 +13157,13 @@
           ]
         ],
         "lines": [
-          "1",
-          "7"
-        ],
-        "inLineIndex": {
-          "1": 171,
-          "7": 131
-        },
-        "adjacentStations": {
-          "1": [
-            "Tuileries",
-            "Louvre - Rivoli"
-          ],
-          "7": [
-            "Pyramides",
-            "Pont Neuf"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14516,23 +13253,11 @@
           ]
         ],
         "lines": [
-          "2",
-          "12"
-        ],
-        "inLineIndex": {
-          "2": 79,
-          "12": 235
-        },
-        "adjacentStations": {
-          "2": [
-            "Anvers",
-            "Blanche"
-          ],
-          "12": [
-            "Abbesses",
-            "Saint-Georges"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14622,23 +13347,13 @@
           ]
         ],
         "lines": [
-          "2",
-          "13"
-        ],
-        "inLineIndex": {
-          "2": 58,
-          "13": 196
-        },
-        "adjacentStations": {
-          "2": [
-            "Blanche",
-            "Rome"
-          ],
-          "13": [
-            "La Fourche",
-            "Liège"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14724,23 +13439,11 @@
           ]
         ],
         "lines": [
-          "2",
-          "3"
-        ],
-        "inLineIndex": {
-          "2": 174,
-          "3": 161
-        },
-        "adjacentStations": {
-          "2": [
-            "Philippe Auguste",
-            "Ménilmontant"
-          ],
-          "3": [
-            "Gambetta",
-            "Rue Saint-Maur"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14824,23 +13527,11 @@
           ]
         ],
         "lines": [
-          "3",
-          "9"
-        ],
-        "inLineIndex": {
-          "3": 97,
-          "9": 134
-        },
-        "adjacentStations": {
-          "3": [
-            "Opéra",
-            "Saint-Lazare"
-          ],
-          "9": [
-            "Chaussée d'Antin - La Fayette",
-            "Saint-Augustin"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -14899,17 +13590,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 68
-        },
-        "adjacentStations": {
-          "4": [
-            "Étienne Marcel",
-            "Strasbourg - Saint-Denis"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15003,30 +13686,13 @@
           ]
         ],
         "lines": [
-          "2",
-          "6",
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 230,
-          "2": 25,
-          "6": 365
-        },
-        "adjacentStations": {
-          "1": [
-            "Argentine",
-            "George V"
-          ],
-          "2": [
-            "Ternes",
-            "Victor Hugo"
-          ],
-          "6": [
-            "Kléber",
-            "Nation",
-            "Picpus"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation",
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15091,23 +13757,11 @@
           ]
         ],
         "lines": [
-          "6",
-          "9"
-        ],
-        "inLineIndex": {
-          "6": 37,
-          "9": 63
-        },
-        "adjacentStations": {
-          "6": [
-            "Passy",
-            "Boissière"
-          ],
-          "9": [
-            "Iéna",
-            "Rue de la Pompe"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15121,18 +13775,128 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4083286997",
-        "layer": "-3",
-        "level": "-3",
+        "@id": "node/4083286998",
+        "STIF:zone": "1",
         "name": "Jussieu",
+        "name:fr": "Jussieu",
+        "name:ru": "Жюссьё",
+        "operator": "RATP",
         "public_transport": "stop_position",
-        "railway": "stop",
+        "railway": "station",
+        "ref:FR:FANTOIR": "75105S258W",
+        "ref:FR:RATP": "1866",
+        "ref:FR:STIF": "22386",
+        "source": "STIF - 12/2016",
+        "station": "subway",
         "subway": "yes",
+        "train": "yes",
+        "type:RATP": "metro",
+        "wheelchair": "no",
+        "wikidata": "Q1463644",
+        "wikipedia": "fr:Jussieu (métro de Paris)",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123652",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "La Courneuve - 8 mai 1945",
+              "name": "Ligne 7 :  La Courneuve - 8 mai 1945 → Mairie d'Ivry",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "ref:FR:RATP": "1001100070001",
+              "route": "subway",
+              "short_name": "M7",
+              "stops": "38",
+              "to": "Mairie d'Ivry",
+              "twitter": "Ligne7_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50748",
+              "wikipedia": "fr:Ligne 7 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "3328804",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "Mairie d'Ivry",
+              "name": "Ligne 7 :  Mairie d'Ivry → La Courneuve - 8 mai 1945",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "ref:FR:RATP": "1001100070001",
+              "route": "subway",
+              "short_name": "M7",
+              "stops": "38",
+              "to": "La Courneuve - 8 mai 1945",
+              "twitter": "Ligne7_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50748",
+              "wikipedia": "fr:Ligne 7 du métro de Paris"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "3328811",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "Villejuif - Louis Aragon",
+              "name": "Ligne 7 : Villejuif - Louis Aragon → La Courneuve - 8 mai 1945",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "route": "subway",
+              "short_name": "M7",
+              "to": "La Courneuve - 8 mai 1945",
+              "type": "route",
+              "wikidata": "Q50748",
+              "wikipedia": "en:Paris Métro Line 7"
+            }
+          },
+          {
+            "role": "stop",
+            "rel": "3328812",
+            "reltags": {
+              "colour": "#ff82b4",
+              "from": "La Courneuve - 8 mai 1945",
+              "name": "Ligne 7 : La Courneuve - 8 mai 1945 → Villejuif - Louis Aragon",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "7",
+              "route": "subway",
+              "short_name": "M7",
+              "to": "Villejuif - Louis Aragon",
+              "type": "route",
+              "wikidata": "Q50748",
+              "wikipedia": "en:Paris Métro Line 7"
+            }
+          }
+        ],
         "coordinates": [
-          [
-            2.3560854,
-            48.8459629
-          ],
           [
             2.354801,
             48.8459626
@@ -15143,33 +13907,22 @@
           ]
         ],
         "lines": [
-          "7",
-          "10"
-        ],
-        "inLineIndex": {
-          "7": 63,
-          "10": 165
-        },
-        "adjacentStations": {
-          "7": [
-            "Sully - Morland",
-            "Place Monge"
-          ],
-          "10": [
-            "Gare d'Austerlitz",
-            "Cardinal Lemoine",
-            "Église d'Auteuil"
-          ]
-        }
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.3560854,
-          48.8459629
+          2.354801,
+          48.8459626
         ]
       },
-      "id": "node/4083286997"
+      "id": "node/4083286998"
     },
     {
       "type": "Feature",
@@ -15250,23 +14003,11 @@
           ]
         ],
         "lines": [
-          "10",
-          "12"
-        ],
-        "inLineIndex": {
-          "10": 108,
-          "12": 102
-        },
-        "adjacentStations": {
-          "10": [
-            "Mabillon",
-            "Vaneau"
-          ],
-          "12": [
-            "Rue du Bac",
-            "Rennes"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15348,16 +14089,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 0
-        },
-        "adjacentStations": {
-          "12": [
-            "Corentin Celton"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15439,17 +14173,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 9
-        },
-        "adjacentStations": {
-          "12": [
-            "Porte de Versailles",
-            "Mairie d'Issy"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15535,17 +14261,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 11
-        },
-        "adjacentStations": {
-          "13": [
-            "Malakoff - Plateau de Vanves",
-            "Châtillon-Montrouge"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15629,16 +14349,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 0
-        },
-        "adjacentStations": {
-          "9": [
-            "Billancourt"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15698,17 +14411,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 3
-        },
-        "adjacentStations": {
-          "9": [
-            "Marcel Sembat",
-            "Pont de Sèvres"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15790,16 +14495,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 1
-        },
-        "adjacentStations": {
-          "10": [
-            "Boulogne - Jean Jaurès"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15881,17 +14579,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 11
-        },
-        "adjacentStations": {
-          "10": [
-            "Michel-Ange - Molitor",
-            "Boulogne - Pont de Saint-Cloud"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -15979,23 +14669,10 @@
           ]
         ],
         "lines": [
-          "9",
-          "10"
-        ],
-        "inLineIndex": {
-          "9": 15,
-          "10": 34
-        },
-        "adjacentStations": {
-          "9": [
-            "Michel-Ange - Auteuil",
-            "Exelmans"
-          ],
-          "10": [
-            "Chardon-Lagache",
-            "Boulogne - Jean Jaurès"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16050,17 +14727,8 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 40
-        },
-        "adjacentStations": {
-          "10": [
-            "Mirabeau",
-            "Michel-Ange - Molitor"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16115,17 +14783,8 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 194
-        },
-        "adjacentStations": {
-          "10": [
-            "Gare d'Austerlitz",
-            "Michel-Ange - Auteuil"
-          ]
-        }
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16213,23 +14872,10 @@
           ]
         ],
         "lines": [
-          "9",
-          "10"
-        ],
-        "inLineIndex": {
-          "9": 18,
-          "10": 187
-        },
-        "adjacentStations": {
-          "9": [
-            "Jasmin",
-            "Michel-Ange - Molitor"
-          ],
-          "10": [
-            "Porte d'Auteuil",
-            "Église d'Auteuil"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16243,43 +14889,58 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5226630380",
+        "@id": "node/11608589351",
         "name": "Mirabeau",
         "public_transport": "stop_position",
         "railway": "stop",
         "subway": "yes",
-        "wikidata": "Q56858995",
+        "@relations": [
+          {
+            "role": "stop",
+            "rel": "123768",
+            "reltags": {
+              "colour": "#dc9600",
+              "from": "Boulogne - Pont de Saint-Cloud",
+              "line": "subway",
+              "name": "Ligne 10 : Boulogne - Pont de Saint-Cloud → Gare d'Austerlitz",
+              "network": "Métro de Paris",
+              "network:wikidata": "Q50716",
+              "network:wikipedia": "fr:Métro de Paris",
+              "operator": "RATP",
+              "operator:wikidata": "Q643290",
+              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
+              "public_transport:version": "2",
+              "ref": "10",
+              "ref:FR:RATP": "1001100100001",
+              "route": "subway",
+              "short_name": "M10",
+              "to": "Gare d'Austerlitz",
+              "twitter": "Ligne10_RATP",
+              "type": "route",
+              "wheelchair": "no",
+              "wikidata": "Q50754",
+              "wikipedia": "fr:Ligne 10 du métro de Paris"
+            }
+          }
+        ],
         "coordinates": [
-          [
-            2.2717151,
-            48.8468259
-          ],
           [
             2.2717155,
             48.8468038
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 43
-        },
-        "adjacentStations": {
-          "10": [
-            "Javel - André Citroën",
-            "Chardon-Lagache"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz"
+        ]
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.2717151,
-          48.8468259
+          2.2717155,
+          48.8468038
         ]
       },
-      "id": "node/5226630380"
+      "id": "node/11608589351"
     },
     {
       "type": "Feature",
@@ -16352,17 +15013,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 57
-        },
-        "adjacentStations": {
-          "10": [
-            "Charles Michels",
-            "Mirabeau"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16417,17 +15070,8 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 173
-        },
-        "adjacentStations": {
-          "10": [
-            "Michel-Ange - Auteuil",
-            "Jussieu"
-          ]
-        }
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16511,17 +15155,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 41
-        },
-        "adjacentStations": {
-          "13": [
-            "Plaisance",
-            "Malakoff - Plateau de Vanves"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16603,17 +15241,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 31
-        },
-        "adjacentStations": {
-          "12": [
-            "Vaugirard",
-            "Porte de Versailles"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16695,17 +15325,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 37
-        },
-        "adjacentStations": {
-          "12": [
-            "Volontaires",
-            "Convention"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16787,17 +15409,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 59
-        },
-        "adjacentStations": {
-          "10": [
-            "Avenue Émile Zola",
-            "Javel - André Citroën"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16879,17 +15493,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 61
-        },
-        "adjacentStations": {
-          "10": [
-            "La Motte-Picquet - Grenelle",
-            "Charles Michels"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -16971,16 +15577,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 0
-        },
-        "adjacentStations": {
-          "2": [
-            "Victor Hugo"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17062,17 +15661,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 13
-        },
-        "adjacentStations": {
-          "2": [
-            "Charles de Gaulle - Étoile",
-            "Porte Dauphine"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17142,17 +15733,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 31
-        },
-        "adjacentStations": {
-          "6": [
-            "Boissière",
-            "Charles de Gaulle - Étoile"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17214,17 +15797,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 35
-        },
-        "adjacentStations": {
-          "6": [
-            "Trocadéro",
-            "Kléber"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17293,17 +15868,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 265
-        },
-        "adjacentStations": {
-          "1": [
-            "Les Sablons",
-            "Argentine"
-          ]
-        }
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17385,17 +15952,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 36
-        },
-        "adjacentStations": {
-          "2": [
-            "Courcelles",
-            "Charles de Gaulle - Étoile"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17459,16 +16018,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 414
-        },
-        "adjacentStations": {
-          "8": [
-            "Créteil-Préfecture"
-          ]
-        }
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "8 - Créteil - Pointe du Lac -> Balard"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17531,16 +16083,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 283
-        },
-        "adjacentStations": {
-          "4": [
-            "Barbara"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17599,17 +16144,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 271
-        },
-        "adjacentStations": {
-          "4": [
-            "Bagneux-Lucie Aubrac",
-            "Mairie de Montrouge"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17668,17 +16205,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 254
-        },
-        "adjacentStations": {
-          "4": [
-            "Barbara",
-            "Porte d'Orléans"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17737,17 +16266,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 239
-        },
-        "adjacentStations": {
-          "4": [
-            "Mairie de Montrouge",
-            "Alésia"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17806,17 +16327,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 233
-        },
-        "adjacentStations": {
-          "4": [
-            "Porte d'Orléans",
-            "Mouton-Duvernet"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17875,17 +16388,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 228
-        },
-        "adjacentStations": {
-          "4": [
-            "Alésia",
-            "Denfert-Rochereau"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -17955,23 +16460,11 @@
           ]
         ],
         "lines": [
-          "6",
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 224,
-          "6": 178
-        },
-        "adjacentStations": {
-          "4": [
-            "Mouton-Duvernet",
-            "Raspail"
-          ],
-          "6": [
-            "Saint-Jacques",
-            "Raspail"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18038,23 +16531,11 @@
           ]
         ],
         "lines": [
-          "4",
-          "6"
-        ],
-        "inLineIndex": {
-          "4": 216,
-          "6": 168
-        },
-        "adjacentStations": {
-          "4": [
-            "Denfert-Rochereau",
-            "Vavin"
-          ],
-          "6": [
-            "Denfert-Rochereau",
-            "Edgar Quinet"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18144,23 +16625,11 @@
           ]
         ],
         "lines": [
-          "12",
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 127,
-          "12": 48
-        },
-        "adjacentStations": {
-          "6": [
-            "Montparnasse-Bienvenüe",
-            "Sèvres-Lecourbe"
-          ],
-          "12": [
-            "Falguière",
-            "Volontaires"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18242,17 +16711,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 45
-        },
-        "adjacentStations": {
-          "12": [
-            "Pasteur",
-            "Vaugirard"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18334,17 +16795,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 79
-        },
-        "adjacentStations": {
-          "10": [
-            "Duroc",
-            "La Motte-Picquet - Grenelle"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18434,23 +16887,13 @@
           ]
         ],
         "lines": [
-          "10",
-          "13"
-        ],
-        "inLineIndex": {
-          "10": 92,
-          "13": 90
-        },
-        "adjacentStations": {
-          "10": [
-            "Vaneau",
-            "Ségur"
-          ],
-          "13": [
-            "Saint-François-Xavier",
-            "Montparnasse-Bienvenüe"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18519,17 +16962,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 56
-        },
-        "adjacentStations": {
-          "12": [
-            "Montparnasse-Bienvenüe",
-            "Pasteur"
-          ]
-        }
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18616,35 +17051,17 @@
           ]
         ],
         "lines": [
-          "6",
-          "4",
-          "12",
-          "13"
-        ],
-        "inLineIndex": {
-          "4": 196,
-          "6": 141,
-          "12": 74,
-          "13": 71
-        },
-        "adjacentStations": {
-          "4": [
-            "Vavin",
-            "Saint-Placide"
-          ],
-          "6": [
-            "Edgar Quinet",
-            "Pasteur"
-          ],
-          "12": [
-            "Notre-Dame des Champs",
-            "Falguière"
-          ],
-          "13": [
-            "Duroc",
-            "Gaîté"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18703,17 +17120,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 206
-        },
-        "adjacentStations": {
-          "4": [
-            "Raspail",
-            "Montparnasse-Bienvenüe"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18772,17 +17181,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 178
-        },
-        "adjacentStations": {
-          "4": [
-            "Montparnasse-Bienvenüe",
-            "Saint-Sulpice"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18841,17 +17242,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 93
-        },
-        "adjacentStations": {
-          "12": [
-            "Rennes",
-            "Montparnasse-Bienvenüe"
-          ]
-        }
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -18933,17 +17326,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 101
-        },
-        "adjacentStations": {
-          "10": [
-            "Sèvres-Babylone",
-            "Duroc"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19002,17 +17387,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 174
-        },
-        "adjacentStations": {
-          "4": [
-            "Saint-Placide",
-            "Saint-Germain-des-Prés"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19071,17 +17448,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 97
-        },
-        "adjacentStations": {
-          "12": [
-            "Sèvres-Babylone",
-            "Notre-Dame des Champs"
-          ]
-        }
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19143,17 +17512,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 188
-        },
-        "adjacentStations": {
-          "6": [
-            "Glacière",
-            "Denfert-Rochereau"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19215,17 +17576,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 191
-        },
-        "adjacentStations": {
-          "6": [
-            "Corvisart",
-            "Saint-Jacques"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19299,29 +17652,15 @@
           ]
         ],
         "lines": [
-          "6",
-          "5",
-          "7"
-        ],
-        "inLineIndex": {
-          "5": 353,
-          "6": 230,
-          "7": 25
-        },
-        "adjacentStations": {
-          "5": [
-            "Campo-Formio"
-          ],
-          "6": [
-            "Nationale",
-            "Corvisart"
-          ],
-          "7": [
-            "Les Gobelins",
-            "Tolbiac",
-            "Villejuif - Léo Lagrange"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19409,17 +17748,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 121
-        },
-        "adjacentStations": {
-          "10": [
-            "Odéon",
-            "Sèvres-Babylone"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19478,17 +17809,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 163
-        },
-        "adjacentStations": {
-          "4": [
-            "Saint-Sulpice",
-            "Odéon"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19547,17 +17870,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 147
-        },
-        "adjacentStations": {
-          "4": [
-            "Odéon",
-            "Cité"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19639,17 +17954,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 132
-        },
-        "adjacentStations": {
-          "10": [
-            "Maubert - Mutualité",
-            "Odéon"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19731,17 +18038,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 141
-        },
-        "adjacentStations": {
-          "10": [
-            "Jussieu",
-            "Maubert - Mutualité"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19823,17 +18122,9 @@
           ]
         ],
         "lines": [
-          "10"
-        ],
-        "inLineIndex": {
-          "10": 133
-        },
-        "adjacentStations": {
-          "10": [
-            "Cardinal Lemoine",
-            "Cluny-La Sorbonne"
-          ]
-        }
+          "10 - Boulogne - Pont de Saint-Cloud -> Gare d'Austerlitz",
+          "10 - Gare d'Austerlitz -> Boulogne - Pont de Saint-Cloud"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19904,17 +18195,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 106
-        },
-        "adjacentStations": {
-          "12": [
-            "Solférino",
-            "Sèvres-Babylone"
-          ]
-        }
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -19996,17 +18279,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 118
-        },
-        "adjacentStations": {
-          "12": [
-            "Assemblée Nationale",
-            "Rue du Bac"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20088,17 +18363,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 120
-        },
-        "adjacentStations": {
-          "12": [
-            "Concorde",
-            "Solférino"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20160,17 +18427,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 174
-        },
-        "adjacentStations": {
-          "1": [
-            "Concorde",
-            "Palais Royal - Musée du Louvre"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20261,23 +18520,13 @@
           ]
         ],
         "lines": [
-          "13",
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 122,
-          "13": 152
-        },
-        "adjacentStations": {
-          "9": [
-            "Saint-Augustin",
-            "Saint-Philippe du Roule"
-          ],
-          "13": [
-            "Saint-Lazare",
-            "Champs-Élysées - Clemenceau"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20358,17 +18607,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 127
-        },
-        "adjacentStations": {
-          "13": [
-            "Champs-Élysées - Clemenceau",
-            "Invalides"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20448,17 +18689,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 79
-        },
-        "adjacentStations": {
-          "3": [
-            "Saint-Lazare",
-            "Villiers"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20540,17 +18773,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 184
-        },
-        "adjacentStations": {
-          "12": [
-            "Notre-Dame de Lorette",
-            "Saint-Lazare"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20623,17 +18848,9 @@
           ]
         ],
         "lines": [
-          "4"
-        ],
-        "inLineIndex": {
-          "4": 126
-        },
-        "adjacentStations": {
-          "4": [
-            "Saint-Michel",
-            "Châtelet"
-          ]
-        }
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20694,17 +18911,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 122
-        },
-        "adjacentStations": {
-          "3": [
-            "Arts et Métiers",
-            "Sentier"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20771,23 +18980,11 @@
           ]
         ],
         "lines": [
-          "3",
-          "11"
-        ],
-        "inLineIndex": {
-          "3": 128,
-          "11": 36
-        },
-        "adjacentStations": {
-          "3": [
-            "Temple",
-            "Réaumur Sébastopol"
-          ],
-          "11": [
-            "République",
-            "Rambuteau"
-          ]
-        }
+          "3 - Gallieni -> Pont de Levallois",
+          "3 - Pont de Levallois -> Gallieni",
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20846,17 +19043,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 21
-        },
-        "adjacentStations": {
-          "11": [
-            "Arts et Métiers",
-            "Hôtel de Ville"
-          ]
-        }
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -20948,23 +19137,13 @@
           ]
         ],
         "lines": [
-          "9",
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 160,
-          "9": 139
-        },
-        "adjacentStations": {
-          "7": [
-            "Le Peletier",
-            "Opéra"
-          ],
-          "9": [
-            "Richelieu - Drouot",
-            "Havre - Caumartin"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21044,17 +19223,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 110
-        },
-        "adjacentStations": {
-          "3": [
-            "Bourse",
-            "Opéra"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21141,23 +19312,11 @@
           ]
         ],
         "lines": [
-          "8",
-          "9"
-        ],
-        "inLineIndex": {
-          "8": 118,
-          "9": 152
-        },
-        "adjacentStations": {
-          "8": [
-            "Bonne Nouvelle",
-            "Richelieu - Drouot"
-          ],
-          "9": [
-            "Bonne Nouvelle",
-            "Richelieu - Drouot"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21237,17 +19396,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 113
-        },
-        "adjacentStations": {
-          "3": [
-            "Sentier",
-            "Quatre Septembre"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21306,17 +19457,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 208
-        },
-        "adjacentStations": {
-          "12": [
-            "Pigalle",
-            "Notre-Dame de Lorette"
-          ]
-        }
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers",
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21398,17 +19541,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 188
-        },
-        "adjacentStations": {
-          "12": [
-            "Saint-Georges",
-            "Trinité d'Estienne d'Orves"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21476,17 +19611,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 118
-        },
-        "adjacentStations": {
-          "3": [
-            "Réaumur Sébastopol",
-            "Bourse"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21573,23 +19700,11 @@
           ]
         ],
         "lines": [
-          "8",
-          "9"
-        ],
-        "inLineIndex": {
-          "8": 122,
-          "9": 155
-        },
-        "adjacentStations": {
-          "8": [
-            "Strasbourg - Saint-Denis",
-            "Grands Boulevards"
-          ],
-          "9": [
-            "Strasbourg - Saint-Denis",
-            "Grands Boulevards"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21656,29 +19771,13 @@
           ]
         ],
         "lines": [
-          "4",
-          "9",
-          "8"
-        ],
-        "inLineIndex": {
-          "4": 63,
-          "8": 124,
-          "9": 157
-        },
-        "adjacentStations": {
-          "4": [
-            "Réaumur - Sébastopol",
-            "Château d'Eau"
-          ],
-          "8": [
-            "République",
-            "Bonne Nouvelle"
-          ],
-          "9": [
-            "République",
-            "Bonne Nouvelle"
-          ]
-        }
+          "4 - Porte de Clignancourt -> Bagneux-Lucie Aubrac",
+          "4 - Bagneux-Lucie Aubrac -> Porte de Clignancourt",
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21769,17 +19868,11 @@
           ]
         ],
         "lines": [
-          "7"
-        ],
-        "inLineIndex": {
-          "7": 166
-        },
-        "adjacentStations": {
-          "7": [
-            "Gare de L'Est",
-            "Cadet"
-          ]
-        }
+          "7 - Mairie d'Ivry -> La Courneuve - 8 mai 1945",
+          "7 - Villejuif - Louis Aragon -> La Courneuve - 8 mai 1945",
+          "7 - La Courneuve - 8 mai 1945 -> Mairie d'Ivry",
+          "7 - La Courneuve - 8 mai 1945 -> Villejuif - Louis Aragon"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21841,17 +19934,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 239
-        },
-        "adjacentStations": {
-          "6": [
-            "Chevaleret",
-            "Place d'Italie"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21911,17 +19996,8 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 310
-        },
-        "adjacentStations": {
-          "5": [
-            "Campo-Formio",
-            "Gare d'Austerlitz"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -21983,17 +20059,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 243
-        },
-        "adjacentStations": {
-          "6": [
-            "Quai de la Gare",
-            "Nationale"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22055,17 +20123,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 261
-        },
-        "adjacentStations": {
-          "6": [
-            "Bercy",
-            "Chevaleret"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22127,17 +20187,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 50
-        },
-        "adjacentStations": {
-          "1": [
-            "Gare de Lyon",
-            "Nation"
-          ]
-        }
+          "1 - La Défense (Grande Arche) -> Château de Vincennes",
+          "1 - Château de Vincennes -> La Défense (Grande Arche)"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22199,17 +20251,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 310
-        },
-        "adjacentStations": {
-          "6": [
-            "Daumesnil",
-            "Bercy"
-          ]
-        }
+          "6 - Charles de Gaulle-Étoile -> Nation",
+          "6 - Nation -> Charles de Gaulle-Étoile"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22275,23 +20319,11 @@
           ]
         ],
         "lines": [
-          "6",
-          "8"
-        ],
-        "inLineIndex": {
-          "6": 315,
-          "8": 205
-        },
-        "adjacentStations": {
-          "6": [
-            "Bel-Air",
-            "Dugommier"
-          ],
-          "8": [
-            "Liberté",
-            "Reuilly — Diderot"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22373,17 +20405,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 191
-        },
-        "adjacentStations": {
-          "8": [
-            "Daumesnil",
-            "Ledru-Rollin"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22465,17 +20489,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 192
-        },
-        "adjacentStations": {
-          "2": [
-            "Nation",
-            "Alexandre Dumas"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22537,18 +20553,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 357
-        },
-        "adjacentStations": {
-          "6": [
-            "Nation",
-            "Bel-Air",
-            "Charles de Gaulle - Étoile"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22610,17 +20617,9 @@
           ]
         ],
         "lines": [
-          "6"
-        ],
-        "inLineIndex": {
-          "6": 337
-        },
-        "adjacentStations": {
-          "6": [
-            "Picpus",
-            "Daumesnil"
-          ]
-        }
+          "6 - Nation -> Charles de Gaulle-Étoile",
+          "6 - Charles de Gaulle-Étoile -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22704,17 +20703,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 222
-        },
-        "adjacentStations": {
-          "9": [
-            "Maraîchers",
-            "Nation"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22798,17 +20789,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 224
-        },
-        "adjacentStations": {
-          "9": [
-            "Porte de Montreuil",
-            "Buzenval"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22892,17 +20875,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 231
-        },
-        "adjacentStations": {
-          "9": [
-            "Robespierre",
-            "Maraîchers"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -22965,17 +20940,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 152
-        },
-        "adjacentStations": {
-          "1": [
-            "Hôtel de Ville",
-            "Bastille"
-          ]
-        }
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23034,17 +21001,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 134
-        },
-        "adjacentStations": {
-          "3": [
-            "République",
-            "Arts et Métiers"
-          ]
-        }
+          "3 - Gallieni -> Pont de Levallois",
+          "3 - Pont de Levallois -> Gallieni"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23128,17 +21087,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 188
-        },
-        "adjacentStations": {
-          "9": [
-            "Saint-Ambroise",
-            "République"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23221,17 +21172,9 @@
           ]
         ],
         "lines": [
-          "5"
-        ],
-        "inLineIndex": {
-          "5": 211
-        },
-        "adjacentStations": {
-          "5": [
-            "Bastille",
-            "République"
-          ]
-        }
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23315,17 +21258,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 191
-        },
-        "adjacentStations": {
-          "9": [
-            "Charonne",
-            "Saint-Ambroise"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23409,17 +21344,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 194
-        },
-        "adjacentStations": {
-          "9": [
-            "Rue des Boulets",
-            "Voltaire"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23499,17 +21426,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 155
-        },
-        "adjacentStations": {
-          "3": [
-            "Rue Saint-Maur",
-            "République"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23593,17 +21512,9 @@
           ]
         ],
         "lines": [
-          "9"
-        ],
-        "inLineIndex": {
-          "9": 190
-        },
-        "adjacentStations": {
-          "9": [
-            "Voltaire",
-            "Oberkampf"
-          ]
-        }
+          "9 - Pont de Sèvres -> Mairie de Montreuil",
+          "9 - Mairie de Montreuil -> Pont de Sèvres"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23683,17 +21594,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 156
-        },
-        "adjacentStations": {
-          "3": [
-            "Père Lachaise",
-            "Parmentier"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23796,41 +21699,17 @@
           ]
         ],
         "lines": [
-          "11",
-          "3",
-          "5",
-          "9",
-          "8"
-        ],
-        "inLineIndex": {
-          "3": 150,
-          "5": 199,
-          "8": 141,
-          "9": 174,
-          "11": 68
-        },
-        "adjacentStations": {
-          "3": [
-            "Parmentier",
-            "Temple"
-          ],
-          "5": [
-            null,
-            "Jacques Bonsergent"
-          ],
-          "8": [
-            "Chemin Vert",
-            "Strasbourg - Saint-Denis"
-          ],
-          "9": [
-            "Oberkampf",
-            "Strasbourg - Saint-Denis"
-          ],
-          "11": [
-            "Goncourt",
-            "Arts et Métiers"
-          ]
-        }
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet",
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois",
+          "5 - Place d'Italie -> Bobigny – Pablo Picasso",
+          "5 - Bobigny – Pablo Picasso -> Place d'Italie",
+          "9 - Mairie de Montreuil -> Pont de Sèvres",
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "9 - Pont de Sèvres -> Mairie de Montreuil"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23889,17 +21768,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 76
-        },
-        "adjacentStations": {
-          "11": [
-            "Belleville",
-            "République"
-          ]
-        }
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -23958,17 +21829,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 97
-        },
-        "adjacentStations": {
-          "11": [
-            "Jourdain",
-            "Belleville"
-          ]
-        }
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24050,17 +21913,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 189
-        },
-        "adjacentStations": {
-          "2": [
-            "Avron",
-            "Philippe Auguste"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24141,17 +21996,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 191
-        },
-        "adjacentStations": {
-          "3": [
-            "Gallieni",
-            "Gambetta"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24210,17 +22057,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 111
-        },
-        "adjacentStations": {
-          "11": [
-            "Place des Fêtes",
-            "Pyrénées"
-          ]
-        }
+          "11 - Châtelet -> Mairie des Lilas",
+          "11 - Mairie des Lilas -> Châtelet"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24279,17 +22118,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 152
-        },
-        "adjacentStations": {
-          "11": [
-            "Porte des Lilas",
-            "Place des Fêtes"
-          ]
-        }
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24364,23 +22195,11 @@
           ]
         ],
         "lines": [
-          "11",
-          "3bis"
-        ],
-        "inLineIndex": {
-          "11": 163,
-          "3bis": 0
-        },
-        "adjacentStations": {
-          "11": [
-            "Mairie des Lilas",
-            "Télégraphe",
-            "Châtelet"
-          ],
-          "3bis": [
-            "Saint-Fargeau"
-          ]
-        }
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas",
+          "3bis - Gambetta -> Porte des Lilas",
+          "3bis - Porte des Lilas -> Gambetta"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24439,17 +22258,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 373
-        },
-        "adjacentStations": {
-          "8": [
-            "Créteil-Pointe du Lac",
-            "Créteil-Université"
-          ]
-        }
+          "8 - Créteil - Pointe du Lac -> Balard",
+          "8 - Balard -> Créteil - Pointe du Lac"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24508,17 +22319,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 329
-        },
-        "adjacentStations": {
-          "8": [
-            "Créteil-Préfecture",
-            "Créteil-L'Échat (Hopital Henri Mondor)"
-          ]
-        }
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "8 - Créteil - Pointe du Lac -> Balard"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24577,17 +22380,9 @@
           ]
         ],
         "lines": [
-          "8"
-        ],
-        "inLineIndex": {
-          "8": 293
-        },
-        "adjacentStations": {
-          "8": [
-            "Créteil-Université",
-            "Liberté"
-          ]
-        }
+          "8 - Balard -> Créteil - Pointe du Lac",
+          "8 - Créteil - Pointe du Lac -> Balard"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24646,17 +22441,9 @@
           ]
         ],
         "lines": [
-          "11"
-        ],
-        "inLineIndex": {
-          "11": 176
-        },
-        "adjacentStations": {
-          "11": [
-            "Porte des Lilas",
-            "Châtelet"
-          ]
-        }
+          "11 - Mairie des Lilas -> Châtelet",
+          "11 - Châtelet -> Mairie des Lilas"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24722,17 +22509,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 302
-        },
-        "adjacentStations": {
-          "1": [
-            "La Défense - Grande Arche",
-            "Pont de Neuilly"
-          ]
-        }
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24804,17 +22583,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 283
-        },
-        "adjacentStations": {
-          "1": [
-            "Esplanade de La Défense",
-            "Les Sablons"
-          ]
-        }
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24885,17 +22656,9 @@
           ]
         ],
         "lines": [
-          "1"
-        ],
-        "inLineIndex": {
-          "1": 279
-        },
-        "adjacentStations": {
-          "1": [
-            "Pont de Neuilly",
-            "Porte Maillot"
-          ]
-        }
+          "1 - Château de Vincennes -> La Défense (Grande Arche)",
+          "1 - La Défense (Grande Arche) -> Château de Vincennes"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -24975,17 +22738,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 44
-        },
-        "adjacentStations": {
-          "3": [
-            "Wagram",
-            "Porte de Champerret"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25065,17 +22820,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 48
-        },
-        "adjacentStations": {
-          "3": [
-            "Malesherbes",
-            "Pereire"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25137,17 +22884,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 238
-        },
-        "adjacentStations": {
-          "13": [
-            "Mairie de Saint-Ouen",
-            "Garibaldi"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25213,17 +22952,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 293
-        },
-        "adjacentStations": {
-          "13": [
-            "Saint-Denis-Université",
-            "Basilique de Saint-Denis"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25303,17 +23034,9 @@
           ]
         ],
         "lines": [
-          "3"
-        ],
-        "inLineIndex": {
-          "3": 52
-        },
-        "adjacentStations": {
-          "3": [
-            "Villiers",
-            "Wagram"
-          ]
-        }
+          "3 - Pont de Levallois -> Gallieni",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25395,17 +23118,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 41
-        },
-        "adjacentStations": {
-          "2": [
-            "Villiers",
-            "Courcelles"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25463,23 +23178,9 @@
           ]
         ],
         "lines": [
-          "2",
-          "3"
-        ],
-        "inLineIndex": {
-          "2": 45,
-          "3": 67
-        },
-        "adjacentStations": {
-          "2": [
-            "Rome",
-            "Monceau"
-          ],
-          "3": [
-            "Europe",
-            "Malesherbes"
-          ]
-        }
+          "2 - Porte Dauphine -> Nation",
+          "3 - Gallieni -> Pont de Levallois"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25561,17 +23262,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 50
-        },
-        "adjacentStations": {
-          "2": [
-            "Place de Clichy",
-            "Villiers"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25660,18 +23353,11 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 205
-        },
-        "adjacentStations": {
-          "13": [
-            "Guy Môquet",
-            "Place de Clichy",
-            "Brochant"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25729,17 +23415,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 216
-        },
-        "adjacentStations": {
-          "13": [
-            "Guy Môquet",
-            "La Fourche"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles",
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25798,18 +23476,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 216
-        },
-        "adjacentStations": {
-          "13": [
-            "Porte de Clichy",
-            "La Fourche",
-            "Brochant"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25878,23 +23547,11 @@
           ]
         ],
         "lines": [
-          "13",
-          "14"
-        ],
-        "inLineIndex": {
-          "13": 220,
-          "14": 31
-        },
-        "adjacentStations": {
-          "13": [
-            "Porte de Saint-Ouen",
-            "Guy Môquet"
-          ],
-          "14": [
-            "Pont Cardinet",
-            "Saint-Ouen"
-          ]
-        }
+          "13 - (Asnières-Genevilliers) Les Courtilles -> Châtillon-Montrouge",
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen",
+          "13 - Châtillon-Montrouge -> (Asnières-Genevilliers) Les Courtilles"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -25953,17 +23610,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 222
-        },
-        "adjacentStations": {
-          "13": [
-            "Garibaldi",
-            "Porte de Clichy"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26022,18 +23671,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 228
-        },
-        "adjacentStations": {
-          "13": [
-            "Mairie de Saint-Ouen",
-            "Porte de Saint-Ouen",
-            "Mairie de Clichy"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26115,17 +23755,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 248
-        },
-        "adjacentStations": {
-          "12": [
-            "Lamarck - Caulaincourt",
-            "Pigalle"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26207,17 +23839,9 @@
           ]
         ],
         "lines": [
-          "2"
-        ],
-        "inLineIndex": {
-          "2": 68
-        },
-        "adjacentStations": {
-          "2": [
-            "Pigalle",
-            "Place de Clichy"
-          ]
-        }
+          "2 - Nation -> Porte Dauphine",
+          "2 - Porte Dauphine -> Nation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26299,17 +23923,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 261
-        },
-        "adjacentStations": {
-          "12": [
-            "Jules Joffrin",
-            "Abbesses"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26391,17 +24007,9 @@
           ]
         ],
         "lines": [
-          "12"
-        ],
-        "inLineIndex": {
-          "12": 279
-        },
-        "adjacentStations": {
-          "12": [
-            "Marcadet - Poissonniers",
-            "Lamarck - Caulaincourt"
-          ]
-        }
+          "12 - Mairie d'Aubervilliers -> Mairie d'Issy",
+          "12 - Mairie d'Issy -> Mairie d'Aubervilliers"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26478,23 +24086,11 @@
           ]
         ],
         "lines": [
-          "13",
-          "14"
-        ],
-        "inLineIndex": {
-          "13": 241,
-          "14": 5
-        },
-        "adjacentStations": {
-          "13": [
-            "Carrefour Pleyel",
-            "Garibaldi",
-            "Mairie de Clichy"
-          ],
-          "14": [
-            "Saint-Ouen"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "14 - Mairie de Saint-Ouen -> Olympiades",
+          "14 - Olympiades -> Mairie de Saint-Ouen"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26560,17 +24156,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 252
-        },
-        "adjacentStations": {
-          "13": [
-            "Saint-Denis - Porte de Paris",
-            "Mairie de Saint-Ouen"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université",
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26639,17 +24227,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 271
-        },
-        "adjacentStations": {
-          "13": [
-            "Basilique de Saint-Denis",
-            "Carrefour Pleyel"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26713,7 +24293,7 @@
           ]
         ],
         "lines": [
-          "7bis"
+          "7bis - Louis Blanc -> Louis Blanc"
         ]
       },
       "geometry": {
@@ -26783,19 +24363,9 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 277
-        },
-        "adjacentStations": {
-          "13": [
-            "Saint-Denis - Université",
-            "Saint-Denis - Porte de Paris",
-            "Saint-Denis-Université",
-            "Gabriel Péri"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge",
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26865,18 +24435,8 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 300
-        },
-        "adjacentStations": {
-          "13": [
-            "Saint-Denis - Université",
-            "Basilique de Saint-Denis",
-            "Gabriel Péri"
-          ]
-        }
+          "13 - Châtillon-Montrouge -> Saint-Denis-Université"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -26942,18 +24502,8 @@
           ]
         ],
         "lines": [
-          "13"
-        ],
-        "inLineIndex": {
-          "13": 305
-        },
-        "adjacentStations": {
-          "13": [
-            "Basilique de Saint-Denis",
-            "Saint-Denis-Université",
-            "Les Agnettes"
-          ]
-        }
+          "13 - Saint-Denis - Université -> Châtillon - Montrouge"
+        ]
       },
       "geometry": {
         "type": "Point",
