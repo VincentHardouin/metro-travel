@@ -3,8 +3,11 @@ import * as d3 from "d3";
 import arrondissements from "../assets/arrondissements.geojson"
 import stationsData from "../assets/stations.geojson"
 import linesData from "../assets/lines.geojson"
+import {getSeededRandomStations, pickStations} from './pick-stations.js';
 
-const stations = stationsData.features;
+const stations = stationsData.features.filter((s) => {
+  return s.properties.adjacentStations && s.properties.name;
+});
 const lines = linesData.features;
 
 const svg = d3.select("svg"),
@@ -134,6 +137,12 @@ function handleClickOnTryButton() {
   });
 }
 
+function initGame() {
+  const pick = pickStations({ stations, random: getSeededRandomStations(2) });
+  document.getElementById('instruction').innerText = `Aujourd'hui, nous allons de ${pick.start} jusqu'à ${pick.end}`
+}
+
 drawParis();
 createStationsList();
 handleClickOnTryButton();
+initGame();
