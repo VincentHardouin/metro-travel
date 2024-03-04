@@ -1,31 +1,14 @@
-import fs from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { getStations, stationExists } from './utils.js';
 
-let __dirname = dirname(fileURLToPath(import.meta.url));
-
-function getStations() {
-  const stationsPath = join(__dirname, '../assets/stations.geojson');
-  const { features: stations } = JSON.parse(fs.readFileSync(stationsPath));
-  return stations.filter((s) => {
-    return s.properties.adjacentStations && s.properties.name;
-  });
-}
-
-function main() {
-  const start = 'La Fourche';
-  const end = 'Europe';
-
-  const filteredStations = getStations();
-  const graph = computeGraph(filteredStations);
-
-  let shortestPathInfo = graph.dijkstra(start, end);
-
-  if (shortestPathInfo) {
-    console.log(`Le chemin le plus court entre ${start} et ${end} est ${shortestPathInfo.path.join(' -> ')} avec une distance de ${shortestPathInfo.distance}`);
-  } else {
-    console.log(`Il n'y a pas de chemin entre ${start} et ${end}`);
+function computeSmallestStationsPath({ start, end, stations = getStations() }) {
+  if (!stationExists(stations, start)) {
+    throw new Error('Start station does not exist');
   }
+  if (!stationExists(stations, end)) {
+    throw new Error('End station does not exist');
+  }
+  const graph = computeGraph(stations);
+  return graph.dijkstra(start, end);
 }
 
 function computeGraph(stations) {
@@ -114,4 +97,6 @@ class Graph {
   }
 }
 
-main()
+export {
+  computeSmallestStationsPath
+}
