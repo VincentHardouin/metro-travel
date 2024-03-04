@@ -2,10 +2,10 @@
   "name": "metro-travel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "source": "index.html",
   "scripts": {
-    "start": "parcel index.html assets/*",
+    "start": "parcel index.html",
     "build": "parcel build",
     "test": "vitest"
   },
