@@ -91,15 +91,15 @@ function drawStation(station) {
 
 function addPathBetweenStations(newStation, addedStations, lines) {
   for (const newStationLine of newStation.properties.lines) {
+    const filteredLines = lines.filter(l => l.properties.name === newStationLine)
     const adjacentStations = newStation.properties.adjacentStations[newStationLine];
+
     for (const adjacentStationName of adjacentStations) {
       if (!addedStations.has(adjacentStationName)) {
         continue;
       }
 
       const adjacentStation = addedStations.get(adjacentStationName);
-      const filteredLines = lines
-        .filter(l => l.properties.name === newStationLine)
       for (const line of filteredLines) {
         const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
 
@@ -132,7 +132,6 @@ function handleClickOnTryButton() {
     const stationName = document.getElementById('station').value;
     addStation(stationName);
   });
-
 }
 
 drawParis();
