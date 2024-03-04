@@ -1,6 +1,4 @@
-import { getStations, stationExists } from './utils.js';
-
-function computeSmallestStationsPath({ start, end, stations = getStations() }) {
+function computeSmallestStationsPath({ start, end, stations }) {
   if (!stationExists(stations, start)) {
     throw new Error('Start station does not exist');
   }
@@ -32,6 +30,12 @@ function computeGraph(stations) {
     graph.addNode(stationName, newAdjacentStations);
   });
   return graph;
+}
+
+function stationExists(stations, stationName) {
+  return stations.some((station) => {
+    return station.properties.name === stationName;
+  });
 }
 
 class Graph {
