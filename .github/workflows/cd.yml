@@ -1,5 +1,8 @@
 name: cd
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
