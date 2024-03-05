@@ -16,7 +16,7 @@ const svg = d3.select("svg"),
 
 const projection = d3.geoMercator()
   .center([2.3522, 48.8566])
-  .scale(200000)
+  .scale(190000)
   .translate([width / 2, height / 2])
 
 const tooltip = d3.select('body').append('div')
@@ -29,10 +29,10 @@ const tooltip = d3.select('body').append('div')
   .style('visibility', 'hidden');
 
 const addedStations = new Map();
+const g = svg.append("g");
 
 function drawParis() {
-  svg.append("g")
-    .selectAll("path")
+  g.selectAll("path")
     .data(arrondissements.features)
     .join("path")
     .attr("fill", "grey")
@@ -40,6 +40,23 @@ function drawParis() {
       .projection(projection)
     )
     .style("stroke", "none")
+
+  function zoomed(event) {
+    g.attr("transform", event.transform);
+  }
+
+  const zoom = d3.zoom()
+    .scaleExtent([1, 8]) // Set the zoom scale's allowed range
+    .on("zoom", zoomed);
+
+  svg.call(zoom);
+
+  svg.on("wheel", function(event) {
+    event.preventDefault(); // Prevent the default scroll behavior
+    const delta = event.deltaY;
+    const scale = delta > 0 ? 1.2 : 0.8; // Determine whether to zoom in or out based on the direction of the scroll
+    svg.transition().call(zoom.scaleBy, scale);
+  });
 }
 
 function createStationsList() {
@@ -65,7 +82,7 @@ function addStation({ stationName, color }) {
 
 function drawStation({ station, color = '#0d47a1' }) {
   for (const coordinates of station.properties.coordinates) {
-    svg.append('circle')
+    g.append('circle')
       .attr('class', 'metro-station')
       .attr('cx', projection(coordinates)[0])
       .attr('cy', projection(coordinates)[1])
@@ -85,7 +102,7 @@ function drawStation({ station, color = '#0d47a1' }) {
       });
   }
 
-  svg.append('path')
+  g.append('path')
     .attr('d', d3.line()(station.properties.coordinates.map(c => projection(c))))
     .attr('stroke', '#0d47a1')
     .attr('stroke-width', 2)
