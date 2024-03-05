@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/VincentHardouin/metro-travel/compare/v1.0.0...v1.0.1) (2024-03-05)
+
+
+### Bug Fixes
+
+* allow token to write ([0dc9777](https://github.com/VincentHardouin/metro-travel/commit/0dc97776ea360f88fd6d98f159e86479c32754ee))
+
 # 1.0.0 (2024-03-05)
 
 
