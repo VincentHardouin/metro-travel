@@ -51,26 +51,26 @@ function createStationsList() {
   document.getElementById('stations').innerHTML = stationsList;
 }
 
-function addStation(stationName) {
+function addStation({ stationName, color }) {
   if (addedStations.has(stationName)) {
     return;
   }
   const station = stations.find(d => d.properties.name === stationName);
 
-  drawStation(station);
+  drawStation({ station, color });
   addPathBetweenStations(station, addedStations, lines);
 
   addedStations.set(stationName, station);
 }
 
-function drawStation(station) {
+function drawStation({ station, color = '#0d47a1' }) {
   for (const coordinates of station.properties.coordinates) {
     svg.append('circle')
       .attr('class', 'metro-station')
       .attr('cx', projection(coordinates)[0])
       .attr('cy', projection(coordinates)[1])
       .attr('r', 3)
-      .style("fill", "#0d47a1")
+      .style("fill", color)
       .on('mouseover', function (e, d) {
         tooltip.style('visibility', 'visible');
         tooltip.html(station.properties.name);
@@ -133,7 +133,7 @@ function addPathBetweenStations(newStation, addedStations, lines) {
 function handleClickOnTryButton() {
   document.getElementById('try').addEventListener('click', function () {
     const stationName = document.getElementById('station').value;
-    addStation(stationName);
+    addStation({ stationName });
   });
 }
 
@@ -142,6 +142,8 @@ function initGame() {
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
   const pick = pickStations({ stations, random: getSeededRandomStations(dateToSeed) });
   document.getElementById('instruction').innerText = `Aujourd'hui, nous allons de ${pick.start} jusqu'à ${pick.end}`
+  addStation({ stationName: pick.start, color: 'green' });
+  addStation({ stationName: pick.end, color: 'red' });
 }
 
 drawParis();
