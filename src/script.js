@@ -21,7 +21,6 @@ const projection = d3.geoMercator()
 function resizeMap() {
   const width = parseInt(svg.style('width'));
   const height = width * 0.825;
-  console.log(width, height)
   projection
     .center([2.3522, 48.8566])
     .scale(scale(height))
