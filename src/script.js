@@ -137,7 +137,7 @@ function addPathBetweenStations(newStation, addedStations, lines) {
           drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
         }
 
-        svg.append('path')
+        g.append('path')
           .attr('d', d3.line()(drawLine.map(c => projection(c))))
           .attr('stroke', 'black')
           .attr('stroke-width', 2)
