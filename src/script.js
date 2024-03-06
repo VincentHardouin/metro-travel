@@ -10,14 +10,29 @@ const stations = stationsData.features.filter((s) => {
 });
 const lines = linesData.features;
 
-const svg = d3.select("svg"),
-  width = +svg.attr("width"),
-  height = +svg.attr("height");
+const svg = d3.select("svg");
+
+const m = 353;
+const b = -2175;
+const scale = (x) => m * x + b;
 
 const projection = d3.geoMercator()
-  .center([2.3522, 48.8566])
-  .scale(190000)
-  .translate([width / 2, height / 2])
+
+function resizeMap() {
+  const width = parseInt(svg.style('width'));
+  const height = width * 0.825;
+  console.log(width, height)
+  projection
+    .center([2.3522, 48.8566])
+    .scale(scale(height))
+    .translate([width / 2, height / 2])
+
+  svg.attr("width", width).attr("height", height);
+}
+
+resizeMap();
+window.addEventListener('resize', resizeMap);
+
 
 const tooltip = d3.select('body').append('div')
   .attr('class', 'tooltip')
