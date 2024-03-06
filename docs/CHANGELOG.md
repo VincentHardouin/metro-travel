@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/VincentHardouin/metro-travel/compare/v1.0.1...v1.0.2) (2024-03-06)
+
+
+### Bug Fixes
+
+* zoom also path between station ([fc0399b](https://github.com/VincentHardouin/metro-travel/commit/fc0399be7f28ea8f0ee30c09df265c0c78f3d941))
+
 ## [1.0.1](https://github.com/VincentHardouin/metro-travel/compare/v1.0.0...v1.0.1) (2024-03-05)
 
 
