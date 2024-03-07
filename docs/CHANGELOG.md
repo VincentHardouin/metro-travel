@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/VincentHardouin/metro-travel/compare/v1.2.0...v1.3.0) (2024-03-07)
+
+
+### Features
+
+* add meta tag ([be7f371](https://github.com/VincentHardouin/metro-travel/commit/be7f371eb05d961ef81e336680285cfcc584d36f))
+
 # [1.2.0](https://github.com/VincentHardouin/metro-travel/compare/v1.1.0...v1.2.0) (2024-03-06)
 
 
