@@ -35,12 +35,6 @@ window.addEventListener('resize', resizeMap);
 
 const tooltip = d3.select('body').append('div')
   .attr('class', 'tooltip')
-  .style('position', 'absolute')
-  .style('background-color', 'white')
-  .style('border', '1px solid black')
-  .style('padding', '5px')
-  .style('border-radius', '5px')
-  .style('visibility', 'hidden');
 
 const addedStations = new Map();
 const g = svg.append("g");

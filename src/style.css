@@ -18,3 +18,13 @@ svg {
 .end {
     color: #e52228;
 }
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    color: #3b3d45;
+}
