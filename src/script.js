@@ -118,7 +118,7 @@ function drawStation({ station, color = '#0d47a1' }) {
 
   g.append('path')
     .attr('d', d3.line()(station.properties.coordinates.map(c => projection(c))))
-    .attr('stroke', '#0d47a1')
+    .attr('stroke', color)
     .attr('stroke-width', 2)
     .attr('fill', 'none');
 }
