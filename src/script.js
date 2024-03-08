@@ -172,7 +172,7 @@ function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
   const pick = pickStations({ stations, random: getSeededRandomStations(dateToSeed) });
-  document.getElementById('instruction').innerText = `Aujourd'hui, nous allons de ${pick.start} jusqu'à ${pick.end}`
+  document.getElementById('instruction').innerText = `Aujourd'hui, nous allons de ${pick.start} jusqu'à ${pick.end} en passant par le moins de stations possible.`
   addStation({ stationName: pick.start, color: 'green' });
   addStation({ stationName: pick.end, color: 'red' });
 }
