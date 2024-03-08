@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/VincentHardouin/metro-travel/compare/v1.3.0...v1.3.1) (2024-03-08)
+
+
+### Bug Fixes
+
+* color in path between same station ([1c6f674](https://github.com/VincentHardouin/metro-travel/commit/1c6f67423e82e21d65c8c15ef6da356930ede236))
+
 # [1.3.0](https://github.com/VincentHardouin/metro-travel/compare/v1.2.0...v1.3.0) (2024-03-07)
 
 
