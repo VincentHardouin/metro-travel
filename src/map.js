@@ -6,7 +6,6 @@ class ParisMap {
   #arrondissements;
   #stations;
   #lines;
-  #addedStations;
   #m = 353;
   #b = -2175;
   #scale = (x) => this.#m * x + this.#b;
@@ -19,7 +18,6 @@ class ParisMap {
     this.#arrondissements = arrondissements;
     this.#stations = stations;
     this.#lines = lines;
-    this.#addedStations = new Map();
     this.#svg = d3.select("svg");
     this.#g = this.#svg.append("g");
     this.#projection = d3.geoMercator();
@@ -72,13 +70,12 @@ class ParisMap {
     this.#svg.attr("width", width).attr("height", height);
   }
 
-  addStation({ station, color }) {
+  addStation({ station, color, adjacentStations }) {
     this.#drawStation({ station, color });
-    this.#addPathBetweenStations({ newStation: station });
-    this.#addedStations.set(station.properties.name, station);
+    this.#addPathBetweenStations({ newStation: station, adjacentStations });
   }
 
-  #drawStation({ station, color }) {
+  #drawStation({ station, color = '#0d47a1' }) {
     for (const coordinates of station.properties.coordinates) {
       this.#g.append('circle')
         .attr('class', 'metro-station')
@@ -107,40 +104,35 @@ class ParisMap {
       .attr('fill', 'none');
   }
 
-  #addPathBetweenStations({ newStation }) {
+  #addPathBetweenStations({ newStation, adjacentStations }) {
     for (const newStationLine of newStation.properties.lines) {
-      const filteredLines = this.#lines.filter(l => l.properties.name === newStationLine)
-      const adjacentStations = newStation.properties.adjacentStations[newStationLine];
+      const line = this.#lines.find(l => l.properties.name === newStationLine);
+      for (const adjacentStation of adjacentStations) {
+        const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
 
-      for (const adjacentStationName of adjacentStations) {
-        if (!this.#addedStations.has(adjacentStationName)) {
+        const newStationIndex = newStation.properties.inLineIndex[newStationLine];
+        const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
+
+        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex) {
           continue;
         }
 
-        const adjacentStation = this.#addedStations.get(adjacentStationName);
-        for (const line of filteredLines) {
-          const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
-
-          const newStationIndex = newStation.properties.inLineIndex[newStationLine];
-          const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
-
-          if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex) {
-            continue;
-          }
-
-          let drawLine;
-          if (newStationIndex < adjacentStationIndex) {
-            drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
-          } else {
-            drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
-          }
-
-          this.#g.append('path')
-            .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
-            .attr('stroke', 'black')
-            .attr('stroke-width', 2)
-            .attr('fill', 'none');
+        if (newStationIndex === undefined || adjacentStationIndex === undefined) {
+          continue;
         }
+
+        let drawLine;
+        if (newStationIndex < adjacentStationIndex) {
+          drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
+        } else {
+          drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
+        }
+
+        this.#g.append('path')
+          .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 2)
+          .attr('fill', 'none');
       }
     }
   }

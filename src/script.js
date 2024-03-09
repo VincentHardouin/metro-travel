@@ -73,8 +73,24 @@ function addStation({ stationName, color }) {
     return;
   }
   const station = stations.find(d => d.properties.name === stationName);
-  map.addStation({ station, color });
+  const adjacentStations = findAdjacentStations({ station, lines, addedStations });
+  map.addStation({ station, color, adjacentStations });
   addedStations.set(stationName, station);
+}
+
+function findAdjacentStations({ station, lines, addedStations }) {
+  let adjacentStations = [];
+  for (const newStationLine of station.properties.lines) {
+    const lineAdjacentStations = station.properties.adjacentStations[newStationLine];
+
+    for (const adjacentStationName of lineAdjacentStations) {
+      if (!addedStations.has(adjacentStationName)) {
+        continue;
+      }
+      adjacentStations.push(addedStations.get(adjacentStationName));
+    }
+  }
+  return adjacentStations;
 }
 
 function handleClickOnTryButton() {
