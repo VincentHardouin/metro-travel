@@ -22,7 +22,10 @@
     <h1>Métro travel</h1>
     <p id="instruction"></p>
     <svg id="carte"></svg>
-    <select id="stations" class="form-select" data-live-search="true"></select>
+    <div class="dropdown">
+        <input id="station" class="form-control" type="text" placeholder="Rechercher une station à ajouter" data-bs-toggle="dropdown" aria-expanded="false">
+        <ul id="stations" class="dropdown-menu"></ul>
+    </div>
     <button id="try" class="btn btn-primary">Essayer</button>
 </div>
 </body>

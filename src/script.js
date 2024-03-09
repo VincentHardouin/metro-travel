@@ -68,13 +68,59 @@ function drawParis() {
 }
 
 function createStationsList() {
-  const stationsList = stations.map((d) => {
-    const el = document.createElement('option')
-    el.value = d.properties.name
-    el.innerText = d.properties.name
-    return el.outerHTML
+  const sortedStations = stations.map((d) => d.properties.name).sort();
+  const dropdown = document.getElementById('stations')
+  const input = document.getElementById('station');
+  input.addEventListener('click', function (event) {
+    event.stopPropagation();
+    handleDropDownVisibility(input, dropdown);
+  });
+  input.addEventListener('input', function () {
+    handleDropDownVisibility(input, dropdown);
+  });
+}
+
+function handleDropDownVisibility(input, dropdown) {
+  const value = input.value;
+  if (value.length > 0) {
+    showDropdown(input, dropdown, value);
+  } else {
+    hideDropdown(input, dropdown);
+  }
+}
+
+function hideDropdown(input, dropdown) {
+  input.classList.remove('show');
+  dropdown.classList.remove('show');
+  dropdown.setAttribute('aria-expanded', 'false');
+}
+
+const sortedStations = stations.map((d) => d.properties.name).sort();
+
+function showDropdown(input, dropdown, value) {
+  input.classList.add('show');
+  dropdown.classList.add('show');
+  dropdown.setAttribute('aria-expanded', 'true');
+  const filteredStations = sortedStations.filter((name) => name.toLowerCase().includes(value.toLowerCase()));
+  dropdown.innerHTML = '';
+  filteredStations.forEach((name) => {
+    dropdown.appendChild(createDropdownStation(name));
   })
-  document.getElementById('stations').innerHTML = stationsList.join('');
+}
+
+function createDropdownStation(stationName) {
+  const button = document.createElement('button');
+  button.innerText = stationName;
+  button.classList.add('dropdown-item');
+  button.addEventListener('click', addNameToInput);
+  const li = document.createElement('li');
+  li.appendChild(button);
+  return li;
+}
+
+function addNameToInput(event) {
+  const stationName = event.target.innerText;
+  document.getElementById('station').value = stationName;
 }
 
 function addStation({ stationName, color }) {
@@ -158,7 +204,7 @@ function addPathBetweenStations(newStation, addedStations, lines) {
 
 function handleClickOnTryButton() {
   document.getElementById('try').addEventListener('click', function () {
-    const stationName = document.getElementById('stations').value;
+    const stationName = document.getElementById('station').value;
     addStation({ stationName });
   });
 }
