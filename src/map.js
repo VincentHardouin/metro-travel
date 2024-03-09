@@ -42,7 +42,37 @@ function resizeMap({ svg, projection }) {
   svg.attr("width", width).attr("height", height);
 }
 
+function drawStation({ station, color = '#0d47a1', g, projection, tooltip }) {
+  for (const coordinates of station.properties.coordinates) {
+    g.append('circle')
+      .attr('class', 'metro-station')
+      .attr('cx', projection(coordinates)[0])
+      .attr('cy', projection(coordinates)[1])
+      .attr('r', 3)
+      .style("fill", color)
+      .on('mouseover', function (e, d) {
+        tooltip.style('visibility', 'visible');
+        tooltip.html(station.properties.name);
+      })
+      .on('mousemove', function (event) {
+        const [x, y] = d3.pointer(event)
+        tooltip.style('top', (event.pageY - 10) + 'px')
+          .style('left', (event.pageX + 10) + 'px');
+      })
+      .on('mouseout', function () {
+        tooltip.style('visibility', 'hidden');
+      });
+  }
+
+  g.append('path')
+    .attr('d', d3.line()(station.properties.coordinates.map(c => projection(c))))
+    .attr('stroke', color)
+    .attr('stroke-width', 2)
+    .attr('fill', 'none');
+}
+
 export {
   drawParis,
+  drawStation,
   resizeMap,
 }
