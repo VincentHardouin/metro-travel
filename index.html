@@ -13,17 +13,17 @@
     <meta name="og:type" content="website">
     <meta name="og:url" content="https://metro-travel.vincenthardouin.dev">
     <title>Métro travel</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.scss">
     <script src="src/script.js" type="module"></script>
     <script defer data-domain="metro-travel.vincenthardouin.dev" src="https://analytics.vincenthardouin.dev/js/script.js"></script>
 </head>
 <body>
-<h1>Métro travel</h1>
-<p id="instruction"></p>
-<svg id="carte"></svg>
-<input id="station" list="stations">
-<datalist id="stations">
-</datalist>
-<button id="try">Essayer</button>
+<div class="container">
+    <h1>Métro travel</h1>
+    <p id="instruction"></p>
+    <svg id="carte"></svg>
+    <select id="stations" class="form-select" data-live-search="true"></select>
+    <button id="try" class="btn btn-primary">Essayer</button>
+</div>
 </body>
 </html>

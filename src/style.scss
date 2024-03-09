@@ -1,4 +1,8 @@
-@import 'npm:simpledotcss/simple.min.css';
+@import "bootstrap/scss/bootstrap";
+
+.container {
+    max-width: 920px;
+}
 
 #carte {
     font-size: 0;
@@ -19,7 +23,7 @@ svg {
     color: #e52228;
 }
 
-.tooltip {
+.map-tooltip {
     position: absolute;
     visibility: hidden;
     padding: 0.5rem;

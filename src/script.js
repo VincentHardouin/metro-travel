@@ -1,3 +1,4 @@
+import * as bootstrap from 'bootstrap'
 import * as d3 from "d3";
 
 import arrondissements from "../assets/arrondissements.geojson"
@@ -32,9 +33,8 @@ function resizeMap() {
 resizeMap();
 window.addEventListener('resize', resizeMap);
 
-
 const tooltip = d3.select('body').append('div')
-  .attr('class', 'tooltip')
+  .attr('class', 'map-tooltip')
 
 const addedStations = new Map();
 const g = svg.append("g");
@@ -71,9 +71,10 @@ function createStationsList() {
   const stationsList = stations.map((d) => {
     const el = document.createElement('option')
     el.value = d.properties.name
+    el.innerText = d.properties.name
     return el.outerHTML
   })
-  document.getElementById('stations').innerHTML = stationsList;
+  document.getElementById('stations').innerHTML = stationsList.join('');
 }
 
 function addStation({ stationName, color }) {
@@ -157,7 +158,7 @@ function addPathBetweenStations(newStation, addedStations, lines) {
 
 function handleClickOnTryButton() {
   document.getElementById('try').addEventListener('click', function () {
-    const stationName = document.getElementById('station').value;
+    const stationName = document.getElementById('stations').value;
     addStation({ stationName });
   });
 }
