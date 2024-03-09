@@ -8,14 +8,14 @@ import { getSeededRandomStations, pickStations } from './pick-stations.js';
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
 });
+const sortedStations = stations.map((d) => d.properties.name).sort();
 const lines = linesData.features;
 
 const map = new ParisMap({ arrondissements, stations, lines });
 
 const addedStations = new Map();
 
-function createStationsList() {
-  const sortedStations = stations.map((d) => d.properties.name).sort();
+function createEventsForStationsList() {
   const dropdown = document.getElementById('stations')
   const input = document.getElementById('station');
   input.addEventListener('click', function (event) {
@@ -41,8 +41,6 @@ function hideDropdown(input, dropdown) {
   dropdown.classList.remove('show');
   dropdown.setAttribute('aria-expanded', 'false');
 }
-
-const sortedStations = stations.map((d) => d.properties.name).sort();
 
 function showDropdown(input, dropdown, value) {
   input.classList.add('show');
@@ -95,6 +93,6 @@ function initGame() {
   addStation({ stationName: pick.end, color: '#e52228' });
 }
 
-createStationsList();
+createEventsForStationsList();
 handleClickOnTryButton();
 initGame();
