@@ -71,7 +71,46 @@ function drawStation({ station, color = '#0d47a1', g, projection, tooltip }) {
     .attr('fill', 'none');
 }
 
+function addPathBetweenStations({ newStation, addedStations, lines, g, projection }) {
+  for (const newStationLine of newStation.properties.lines) {
+    const filteredLines = lines.filter(l => l.properties.name === newStationLine)
+    const adjacentStations = newStation.properties.adjacentStations[newStationLine];
+
+    for (const adjacentStationName of adjacentStations) {
+      if (!addedStations.has(adjacentStationName)) {
+        continue;
+      }
+
+      const adjacentStation = addedStations.get(adjacentStationName);
+      for (const line of filteredLines) {
+        const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
+
+        const newStationIndex = newStation.properties.inLineIndex[newStationLine];
+        const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
+
+        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex) {
+          continue;
+        }
+
+        let drawLine;
+        if (newStationIndex < adjacentStationIndex) {
+          drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
+        } else {
+          drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
+        }
+
+        g.append('path')
+          .attr('d', d3.line()(drawLine.map(c => projection(c))))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 2)
+          .attr('fill', 'none');
+      }
+    }
+  }
+}
+
 export {
+  addPathBetweenStations,
   drawParis,
   drawStation,
   resizeMap,

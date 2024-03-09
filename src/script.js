@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import arrondissements from "../assets/arrondissements.geojson"
 import stationsData from "../assets/stations.geojson"
 import linesData from "../assets/lines.geojson"
-import { drawParis, drawStation, resizeMap } from './map.js';
+import {addPathBetweenStations, drawParis, drawStation, resizeMap} from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 
 const stations = stationsData.features.filter((s) => {
@@ -87,48 +87,9 @@ function addStation({ stationName, color }) {
   const station = stations.find(d => d.properties.name === stationName);
 
   drawStation({ station, color, g, projection, tooltip });
-  addPathBetweenStations(station, addedStations, lines);
+  addPathBetweenStations({ newStation: station, addedStations, lines, g, projection });
 
   addedStations.set(stationName, station);
-}
-
-
-function addPathBetweenStations(newStation, addedStations, lines) {
-  for (const newStationLine of newStation.properties.lines) {
-    const filteredLines = lines.filter(l => l.properties.name === newStationLine)
-    const adjacentStations = newStation.properties.adjacentStations[newStationLine];
-
-    for (const adjacentStationName of adjacentStations) {
-      if (!addedStations.has(adjacentStationName)) {
-        continue;
-      }
-
-      const adjacentStation = addedStations.get(adjacentStationName);
-      for (const line of filteredLines) {
-        const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
-
-        const newStationIndex = newStation.properties.inLineIndex[newStationLine];
-        const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
-
-        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex) {
-          continue;
-        }
-
-        let drawLine;
-        if (newStationIndex < adjacentStationIndex) {
-          drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
-        } else {
-          drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
-        }
-
-        g.append('path')
-          .attr('d', d3.line()(drawLine.map(c => projection(c))))
-          .attr('stroke', 'black')
-          .attr('stroke-width', 2)
-          .attr('fill', 'none');
-      }
-    }
-  }
 }
 
 function handleClickOnTryButton() {
