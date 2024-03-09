@@ -28,6 +28,21 @@ function drawParis({ svg, g, arrondissements, projection }){
   });
 }
 
+const m = 353;
+const b = -2175;
+const scale = (x) => m * x + b;
+function resizeMap({ svg, projection }) {
+  const width = parseInt(svg.style('width'));
+  const height = width * 0.825;
+  projection
+    .center([2.3522, 48.8566])
+    .scale(scale(height))
+    .translate([width / 2, height / 2])
+
+  svg.attr("width", width).attr("height", height);
+}
+
 export {
-  drawParis
+  drawParis,
+  resizeMap,
 }

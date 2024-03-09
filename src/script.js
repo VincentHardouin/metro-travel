@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import arrondissements from "../assets/arrondissements.geojson"
 import stationsData from "../assets/stations.geojson"
 import linesData from "../assets/lines.geojson"
-import { drawParis } from './map.js';
+import { drawParis, resizeMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 
 const stations = stationsData.features.filter((s) => {
@@ -14,25 +14,9 @@ const lines = linesData.features;
 
 const svg = d3.select("svg");
 
-const m = 353;
-const b = -2175;
-const scale = (x) => m * x + b;
-
 const projection = d3.geoMercator()
 
-function resizeMap() {
-  const width = parseInt(svg.style('width'));
-  const height = width * 0.825;
-  projection
-    .center([2.3522, 48.8566])
-    .scale(scale(height))
-    .translate([width / 2, height / 2])
-
-  svg.attr("width", width).attr("height", height);
-}
-
-resizeMap();
-window.addEventListener('resize', resizeMap);
+window.addEventListener('resize', () => { resizeMap({ svg, projection }) });
 
 const tooltip = d3.select('body').append('div')
   .attr('class', 'map-tooltip')
@@ -191,7 +175,8 @@ function initGame() {
   addStation({ stationName: pick.end, color: '#e52228' });
 }
 
-drawParis({ svg, g, arrondissements, projection });
+resizeMap({ svg, projection });
+drawParis({ svg, g, arrondissements, projection});
 createStationsList();
 handleClickOnTryButton();
 initGame();
