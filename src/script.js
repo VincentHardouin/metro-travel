@@ -1,10 +1,8 @@
 import * as bootstrap from 'bootstrap'
-import * as d3 from "d3";
-
 import arrondissements from "../assets/arrondissements.geojson"
 import stationsData from "../assets/stations.geojson"
 import linesData from "../assets/lines.geojson"
-import {addPathBetweenStations, drawParis, drawStation, resizeMap} from './map.js';
+import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 
 const stations = stationsData.features.filter((s) => {
@@ -12,17 +10,9 @@ const stations = stationsData.features.filter((s) => {
 });
 const lines = linesData.features;
 
-const svg = d3.select("svg");
-
-const projection = d3.geoMercator()
-
-window.addEventListener('resize', () => { resizeMap({ svg, projection }) });
-
-const tooltip = d3.select('body').append('div')
-  .attr('class', 'map-tooltip')
+const map = new ParisMap({ arrondissements, stations, lines });
 
 const addedStations = new Map();
-const g = svg.append("g");
 
 function createStationsList() {
   const sortedStations = stations.map((d) => d.properties.name).sort();
@@ -85,10 +75,7 @@ function addStation({ stationName, color }) {
     return;
   }
   const station = stations.find(d => d.properties.name === stationName);
-
-  drawStation({ station, color, g, projection, tooltip });
-  addPathBetweenStations({ newStation: station, addedStations, lines, g, projection });
-
+  map.addStation({ station, color });
   addedStations.set(stationName, station);
 }
 
@@ -108,8 +95,6 @@ function initGame() {
   addStation({ stationName: pick.end, color: '#e52228' });
 }
 
-resizeMap({ svg, projection });
-drawParis({ svg, g, arrondissements, projection});
 createStationsList();
 handleClickOnTryButton();
 initGame();
