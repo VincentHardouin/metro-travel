@@ -1,18 +1,19 @@
 @import "bootstrap/scss/bootstrap";
 
+// Bootstrap override
 .container {
     max-width: 920px;
 }
 
+// Custom styles
 #carte {
     font-size: 0;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-svg {
-    width: 100%;
-    height: 100%;
+#station {
+    margin-bottom: .5rem;
 }
 
 .start {
