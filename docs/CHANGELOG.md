@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/VincentHardouin/metro-travel/compare/v1.8.0...v1.8.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* cd workflow ([795cb1d](https://github.com/VincentHardouin/metro-travel/commit/795cb1dbca9af2e40fb95362c969a902e05322a3))
+
 # [1.8.0](https://github.com/VincentHardouin/metro-travel/compare/v1.7.0...v1.8.0) (2024-03-10)
 
 
