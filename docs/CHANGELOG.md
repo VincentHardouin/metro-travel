@@ -61,6 +61,8 @@
 
 * improve search input ([4d2ba4a](https://github.com/VincentHardouin/metro-travel/commit/4d2ba4aaee4330d567fb4e22dc0afaa072c193eb))
 
+![1.5.0](./screenshots/1.5.0-desktop.png) ![1.5.0](./screenshots/1.5.0-mobile.png) 
+
 # [1.4.0](https://github.com/VincentHardouin/metro-travel/compare/v1.3.1...v1.4.0) (2024-03-08)
 
 
