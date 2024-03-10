@@ -71,6 +71,8 @@
 * improve start and end colors ([484f580](https://github.com/VincentHardouin/metro-travel/commit/484f580de4127fe07f73026e7caaf825abf76ff4))
 * update wording ([b4ebbee](https://github.com/VincentHardouin/metro-travel/commit/b4ebbee0b57e9073a70ca6b3118ffa05b3e91e82))
 
+![1.4.0](./screenshots/1.4.0-desktop.png) ![1.4.0](./screenshots/1.4.0-mobile.png) 
+
 ## [1.3.1](https://github.com/VincentHardouin/metro-travel/compare/v1.3.0...v1.3.1) (2024-03-08)
 
 
