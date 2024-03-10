@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "source": "index.html",
+  "private": true,
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build",
