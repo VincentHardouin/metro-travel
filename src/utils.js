@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-let __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 function getStations() {
   const stationsPath = join(__dirname, '../assets/stations.geojson');
@@ -21,4 +21,4 @@ function stationExists(stations, stationName) {
 export {
   getStations,
   stationExists,
-}
+};

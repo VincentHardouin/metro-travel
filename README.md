@@ -1,6 +1,6 @@
 # Metro travel
 
-Challenge yourself daily to find the optimal route between two Paris Metro stations. 
+Challenge yourself daily to find the optimal route between two Paris Metro stations.
 
 ## Development & Contribution
 
@@ -8,12 +8,12 @@ This project is a personal project, but if you want to contribute, feel free to 
 
 ### Requirements
 
-- Node.js 20 
+- Node.js 20
 
 ### Install
 
 ```bash
-npm ci 
+npm ci
 ```
 
 ### Start

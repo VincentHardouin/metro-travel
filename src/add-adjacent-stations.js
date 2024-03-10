@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 
 const linesData = JSON.parse(fs.readFileSync('./assets/lines.geojson'));
-const stationsData = JSON.parse(fs.readFileSync('./assets/stations.geojson'))
+const stationsData = JSON.parse(fs.readFileSync('./assets/stations.geojson'));
 
 const lines = linesData.features;
 const stations = stationsData.features;
@@ -12,7 +12,7 @@ lines.forEach((line) => {
     return station.properties.lines.includes(lineName);
   });
 
-  const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0]
+  const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
 
   lineCoordinates.forEach((coordinates, index) => {
     const station = lineStations.find((s) => {
@@ -21,9 +21,8 @@ lines.forEach((line) => {
       });
     });
 
-    if (station) {
+    if (station)
       _addInLineIndex(station, lineName, index);
-    }
   });
 
   const sortedStations = lineStations.filter((s) => {
@@ -47,29 +46,29 @@ lines.forEach((line) => {
 
 function _addInLineIndex(station, lineName, index) {
   station.properties.inLineIndex = station.properties.inLineIndex || {};
-  if (!station.properties.inLineIndex[lineName]) {
+  if (!station.properties.inLineIndex[lineName])
     station.properties.inLineIndex[lineName] = index;
-  }
 }
 
 function _addAdjacentStations(station, lineName, stationName) {
   station.properties.adjacentStations = station.properties.adjacentStations || {};
   if (station.properties.adjacentStations[lineName]) {
     station.properties.adjacentStations[lineName].add(stationName);
-  } else {
+  }
+  else {
     station.properties.adjacentStations[lineName] = new Set();
     station.properties.adjacentStations[lineName].add(stationName);
   }
 }
 
-
 stations.forEach((station) => {
-  if (!station.properties.adjacentStations) {
+  if (!station.properties.adjacentStations)
+    // eslint-disable-next-line no-console
     console.log('Station is missing adjacentStations', station.properties.name);
-  }
+
   if (station.properties.adjacentStations) {
-    const adjacentStations = {}
-    Object.keys(station.properties.adjacentStations).forEach((lineName)=> {
+    const adjacentStations = {};
+    Object.keys(station.properties.adjacentStations).forEach((lineName) => {
       adjacentStations[lineName] = Array.from(station.properties.adjacentStations[lineName]);
     });
     station.properties.adjacentStations = adjacentStations;
@@ -78,9 +77,8 @@ stations.forEach((station) => {
 
 const outputGeojson = {
   type: 'FeatureCollection',
-  features: []
+  features: [],
 };
-
 
 stations.forEach((s) => {
   outputGeojson.features.push(s);

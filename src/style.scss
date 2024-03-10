@@ -1,70 +1,71 @@
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 // Bootstrap override
 .container {
-    max-width: 920px;
+  max-width: 920px;
 }
 
 // Custom styles
 #carte {
-    font-size: 0;
-    width: 100%;
-    margin-bottom: 1rem;
+  font-size: 0;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 #station {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .start {
-    color: #008a22;
+  color: #008a22;
 }
 
 .end {
-    color: #e52228;
+  color: #e52228;
 }
 
 .map-tooltip {
-    position: absolute;
-    visibility: hidden;
-    padding: 0.5rem;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 0.25rem;
-    color: #3b3d45;
+  position: absolute;
+  visibility: hidden;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  color: #3b3d45;
 }
 
 @keyframes slide-enter {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    html:not(.no-sliding) [slide-enter],
-    html:not(.no-sliding) .slide-enter,
-    html:not(.no-sliding) .slide-enter-content > *:not(:has(.table-of-contents)) {
-        --enter-stage: 0;
-        --enter-step: 40ms;
-        --enter-initial: 0ms;
-        animation: slide-enter 1s both 1;
-        animation-delay: calc(
-                var(--enter-initial) + var(--enter-stage) * var(--enter-step)
-        );
-    }
+  html:not(.no-sliding) [slide-enter],
+  html:not(.no-sliding) .slide-enter,
+  html:not(.no-sliding) .slide-enter-content > *:not(:has(.table-of-contents)) {
+    --enter-stage: 0;
+    --enter-step: 40ms;
+    --enter-initial: 0ms;
+    animation: slide-enter 1s both 1;
+    animation-delay: calc(
+      var(--enter-initial) + var(--enter-stage) * var(--enter-step)
+    );
+  }
 
-    .slide-enter-content {
-        $element: 100;
-        @for $i from 1 to $element {
-            > *:nth-child(#{$i}) {
-                --enter-stage: #{$i} !important
-            }
-        }
+  .slide-enter-content {
+    $element: 100;
+    @for $i from 1 to $element {
+      > *:nth-child(#{$i}) {
+        --enter-stage: #{$i} !important
+            ;
+      }
     }
+  }
 }

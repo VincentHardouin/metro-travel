@@ -4,14 +4,14 @@ const metros = JSON.parse(fs.readFileSync('./assets/export.geojson'));
 
 const lines = metros.features.filter((d) => {
   return d.geometry.type === 'MultiLineString' || (d.geometry.type === 'LineString' && d.properties.route === 'subway');
-})
+});
 
 const outputGeojson = {
   type: 'FeatureCollection',
-  features: []
+  features: [],
 };
 
-lines.forEach((l, key) => {
+lines.forEach((l) => {
   outputGeojson.features.push(l);
 });
 

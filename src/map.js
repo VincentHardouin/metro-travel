@@ -1,14 +1,12 @@
 import * as d3 from 'd3';
 
-
 class ParisMap {
-
   #arrondissements;
   #stations;
   #lines;
   #m = 353;
   #b = -2175;
-  #scale = (x) => this.#m * x + this.#b;
+  #scale = x => this.#m * x + this.#b;
   #svg;
   #g;
   #projection;
@@ -18,8 +16,8 @@ class ParisMap {
     this.#arrondissements = arrondissements;
     this.#stations = stations;
     this.#lines = lines;
-    this.#svg = d3.select("svg");
-    this.#g = this.#svg.append("g");
+    this.#svg = d3.select('svg');
+    this.#g = this.#svg.append('g');
     this.#projection = d3.geoMercator();
     this.#tooltip = d3.select('body').append('div').attr('class', 'map-tooltip');
     window.addEventListener('resize', () => this.#resize());
@@ -27,34 +25,33 @@ class ParisMap {
   }
 
   #draw() {
-    this.#resize()
+    this.#resize();
     this.#drawParis({ arrondissements: this.#arrondissements, projection: this.#projection, g: this.#g, svg: this.#svg });
   }
 
   #drawParis() {
     const sortedArrondissements = this.#arrondissements.features.sort((a, b) => a.properties.c_ar - b.properties.c_ar);
     this.#g.attr('class', 'slide-enter-content');
-    this.#g.selectAll("path")
+    this.#g.selectAll('path')
       .data(sortedArrondissements)
-      .join("path")
+      .join('path')
       .attr('fill', '#dee2e6')
-      .attr("d", d3.geoPath()
-        .projection(this.#projection)
-      )
-      .style("stroke", "#6c757d")
-      .style("stroke-width", 2);
+      .attr('d', d3.geoPath()
+        .projection(this.#projection))
+      .style('stroke', '#6c757d')
+      .style('stroke-width', 2);
 
     const zoomed = (event) => {
-      this.#g.attr("transform", event.transform);
-    }
+      this.#g.attr('transform', event.transform);
+    };
 
     const zoom = d3.zoom()
       .scaleExtent([1, 8]) // Set the zoom scale's allowed range
-      .on("zoom", zoomed);
+      .on('zoom', zoomed);
 
     this.#svg.call(zoom);
 
-    this.#svg.on("wheel", (event) => {
+    this.#svg.on('wheel', (event) => {
       event.preventDefault(); // Prevent the default scroll behavior
       const delta = event.deltaY;
       const scale = delta > 0 ? 1.2 : 0.8; // Determine whether to zoom in or out based on the direction of the scroll
@@ -63,14 +60,14 @@ class ParisMap {
   }
 
   #resize() {
-    const width = parseInt(this.#svg.style('width'));
+    const width = Number.parseInt(this.#svg.style('width'));
     const height = width * 0.825;
     this.#projection
       .center([2.3522, 48.8566])
       .scale(this.#scale(height))
-      .translate([width / 2, height / 2])
+      .translate([width / 2, height / 2]);
 
-    this.#svg.attr("width", width).attr("height", height);
+    this.#svg.attr('width', width).attr('height', height);
   }
 
   addStation({ station, color, adjacentStations }) {
@@ -85,15 +82,14 @@ class ParisMap {
         .attr('cx', this.#projection(coordinates)[0])
         .attr('cy', this.#projection(coordinates)[1])
         .attr('r', 3)
-        .style("fill", color)
-        .on('mouseover', (e, d) => {
+        .style('fill', color)
+        .on('mouseover', () => {
           this.#tooltip.style('visibility', 'visible');
           this.#tooltip.html(station.properties.name);
         })
-        .on('mousemove',  (event) => {
-          const [x, y] = d3.pointer(event)
-          this.#tooltip.style('top', (event.pageY - 10) + 'px')
-            .style('left', (event.pageX + 10) + 'px');
+        .on('mousemove', (event) => {
+          this.#tooltip.style('top', `${event.pageY - 10}px`)
+            .style('left', `${event.pageX + 10}px`);
         })
         .on('mouseout', () => {
           this.#tooltip.style('visibility', 'hidden');
@@ -116,20 +112,17 @@ class ParisMap {
         const newStationIndex = newStation.properties.inLineIndex[newStationLine];
         const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
 
-        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex) {
+        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex)
           continue;
-        }
 
-        if (newStationIndex === undefined || adjacentStationIndex === undefined) {
+        if (newStationIndex === undefined || adjacentStationIndex === undefined)
           continue;
-        }
 
         let drawLine;
-        if (newStationIndex < adjacentStationIndex) {
+        if (newStationIndex < adjacentStationIndex)
           drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
-        } else {
+        else
           drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
-        }
 
         this.#g.append('path')
           .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
@@ -142,5 +135,5 @@ class ParisMap {
 }
 
 export {
-  ParisMap
-}
+  ParisMap,
+};

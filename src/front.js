@@ -1,16 +1,16 @@
-import * as bootstrap from 'bootstrap'
-import arrondissements from "../assets/arrondissements.geojson"
-import stationsData from "../assets/stations.geojson"
-import linesData from "../assets/lines.geojson"
+import * as bootstrap from 'bootstrap';
+import arrondissements from '../assets/arrondissements.geojson';
+import stationsData from '../assets/stations.geojson';
+import linesData from '../assets/lines.geojson';
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
-import { verifyIfConnected} from './graph.js';
+import { verifyIfConnected } from './graph.js';
 import { filterStationsForList } from './utils.front.js';
 
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
 });
-const sortedStations = stations.map((d) => d.properties.name).sort();
+const sortedStations = stations.map(d => d.properties.name).sort();
 const lines = linesData.features;
 
 const map = new ParisMap({ arrondissements, stations, lines });
@@ -18,24 +18,23 @@ const map = new ParisMap({ arrondissements, stations, lines });
 const addedStations = new Map();
 
 function createEventsForStationsList() {
-  const dropdown = document.getElementById('stations')
+  const dropdown = document.getElementById('stations');
   const input = document.getElementById('station');
-  input.addEventListener('click', function (event) {
+  input.addEventListener('click', (event) => {
     event.stopPropagation();
     handleDropDownVisibility(input, dropdown);
   });
-  input.addEventListener('input', function () {
+  input.addEventListener('input', () => {
     handleDropDownVisibility(input, dropdown);
   });
 }
 
 function handleDropDownVisibility(input, dropdown) {
   const value = input.value;
-  if (value.length > 0) {
+  if (value.length > 0)
     showDropdown(input, dropdown, value);
-  } else {
+  else
     hideDropdown(input, dropdown);
-  }
 }
 
 function hideDropdown(input, dropdown) {
@@ -48,18 +47,16 @@ function showDropdown(input, dropdown, value) {
   input.classList.add('show');
   dropdown.classList.add('show');
   dropdown.setAttribute('aria-expanded', 'true');
-  console.log({value})
   const filteredStations = filterStationsForList(value, sortedStations);
   dropdown.innerHTML = '';
-  console.log({filteredStations})
   filteredStations.forEach((name) => {
     dropdown.appendChild(createDropdownStation(name));
-  })
+  });
 }
 
 function createDropdownStation(stationName) {
   const button = document.createElement('button');
-  button.innerText = stationName;
+  button.textContent = stationName;
   button.classList.add('dropdown-item');
   button.addEventListener('click', addNameToInput);
   const li = document.createElement('li');
@@ -68,29 +65,28 @@ function createDropdownStation(stationName) {
 }
 
 function addNameToInput(event) {
-  const stationName = event.target.innerText;
-  document.getElementById('station').value = stationName;
+  document.getElementById('station').value = event.target.textContent;
 }
 
 function addStation({ stationName, color }) {
-  if (addedStations.has(stationName)) {
+  if (addedStations.has(stationName))
     return;
-  }
+
   const station = stations.find(d => d.properties.name === stationName);
   const adjacentStations = findAdjacentStations({ station, lines, addedStations });
   map.addStation({ station, color, adjacentStations });
   addedStations.set(stationName, station);
 }
 
-function findAdjacentStations({ station, lines, addedStations }) {
-  let adjacentStations = [];
+function findAdjacentStations({ station, addedStations }) {
+  const adjacentStations = [];
   for (const newStationLine of station.properties.lines) {
     const lineAdjacentStations = station.properties.adjacentStations[newStationLine];
 
     for (const adjacentStationName of lineAdjacentStations) {
-      if (!addedStations.has(adjacentStationName)) {
+      if (!addedStations.has(adjacentStationName))
         continue;
-      }
+
       adjacentStations.push(addedStations.get(adjacentStationName));
     }
   }
@@ -98,27 +94,19 @@ function findAdjacentStations({ station, lines, addedStations }) {
 }
 
 function handleClickOnTryButton() {
-  document.getElementById('try').addEventListener('click', function () {
+  document.getElementById('try').addEventListener('click', () => {
     const stationName = document.getElementById('station').value;
     addStation({ stationName });
     isFinished({ addedStations });
   });
 }
 
-function isFinished({ addedStations }) {
-  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
-  if (isFinished) {
-    const modal = new bootstrap.Modal(document.getElementById('finish-modal'))
-    modal.show();
-  }
-}
-
-let pick
+let pick;
 function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
   const pick = pickStations({ stations, random: getSeededRandomStations(dateToSeed) });
-  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start}</span> jusqu'à <span class="end">${pick.end}</span> en passant par le moins de stations possible.`
+  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start}</span> jusqu'à <span class="end">${pick.end}</span> en passant par le moins de stations possible.`;
   addStation({ stationName: pick.start, color: '#008a22' });
   addStation({ stationName: pick.end, color: '#e52228' });
 }
@@ -126,3 +114,11 @@ function initGame() {
 createEventsForStationsList();
 handleClickOnTryButton();
 initGame();
+
+function isFinished({ addedStations }) {
+  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
+  if (isFinished) {
+    const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
+    modal.show();
+  }
+}

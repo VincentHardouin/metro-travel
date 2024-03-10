@@ -1,34 +1,38 @@
 {
   "name": "metro-travel",
-  "version": "1.9.1",
-  "description": "",
   "type": "module",
-  "source": "index.html",
+  "version": "1.9.1",
   "private": true,
-  "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build",
-    "test": "vitest",
-    "screenshots": "node src/capture-version.js"
-  },
+  "description": "",
+  "source": "index.html",
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/VincentHardouin/metro-travel#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VincentHardouin/metro-travel.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/VincentHardouin/metro-travel/issues"
   },
-  "homepage": "https://github.com/VincentHardouin/metro-travel#readme",
+  "keywords": [],
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build",
+    "lint": "eslint .",
+    "test": "vitest",
+    "screenshots": "node src/capture-version.js"
+  },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
     "@parcel/transformer-sass": "^2.11.0",
     "d3": "^7.8.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
     "parcel": "^2.11.0",
     "parcel-transformer-geojson": "^0.0.4",
     "puppeteer": "^22.4.1",

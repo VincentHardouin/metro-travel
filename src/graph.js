@@ -1,10 +1,10 @@
 function computeSmallestStationsPath({ start, end, stations }) {
-  if (!stationExists(stations, start)) {
+  if (!stationExists(stations, start))
     throw new Error('Start station does not exist');
-  }
-  if (!stationExists(stations, end)) {
+
+  if (!stationExists(stations, end))
     throw new Error('End station does not exist');
-  }
+
   const graph = computeGraph(stations);
   return graph.dijkstra(start, end);
 }
@@ -53,21 +53,21 @@ class Graph {
   }
 
   dijkstra(start, end) {
-    let shortestDistances = {};
-    let predecessors = {};
-    let unseenNodes = Object.assign({}, this.nodes);
+    const shortestDistances = {};
+    const predecessors = {};
+    const unseenNodes = Object.assign({}, this.nodes);
 
-    for (let node in this.nodes) {
-      shortestDistances[node] = Infinity;
-    }
+    for (const node in this.nodes)
+      shortestDistances[node] = Number.POSITIVE_INFINITY;
+
     shortestDistances[start] = 0;
 
     while (Object.keys(unseenNodes).length > 0) {
-      let currentNode = this.getMinNode(shortestDistances, unseenNodes);
-      let neighbors = this.nodes[currentNode];
+      const currentNode = this.getMinNode(shortestDistances, unseenNodes);
+      const neighbors = this.nodes[currentNode];
 
-      for (let neighbor in neighbors) {
-        let distance = neighbors[neighbor];
+      for (const neighbor in neighbors) {
+        const distance = neighbors[neighbor];
         if (distance + shortestDistances[currentNode] < shortestDistances[neighbor]) {
           shortestDistances[neighbor] = distance + shortestDistances[currentNode];
           predecessors[neighbor] = currentNode;
@@ -76,40 +76,40 @@ class Graph {
       delete unseenNodes[currentNode];
     }
 
-    let path = [end];
+    const path = [end];
     let predecessor = predecessors[end];
     while (predecessor) {
       path.unshift(predecessor);
       predecessor = predecessors[predecessor];
     }
 
-    if (shortestDistances[end] !== Infinity) {
+    if (shortestDistances[end] !== Number.POSITIVE_INFINITY) {
       return {
-        path: path,
-        distance: shortestDistances[end]
+        path,
+        distance: shortestDistances[end],
       };
-    } else {
+    }
+    else {
       return null;
     }
   }
 
   isConnectedTo(start, end, visited = {}) {
-    if (start === end) {
+    if (start === end)
       return true;
-    }
+
     visited[start] = true;
     for (const neighbor in this.nodes[start]) {
-      if (!visited[neighbor] && this.isConnectedTo(neighbor, end, visited)) {
+      if (!visited[neighbor] && this.isConnectedTo(neighbor, end, visited))
         return true;
-      }
     }
     return false;
   }
 
   getMinNode(distances, nodes) {
-    let minDistance = Infinity;
+    let minDistance = Number.POSITIVE_INFINITY;
     let minNode = null;
-    for (let node in nodes) {
+    for (const node in nodes) {
       if (distances[node] < minDistance) {
         minDistance = distances[node];
         minNode = node;
@@ -121,5 +121,5 @@ class Graph {
 
 export {
   computeSmallestStationsPath,
-  verifyIfConnected
-}
+  verifyIfConnected,
+};

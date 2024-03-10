@@ -29,7 +29,7 @@ function getVersion() {
 export async function captureVersion(version) {
   const { browser, page } = await getPage();
   await page.emulateMediaFeatures([
-    {name: 'prefers-reduced-motion', value: 'reduce'},
+    { name: 'prefers-reduced-motion', value: 'reduce' },
   ]);
   await page.setViewport({ width: 1200, height: 630 });
   await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
@@ -48,7 +48,8 @@ async function updateChangelog(version) {
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].startsWith(`# [${version}]`)) {
       isCurrentVersion = true;
-    } else if (isCurrentVersion) {
+    }
+    else if (isCurrentVersion) {
       if (lines[i].startsWith('## ') || lines[i].startsWith('# ')) {
         lastLine = i;
         break;
@@ -61,11 +62,10 @@ async function updateChangelog(version) {
   await writeFile('docs/CHANGELOG.md', lines.join('\n'));
 }
 
-
 async function main() {
   const version = getVersion();
   await captureVersion(version);
   await updateChangelog(version);
 }
 
-main()
+main();

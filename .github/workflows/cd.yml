@@ -8,7 +8,7 @@ on:
     branches:
       - main
   repository_dispatch:
-    types: [ 'deploy' ]
+    types: [deploy]
   workflow_dispatch:
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-            node-version: 20
+          node-version: 20
 
       - name: Install
         run: npm ci
@@ -57,14 +57,14 @@ jobs:
 
       - name: Generate Screenshots
         id: screenshots
-        if: steps.semantic.outputs.new_release_published == 'true' && steps.semantic.outputs.new_release_patch_version 	== '0'
+        if: steps.semantic.outputs.new_release_published == 'true' && steps.semantic.outputs.new_release_patch_version == '0'
         run: (npm start &); npm run screenshots && echo "screenshots_generated=true" >> $GITHUB_OUTPUT
 
       - name: Commit & push screenshots
         if: steps.screenshots.outputs.screenshots_generated == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: | 
-          git add docs 
+        run: |
+          git add docs
           git commit -m "docs: include screenshots for version ${{steps.semantic.outputs.new_release_published}} [skip ci]"
-          git push https://x-access-token:${{ env.GITHUB_TOKEN }}@github.com/${{ vars.GITHUB_REPOSITORY }}.git HEAD:refs/heads/main
+          git push https://VincentHardouin:${{ env.GITHUB_TOKEN }}@github.com/${{ vars.GITHUB_REPOSITORY }}.git HEAD:refs/heads/main

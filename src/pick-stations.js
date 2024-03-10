@@ -1,25 +1,26 @@
 import { computeSmallestStationsPath } from './graph.js';
 
-const getRandomStations = (stations) => {
+function getRandomStations(stations) {
   return [
     stations[Math.floor(Math.random() * stations.length)],
     stations[Math.floor(Math.random() * stations.length)],
-  ]
+  ];
 }
 
-const getSeededRandomStations = (seed) => {
+function getSeededRandomStations(seed) {
   const g = makeRandom(seed);
   return (stations) => {
     return [
       stations[g() % stations.length],
-      stations[g() % stations.length]
-    ]
-  }
+      stations[g() % stations.length],
+    ];
+  };
 }
 
 function makeRandom(seed) {
   seed %= 2147483647;
-  if (seed <= 0) seed += 2147483646;
+  if (seed <= 0)
+    seed += 2147483646;
   const next = () => {
     seed = (seed * 48271) % 2147483647;
     return seed;
@@ -36,18 +37,18 @@ function pickStations({ stations, random = getRandomStations } = {}) {
   let path = null;
 
   do {
-    [start, end] = random(stations)
+    [start, end] = random(stations);
     path = computeSmallestStationsPath({ start: start.properties.name, end: end.properties.name, stations });
-  } while (path.distance < MIN_DISTANCE)
+  } while (path.distance < MIN_DISTANCE);
 
   return {
     start: start.properties.name,
     end: end.properties.name,
-    path
-  }
+    path,
+  };
 }
 
 export {
   pickStations,
-  getSeededRandomStations
-}
+  getSeededRandomStations,
+};
