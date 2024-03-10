@@ -52,6 +52,8 @@
 * add modal to indicate user has finished ([a4c44c3](https://github.com/VincentHardouin/metro-travel/commit/a4c44c36333efd0db4722196f381afe8b7ecc6b1))
 * improve spacing between search input and button ([1098f98](https://github.com/VincentHardouin/metro-travel/commit/1098f9831ea089676c63e26995794398784434ee))
 
+![1.6.0](./screenshots/1.6.0-desktop.png) ![1.6.0](./screenshots/1.6.0-mobile.png) 
+
 # [1.5.0](https://github.com/VincentHardouin/metro-travel/compare/v1.4.0...v1.5.0) (2024-03-09)
 
 
