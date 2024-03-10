@@ -9,6 +9,11 @@ function computeSmallestStationsPath({ start, end, stations }) {
   return graph.dijkstra(start, end);
 }
 
+function verifyIfConnected({ start, end, stations }) {
+  const graph = computeGraph(stations);
+  return graph.isConnectedTo(start, end);
+}
+
 function computeGraph(stations) {
   const graph = new Graph();
 
@@ -88,6 +93,19 @@ class Graph {
     }
   }
 
+  isConnectedTo(start, end, visited = {}) {
+    if (start === end) {
+      return true;
+    }
+    visited[start] = true;
+    for (const neighbor in this.nodes[start]) {
+      if (!visited[neighbor] && this.isConnectedTo(neighbor, end, visited)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   getMinNode(distances, nodes) {
     let minDistance = Infinity;
     let minNode = null;
@@ -102,5 +120,6 @@ class Graph {
 }
 
 export {
-  computeSmallestStationsPath
+  computeSmallestStationsPath,
+  verifyIfConnected
 }

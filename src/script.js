@@ -4,6 +4,7 @@ import stationsData from "../assets/stations.geojson"
 import linesData from "../assets/lines.geojson"
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
+import { verifyIfConnected} from './graph.js';
 
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
@@ -97,9 +98,19 @@ function handleClickOnTryButton() {
   document.getElementById('try').addEventListener('click', function () {
     const stationName = document.getElementById('station').value;
     addStation({ stationName });
+    isFinished({ addedStations });
   });
 }
 
+function isFinished({ addedStations }) {
+  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
+  if (isFinished) {
+    const modal = new bootstrap.Modal(document.getElementById('finish-modal'))
+    modal.show();
+  }
+}
+
+let pick
 function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();

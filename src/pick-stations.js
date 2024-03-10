@@ -1,4 +1,4 @@
-import { computeSmallestStationsPath } from './compute-smallest-stations-path.js';
+import { computeSmallestStationsPath } from './graph.js';
 
 const getRandomStations = (stations) => {
   return [
