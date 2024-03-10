@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/VincentHardouin/metro-travel/compare/v1.6.0...v1.7.0) (2024-03-10)
+
+
+### Features
+
+* improve search station field ([9f061ab](https://github.com/VincentHardouin/metro-travel/commit/9f061ab0d9abaef565f0696e251f090e1a1c2bd4))
+
 # [1.6.0](https://github.com/VincentHardouin/metro-travel/compare/v1.5.0...v1.6.0) (2024-03-10)
 
 
