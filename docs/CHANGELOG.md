@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/VincentHardouin/metro-travel/compare/v1.8.1...v1.9.0) (2024-03-10)
+
+
+### Features
+
+* add animation to arrondissements ([75ca152](https://github.com/VincentHardouin/metro-travel/commit/75ca15204944b663f4331e1e7b531b67e8def9fe))
+* update map colors ([7585804](https://github.com/VincentHardouin/metro-travel/commit/75858048186b29a0a12cd382a4924c40febeb220))
+
 ## [1.8.1](https://github.com/VincentHardouin/metro-travel/compare/v1.8.0...v1.8.1) (2024-03-10)
 
 
