@@ -153,3 +153,5 @@
 * show path between adjacent path ([b70e12c](https://github.com/VincentHardouin/metro-travel/commit/b70e12c1cf027cce84cd113907c53a89f688ac12))
 * specify engine ([950c1ff](https://github.com/VincentHardouin/metro-travel/commit/950c1ffee418fa003d94c36f7c25db01a81aae02))
 * update stations and merge-duplicate-stations ([cb870f5](https://github.com/VincentHardouin/metro-travel/commit/cb870f5df6c7fa71a19670a6e431a3ec05e60118))
+
+![1.0.0](./screenshots/1.0.0-desktop.png) ![1.0.0](./screenshots/1.0.0-mobile.png) 
