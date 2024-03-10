@@ -47,11 +47,15 @@ function showDropdown(input, dropdown, value) {
   input.classList.add('show');
   dropdown.classList.add('show');
   dropdown.setAttribute('aria-expanded', 'true');
-  const filteredStations = sortedStations.filter((name) => name.toLowerCase().includes(value.toLowerCase()));
+  const filteredStations = filterStationsForList(value, sortedStations);
   dropdown.innerHTML = '';
   filteredStations.forEach((name) => {
     dropdown.appendChild(createDropdownStation(name));
   })
+}
+
+function filterStationsForList(search, stations) {
+  return stations.filter((name) => name.toLowerCase().includes(search.toLowerCase()));
 }
 
 function createDropdownStation(stationName) {
