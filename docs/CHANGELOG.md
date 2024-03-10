@@ -33,6 +33,8 @@
 * add screenshots generation in cd ([1fcea85](https://github.com/VincentHardouin/metro-travel/commit/1fcea856e0afad951315812af38b0924c39f35c3))
 * update semantic-release config to update package.json version ([69e9b4f](https://github.com/VincentHardouin/metro-travel/commit/69e9b4fa09f37538353c616f8a4dfb83c33fab31))
 
+![1.8.0](./screenshots/1.8.0-desktop.png) ![1.8.0](./screenshots/1.8.0-mobile.png) 
+
 # [1.7.0](https://github.com/VincentHardouin/metro-travel/compare/v1.6.0...v1.7.0) (2024-03-10)
 
 
