@@ -32,8 +32,10 @@ class ParisMap {
   }
 
   #drawParis() {
+    const sortedArrondissements = this.#arrondissements.features.sort((a, b) => a.properties.c_ar - b.properties.c_ar);
+    this.#g.attr('class', 'slide-enter-content');
     this.#g.selectAll("path")
-      .data(this.#arrondissements.features)
+      .data(sortedArrondissements)
       .join("path")
       .attr('fill', '#dee2e6')
       .attr("d", d3.geoPath()
