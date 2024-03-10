@@ -28,10 +28,14 @@ function getVersion() {
 
 export async function captureVersion(version) {
   const { browser, page } = await getPage();
-  await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
+  await page.emulateMediaFeatures([
+    {name: 'prefers-reduced-motion', value: 'reduce'},
+  ]);
   await page.setViewport({ width: 1200, height: 630 });
+  await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
   await page.screenshot({ path: `docs/screenshots/${version}-desktop.png`, fullPage: true });
   await page.setViewport({ width: 390, height: 630 });
+  await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
   await page.screenshot({ path: `docs/screenshots/${version}-mobile.png`, fullPage: true });
   await closePage(browser, page);
 }
