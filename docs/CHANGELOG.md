@@ -100,6 +100,8 @@
 
 * add analytics ([74a7520](https://github.com/VincentHardouin/metro-travel/commit/74a752097a9aeeb639b3f30caa889ff1ca301bbf))
 
+![1.1.0](./screenshots/1.1.0-desktop.png) ![1.1.0](./screenshots/1.1.0-mobile.png)
+
 ## [1.0.2](https://github.com/VincentHardouin/metro-travel/compare/v1.0.1...v1.0.2) (2024-03-06)
 
 
