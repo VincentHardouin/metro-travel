@@ -35,11 +35,12 @@ class ParisMap {
     this.#g.selectAll("path")
       .data(this.#arrondissements.features)
       .join("path")
-      .attr("fill", "grey")
+      .attr('fill', '#dee2e6')
       .attr("d", d3.geoPath()
         .projection(this.#projection)
       )
-      .style("stroke", "none")
+      .style("stroke", "#6c757d")
+      .style("stroke-width", 2);
 
     const zoomed = (event) => {
       this.#g.attr("transform", event.transform);
