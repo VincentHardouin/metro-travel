@@ -93,6 +93,8 @@
 * **mobile:** add meta viewport to prevent zoom on input focus ([b15b97a](https://github.com/VincentHardouin/metro-travel/commit/b15b97a044d97b115f63cfb24cc6c8fe64d4a282))
 * **mobile:** improve map responsiveness ([dd96f31](https://github.com/VincentHardouin/metro-travel/commit/dd96f31b80880f9ad968ac1a75bc756e0dcb680e))
 
+![1.2.0](./screenshots/1.2.0-desktop.png) ![1.2.0](./screenshots/1.2.0-mobile.png)
+
 # [1.1.0](https://github.com/VincentHardouin/metro-travel/compare/v1.0.2...v1.1.0) (2024-03-06)
 
 
