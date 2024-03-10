@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/VincentHardouin/metro-travel/compare/v1.9.0...v1.9.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* cd ([beaa672](https://github.com/VincentHardouin/metro-travel/commit/beaa6720bb926f06da86804c477f4f8a6d753c16))
+
 # [1.9.0](https://github.com/VincentHardouin/metro-travel/compare/v1.8.1...v1.9.0) (2024-03-10)
 
 
