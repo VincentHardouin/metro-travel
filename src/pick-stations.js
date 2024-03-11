@@ -42,8 +42,8 @@ function pickStations({ stations, random = getRandomStations } = {}) {
   } while (path.distance < MIN_DISTANCE);
 
   return {
-    start: start.properties.name,
-    end: end.properties.name,
+    start,
+    end,
     path,
   };
 }

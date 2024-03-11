@@ -5,7 +5,7 @@ import linesData from '../assets/lines.geojson';
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { verifyIfConnected } from './graph.js';
-import { searchStations, stationExists } from './utils.front.js';
+import { searchStations } from './utils.front.js';
 
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
@@ -69,11 +69,11 @@ function addNameToInput(event) {
   document.getElementById('station').value = event.target.textContent;
 }
 
-function addStation({ stationName, color }) {
+function addStation({ station, color }) {
+  const stationName = station.properties.name;
   if (addedStations.has(stationName))
     return;
 
-  const station = stations.find(d => d.properties.name === stationName);
   const adjacentStations = findAdjacentStations({ station, lines, addedStations });
   map.addStation({ station, color, adjacentStations });
   addedStations.set(stationName, station);
@@ -98,8 +98,9 @@ function handleClickOnTryButton({ pick }) {
   document.getElementById('try').addEventListener('click', () => {
     const input = document.getElementById('station');
     const stationName = input.value;
-    if (stationExists(stations, stationName)) {
-      addStation({ stationName });
+    const station = stations.find(d => d.properties.name === stationName);
+    if (station) {
+      addStation({ station });
       input.value = '';
       isFinished({ addedStations, pick });
     }
@@ -135,9 +136,9 @@ function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
   const pick = pickStations({ stations, random: getSeededRandomStations(dateToSeed) });
-  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start}</span> jusqu'à <span class="end">${pick.end}</span> en passant par le moins de stations possible.`;
-  addStation({ stationName: pick.start, color: '#008a22' });
-  addStation({ stationName: pick.end, color: '#e52228' });
+  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start.properties.name}</span> jusqu'à <span class="end">${pick.end.properties.name}</span> en passant par le moins de stations possible.`;
+  addStation({ station: pick.start, color: '#008a22' });
+  addStation({ station: pick.end, color: '#e52228' });
   return pick;
 }
 
