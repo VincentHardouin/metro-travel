@@ -1,5 +1,7 @@
 import * as d3 from 'd3';
 
+const PARIS_COORDINATES = [2.3522, 48.8566];
+
 class ParisMap {
   #arrondissements;
   #stations;
@@ -63,7 +65,7 @@ class ParisMap {
     const width = Number.parseInt(this.#svg.style('width'));
     const height = width * 0.825;
     this.#projection
-      .center([2.3522, 48.8566])
+      .center(PARIS_COORDINATES)
       .scale(this.#scale(height))
       .translate([width / 2, height / 2]);
 
