@@ -1,4 +1,19 @@
+# [1.10.0](https://github.com/VincentHardouin/metro-travel/compare/v1.9.1...v1.10.0) (2024-03-11)
 
+
+### Bug Fixes
+
+* handle accent correctly in data export ([970ebc2](https://github.com/VincentHardouin/metro-travel/commit/970ebc20225cfe5e424738eaf2a6b3150d4e714d))
+* try button ([9e37ead](https://github.com/VincentHardouin/metro-travel/commit/9e37ead3ac21a55bec7e6481f240e4edb5276267))
+
+
+### Features
+
+* add feedback after click on try button ([1d7520a](https://github.com/VincentHardouin/metro-travel/commit/1d7520a361d62b76964e7310548872750f15ba5a))
+* handle station with same name without accent ([968e4f9](https://github.com/VincentHardouin/metro-travel/commit/968e4f92cad7c3c90986eb739f701a887d397085))
+* improve about ([d3dccc5](https://github.com/VincentHardouin/metro-travel/commit/d3dccc585d5a48b85cdd09222282ee13d35840c4))
+* remove already added station in search dropdown ([b5af344](https://github.com/VincentHardouin/metro-travel/commit/b5af344ccb5ad4888f7c52e97d1601b1670418d3))
+* remove input value after try ([6afaab8](https://github.com/VincentHardouin/metro-travel/commit/6afaab877309d159520d50194aa7f42bb6a17761))
 
 ## [1.9.1](https://github.com/VincentHardouin/metro-travel/compare/v1.9.0...v1.9.1) (2024-03-10)
 
@@ -162,4 +177,4 @@
 * specify engine ([950c1ff](https://github.com/VincentHardouin/metro-travel/commit/950c1ffee418fa003d94c36f7c25db01a81aae02))
 * update stations and merge-duplicate-stations ([cb870f5](https://github.com/VincentHardouin/metro-travel/commit/cb870f5df6c7fa71a19670a6e431a3ec05e60118))
 
-![1.0.0](./screenshots/1.0.0-desktop.png) ![1.0.0](./screenshots/1.0.0-mobile.png) 
+![1.0.0](./screenshots/1.0.0-desktop.png) ![1.0.0](./screenshots/1.0.0-mobile.png)
