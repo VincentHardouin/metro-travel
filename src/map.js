@@ -11,6 +11,8 @@ class ParisMap {
   #scale = x => this.#m * x + this.#b;
   #svg;
   #g;
+  #arrondissementsNode;
+  #stationsNode;
   #projection;
   #tooltip;
 
@@ -20,6 +22,9 @@ class ParisMap {
     this.#lines = lines;
     this.#svg = d3.select('svg');
     this.#g = this.#svg.append('g');
+    this.#arrondissementsNode = this.#g.append('g');
+    this.#stationsNode = this.#g.append('g');
+    this.#stationsNode.attr('class', 'stations-slide-enter-content');
     this.#projection = d3.geoMercator();
     this.#tooltip = d3.select('body').append('div').attr('class', 'map-tooltip');
     window.addEventListener('resize', () => this.#resize());
@@ -33,8 +38,7 @@ class ParisMap {
 
   #drawParis() {
     const sortedArrondissements = this.#arrondissements.features.sort((a, b) => a.properties.c_ar - b.properties.c_ar);
-    this.#g.attr('class', 'slide-enter-content');
-    this.#g.selectAll('path')
+    this.#arrondissementsNode.attr('class', 'slide-enter-content').selectAll('path')
       .data(sortedArrondissements)
       .join('path')
       .attr('fill', '#dee2e6')
@@ -79,7 +83,7 @@ class ParisMap {
 
   #drawStation({ station, color = '#0d47a1' }) {
     for (const coordinates of station.properties.coordinates) {
-      this.#g.append('circle')
+      this.#stationsNode.append('circle')
         .attr('class', 'metro-station')
         .attr('cx', this.#projection(coordinates)[0])
         .attr('cy', this.#projection(coordinates)[1])
@@ -98,7 +102,7 @@ class ParisMap {
         });
     }
 
-    this.#g.append('path')
+    this.#stationsNode.append('path')
       .attr('d', d3.line()(station.properties.coordinates.map(c => this.#projection(c))))
       .attr('stroke', color)
       .attr('stroke-width', 2)
@@ -126,7 +130,7 @@ class ParisMap {
         else
           drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
 
-        this.#g.append('path')
+        this.#stationsNode.append('path')
           .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
           .attr('stroke', 'black')
           .attr('stroke-width', 2)
