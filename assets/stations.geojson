@@ -668,7 +668,7 @@
           ],
           "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie": [
             "Quai de la Rapée",
-            null
+            "République"
           ],
           "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)": [
             "Saint-Paul",
@@ -679,7 +679,7 @@
             "Saint-Paul"
           ],
           "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso": [
-            null,
+            "République",
             "Quai de la Rapée"
           ],
           "Ligne 8 : Balard → Créteil - Pointe du Lac": [
@@ -5607,11 +5607,11 @@
             "La Motte-Picquet - Grenelle"
           ],
           "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": [
-            "Champs-Elysées - Clémenceau",
+            "Champs-Élysées - Clemenceau",
             "Varenne"
           ],
           "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": [
-            "Champs-Elysées - Clémenceau",
+            "Champs-Élysées - Clemenceau",
             "Varenne"
           ],
           "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge": [
@@ -15641,18 +15641,26 @@
           [
             2.3142551,
             48.8674918
+          ],
+          [
+            2.3139089,
+            48.8677932
           ]
         ],
         "lines": [
           "Ligne 1 : La Défense (Grande Arche) → Château de Vincennes",
           "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
           "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
-          "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)"
+          "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)",
+          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université",
+          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles"
         ],
         "inLineIndex": {
           "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)": 195,
           "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge": 130,
           "Ligne 1 : La Défense (Grande Arche) → Château de Vincennes": 117,
+          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": 127,
+          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": 127,
           "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge": 130
         },
         "adjacentStations": {
@@ -15667,6 +15675,14 @@
           "Ligne 1 : La Défense (Grande Arche) → Château de Vincennes": [
             "Concorde",
             "Franklin D. Roosevelt"
+          ],
+          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": [
+            "Miromesnil",
+            "Invalides"
+          ],
+          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": [
+            "Miromesnil",
+            "Invalides"
           ],
           "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge": [
             "Miromesnil",
@@ -22441,11 +22457,11 @@
           ],
           "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": [
             "Saint-Lazare",
-            "Champs-Elysées - Clémenceau"
+            "Champs-Élysées - Clemenceau"
           ],
           "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": [
             "Saint-Lazare",
-            "Champs-Elysées - Clémenceau"
+            "Champs-Élysées - Clemenceau"
           ],
           "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge": [
             "Saint-Lazare",
@@ -22461,103 +22477,6 @@
         ]
       },
       "id": "node/5226630398"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/8928654599",
-        "name": "Champs-Elysées - Clémenceau",
-        "public_transport": "stop_position",
-        "railway": "stop",
-        "subway": "yes",
-        "@relations": [
-          {
-            "role": "stop",
-            "rel": "7731233",
-            "reltags": {
-              "colour": "#82c8e6",
-              "from": "Châtillon-Montrouge",
-              "line": "subway",
-              "name": "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "13",
-              "ref:FR:RATP": "1001100130001",
-              "route": "subway",
-              "short_name": "M13",
-              "to": "Saint-Denis-Université",
-              "twitter": "Ligne13_RATP",
-              "type": "route",
-              "wheelchair": "limited",
-              "wikidata": "Q50759",
-              "wikipedia": "fr:Ligne 13 du métro de Paris"
-            }
-          },
-          {
-            "role": "stop",
-            "rel": "7731234",
-            "reltags": {
-              "colour": "#82c8e6",
-              "from": "Châtillon-Montrouge",
-              "name": "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "13",
-              "ref:FR:RATP": "1001100130001",
-              "route": "subway",
-              "short_name": "M13",
-              "to": "(Asnières-Genevilliers) Les Courtilles",
-              "twitter": "Ligne13_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50759",
-              "wikipedia": "fr:Ligne 13 du métro de Paris"
-            }
-          }
-        ],
-        "coordinates": [
-          [
-            2.3139089,
-            48.8677932
-          ]
-        ],
-        "lines": [
-          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université",
-          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles"
-        ],
-        "inLineIndex": {
-          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": 127,
-          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": 127
-        },
-        "adjacentStations": {
-          "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université": [
-            "Miromesnil",
-            "Invalides"
-          ],
-          "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles": [
-            "Miromesnil",
-            "Invalides"
-          ]
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3139089,
-          48.8677932
-        ]
-      },
-      "id": "node/8928654599"
     },
     {
       "type": "Feature",
@@ -25589,105 +25508,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11608141165",
-        "public_transport": "stop_position",
-        "railway": "stop",
-        "subway": "yes",
-        "@relations": [
-          {
-            "role": "stop",
-            "rel": "123674",
-            "reltags": {
-              "air_conditioning": "yes",
-              "colour": "#FF7F32",
-              "from": "Bobigny – Pablo Picasso",
-              "name": "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "5",
-              "ref:FR:RATP": "1001100050001",
-              "route": "subway",
-              "short_name": "M5",
-              "stops": "22",
-              "to": "Place d'Italie",
-              "twitter": "Ligne5_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50745",
-              "wikipedia": "fr:Ligne 5 du métro de Paris"
-            }
-          },
-          {
-            "role": "stop",
-            "rel": "4730854",
-            "reltags": {
-              "air_conditioning": "yes",
-              "colour": "#FF7F32",
-              "from": "Place d'Italie",
-              "name": "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso",
-              "network": "Métro de Paris",
-              "network:wikidata": "Q50716",
-              "network:wikipedia": "fr:Métro de Paris",
-              "operator": "RATP",
-              "operator:wikidata": "Q643290",
-              "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-              "public_transport:version": "2",
-              "ref": "5",
-              "ref:FR:RATP": "1001100050001",
-              "route": "subway",
-              "short_name": "M5",
-              "stops": "22",
-              "to": "Bobigny – Pablo Picasso",
-              "twitter": "Ligne5_RATP",
-              "type": "route",
-              "wheelchair": "no",
-              "wikidata": "Q50745",
-              "wikipedia": "fr:Ligne 5 du métro de Paris"
-            }
-          }
-        ],
-        "coordinates": [
-          [
-            2.3694165,
-            48.8640529
-          ]
-        ],
-        "lines": [
-          "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie",
-          "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso"
-        ],
-        "inLineIndex": {
-          "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie": 211,
-          "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso": 143
-        },
-        "adjacentStations": {
-          "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie": [
-            "Bastille",
-            "République"
-          ],
-          "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso": [
-            "République",
-            "Bastille"
-          ]
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.3694165,
-          48.8640529
-        ]
-      },
-      "id": "node/11608141165"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/11608141167",
         "name": "Voltaire",
         "public_transport": "stop_position",
@@ -26298,7 +26118,7 @@
             "Strasbourg - Saint-Denis"
           ],
           "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie": [
-            null,
+            "Bastille",
             "Jacques Bonsergent"
           ],
           "Ligne 9 : Pont de Sèvres → Mairie de Montreuil": [
@@ -26319,7 +26139,7 @@
           ],
           "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso": [
             "Jacques Bonsergent",
-            null
+            "Bastille"
           ],
           "Ligne 11 : Mairie des Lilas → Châtelet": [
             "Arts et Métiers",

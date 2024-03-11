@@ -10,4 +10,4 @@
   - [ ] UX - Pouvoir activer/désactiver des stations
 - [ ] UX - Search Input - Retirer les stations déjà ajoutées
 - [ ] UX - Afficher les lignes de métro dans la bonne couleur
-- [ ] Script - Merge-duplicate-station - Ne pas prendre compte les accents dans les noms
+- [x] Script - Merge-duplicate-station - Ne pas prendre compte les accents dans les noms

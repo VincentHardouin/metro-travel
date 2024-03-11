@@ -5,7 +5,8 @@ export function mergeDuplicateStations({ data }) {
     .filter((d) => {
       return d.properties.railway === 'stop'
         || (d.properties.public_transport === 'stop_position' && (d.properties['type:RATP'] === 'metro' || d.properties.subway === 'yes'));
-    });
+    })
+    .filter(d => d.properties['@relations'] && d.properties.name);
 
   for (const s of metros) {
     const properties = s.properties;
