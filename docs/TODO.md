@@ -1,0 +1,13 @@
+- [ ] Ajouter un cout de changement de ligne sur le script de Dijkstra
+- [ ] Optimiser le build - supprimer les propriétés inutiles dans les stations et lignes
+- [ ] Trouver un nom
+- [ ] Mode de Jeu - Ajouter un mode par temps entre stations
+- [ ] Mode de Jeu - Ajouter un mode practice ?
+- [ ] UX - Map - Améliorer le responsive : se baser sur la hauteur de fenêtre aussi
+- [ ] UX - Ajouter les boutons pour le zoom : zoomer, dézoomer, reset
+- [ ] UX - Modale de fin - Ajouter le chemin le plus court et le chemin du joueur
+- [ ] UX - Ajouter les stations du joueur en dessous de la carte
+  - [ ] UX - Pouvoir activer/désactiver des stations
+- [ ] UX - Search Input - Retirer les stations déjà ajoutées
+- [ ] UX - Afficher les lignes de métro dans la bonne couleur
+- [ ] Script - Merge-duplicate-station - Ne pas prendre compte les accents dans les noms
