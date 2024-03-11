@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/VincentHardouin/metro-travel/compare/v1.10.0...v1.11.0) (2024-03-11)
+
+
+### Features
+
+* reduce map height to fit in viewport ([2447ead](https://github.com/VincentHardouin/metro-travel/commit/2447ead0aac0f9560b60e36e2738229ba57be5b2))
+
 # [1.10.0](https://github.com/VincentHardouin/metro-travel/compare/v1.9.1...v1.10.0) (2024-03-11)
 
 
