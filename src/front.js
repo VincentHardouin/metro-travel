@@ -47,7 +47,7 @@ function showDropdown(input, dropdown, value) {
   input.classList.add('show');
   dropdown.classList.add('show');
   dropdown.setAttribute('aria-expanded', 'true');
-  const filteredStations = filterStationsForList(value, sortedStations);
+  const filteredStations = filterStationsForList(value, sortedStations).filter(station => !addedStations.has(station));
   dropdown.innerHTML = '';
   filteredStations.forEach((name) => {
     dropdown.appendChild(createDropdownStation(name));
