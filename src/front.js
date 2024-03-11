@@ -95,8 +95,10 @@ function findAdjacentStations({ station, addedStations }) {
 
 function handleClickOnTryButton({ pick }) {
   document.getElementById('try').addEventListener('click', () => {
-    const stationName = document.getElementById('station').value;
+    const input = document.getElementById('station');
+    const stationName = input.value;
     addStation({ stationName });
+    input.value = '';
     isFinished({ addedStations, pick });
   });
 }
