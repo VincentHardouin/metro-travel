@@ -93,15 +93,21 @@ function findAdjacentStations({ station, addedStations }) {
   return adjacentStations;
 }
 
-function handleClickOnTryButton() {
+function handleClickOnTryButton({ pick }) {
   document.getElementById('try').addEventListener('click', () => {
     const stationName = document.getElementById('station').value;
     addStation({ stationName });
-    isFinished({ addedStations });
+    isFinished({ addedStations, pick });
   });
 }
+function isFinished({ addedStations, pick }) {
+  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
+  if (isFinished) {
+    const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
+    modal.show();
+  }
+}
 
-let pick;
 function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
@@ -109,16 +115,9 @@ function initGame() {
   document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start}</span> jusqu'à <span class="end">${pick.end}</span> en passant par le moins de stations possible.`;
   addStation({ stationName: pick.start, color: '#008a22' });
   addStation({ stationName: pick.end, color: '#e52228' });
+  return pick;
 }
 
 createEventsForStationsList();
-handleClickOnTryButton();
-initGame();
-
-function isFinished({ addedStations }) {
-  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
-  if (isFinished) {
-    const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
-    modal.show();
-  }
-}
+const pick = initGame();
+handleClickOnTryButton({ pick });
