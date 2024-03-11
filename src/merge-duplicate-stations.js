@@ -9,7 +9,10 @@ export function mergeDuplicateStations({ data }) {
 
   for (const s of metros) {
     const properties = s.properties;
-    const stationName = properties.name;
+    const stationName = properties.name
+      .normalize('NFD')
+      .replace(/[\u0300-\u036F]/g, '')
+      .toLowerCase();
 
     const currentCoordinates = s.geometry.coordinates;
 
