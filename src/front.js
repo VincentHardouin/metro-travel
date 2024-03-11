@@ -112,6 +112,21 @@ function isFinished({ addedStations, pick }) {
   const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
   if (isFinished) {
     const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
+    const result = document.getElementById('result');
+    result.innerHTML = `<p>Bravo, tu as réussi à relier les deux stations en ${addedStations.size - 2} stations ! 🎉</p><p>Voici le chemin optimal en ${pick.path.distance - 1} stations : </p>`;
+    const list = document.createElement('ul');
+    for (let i = 0; i < pick.path.path.length; i++) {
+      const station = pick.path.path[i];
+      const li = document.createElement('li');
+      li.textContent = station;
+      if (i === 0)
+        li.classList.add('start');
+      else if (i === pick.path.path.length - 1)
+        li.classList.add('end');
+
+      list.appendChild(li);
+    }
+    result.appendChild(list);
     modal.show();
   }
 }
