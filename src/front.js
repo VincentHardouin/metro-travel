@@ -5,7 +5,7 @@ import linesData from '../assets/lines.geojson';
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { verifyIfConnected } from './graph.js';
-import { filterStationsForList } from './utils.front.js';
+import { searchStations } from './utils.front.js';
 
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
@@ -47,7 +47,7 @@ function showDropdown(input, dropdown, value) {
   input.classList.add('show');
   dropdown.classList.add('show');
   dropdown.setAttribute('aria-expanded', 'true');
-  const filteredStations = filterStationsForList(value, sortedStations).filter(station => !addedStations.has(station));
+  const filteredStations = searchStations(value, sortedStations).filter(station => !addedStations.has(station));
   dropdown.innerHTML = '';
   filteredStations.forEach((name) => {
     dropdown.appendChild(createDropdownStation(name));

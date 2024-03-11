@@ -1,4 +1,4 @@
-function filterStationsForList(search, stations) {
+function searchStations(search, stations) {
   const normalizedSearch = search
     .normalize('NFD')
     .replace(/[\u0300-\u036F]/g, '')
@@ -26,5 +26,5 @@ function filterStationsForList(search, stations) {
 }
 
 export {
-  filterStationsForList,
+  searchStations,
 };
