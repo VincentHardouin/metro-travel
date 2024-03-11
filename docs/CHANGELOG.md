@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/VincentHardouin/metro-travel/compare/v1.11.0...v1.12.0) (2024-03-11)
+
+
+### Bug Fixes
+
+* station enter animation ([bdb8d16](https://github.com/VincentHardouin/metro-travel/commit/bdb8d16512024a229afaa29bd5758e5f0507805f))
+
+
+### Features
+
+* add the shortest path in finish modal ([d9748e5](https://github.com/VincentHardouin/metro-travel/commit/d9748e59e25695fd507105f004f2426670c574b0))
+
 # [1.11.0](https://github.com/VincentHardouin/metro-travel/compare/v1.10.0...v1.11.0) (2024-03-11)
 
 
