@@ -1,9 +1,4 @@
-import fs from 'node:fs';
-
-export function addAdjacentStations() {
-  const linesData = JSON.parse(fs.readFileSync('./assets/lines.geojson'));
-  const stationsData = JSON.parse(fs.readFileSync('./assets/stations.geojson'));
-
+export function addAdjacentStations({ linesData, stationsData }) {
   const lines = linesData.features;
   const stations = stationsData.features;
 
@@ -68,7 +63,7 @@ export function addAdjacentStations() {
     outputGeojson.features.push(s);
   });
 
-  fs.writeFileSync('stations.geojson', JSON.stringify(outputGeojson, null, 2));
+  return outputGeojson;
 }
 
 function _addInLineIndex(station, lineName, index) {

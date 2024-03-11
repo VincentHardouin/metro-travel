@@ -1,11 +1,7 @@
-import fs from 'node:fs';
-
-export function mergeDuplicateStations({ inputPath = './assets/export.geojson', outputPath = 'stations.geojson' }) {
-  const exportData = JSON.parse(fs.readFileSync(inputPath, 'utf-8'));
-
+export function mergeDuplicateStations({ data }) {
   const stations = new Map();
 
-  const metros = exportData.features
+  const metros = data.features
     .filter((d) => {
       return d.properties.railway === 'stop'
         || (d.properties.public_transport === 'stop_position' && (d.properties['type:RATP'] === 'metro' || d.properties.subway === 'yes'));
@@ -54,5 +50,5 @@ export function mergeDuplicateStations({ inputPath = './assets/export.geojson', 
     outputGeojson.features.push(s);
   });
 
-  fs.writeFileSync(outputPath, JSON.stringify(outputGeojson, null, 2));
+  return outputGeojson;
 }

@@ -1,9 +1,5 @@
-import fs from 'node:fs';
-
-export function extractLines({ inputPath = './assets/export.geojson', outputPath = 'lines.geojson' }) {
-  const metros = JSON.parse(fs.readFileSync(inputPath));
-
-  const lines = metros.features.filter((d) => {
+export function extractLines({ data }) {
+  const lines = data.features.filter((d) => {
     return d.geometry.type === 'MultiLineString' || (d.geometry.type === 'LineString' && d.properties.route === 'subway');
   });
 
@@ -16,5 +12,5 @@ export function extractLines({ inputPath = './assets/export.geojson', outputPath
     outputGeojson.features.push(l);
   });
 
-  fs.writeFileSync(outputPath, JSON.stringify(outputGeojson, null, 2));
+  return outputGeojson;
 }
