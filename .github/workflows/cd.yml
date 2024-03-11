@@ -69,4 +69,4 @@ jobs:
           git config --global user.name "Vincent Hardouin"
           git add docs
           git commit -m "docs: include screenshots for version ${{steps.semantic.outputs.new_release_published}} [skip ci]"
-          git push https://VincentHardouin:${{ env.GITHUB_TOKEN }}@github.com/${{ vars.GITHUB_REPOSITORY }}.git HEAD:refs/heads/main
+          git push https://VincentHardouin:${{ env.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/heads/main
