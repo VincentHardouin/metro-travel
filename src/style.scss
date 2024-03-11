@@ -70,14 +70,14 @@
 
   html:not(.no-sliding) [slide-enter],
   html:not(.no-sliding) .slide-enter,
-  html:not(.no-sliding) .stations-slide-enter-content > *:not(:has(.table-of-contents)) {
+  html:not(.no-sliding)
+    .stations-slide-enter-content
+    > *:not(:has(.table-of-contents)) {
     --enter-stage: 0;
     --enter-step: 200ms;
     --enter-initial: 0ms;
     animation: slide-enter 2s both 1;
-    animation-delay: calc(
-            var(--enter-initial) + 1 * var(--enter-step)
-    );
+    animation-delay: calc(var(--enter-initial) + 1 * var(--enter-step));
   }
 
   .stations-slide-enter-content {
