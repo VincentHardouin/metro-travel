@@ -15,6 +15,8 @@
 * remove already added station in search dropdown ([b5af344](https://github.com/VincentHardouin/metro-travel/commit/b5af344ccb5ad4888f7c52e97d1601b1670418d3))
 * remove input value after try ([6afaab8](https://github.com/VincentHardouin/metro-travel/commit/6afaab877309d159520d50194aa7f42bb6a17761))
 
+![1.10.0](./screenshots/1.10.0-desktop.png) ![1.10.0](./screenshots/1.10.0-mobile.png) 
+
 ## [1.9.1](https://github.com/VincentHardouin/metro-travel/compare/v1.9.0...v1.9.1) (2024-03-10)
 
 
