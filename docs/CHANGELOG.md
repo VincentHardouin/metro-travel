@@ -10,6 +10,8 @@
 
 * add the shortest path in finish modal ([d9748e5](https://github.com/VincentHardouin/metro-travel/commit/d9748e59e25695fd507105f004f2426670c574b0))
 
+![1.12.0](./screenshots/1.12.0-desktop.png) ![1.12.0](./screenshots/1.12.0-mobile.png) 
+
 # [1.11.0](https://github.com/VincentHardouin/metro-travel/compare/v1.10.0...v1.11.0) (2024-03-11)
 
 
