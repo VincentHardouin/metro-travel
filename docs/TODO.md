@@ -8,6 +8,7 @@
 - [ ] UX - Modale de fin - Ajouter le chemin le plus court et le chemin du joueur
 - [ ] UX - Ajouter les stations du joueur en dessous de la carte
   - [ ] UX - Pouvoir activer/désactiver des stations
-- [ ] UX - Search Input - Retirer les stations déjà ajoutées
+- [x] UX - Search Input - Retirer les stations déjà ajoutées
+- [x] UX - Search Input - Ajouter un feedback si la station n'existe pas
 - [ ] UX - Afficher les lignes de métro dans la bonne couleur
 - [x] Script - Merge-duplicate-station - Ne pas prendre compte les accents dans les noms

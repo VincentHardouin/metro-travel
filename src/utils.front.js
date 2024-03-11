@@ -25,6 +25,13 @@ function searchStations(search, stations) {
     });
 }
 
+function stationExists(stations, stationName) {
+  return stations.some((station) => {
+    return station.properties.name === stationName;
+  });
+}
+
 export {
   searchStations,
+  stationExists,
 };

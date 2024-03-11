@@ -12,13 +12,6 @@ function getStations() {
   });
 }
 
-function stationExists(stations, stationName) {
-  return stations.some((station) => {
-    return station.properties.name === stationName;
-  });
-}
-
 export {
   getStations,
-  stationExists,
 };

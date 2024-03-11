@@ -5,7 +5,7 @@ import linesData from '../assets/lines.geojson';
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { verifyIfConnected } from './graph.js';
-import { searchStations } from './utils.front.js';
+import { searchStations, stationExists } from './utils.front.js';
 
 const stations = stationsData.features.filter((s) => {
   return s.properties.adjacentStations && s.properties.name;
@@ -25,6 +25,7 @@ function createEventsForStationsList() {
     handleDropDownVisibility(input, dropdown);
   });
   input.addEventListener('input', () => {
+    input.classList.remove('is-invalid');
     handleDropDownVisibility(input, dropdown);
   });
 }
@@ -97,9 +98,14 @@ function handleClickOnTryButton({ pick }) {
   document.getElementById('try').addEventListener('click', () => {
     const input = document.getElementById('station');
     const stationName = input.value;
-    addStation({ stationName });
-    input.value = '';
-    isFinished({ addedStations, pick });
+    if (stationExists(stations, stationName)) {
+      addStation({ stationName });
+      input.value = '';
+      isFinished({ addedStations, pick });
+    }
+    else {
+      input.classList.add('is-invalid');
+    }
   });
 }
 function isFinished({ addedStations, pick }) {

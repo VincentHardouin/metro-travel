@@ -175,6 +175,7 @@
       <p id="instruction"></p>
       <svg id="carte"></svg>
       <div class="dropdown">
+        <label for="station" class="form-label">Nom d'une station</label>
         <input
           id="station"
           class="form-control"
@@ -182,7 +183,11 @@
           placeholder="Rechercher une station à ajouter"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          aria-describedby="station-validation"
         />
+        <div id="station-validation" class="invalid-feedback">
+          Le nom de station doit être valide.
+        </div>
         <ul id="stations" class="dropdown-menu"></ul>
       </div>
       <button id="try" class="btn btn-primary">Essayer</button>
