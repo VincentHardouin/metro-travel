@@ -101,7 +101,6 @@ function handleClickOnTryButton({ pick }) {
     const station = stations.find(d => d.properties.name === stationName);
     if (station) {
       addStation({ station });
-      console.log('onClick');
       input.value = '';
       isFinished({ addedStations, pick });
     }
