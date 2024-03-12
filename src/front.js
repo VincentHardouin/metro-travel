@@ -101,6 +101,7 @@ function handleClickOnTryButton({ pick }) {
     const station = stations.find(d => d.properties.name === stationName);
     if (station) {
       addStation({ station });
+      console.log('onClick');
       input.value = '';
       isFinished({ addedStations, pick });
     }
@@ -110,7 +111,7 @@ function handleClickOnTryButton({ pick }) {
   });
 }
 function isFinished({ addedStations, pick }) {
-  const isFinished = verifyIfConnected({ start: pick.start, end: pick.end, stations: [...addedStations.values()] });
+  const isFinished = verifyIfConnected({ start: pick.start.properties.name, end: pick.end.properties.name, stations: [...addedStations.values()] });
   if (isFinished) {
     const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
     const result = document.getElementById('result');
