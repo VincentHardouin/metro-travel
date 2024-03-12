@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/VincentHardouin/metro-travel/compare/v1.12.0...v1.12.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* show final modal ([7168016](https://github.com/VincentHardouin/metro-travel/commit/71680163e410e6594415fe27ba185de5258fcd7f))
+
 # [1.12.0](https://github.com/VincentHardouin/metro-travel/compare/v1.11.0...v1.12.0) (2024-03-11)
 
 
