@@ -2,6 +2,29 @@ import * as d3 from 'd3';
 
 const PARIS_COORDINATES = [2.3522, 48.8566];
 
+const color = {
+  '1': '#FFCE00',
+  '2': '#0064B0',
+  '3': '#9F9825',
+  '3bis': '#98D4E2',
+  '4': '#C04191',
+  '5': '#F28E42',
+  '6': '#83C491',
+  '7': '#F3A4BA',
+  '7bis': '#83C491',
+  '8': '#CEADD2',
+  '9': '#D5C900',
+  '10': '#E3B32A',
+  '11': '#8D5E2A',
+  '12': '#00814F',
+  '13': '#98D4E2',
+  '14': '#662483',
+  '15': '#B90845',
+  '16': '#F3A4BA',
+  '17': '#D5C900',
+  '18': '#00A88F',
+};
+
 class ParisMap {
   #arrondissements;
   #stations;
@@ -132,7 +155,7 @@ class ParisMap {
 
         this.#stationsNode.append('path')
           .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
-          .attr('stroke', 'black')
+          .attr('stroke', color[line.properties.ref])
           .attr('stroke-width', 2)
           .attr('fill', 'none');
       }
