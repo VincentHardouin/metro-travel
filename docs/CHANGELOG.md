@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/VincentHardouin/metro-travel/compare/v1.12.1...v1.13.0) (2024-03-13)
+
+
+### Features
+
+* show line color ([742908a](https://github.com/VincentHardouin/metro-travel/commit/742908ae1bbade097850df453909bd564420228c))
+
 ## [1.12.1](https://github.com/VincentHardouin/metro-travel/compare/v1.12.0...v1.12.1) (2024-03-12)
 
 
