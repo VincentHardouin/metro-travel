@@ -1,4 +1,3 @@
-- [ ] UX - Afficher les lignes de métro dans la bonne couleur
 - [ ] Ajouter un cout de changement de ligne sur le script de Dijkstra
 - [ ] UX - Map - Améliorer le responsive : se baser sur la hauteur de fenêtre aussi
 - [ ] UX - Ajouter les stations du joueur en dessous de la carte
@@ -9,6 +8,7 @@
 - [ ] Mode de Jeu - Ajouter un mode par temps entre stations
   - [ ] UX - Pouvoir activer/désactiver des stations
 - [ ] Script - Merge-duplicate-station - Ne pas prendre compte les tirets dans les noms : "Reuilly - Diderot" et "Reuilly — Diderot
+- [X] UX - Afficher les lignes de métro dans la bonne couleur
 - [x] UX - Modale de fin - Ajouter le chemin le plus court et le chemin du joueur
 - [x] UX - Search Input - Ajouter un feedback si la station n'existe pas
 - [x] UX - Search Input - Retirer les stations déjà ajoutées
