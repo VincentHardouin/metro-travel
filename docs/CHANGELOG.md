@@ -5,6 +5,8 @@
 
 * remove useless data in lines and stations ([13db2e8](https://github.com/VincentHardouin/metro-travel/commit/13db2e86dacb1bf38bea9072736a7e0454953306))
 
+![1.14.0](./screenshots/1.14.0-desktop.png) ![1.14.0](./screenshots/1.14.0-mobile.png) 
+
 # [1.13.0](https://github.com/VincentHardouin/metro-travel/compare/v1.12.1...v1.13.0) (2024-03-13)
 
 
