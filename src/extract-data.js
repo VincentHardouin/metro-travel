@@ -12,8 +12,38 @@ export async function extractData() {
   const mergedStations = mergeDuplicateStations({ data: { ...data } });
   const lines = extractLines({ data: { ...data } });
   const stations = addAdjacentStations({ linesData: { ...lines }, stationsData: { ...mergedStations } });
-  await _writeData(join(__dirname, '../assets/stations.geojson'), stations);
-  await _writeData(join(__dirname, '../assets/lines.geojson'), lines);
+  const reducedStations = keepNeededStationMetadata({ data: { ...stations } });
+  const reducedLines = keepNeededLineMetadata({ data: { ...lines } });
+  await _writeData(join(__dirname, '../assets/stations.geojson'), reducedStations);
+  await _writeData(join(__dirname, '../assets/lines.geojson'), reducedLines);
+}
+
+function keepNeededLineMetadata({ data }) {
+  const keepProperties = ({ name, ref, from, to, color }) => ({ name, ref, from, to, color });
+  return {
+    type: 'FeatureCollection',
+    features: data.features.map((f) => {
+      return {
+        type: 'Feature',
+        properties: keepProperties(f.properties),
+        geometry: f.geometry,
+      };
+    }),
+  };
+}
+
+function keepNeededStationMetadata({ data }) {
+  const keepProperties = ({ name, coordinates, lines, inLineIndex, adjacentStations }) => ({ name, coordinates, lines, inLineIndex, adjacentStations });
+  return {
+    type: 'FeatureCollection',
+    features: data.features.map((f) => {
+      return {
+        geometry: f.geometry,
+        properties: keepProperties(f.properties),
+        type: 'Feature',
+      };
+    }),
+  };
 }
 
 async function _getData(path) {

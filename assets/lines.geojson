@@ -4,33 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123564",
-        "colour": "#d282be",
-        "from": "Créteil - Pointe du Lac",
-        "line": "subway",
         "name": "Ligne 8 : Créteil-Pointe du Lac → Balard",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "8",
-        "ref:FR:RATP": "1001100080001",
-        "route": "subway",
-        "short_name": "M8",
-        "to": "Balard",
-        "twitter": "Ligne8_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50751",
-        "wikipedia": "fr:Ligne 8 du métro de Paris",
-        "@timestamp": "2024-02-10T06:48:34Z",
-        "@version": "102",
-        "@changeset": "147281925",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Créteil - Pointe du Lac",
+        "to": "Balard"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -1944,39 +1921,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123564"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123652",
-        "colour": "#ff82b4",
-        "from": "La Courneuve - 8 mai 1945",
         "name": "Ligne 7 :  La Courneuve - 8 mai 1945 → Mairie d'Ivry",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "7",
-        "ref:FR:RATP": "1001100070001",
-        "route": "subway",
-        "short_name": "M7",
-        "stops": "38",
-        "to": "Mairie d'Ivry",
-        "twitter": "Ligne7_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50748",
-        "wikipedia": "fr:Ligne 7 du métro de Paris",
-        "@timestamp": "2024-02-10T06:34:50Z",
-        "@version": "70",
-        "@changeset": "147281698",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "La Courneuve - 8 mai 1945",
+        "to": "Mairie d'Ivry"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3142,40 +3095,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123652"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123674",
-        "air_conditioning": "yes",
-        "colour": "#FF7F32",
-        "from": "Bobigny – Pablo Picasso",
         "name": "Ligne 5 : Bobigny-Pablo Picasso → Place d'Italie",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "5",
-        "ref:FR:RATP": "1001100050001",
-        "route": "subway",
-        "short_name": "M5",
-        "stops": "22",
-        "to": "Place d'Italie",
-        "twitter": "Ligne5_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50745",
-        "wikipedia": "fr:Ligne 5 du métro de Paris",
-        "@timestamp": "2024-02-10T16:51:48Z",
-        "@version": "81",
-        "@changeset": "147300445",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Bobigny – Pablo Picasso",
+        "to": "Place d'Italie"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4831,40 +4759,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123674"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123737",
-        "air_conditioning": "yes",
-        "colour": "#640082",
-        "from": "Mairie de Saint-Ouen",
-        "line": "subway",
         "name": "Ligne 14 : Mairie de Saint-Ouen → Olympiades",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "14",
-        "ref:FR:RATP": "1001100140001",
-        "route": "subway",
-        "short_name": "M14",
-        "to": "Olympiades",
-        "twitter": "Ligne14_RATP",
-        "type": "route",
-        "wheelchair": "yes",
-        "wikidata": "Q50761",
-        "wikipedia": "fr:Ligne 14 du métro de Paris",
-        "@timestamp": "2024-02-10T09:06:49Z",
-        "@version": "71",
-        "@changeset": "147284864",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie de Saint-Ouen",
+        "to": "Olympiades"
       },
       "geometry": {
         "type": "LineString",
@@ -5658,39 +5561,15 @@
             48.8270333
           ]
         ]
-      },
-      "id": "relation/123737"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123767",
-        "colour": "#a0006e",
-        "from": "Porte de Clignancourt",
-        "line": "subway",
         "name": "Ligne 4 : Porte de Clignancourt → Bagneux-Lucie Aubrac",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "4",
-        "ref:FR:RATP": "1001100040001",
-        "route": "subway",
-        "short_name": "M4",
-        "to": "Bagneux-Lucie Aubrac",
-        "twitter": "Ligne4_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50743",
-        "wikipedia": "fr:Ligne 4 du métro de Paris",
-        "@timestamp": "2024-02-13T07:39:43Z",
-        "@version": "97",
-        "@changeset": "147396417",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Porte de Clignancourt",
+        "to": "Bagneux-Lucie Aubrac"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7162,39 +7041,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123767"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123768",
-        "colour": "#dc9600",
-        "from": "Boulogne - Pont de Saint-Cloud",
-        "line": "subway",
         "name": "Ligne 10 : Boulogne - Pont de Saint-Cloud → Gare d'Austerlitz",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "10",
-        "ref:FR:RATP": "1001100100001",
-        "route": "subway",
-        "short_name": "M10",
-        "to": "Gare d'Austerlitz",
-        "twitter": "Ligne10_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50754",
-        "wikipedia": "fr:Ligne 10 du métro de Paris",
-        "@timestamp": "2024-02-10T21:09:58Z",
-        "@version": "73",
-        "@changeset": "147308595",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Boulogne - Pont de Saint-Cloud",
+        "to": "Gare d'Austerlitz"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -8056,39 +7911,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123768"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123775",
-        "colour": "#00643c",
-        "from": "Mairie d'Aubervilliers",
         "name": "Ligne 12 : Mairie d'Aubervilliers → Mairie d'Issy",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "old_name": "Ligne A du Nord-Sud",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "12",
-        "ref:FR:RATP": "1001100120001",
-        "route": "subway",
-        "short_name": "M12",
-        "to": "Mairie d'Issy",
-        "twitter": "Ligne12_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50757",
-        "wikipedia": "fr:Ligne 12 du métro de Paris",
-        "@timestamp": "2024-02-10T08:52:50Z",
-        "@version": "71",
-        "@changeset": "147284488",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie d'Aubervilliers",
+        "to": "Mairie d'Issy"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9638,40 +9469,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123775"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123782",
-        "air_conditioning": "yes",
-        "colour": "#d2d200",
-        "from": "Pont de Sèvres",
-        "line": "subway",
         "name": "Ligne 9 : Pont de Sèvres → Mairie de Montreuil",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "9",
-        "ref:FR:RATP": "1001100090001",
-        "route": "subway",
-        "short_name": "M9",
-        "to": "Mairie de Montreuil",
-        "twitter": "Ligne9_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50753",
-        "wikipedia": "fr:Ligne 9 du métro de Paris",
-        "@timestamp": "2024-02-10T17:10:15Z",
-        "@version": "75",
-        "@changeset": "147301021",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Pont de Sèvres",
+        "to": "Mairie de Montreuil"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -10677,43 +10483,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123782"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123784",
-        "air_conditioning": "yes",
-        "bicycle:conditional": "yes @ (Su 05:30-16:30)",
-        "colour": "#ffbe00",
-        "from": "Château de Vincennes",
-        "line": "subway",
         "name": "Ligne 1 : Château de Vincennes → La Défense (Grande Arche)",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "1",
-        "ref:FR:RATP": "1001100010001",
-        "ref:structurae": "10000240",
-        "route": "subway",
-        "short_name": "M1",
-        "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
-        "to": "La Défense (Grande Arche)",
-        "twitter": "Ligne1_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q13224",
-        "wikipedia": "fr:Ligne 1 du métro de Paris",
-        "@timestamp": "2024-02-12T07:39:51Z",
-        "@version": "131",
-        "@changeset": "147354653",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Château de Vincennes",
+        "to": "La Défense (Grande Arche)"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -12335,37 +12113,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123784"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123789",
-        "colour": "#6e6e00",
-        "from": "Pont de Levallois",
         "name": "Ligne 3 : Pont de Levallois - Bécon → Gallieni",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "3",
-        "ref:FR:RATP": "1001100030001",
-        "route": "subway",
-        "short_name": "M3",
-        "stops": "25",
-        "to": "Gallieni",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50741",
-        "@timestamp": "2024-02-10T22:55:02Z",
-        "@version": "82",
-        "@changeset": "147310990",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Pont de Levallois",
+        "to": "Gallieni"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -13303,39 +13059,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123789"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123792",
-        "colour": "#6e491e",
-        "from": "Châtelet",
         "name": "Ligne 11 : Châtelet → Mairie des Lilas",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "11",
-        "ref:FR:RATP": "1001100110001",
-        "route": "subway",
-        "short_name": "M11",
-        "stops": "13",
-        "to": "Mairie des Lilas",
-        "twitter": "Ligne11_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50756",
-        "wikipedia": "fr:Ligne 11 du métro de Paris",
-        "@timestamp": "2024-02-10T17:40:44Z",
-        "@version": "71",
-        "@changeset": "147302050",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Châtelet",
+        "to": "Mairie des Lilas"
       },
       "geometry": {
         "type": "LineString",
@@ -14049,41 +13781,15 @@
             48.8796198
           ]
         ]
-      },
-      "id": "relation/123792"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123799",
-        "colour": "#82c8e6",
-        "colour:back": "#99D5E3",
-        "colour:text": "#202C38",
-        "from": "Saint-Denis - Université",
-        "line": "subway",
         "name": "Ligne 13 : Saint-Denis-Université → Châtillon-Montrouge",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "13",
-        "ref:FR:RATP": "1001100130001",
-        "route": "subway",
-        "short_name": "M13",
-        "to": "Châtillon - Montrouge",
-        "twitter": "Ligne13_RATP",
-        "type": "route",
-        "wheelchair": "limited",
-        "wikidata": "Q50759",
-        "wikipedia": "fr:Ligne 13 du métro de Paris",
-        "@timestamp": "2024-02-12T08:45:32Z",
-        "@version": "97",
-        "@changeset": "147356463",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Saint-Denis - Université",
+        "to": "Châtillon - Montrouge"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -15691,36 +15397,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123799"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123802",
-        "colour": "#82c8e6",
-        "from": "Porte des Lilas",
         "name": "Ligne 3bis :  Porte des Lilas → Gambetta",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
         "ref": "3bis",
-        "ref:FR:RATP": "1001101030001",
-        "route": "subway",
-        "short_name": "M3bis",
-        "source:colour": "opendata RATP",
-        "to": "Gambetta",
-        "twitter": "Ligne3_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50742",
-        "wikipedia": "fr:Ligne 3 bis du métro de Paris",
-        "@timestamp": "2024-02-10T10:52:08Z",
-        "@version": "35",
-        "@changeset": "147287737",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Porte des Lilas",
+        "to": "Gambetta"
       },
       "geometry": {
         "type": "LineString",
@@ -15810,42 +15495,15 @@
             48.8651235
           ]
         ]
-      },
-      "id": "relation/123802"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123912",
-        "colour": "#82dc73",
-        "from": "Charles de Gaulle-Étoile",
-        "line": "subway",
         "name": "Ligne 6 : Charles de Gaulle-Étoile → Nation",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
-        "railway:track_ref": "2",
         "ref": "6",
-        "ref:FR:RATP": "1001100060001",
-        "route": "subway",
-        "short_name": "M6",
-        "start_date": "1909-03-01",
-        "to": "Nation",
-        "twitter": "Ligne6_RATP",
-        "type": "route",
-        "via": "Montparnasse-Bienvenüe",
-        "wheelchair": "no",
-        "wikidata": "Q50746",
-        "wikipedia": "fr:Ligne 6 du métro de Paris",
-        "@timestamp": "2024-02-13T08:09:43Z",
-        "@version": "106",
-        "@changeset": "147397412",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Charles de Gaulle-Étoile",
+        "to": "Nation"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -17527,40 +17185,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123912"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/123917",
-        "air_conditioning": "yes",
-        "colour": "#0055c8",
-        "from": "Nation",
         "name": "Ligne 2 : Nation → Porte Dauphine",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "2",
-        "ref:FR:RATP": "1001100020001",
-        "route": "subway",
-        "short_name": "M2",
-        "stops": "25",
-        "to": "Porte Dauphine",
-        "twitter": "Ligne2_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50718",
-        "wikipedia": "fr:Ligne 2 du métro de Paris",
-        "@timestamp": "2024-02-11T09:45:29Z",
-        "@version": "71",
-        "@changeset": "147320555",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Nation",
+        "to": "Porte Dauphine"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -18562,36 +18195,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/123917"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/2554093",
-        "colour": "#82dc73",
-        "from": "Louis Blanc",
         "name": "Ligne 7 bis : Ligne 7 bis : Louis Blanc → Pré Saint-Gervais → Louis Blanc",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "public_transport:version": "2",
         "ref": "7bis",
-        "ref:FR:RATP": "1001101070001",
-        "route": "subway",
-        "short_name": "M7bis",
-        "to": "Louis Blanc",
-        "twitter": "Ligne7_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50749",
-        "wikipedia": "fr:Ligne 7 bis du métro de Paris",
-        "@timestamp": "2024-02-10T10:17:01Z",
-        "@version": "32",
-        "@changeset": "147286689",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Louis Blanc",
+        "to": "Louis Blanc"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -19217,39 +18829,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/2554093"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3326844",
-        "colour": "#a0006e",
-        "from": "Bagneux-Lucie Aubrac",
-        "line": "subway",
         "name": "Ligne 4 : Bagneux-Lucie Aubrac → Porte de Clignancourt",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "4",
-        "ref:FR:RATP": "1001100040001",
-        "route": "subway",
-        "short_name": "M4",
-        "to": "Porte de Clignancourt",
-        "twitter": "Ligne4_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50743",
-        "wikipedia": "fr:Ligne 4 du métro de Paris",
-        "@timestamp": "2024-02-13T07:39:43Z",
-        "@version": "72",
-        "@changeset": "147396417",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Bagneux-Lucie Aubrac",
+        "to": "Porte de Clignancourt"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -20821,42 +20409,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3326844"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328692",
-        "bicycle:conditional": "yes @ (Su 05:30-16:30)",
-        "colour": "#ffbe00",
-        "from": "La Défense (Grande Arche)",
-        "line": "subway",
         "name": "Ligne 1 : La Défense (Grande Arche) → Château de Vincennes",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "1",
-        "ref:FR:RATP": "1001100010001",
-        "ref:structurae": "10000240",
-        "route": "subway",
-        "short_name": "M1",
-        "source": "http://www.ratp.fr/fr/ratp/r_102432/cyclistes-et-pietons/",
-        "to": "Château de Vincennes",
-        "twitter": "Ligne1_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q13224",
-        "wikipedia": "fr:Ligne 1 du métro de Paris",
-        "@timestamp": "2024-02-12T07:46:00Z",
-        "@version": "73",
-        "@changeset": "147354817",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "La Défense (Grande Arche)",
+        "to": "Château de Vincennes"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -22404,40 +21965,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328692"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328693",
-        "air_conditioning": "yes",
-        "colour": "#640082",
-        "from": "Olympiades",
-        "line": "subway",
         "name": "Ligne 14 : Olympiades → Mairie de Saint-Ouen",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "14",
-        "ref:FR:RATP": "1001100140001",
-        "route": "subway",
-        "short_name": "M14",
-        "to": "Mairie de Saint-Ouen",
-        "twitter": "Ligne14_RATP",
-        "type": "route",
-        "wheelchair": "yes",
-        "wikidata": "Q50761",
-        "wikipedia": "fr:Ligne 14 du métro de Paris",
-        "@timestamp": "2024-02-11T14:23:13Z",
-        "@version": "50",
-        "@changeset": "147329688",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Olympiades",
+        "to": "Mairie de Saint-Ouen"
       },
       "geometry": {
         "type": "LineString",
@@ -23231,40 +22767,15 @@
             48.8270157
           ]
         ]
-      },
-      "id": "relation/3328693"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328716",
-        "air_conditioning": "yes",
-        "colour": "#d2d200",
-        "from": "Mairie de Montreuil",
-        "line": "subway",
         "name": "Ligne 9 : Mairie de Montreuil → Pont de Sèvres",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "9",
-        "ref:FR:RATP": "1001100090001",
-        "route": "subway",
-        "short_name": "M9",
-        "to": "Pont de Sèvres",
-        "twitter": "Ligne9_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50753",
-        "wikipedia": "fr:Ligne 9 du métro de Paris",
-        "@timestamp": "2024-02-10T17:16:37Z",
-        "@version": "46",
-        "@changeset": "147301209",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie de Montreuil",
+        "to": "Pont de Sèvres"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -24290,39 +23801,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328716"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328740",
-        "colour": "#dc9600",
-        "from": "Gare d'Austerlitz",
-        "line": "subway",
         "name": "Ligne 10 : Gare d'Austerlitz → Boulogne - Pont de Saint-Cloud",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "10",
-        "ref:FR:RATP": "1001100100001",
-        "route": "subway",
-        "short_name": "M10",
-        "to": "Boulogne - Pont de Saint-Cloud",
-        "twitter": "Ligne10_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50754",
-        "wikipedia": "fr:Ligne 10 du métro de Paris",
-        "@timestamp": "2024-02-10T21:19:26Z",
-        "@version": "44",
-        "@changeset": "147308851",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Gare d'Austerlitz",
+        "to": "Boulogne - Pont de Saint-Cloud"
       },
       "geometry": {
         "type": "LineString",
@@ -25284,42 +24771,15 @@
             48.8408075
           ]
         ]
-      },
-      "id": "relation/3328740"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328764",
-        "colour": "#82dc73",
-        "from": "Nation",
-        "line": "subway",
         "name": "Ligne 6 : Nation → Charles de Gaulle-Étoile",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
-        "railway:track_ref": "1",
         "ref": "6",
-        "ref:FR:RATP": "1001100060001",
-        "route": "subway",
-        "short_name": "M6",
-        "start_date": "1909-03-01",
-        "to": "Charles de Gaulle-Étoile",
-        "twitter": "Ligne6_RATP",
-        "type": "route",
-        "via": "Montparnasse-Bienvenüe",
-        "wheelchair": "no",
-        "wikidata": "Q50746",
-        "wikipedia": "fr:Ligne 6 du métro de Paris",
-        "@timestamp": "2024-02-13T08:09:43Z",
-        "@version": "85",
-        "@changeset": "147397412",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Nation",
+        "to": "Charles de Gaulle-Étoile"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -26897,39 +26357,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328764"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328804",
-        "colour": "#ff82b4",
-        "from": "Mairie d'Ivry",
         "name": "Ligne 7 :  Mairie d'Ivry → La Courneuve - 8 mai 1945",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "7",
-        "ref:FR:RATP": "1001100070001",
-        "route": "subway",
-        "short_name": "M7",
-        "stops": "38",
-        "to": "La Courneuve - 8 mai 1945",
-        "twitter": "Ligne7_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50748",
-        "wikipedia": "fr:Ligne 7 du métro de Paris",
-        "@timestamp": "2024-02-10T06:34:50Z",
-        "@version": "39",
-        "@changeset": "147281698",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie d'Ivry",
+        "to": "La Courneuve - 8 mai 1945"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -28023,35 +27459,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328804"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328811",
-        "colour": "#ff82b4",
-        "from": "Villejuif - Louis Aragon",
         "name": "Ligne 7 : Villejuif - Louis Aragon → La Courneuve - 8 mai 1945",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "7",
-        "route": "subway",
-        "short_name": "M7",
-        "to": "La Courneuve - 8 mai 1945",
-        "type": "route",
-        "wikidata": "Q50748",
-        "wikipedia": "en:Paris Métro Line 7",
-        "@timestamp": "2024-02-10T06:34:50Z",
-        "@version": "28",
-        "@changeset": "147281698",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Villejuif - Louis Aragon",
+        "to": "La Courneuve - 8 mai 1945"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -29281,35 +28697,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328811"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/3328812",
-        "colour": "#ff82b4",
-        "from": "La Courneuve - 8 mai 1945",
         "name": "Ligne 7 : La Courneuve - 8 mai 1945 → Villejuif - Louis Aragon",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "7",
-        "route": "subway",
-        "short_name": "M7",
-        "to": "Villejuif - Louis Aragon",
-        "type": "route",
-        "wikidata": "Q50748",
-        "wikipedia": "en:Paris Métro Line 7",
-        "@timestamp": "2024-02-10T06:34:50Z",
-        "@version": "32",
-        "@changeset": "147281698",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "La Courneuve - 8 mai 1945",
+        "to": "Villejuif - Louis Aragon"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -30611,38 +30007,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/3328812"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/4728208",
-        "air_conditioning": "yes",
-        "colour": "#0055c8",
-        "from": "Porte Dauphine",
         "name": "Ligne 2 : Porte Dauphine → Nation",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "public_transport:version": "2",
         "ref": "2",
-        "ref:FR:RATP": "1001100020001",
-        "route": "subway",
-        "short_name": "M2",
-        "stops": "25",
-        "to": "Nation",
-        "twitter": "Ligne2_RATP",
-        "type": "route",
-        "wheelchair": "limited",
-        "wikidata": "Q50718",
-        "wikipedia": "fr:Ligne 2 du métro de Paris",
-        "@timestamp": "2024-02-13T21:55:40Z",
-        "@version": "36",
-        "@changeset": "147428203",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Porte Dauphine",
+        "to": "Nation"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -31688,40 +31061,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/4728208"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/4730854",
-        "air_conditioning": "yes",
-        "colour": "#FF7F32",
-        "from": "Place d'Italie",
         "name": "Ligne 5 : Place d'Italie → Bobigny-Pablo Picasso",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "5",
-        "ref:FR:RATP": "1001100050001",
-        "route": "subway",
-        "short_name": "M5",
-        "stops": "22",
-        "to": "Bobigny – Pablo Picasso",
-        "twitter": "Ligne5_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50745",
-        "wikipedia": "fr:Ligne 5 du métro de Paris",
-        "@timestamp": "2024-02-10T16:51:48Z",
-        "@version": "53",
-        "@changeset": "147300445",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Place d'Italie",
+        "to": "Bobigny – Pablo Picasso"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -33381,35 +32729,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/4730854"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/5456573",
-        "colour": "#82c8e6",
-        "from": "Gambetta",
         "name": "Ligne 3bis : Gambetta → Porte des Lilas",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
         "ref": "3bis",
-        "ref:FR:RATP": "1001101030001",
-        "route": "subway",
-        "short_name": "M3bis",
-        "source:colour": "opendata RATP",
-        "to": "Porte des Lilas",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50742",
-        "wikipedia": "fr:Ligne 3 bis du métro de Paris",
-        "@timestamp": "2024-02-10T10:52:08Z",
-        "@version": "16",
-        "@changeset": "147287737",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Gambetta",
+        "to": "Porte des Lilas"
       },
       "geometry": {
         "type": "LineString",
@@ -33507,39 +32835,15 @@
             48.8651235
           ]
         ]
-      },
-      "id": "relation/5456573"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/5456634",
-        "colour": "#6e491e",
-        "from": "Mairie des Lilas",
         "name": "Ligne 11 : Mairie des Lilas → Châtelet",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "11",
-        "ref:FR:RATP": "1001100110001",
-        "route": "subway",
-        "short_name": "M11",
-        "stops": "13",
-        "to": "Châtelet",
-        "twitter": "Ligne11_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50756",
-        "wikipedia": "fr:Ligne 11 du métro de Paris",
-        "@timestamp": "2024-02-10T21:29:29Z",
-        "@version": "29",
-        "@changeset": "147309116",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie des Lilas",
+        "to": "Châtelet"
       },
       "geometry": {
         "type": "LineString",
@@ -34249,39 +33553,15 @@
             48.8578177
           ]
         ]
-      },
-      "id": "relation/5456634"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731178",
-        "colour": "#00643c",
-        "from": "Mairie d'Issy",
         "name": "Ligne 12 : Mairie d'Issy → Mairie d'Aubervilliers",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "old_name": "Ligne A du Nord-Sud",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "12",
-        "ref:FR:RATP": "1001100120001",
-        "route": "subway",
-        "short_name": "M12",
-        "to": "Mairie d'Aubervilliers",
-        "twitter": "Ligne12_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50757",
-        "wikipedia": "fr:Ligne 12 du métro de Paris",
-        "@timestamp": "2024-02-10T08:12:00Z",
-        "@version": "22",
-        "@changeset": "147283510",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Mairie d'Issy",
+        "to": "Mairie d'Aubervilliers"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -35747,39 +35027,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731178"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731215",
-        "colour": "#d282be",
-        "from": "Balard",
-        "line": "subway",
         "name": "Ligne 8 : Balard → Créteil - Pointe du Lac",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "8",
-        "ref:FR:RATP": "1001100080001",
-        "route": "subway",
-        "short_name": "M8",
-        "to": "Créteil - Pointe du Lac",
-        "twitter": "Ligne8_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50751",
-        "wikipedia": "fr:Ligne 8 du métro de Paris",
-        "@timestamp": "2024-02-10T06:48:34Z",
-        "@version": "44",
-        "@changeset": "147281925",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Balard",
+        "to": "Créteil - Pointe du Lac"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -37821,39 +37077,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731215"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731233",
-        "colour": "#82c8e6",
-        "from": "Châtillon-Montrouge",
-        "line": "subway",
         "name": "Ligne 13 : Châtillon-Montrouge → Saint-Denis-Université",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "13",
-        "ref:FR:RATP": "1001100130001",
-        "route": "subway",
-        "short_name": "M13",
-        "to": "Saint-Denis-Université",
-        "twitter": "Ligne13_RATP",
-        "type": "route",
-        "wheelchair": "limited",
-        "wikidata": "Q50759",
-        "wikipedia": "fr:Ligne 13 du métro de Paris",
-        "@timestamp": "2024-02-12T08:35:39Z",
-        "@version": "56",
-        "@changeset": "147356167",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Châtillon-Montrouge",
+        "to": "Saint-Denis-Université"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -39445,38 +38677,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731233"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731234",
-        "colour": "#82c8e6",
-        "from": "Châtillon-Montrouge",
         "name": "Ligne 13 : Châtillon-Montrouge → (Asnières-Genevilliers) Les Courtilles",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "13",
-        "ref:FR:RATP": "1001100130001",
-        "route": "subway",
-        "short_name": "M13",
-        "to": "(Asnières-Genevilliers) Les Courtilles",
-        "twitter": "Ligne13_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50759",
-        "wikipedia": "fr:Ligne 13 du métro de Paris",
-        "@timestamp": "2024-02-11T13:55:27Z",
-        "@version": "56",
-        "@changeset": "147328710",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "Châtillon-Montrouge",
+        "to": "(Asnières-Genevilliers) Les Courtilles"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -41086,38 +40295,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731234"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731235",
-        "colour": "#82c8e6",
-        "from": "(Asnières-Genevilliers) Les Courtilles",
         "name": "Ligne 13 : (Asnières-Genevilliers) Les Courtilles → Châtillon-Montrouge",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "13",
-        "ref:FR:RATP": "1001100130001",
-        "route": "subway",
-        "short_name": "M13",
-        "to": "Châtillon-Montrouge",
-        "twitter": "Ligne13_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50759",
-        "wikipedia": "fr:Ligne 13 du métro de Paris",
-        "@timestamp": "2024-02-11T14:11:07Z",
-        "@version": "54",
-        "@changeset": "147329246",
-        "@user": "michel60",
-        "@uid": "211063"
+        "from": "(Asnières-Genevilliers) Les Courtilles",
+        "to": "Châtillon-Montrouge"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -42787,39 +41973,15 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731235"
+      }
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/7731250",
-        "colour": "#6e6e00",
-        "from": "Gallieni",
         "name": "Ligne 3 : Gallieni → Pont de Levallois - Bécon",
-        "network": "Métro de Paris",
-        "network:wikidata": "Q50716",
-        "network:wikipedia": "fr:Métro de Paris",
-        "operator": "RATP",
-        "operator:wikidata": "Q643290",
-        "operator:wikipedia": "fr:Régie autonome des transports parisiens",
-        "public_transport:version": "2",
         "ref": "3",
-        "ref:FR:RATP": "1001100030001",
-        "route": "subway",
-        "short_name": "M3",
-        "stops": "25",
-        "to": "Pont de Levallois",
-        "twitter": "Ligne3_RATP",
-        "type": "route",
-        "wheelchair": "no",
-        "wikidata": "Q50741",
-        "wikipedia": "fr:Ligne 3 du métro de Paris",
-        "@timestamp": "2024-02-10T22:55:02Z",
-        "@version": "37",
-        "@changeset": "147310990",
-        "@user": "Claudius Henrichs",
-        "@uid": "18069"
+        "from": "Gallieni",
+        "to": "Pont de Levallois"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -43733,8 +42895,7 @@
             ]
           ]
         ]
-      },
-      "id": "relation/7731250"
+      }
     }
   ]
 }
