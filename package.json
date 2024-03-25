@@ -21,7 +21,7 @@
     "build": "parcel build",
     "lint": "eslint .",
     "test": "vitest",
-    "screenshots": "node src/capture-version.js"
+    "screenshots": "node scripts/capture-version.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
