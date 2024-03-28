@@ -30,24 +30,47 @@ async function getStops() {
 }
 
 async function getAdjacentStations() {
-  const adjacentStations = await knex
-    .with('stop_with_adjacent_station', knex
-      .distinct(
-        'st.stop_id as from_stop_id',
-        'adjacent_stops.stop_id as to_stop_id',
-        knex.raw(`CASE
-            WHEN st.arrival_time::interval <= adjacent_stops.arrival_time::interval
-                 THEN (adjacent_stops.arrival_time::interval - st.arrival_time::interval)::TEXT
-             ELSE (st.arrival_time::interval - adjacent_stops.arrival_time::interval)::TEXT
-            END AS duration`),
-      )
-      .from('stop_times as st')
-      .join('stop_times as adjacent_stops', 'st.trip_id', 'adjacent_stops.trip_id')
-      .join('trips as t', 'st.trip_id', 't.trip_id')
-      .join('routes as r', 't.route_id', 'r.route_id')
-      .whereRaw('ABS(st.stop_sequence - adjacent_stops.stop_sequence) = 1')
-      .andWhere('r.route_type', 1)).select('from_stop_id', 'to_stop_id', knex.min('duration').as('time')).from('stop_with_adjacent_station').groupBy('from_stop_id', 'to_stop_id');
-  return adjacentStations;
+  return knex.with('stop_ids', (qb) => {
+    qb.select('stop_id', 'routes.route_short_name')
+      .distinct()
+      .from('stop_times')
+      .join('trips', 'stop_times.trip_id', '=', 'trips.trip_id')
+      .join('routes', 'trips.route_id', '=', 'routes.route_id')
+      .where('routes.route_type', 1);
+  })
+    .with('adjacent_stops_in_transfers', (qb) => {
+      qb.select('from_stop_id', 'to_stop_id', 'min_transfer_time as duration')
+        .distinct()
+        .from('transfers')
+        .join('stop_ids as fs', 'fs.stop_id', '=', 'transfers.from_stop_id')
+        .join('stop_ids as ts', 'ts.stop_id', '=', 'transfers.to_stop_id');
+    })
+    .with('adjacent_stops_by_routes', (qb) => {
+      qb.select('st.stop_id as from_stop_id', 'adjacent_stops.stop_id as to_stop_id')
+        .distinct()
+        .select(knex.raw(`CASE
+      WHEN st.arrival_time::interval <= adjacent_stops.arrival_time::interval
+        THEN EXTRACT(epoch from (adjacent_stops.arrival_time::interval - st.arrival_time::interval))::int
+      ELSE EXTRACT(epoch from (st.arrival_time::interval - adjacent_stops.arrival_time::interval))::int
+      END as duration`))
+        .from('stop_times as st')
+        .join('stop_times as adjacent_stops', 'st.trip_id', '=', 'adjacent_stops.trip_id')
+        .join('stop_ids as fs', 'st.stop_id', '=', 'fs.stop_id')
+        .join('stop_ids as ts', 'adjacent_stops.stop_id', '=', 'ts.stop_id')
+        .whereRaw('ABS(st.stop_sequence - adjacent_stops.stop_sequence) = 1');
+    })
+    .with('adjacent_stops', (qb) => {
+      qb.select('from_stop_id', 'to_stop_id', 'duration')
+        .from('adjacent_stops_by_routes')
+        .union(function () {
+          this.select('from_stop_id', 'to_stop_id', 'duration')
+            .from('adjacent_stops_in_transfers');
+        });
+    })
+    .select('from_stop_id', 'to_stop_id')
+    .min('duration as time')
+    .from('adjacent_stops')
+    .groupBy('from_stop_id', 'to_stop_id');
 }
 
 export { getRoutes, getStops, getAdjacentStations };
