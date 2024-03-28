@@ -45,7 +45,7 @@ export async function listAllTableNames() {
 
 export async function emptyAllTables() {
   const tableNames = await listAllTableNames();
-  const tablesToDelete = tableNames.filter(name => ['knex_migrations', 'knex_migrations_lock', 'pix_roles'].includes(name));
+  const tablesToDelete = tableNames.filter(name => !['knex_migrations', 'knex_migrations_lock'].includes(name));
 
   const tables = tablesToDelete.map(tableToDelete => `"${tableToDelete}"`).join();
 
