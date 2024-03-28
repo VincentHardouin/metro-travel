@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mergeDuplicateStations } from '../src/merge-duplicate-stations.js';
+import { mergeDuplicateStations } from '../scripts/merge-duplicate-stations.js';
 
 describe('merge-duplicate-stations', () => {
   it('should keep only metro stations with relations', () => {
