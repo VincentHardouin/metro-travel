@@ -29,4 +29,25 @@ async function getStops() {
   });
 }
 
-export { getRoutes, getStops };
+async function getAdjacentStations() {
+  const adjacentStations = await knex
+    .with('stop_with_adjacent_station', knex
+      .distinct(
+        'st.stop_id as from_stop_id',
+        'adjacent_stops.stop_id as to_stop_id',
+        knex.raw(`CASE
+            WHEN st.arrival_time::interval <= adjacent_stops.arrival_time::interval
+                 THEN (adjacent_stops.arrival_time::interval - st.arrival_time::interval)::TEXT
+             ELSE (st.arrival_time::interval - adjacent_stops.arrival_time::interval)::TEXT
+            END AS duration`),
+      )
+      .from('stop_times as st')
+      .join('stop_times as adjacent_stops', 'st.trip_id', 'adjacent_stops.trip_id')
+      .join('trips as t', 'st.trip_id', 't.trip_id')
+      .join('routes as r', 't.route_id', 'r.route_id')
+      .whereRaw('ABS(st.stop_sequence - adjacent_stops.stop_sequence) = 1')
+      .andWhere('r.route_type', 1)).select('from_stop_id', 'to_stop_id', knex.min('duration').as('time')).from('stop_with_adjacent_station').groupBy('from_stop_id', 'to_stop_id');
+  return adjacentStations;
+}
+
+export { getRoutes, getStops, getAdjacentStations };
