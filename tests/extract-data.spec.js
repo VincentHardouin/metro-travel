@@ -1,7 +1,13 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { saveRoutes, saveStopTimes, saveStops, saveTransfers, saveTrips } from '../scripts/save-data.js';
-import { getAdjacentStations, getRoutes, getStops } from '../scripts/extract-data.js';
-import { emptyAllTables, knex } from '../db/knex-database-connection.js';
+import {
+  fillPathsInAdjacentStation,
+  getAdjacentStations,
+  getRoutes,
+  getRoutesPaths,
+  getStops,
+} from '../scripts/extract-data.js';
+import { emptyAllTables } from '../db/knex-database-connection.js';
 
 describe('extract-data', () => {
   afterEach(async () => {
@@ -47,13 +53,6 @@ describe('extract-data', () => {
   });
 
   describe('#getStops', () => {
-    afterEach(async () => {
-      await knex('routes').del();
-      await knex('trips').del();
-      await knex('stop_times').del();
-      await knex('stops').del();
-    });
-
     it('should extract stops', async () => {
       const routes = [
         {
@@ -142,7 +141,7 @@ describe('extract-data', () => {
           stop_lon: 2.373273,
           zone_id: '',
           stop_url: '',
-          parent_station: '',
+          parent_station: 'IDFM:C01372',
           platform_code: '',
         },
         {
@@ -168,6 +167,7 @@ describe('extract-data', () => {
           stop_lon: 2.373273,
           stop_name: 'Gare de Lyon',
           route_id: 'IDFM:C01371',
+          parent_station: 'IDFM:C01372',
         },
       ];
       expect(results).to.deep.equal(expectedRoutes);
@@ -405,6 +405,29 @@ describe('extract-data', () => {
         },
       ];
       expect(adjacentStations).to.deep.equal(expectedAdjacentStations);
+    });
+  });
+
+  describe.skip('#getRoutePath', () => {
+    it('should extract route path', async () => {
+      const routePaths = await getRoutesPaths();
+
+      expect(routePaths.map(path => ({
+        route_id: path.route_id,
+        coordinates: path.coordinates,
+      }))).to.deep.equal([{ ID: 'IDFM:C01371' }]);
+    });
+  });
+
+  describe.skip('#fillPath', () => {
+    it('should fill path', async () => {
+      const stations = await getStops();
+      const adjacentStations = await getAdjacentStations();
+      const routePaths = await getRoutesPaths();
+
+      const result = await fillPathsInAdjacentStation({ adjacentStations, stations, routePaths });
+
+      expect(result).to.deep.equal([]);
     });
   });
 });
