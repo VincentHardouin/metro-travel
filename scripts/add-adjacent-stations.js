@@ -42,7 +42,7 @@ export function addAdjacentStations({ linesData, stationsData }) {
 
   stations.forEach((station) => {
     if (!station.properties.adjacentStations)
-      // eslint-disable-next-line no-console
+
       console.log('Station is missing adjacentStations', station.properties.name);
 
     if (station.properties.adjacentStations) {

@@ -11,7 +11,8 @@ class PgClient {
     const instance = new PgClient(databaseUrl);
     try {
       await instance.client.connect();
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Database error', error);
     }
     return instance;

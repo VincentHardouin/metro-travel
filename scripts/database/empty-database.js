@@ -12,6 +12,7 @@ async function main() {
   }
   catch (error) {
     console.error(error);
+    // eslint-disable-next-line node/prefer-global/process
     process.exitCode = 1;
   }
   finally {
