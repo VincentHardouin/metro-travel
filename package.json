@@ -27,7 +27,7 @@
     "start": "parcel index.html",
     "build": "parcel build",
     "lint": "eslint .",
-    "test": "npm run db:reset && npm run db:migrate && vitest",
+    "test": "NODE_ENV=test npm run db:reset && NODE_ENV=test npm run db:migrate && vitest --no-file-parallelism",
     "screenshots": "node scripts/capture-version.js"
   },
   "dependencies": {
