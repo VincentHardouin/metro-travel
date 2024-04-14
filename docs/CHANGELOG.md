@@ -11,6 +11,8 @@
 * creation migrations ([42cd5be](https://github.com/VincentHardouin/metro-travel/commit/42cd5be9e9aa565ce4672c02d6fc43fe0111ef7f))
 * prepare database usage ([85a7d6d](https://github.com/VincentHardouin/metro-travel/commit/85a7d6d3746bea62d0a6a2bdc336c9646ed4ce47))
 
+![1.15.0](./screenshots/1.15.0-desktop.png) ![1.15.0](./screenshots/1.15.0-mobile.png) 
+
 # [1.14.0](https://github.com/VincentHardouin/metro-travel/compare/v1.13.0...v1.14.0) (2024-03-18)
 
 
