@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/VincentHardouin/metro-travel/compare/v1.15.0...v1.15.1) (2024-04-14)
+
+
+### Bug Fixes
+
+* add build step in cd workflow ([ce8f9c7](https://github.com/VincentHardouin/metro-travel/commit/ce8f9c7127085cbef40afa364d988e55646f3c92))
+
 # [1.15.0](https://github.com/VincentHardouin/metro-travel/compare/v1.14.0...v1.15.0) (2024-04-14)
 
 
