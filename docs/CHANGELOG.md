@@ -1,3 +1,16 @@
+# [1.15.0](https://github.com/VincentHardouin/metro-travel/compare/v1.14.0...v1.15.0) (2024-04-14)
+
+
+### Features
+
+* add extract data script ([1f1f030](https://github.com/VincentHardouin/metro-travel/commit/1f1f03040548c7aefd327c3dbbebc9dbddbc428f))
+* add extract data script ([676d4a6](https://github.com/VincentHardouin/metro-travel/commit/676d4a6ac2928cb3901668787442fe689a3d096d))
+* add getAdjacentStations with transfers ([da427ab](https://github.com/VincentHardouin/metro-travel/commit/da427abd70e9511a14cc7da3a9a23f14ab2ead35))
+* add getAdjacentStations without correspondence ([5bc262e](https://github.com/VincentHardouin/metro-travel/commit/5bc262e81f964bc7ed9b09f4c7d009a6ad520599))
+* add import-data script ([b523561](https://github.com/VincentHardouin/metro-travel/commit/b52356119b3be5934442ed39f6c5d49509b2cc20))
+* creation migrations ([42cd5be](https://github.com/VincentHardouin/metro-travel/commit/42cd5be9e9aa565ce4672c02d6fc43fe0111ef7f))
+* prepare database usage ([85a7d6d](https://github.com/VincentHardouin/metro-travel/commit/85a7d6d3746bea62d0a6a2bdc336c9646ed4ce47))
+
 # [1.14.0](https://github.com/VincentHardouin/metro-travel/compare/v1.13.0...v1.14.0) (2024-03-18)
 
 
