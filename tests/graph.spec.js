@@ -1,23 +1,32 @@
 import { describe, expect, it } from 'vitest';
 import { computeSmallestStationsPath, verifyIfConnected } from '../src/graph.js';
-import { getStations } from '../src/utils.js';
+import { getAdjacentStations, getUniqueStops } from '../src/utils.js';
 
 describe('graph', () => {
   describe('#computeSmallestStationsPath', () => {
     it('should return always same value for given seed', () => {
-      const stations = getStations();
+      const adjacentStops = getAdjacentStations();
+      const uniqueStops = getUniqueStops();
 
-      const path = computeSmallestStationsPath({ start: 'Notre-Dame de Lorette', end: 'Brochant', stations });
+      const startName = 'Notre-Dame-de-Lorette';
+      const endName = 'Brochant';
+
+      const start = uniqueStops.find(stop => stop.stop_name === startName).stop_unique_id;
+      const end = uniqueStops.find(stop => stop.stop_name === endName).stop_unique_id;
+
+      const path = computeSmallestStationsPath({ start, end, adjacentStops });
 
       expect(path).to.deep.equal({
-        distance: 5,
+        distance: 491,
         path: [
-          'Notre-Dame de Lorette',
-          'Trinité d\'Estienne d\'Orves',
-          'Saint-Lazare',
-          'Pont Cardinet',
-          'Porte de Clichy',
-          'Brochant',
+          'IDFM:22050',
+          'IDFM:463317',
+          'IDFM:21964',
+          'IDFM:22218',
+          'IDFM:22225',
+          'IDFM:22129',
+          'IDFM:22227',
+          'IDFM:22231',
         ],
       });
     });
@@ -25,9 +34,11 @@ describe('graph', () => {
 
   describe('#verifyIsConnected', () => {
     it('should return true when stations is connected', () => {
-      const stations = getStations();
-      const pickStations = [
-        'Notre-Dame de Lorette',
+      const adjacentStations = getAdjacentStations();
+      const uniqueStops = getUniqueStops();
+
+      const pickedUniqueStations = [
+        'Notre-Dame-de-Lorette',
         'Brochant',
         'Trinité d\'Estienne d\'Orves',
         'Saint-Lazare',
@@ -35,32 +46,58 @@ describe('graph', () => {
         'Place de Clichy',
         'La Fourche',
       ];
-      const filteredStations = stations.filter((station) => {
-        return pickStations.includes(station.properties.name);
-      });
-      expect(filteredStations.length).to.equal(7);
 
-      const isConnected = verifyIfConnected({ start: 'Notre-Dame de Lorette', end: 'Brochant', stations: filteredStations });
+      const pickedUniqueStopsIds = uniqueStops
+        .filter((stop) => {
+          return pickedUniqueStations.includes(stop.stop_name);
+        })
+        .map(stop => stop.stop_unique_id);
+
+      const startUniqueId = uniqueStops.find(stop => stop.stop_name === 'Notre-Dame-de-Lorette').stop_unique_id;
+      const endUniqueId = uniqueStops.find(stop => stop.stop_name === 'Brochant').stop_unique_id;
+
+      expect(pickedUniqueStopsIds.length).to.equal(7);
+
+      const isConnected = verifyIfConnected({
+        start: startUniqueId,
+        end: endUniqueId,
+        stationsToVerify: pickedUniqueStopsIds,
+        adjacentStations,
+      });
 
       expect(isConnected).toBeTruthy();
     });
 
-    it('should return false when stations is connected', () => {
-      const stations = getStations();
-      const pickStations = [
-        'Notre-Dame de Lorette',
+    it('should return false when stations is not connected', () => {
+      const adjacentStations = getAdjacentStations();
+      const uniqueStops = getUniqueStops();
+
+      const pickedUniqueStations = [
+        'Notre-Dame-de-Lorette',
         'Brochant',
         'Trinité d\'Estienne d\'Orves',
         'Saint-Lazare',
         'Liège',
         'La Fourche',
       ];
-      const filteredStations = stations.filter((station) => {
-        return pickStations.includes(station.properties.name);
-      });
-      expect(filteredStations.length).to.equal(6);
 
-      const isConnected = verifyIfConnected({ start: 'Notre-Dame de Lorette', end: 'Brochant', stations: filteredStations });
+      const pickedUniqueStopsIds = uniqueStops
+        .filter((stop) => {
+          return pickedUniqueStations.includes(stop.stop_name);
+        })
+        .map(stop => stop.stop_unique_id);
+
+      const startUniqueId = uniqueStops.find(stop => stop.stop_name === 'Notre-Dame-de-Lorette').stop_unique_id;
+      const endUniqueId = uniqueStops.find(stop => stop.stop_name === 'Brochant').stop_unique_id;
+
+      expect(pickedUniqueStopsIds.length).to.equal(6);
+
+      const isConnected = verifyIfConnected({
+        start: startUniqueId,
+        end: endUniqueId,
+        stationsToVerify: pickedUniqueStopsIds,
+        adjacentStations,
+      });
 
       expect(isConnected).toBeFalsy();
     });
