@@ -2,29 +2,6 @@ import * as d3 from 'd3';
 
 const PARIS_COORDINATES = [2.3522, 48.8566];
 
-const color = {
-  '1': '#FFCE00',
-  '2': '#0064B0',
-  '3': '#9F9825',
-  '3bis': '#98D4E2',
-  '4': '#C04191',
-  '5': '#F28E42',
-  '6': '#83C491',
-  '7': '#F3A4BA',
-  '7bis': '#83C491',
-  '8': '#CEADD2',
-  '9': '#D5C900',
-  '10': '#E3B32A',
-  '11': '#8D5E2A',
-  '12': '#00814F',
-  '13': '#98D4E2',
-  '14': '#662483',
-  '15': '#B90845',
-  '16': '#F3A4BA',
-  '17': '#D5C900',
-  '18': '#00A88F',
-};
-
 class ParisMap {
   #arrondissements;
   #stations;
@@ -99,67 +76,46 @@ class ParisMap {
     this.#svg.attr('width', width).attr('height', height);
   }
 
-  addStation({ station, color, adjacentStations }) {
+  addStation({ station, color, adjacentStops }) {
     this.#drawStation({ station, color });
-    this.#addPathBetweenStations({ newStation: station, adjacentStations });
+    this.#addPathBetweenStations({ adjacentStops });
   }
 
   #drawStation({ station, color = '#0d47a1' }) {
-    for (const coordinates of station.properties.coordinates) {
-      this.#stationsNode.append('circle')
-        .attr('class', 'metro-station')
-        .attr('cx', this.#projection(coordinates)[0])
-        .attr('cy', this.#projection(coordinates)[1])
-        .attr('r', 3)
-        .style('fill', color)
-        .on('mouseover', () => {
-          this.#tooltip.style('visibility', 'visible');
-          this.#tooltip.html(station.properties.name);
-        })
-        .on('mousemove', (event) => {
-          this.#tooltip.style('top', `${event.pageY - 10}px`)
-            .style('left', `${event.pageX + 10}px`);
-        })
-        .on('mouseout', () => {
-          this.#tooltip.style('visibility', 'hidden');
-        });
-    }
-
-    this.#stationsNode.append('path')
-      .attr('d', d3.line()(station.properties.coordinates.map(c => this.#projection(c))))
-      .attr('stroke', color)
-      .attr('stroke-width', 2)
-      .attr('fill', 'none');
+    const point = [station.stop_lat, station.stop_lon];
+    this.#stationsNode.append('circle')
+      .attr('class', 'metro-station')
+      .attr('cx', this.#projection(point)[0])
+      .attr('cy', this.#projection(point)[1])
+      .attr('r', 3)
+      .style('fill', color)
+      .on('mouseover', () => {
+        this.#tooltip.style('visibility', 'visible');
+        this.#tooltip.html(station.stop_name);
+      })
+      .on('mousemove', (event) => {
+        this.#tooltip.style('top', `${event.pageY - 10}px`)
+          .style('left', `${event.pageX + 10}px`);
+      })
+      .on('mouseout', () => {
+        this.#tooltip.style('visibility', 'hidden');
+      });
   }
 
-  #addPathBetweenStations({ newStation, adjacentStations }) {
-    for (const newStationLine of newStation.properties.lines) {
-      const line = this.#lines.find(l => l.properties.name === newStationLine);
-      for (const adjacentStation of adjacentStations) {
-        const lineCoordinates = line.geometry.type === 'LineString' ? line.geometry.coordinates : line.geometry.coordinates[0];
+  #addPathBetweenStations({ adjacentStops }) {
+    adjacentStops
+      .filter(adjacentStop => adjacentStop.path)
+      .forEach((adjacentStop) => {
+        if (!adjacentStop.path.length || !adjacentStop.route_id)
+          return;
 
-        const newStationIndex = newStation.properties.inLineIndex[newStationLine];
-        const adjacentStationIndex = adjacentStation.properties.inLineIndex[newStationLine];
-
-        if (lineCoordinates.length < newStationIndex && lineCoordinates.length < adjacentStationIndex)
-          continue;
-
-        if (newStationIndex === undefined || adjacentStationIndex === undefined)
-          continue;
-
-        let drawLine;
-        if (newStationIndex < adjacentStationIndex)
-          drawLine = lineCoordinates.slice(newStationIndex, adjacentStationIndex + 1);
-        else
-          drawLine = lineCoordinates.slice(adjacentStationIndex, newStationIndex + 1);
-
+        const { route_color: color } = this.#lines.find(line => line.route_id === adjacentStop.route_id);
         this.#stationsNode.append('path')
-          .attr('d', d3.line()(drawLine.map(c => this.#projection(c))))
-          .attr('stroke', color[line.properties.ref])
+          .attr('d', d3.line()(adjacentStop.path.map(p => this.#projection(p))))
+          .attr('stroke', `#${color}`)
           .attr('stroke-width', 2)
           .attr('fill', 'none');
-      }
-    }
+      });
   }
 }
 

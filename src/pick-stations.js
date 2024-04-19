@@ -44,7 +44,7 @@ function pickStations({ stations, adjacentStops, random = getRandomStations } = 
   return {
     start,
     end,
-    path,
+    ...path,
   };
 }
 

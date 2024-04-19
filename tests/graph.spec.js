@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { computeSmallestStationsPath, verifyIfConnected } from '../src/graph.js';
-import { getAdjacentStations, getUniqueStops } from '../src/utils.js';
+import { getAdjacentStops, getUniqueStops } from '../src/utils.js';
 
 describe('graph', () => {
   describe('#computeSmallestStationsPath', () => {
     it('should return always same value for given seed', () => {
-      const adjacentStops = getAdjacentStations();
+      const adjacentStops = getAdjacentStops();
       const uniqueStops = getUniqueStops();
 
       const startName = 'Notre-Dame-de-Lorette';
@@ -34,7 +34,7 @@ describe('graph', () => {
 
   describe('#verifyIsConnected', () => {
     it('should return true when stations is connected', () => {
-      const adjacentStations = getAdjacentStations();
+      const adjacentStops = getAdjacentStops();
       const uniqueStops = getUniqueStops();
 
       const pickedUniqueStations = [
@@ -62,14 +62,14 @@ describe('graph', () => {
         start: startUniqueId,
         end: endUniqueId,
         stationsToVerify: pickedUniqueStopsIds,
-        adjacentStations,
+        adjacentStops,
       });
 
       expect(isConnected).toBeTruthy();
     });
 
     it('should return false when stations is not connected', () => {
-      const adjacentStations = getAdjacentStations();
+      const adjacentStops = getAdjacentStops();
       const uniqueStops = getUniqueStops();
 
       const pickedUniqueStations = [
@@ -96,7 +96,7 @@ describe('graph', () => {
         start: startUniqueId,
         end: endUniqueId,
         stationsToVerify: pickedUniqueStopsIds,
-        adjacentStations,
+        adjacentStops,
       });
 
       expect(isConnected).toBeFalsy();

@@ -9,11 +9,11 @@ function computeSmallestStationsPath({ start, end, adjacentStops }) {
   return graph.dijkstra(start, end);
 }
 
-function verifyIfConnected({ start, end, adjacentStations, stationsToVerify }) {
-  const adjacentStops = adjacentStations.filter((stop) => {
+function verifyIfConnected({ start, end, adjacentStops, stationsToVerify }) {
+  const filteredAdjacentStops = adjacentStops.filter((stop) => {
     return stationsToVerify.includes(stop.from_stop_unique_id) && stationsToVerify.includes(stop.to_stop_unique_id);
   });
-  const graph = computeGraph(adjacentStops, start, end);
+  const graph = computeGraph(filteredAdjacentStops, start, end);
   return graph.isConnectedTo(start, end);
 }
 
