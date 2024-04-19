@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { saveRoutes, saveStopTimes, saveStops, saveTransfers, saveTrips } from '../scripts/save-data.js';
 import {
-  fillPathsInAdjacentStation,
-  getAdjacentStations,
+  fillPathsInAdjacentStop,
+  getAdjacentStops,
   getRoutes,
   getRoutesPaths,
   getStops,
@@ -174,7 +174,7 @@ describe('extract-data', () => {
     });
   });
 
-  describe('#getAdjacentStations', () => {
+  describe('#getAdjacentStops', () => {
     it('should extract adjacent stations', async () => {
       const routes = [
         {
@@ -254,9 +254,9 @@ describe('extract-data', () => {
       ];
       await saveStopTimes(stopTimes);
 
-      const adjacentStations = await getAdjacentStations();
+      const adjacentStops = await getAdjacentStops();
 
-      const expectedAdjacentStations = [
+      const expectedAdjacentStops = [
         {
           from_stop_id: 'IDFM:10181',
           time: 180,
@@ -278,7 +278,7 @@ describe('extract-data', () => {
           to_stop_id: 'IDFM:10182',
         },
       ];
-      expect(adjacentStations).to.deep.equal(expectedAdjacentStations);
+      expect(adjacentStops).to.deep.equal(expectedAdjacentStops);
     });
 
     it('should extract adjacent stations from transfers', async () => {
@@ -380,9 +380,9 @@ describe('extract-data', () => {
 
       await saveTransfers(transfers);
 
-      const adjacentStations = await getAdjacentStations();
+      const adjacentStops = await getAdjacentStops();
 
-      const expectedAdjacentStations = [
+      const expectedAdjacentStops = [
         {
           from_stop_id: 'IDFM:10181',
           time: 180,
@@ -404,7 +404,7 @@ describe('extract-data', () => {
           to_stop_id: 'IDFM:10182',
         },
       ];
-      expect(adjacentStations).to.deep.equal(expectedAdjacentStations);
+      expect(adjacentStops).to.deep.equal(expectedAdjacentStops);
     });
   });
 
@@ -419,13 +419,13 @@ describe('extract-data', () => {
     });
   });
 
-  describe.skip('#fillPath', () => {
+  describe.skip('#fillPathInAdjacenStop', () => {
     it('should fill path', async () => {
       const stations = await getStops();
-      const adjacentStations = await getAdjacentStations();
+      const adjacentStops = await getAdjacentStops();
       const routePaths = await getRoutesPaths();
 
-      const result = await fillPathsInAdjacentStation({ adjacentStations, stations, routePaths });
+      const result = await fillPathsInAdjacentStop({ adjacentStops, stations, routePaths });
 
       expect(result).to.deep.equal([]);
     });
