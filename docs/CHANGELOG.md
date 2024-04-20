@@ -7,6 +7,8 @@
 * use gtfs in front ([69472df](https://github.com/VincentHardouin/metro-travel/commit/69472df8751d30c5c44708970425aa6258a9e86a))
 * use new gtfs data for graph ([1a69090](https://github.com/VincentHardouin/metro-travel/commit/1a690909604d57223f4cace410b3dd448d9b8bc6))
 
+![1.16.0](./screenshots/1.16.0-desktop.png) ![1.16.0](./screenshots/1.16.0-mobile.png) 
+
 ## [1.15.1](https://github.com/VincentHardouin/metro-travel/compare/v1.15.0...v1.15.1) (2024-04-14)
 
 
