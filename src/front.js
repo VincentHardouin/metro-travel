@@ -1,19 +1,18 @@
 import * as bootstrap from 'bootstrap';
 import arrondissements from '../assets/arrondissements.geojson';
-import stationsData from '../assets/stations.geojson';
-import linesData from '../assets/lines.geojson';
 import { ParisMap } from './map.js';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { verifyIfConnected } from './graph.js';
 import { searchStations } from './utils.front.js';
+import { getAdjacentStops, getRoutes, getStops, getUniqueStops } from './utils.js';
 
-const stations = stationsData.features.filter((s) => {
-  return s.properties.adjacentStations && s.properties.name;
-});
-const sortedStations = stations.map(d => d.properties.name).sort();
-const lines = linesData.features;
+const stations = getUniqueStops();
+const adjacentStops = getAdjacentStops();
+const sortedStations = stations.map(d => d.stop_name).sort();
+const routes = getRoutes();
+const stops = getStops();
 
-const map = new ParisMap({ arrondissements, stations, lines });
+const map = new ParisMap({ arrondissements, stations, lines: routes });
 
 const addedStations = new Map();
 
@@ -70,35 +69,33 @@ function addNameToInput(event) {
 }
 
 function addStation({ station, color }) {
-  const stationName = station.properties.name;
-  if (addedStations.has(stationName))
+  const stationUniqueId = station.stop_unique_id;
+  if (addedStations.has(stationUniqueId))
     return;
 
-  const adjacentStations = findAdjacentStations({ station, lines, addedStations });
-  map.addStation({ station, color, adjacentStations });
-  addedStations.set(stationName, station);
+  const foundAdjacentStops = findAdjacentStops({
+    pickStation: station,
+    addedStations,
+    adjacentStops,
+  });
+  map.addStation({ station, color, adjacentStops: foundAdjacentStops });
+  addedStations.set(stationUniqueId, station);
 }
 
-function findAdjacentStations({ station, addedStations }) {
-  const adjacentStations = [];
-  for (const newStationLine of station.properties.lines) {
-    const lineAdjacentStations = station.properties.adjacentStations[newStationLine];
-
-    for (const adjacentStationName of lineAdjacentStations) {
-      if (!addedStations.has(adjacentStationName))
-        continue;
-
-      adjacentStations.push(addedStations.get(adjacentStationName));
-    }
-  }
-  return adjacentStations;
+function findAdjacentStops({ pickStation, addedStations, adjacentStops }) {
+  const filteredAdjacentStationForPickedStation = adjacentStops.filter((adjacentStop) => {
+    return adjacentStop.from_stop_unique_id === pickStation.stop_unique_id || adjacentStop.to_stop_unique_id === pickStation.stop_unique_id;
+  });
+  return filteredAdjacentStationForPickedStation.filter((adjacentStop) => {
+    return addedStations.has(adjacentStop.from_stop_unique_id) || addedStations.has(adjacentStop.to_stop_unique_id);
+  });
 }
 
 function handleClickOnTryButton({ pick }) {
   document.getElementById('try').addEventListener('click', () => {
     const input = document.getElementById('station');
     const stationName = input.value;
-    const station = stations.find(d => d.properties.name === stationName);
+    const station = stations.find(d => d.stop_name === stationName);
     if (station) {
       addStation({ station });
       input.value = '';
@@ -109,20 +106,29 @@ function handleClickOnTryButton({ pick }) {
     }
   });
 }
+
 function isFinished({ addedStations, pick }) {
-  const isFinished = verifyIfConnected({ start: pick.start.properties.name, end: pick.end.properties.name, stations: [...addedStations.values()] });
+  const isFinished = verifyIfConnected({
+    start: pick.start.stop_unique_id,
+    end: pick.end.stop_unique_id,
+    stationsToVerify: [...addedStations.keys()],
+    adjacentStops,
+  });
   if (isFinished) {
     const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
     const result = document.getElementById('result');
-    result.innerHTML = `<p>Bravo, tu as réussi à relier les deux stations en ${addedStations.size - 2} stations ! 🎉</p><p>Voici le chemin optimal en ${pick.path.distance - 1} stations : </p>`;
+    result.innerHTML = `<p>Bravo, tu as réussi à relier les deux stations en ${addedStations.size - 2} stations ! 🎉</p><p>Voici le chemin optimal en ${pick.path.length - 2} stations : </p>`;
     const list = document.createElement('ul');
-    for (let i = 0; i < pick.path.path.length; i++) {
-      const station = pick.path.path[i];
+    for (let i = 0; i < pick.path.length; i++) {
+      const stationId = pick.path[i];
+      const { stop_unique_id, route_id } = stops.find(d => d.stop_id === stationId);
+      const stopName = stations.find(d => d.stop_unique_id === stop_unique_id).stop_name;
+      const line = routes.find(d => d.route_id === route_id);
       const li = document.createElement('li');
-      li.textContent = station;
+      li.textContent = `${stopName} - Ligne ${line.route_short_name}`;
       if (i === 0)
         li.classList.add('start');
-      else if (i === pick.path.path.length - 1)
+      else if (i === pick.path.length - 1)
         li.classList.add('end');
 
       list.appendChild(li);
@@ -135,8 +141,8 @@ function isFinished({ addedStations, pick }) {
 function initGame() {
   const date = new Date();
   const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
-  const pick = pickStations({ stations, random: getSeededRandomStations(dateToSeed) });
-  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start.properties.name}</span> jusqu'à <span class="end">${pick.end.properties.name}</span> en passant par le moins de stations possible.`;
+  const pick = pickStations({ stations, adjacentStops, random: getSeededRandomStations(dateToSeed) });
+  document.getElementById('instruction').innerHTML = `Aujourd'hui, nous allons de <span class="start">${pick.start.stop_name}</span> jusqu'à <span class="end">${pick.end.stop_name}</span> en passant par le moins de stations possible.`;
   addStation({ station: pick.start, color: '#008a22' });
   addStation({ station: pick.end, color: '#e52228' });
   return pick;

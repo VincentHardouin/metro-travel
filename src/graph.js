@@ -1,45 +1,47 @@
-function computeSmallestStationsPath({ start, end, stations }) {
-  if (!stationExists(stations, start))
-    throw new Error('Start station does not exist');
+function computeSmallestStationsPath({ start, end, adjacentStops }) {
+  if (!stopExists(adjacentStops, start))
+    throw new Error('Start stop does not exist');
 
-  if (!stationExists(stations, end))
-    throw new Error('End station does not exist');
+  if (!stopExists(adjacentStops, end))
+    throw new Error('End stop does not exist');
 
-  const graph = computeGraph(stations);
+  const graph = computeGraph(adjacentStops, start, end);
   return graph.dijkstra(start, end);
 }
 
-function verifyIfConnected({ start, end, stations }) {
-  const graph = computeGraph(stations);
+function verifyIfConnected({ start, end, adjacentStops, stationsToVerify }) {
+  const filteredAdjacentStops = adjacentStops.filter((stop) => {
+    return stationsToVerify.includes(stop.from_stop_unique_id) && stationsToVerify.includes(stop.to_stop_unique_id);
+  });
+  const graph = computeGraph(filteredAdjacentStops, start, end);
   return graph.isConnectedTo(start, end);
 }
 
-function computeGraph(stations) {
+function computeGraph(adjacentStops, start, end) {
   const graph = new Graph();
 
-  stations.forEach((station) => {
-    const adjacentStations = station.properties.adjacentStations;
-    const stationName = station.properties.name;
+  adjacentStops.forEach(({ from_stop_id, from_stop_unique_id, to_stop_id, to_stop_unique_id, duration }) => {
+    graph.addNode(from_stop_id);
+    graph.addNode(to_stop_id);
+    graph.addEdge(from_stop_id, to_stop_id, duration);
 
-    const newAdjacentStations = {};
+    if (from_stop_unique_id === start || from_stop_unique_id === end) {
+      graph.addNode(from_stop_unique_id);
+      graph.addEdge(from_stop_unique_id, from_stop_id, 0);
+    }
 
-    Object.keys(adjacentStations).forEach((line) => {
-      const adjacentStationsSet = adjacentStations[line];
-      adjacentStationsSet.forEach((adjacentStation) => {
-        const adjacentStationName = adjacentStation;
-        const distance = 1;
-        newAdjacentStations[adjacentStationName] = distance;
-      });
-    });
-
-    graph.addNode(stationName, newAdjacentStations);
+    if (to_stop_unique_id === end || to_stop_unique_id === start) {
+      graph.addNode(to_stop_id);
+      graph.addEdge(to_stop_id, to_stop_unique_id, 0);
+    }
   });
+
   return graph;
 }
 
-function stationExists(stations, stationName) {
-  return stations.some((station) => {
-    return station.properties.name === stationName;
+function stopExists(adjacentStops, stopId) {
+  return adjacentStops.some((stop) => {
+    return stop.from_stop_unique_id === stopId || stop.to_stop_unique_id === stopId;
   });
 }
 
@@ -48,50 +50,64 @@ class Graph {
     this.nodes = {};
   }
 
-  addNode(name, edges) {
-    this.nodes[name] = edges;
+  addNode(nodeId) {
+    if (!this.nodes[nodeId])
+      this.nodes[nodeId] = [];
   }
 
-  dijkstra(start, end) {
-    const shortestDistances = {};
-    const predecessors = {};
-    const unseenNodes = Object.assign({}, this.nodes);
+  addEdge(fromNodeId, toNodeId, weight) {
+    this.nodes[fromNodeId].push({ to: toNodeId, weight });
+  }
 
-    for (const node in this.nodes)
-      shortestDistances[node] = Number.POSITIVE_INFINITY;
+  dijkstra(startNodeId, endNodeId) {
+    const distances = {};
+    const visited = {};
+    const previous = {};
+    const queue = [];
 
-    shortestDistances[start] = 0;
+    for (const nodeId in this.nodes) {
+      if (nodeId === startNodeId)
+        distances[nodeId] = 0;
+      else
+        distances[nodeId] = Number.POSITIVE_INFINITY;
 
-    while (Object.keys(unseenNodes).length > 0) {
-      const currentNode = this.getMinNode(shortestDistances, unseenNodes);
-      const neighbors = this.nodes[currentNode];
+      previous[nodeId] = null;
+      queue.push(nodeId);
+    }
 
-      for (const neighbor in neighbors) {
-        const distance = neighbors[neighbor];
-        if (distance + shortestDistances[currentNode] < shortestDistances[neighbor]) {
-          shortestDistances[neighbor] = distance + shortestDistances[currentNode];
-          predecessors[neighbor] = currentNode;
+    while (queue.length > 0) {
+      queue.sort((a, b) => distances[a] - distances[b]);
+      const currentNodeId = queue.shift();
+      visited[currentNodeId] = true;
+
+      this.nodes[currentNodeId].forEach((neighbor) => {
+        if (!visited[neighbor.to]) {
+          const newDistance = distances[currentNodeId] + neighbor.weight;
+          if (newDistance < distances[neighbor.to]) {
+            distances[neighbor.to] = newDistance;
+            previous[neighbor.to] = currentNodeId;
+          }
         }
-      }
-      delete unseenNodes[currentNode];
+      });
     }
 
-    const path = [end];
-    let predecessor = predecessors[end];
-    while (predecessor) {
-      path.unshift(predecessor);
-      predecessor = predecessors[predecessor];
+    const path = [];
+    let currentNodeId = endNodeId;
+    const distance = distances[endNodeId];
+
+    while (currentNodeId) {
+      path.unshift(currentNodeId);
+      currentNodeId = previous[currentNodeId];
     }
 
-    if (shortestDistances[end] !== Number.POSITIVE_INFINITY) {
-      return {
-        path,
-        distance: shortestDistances[end],
-      };
-    }
-    else {
-      return null;
-    }
+    return this.#formatResult({ path, distance });
+  }
+
+  #formatResult({ path, distance }) {
+    return {
+      path: path.slice(1, -1),
+      distance,
+    };
   }
 
   isConnectedTo(start, end, visited = {}) {
@@ -99,23 +115,13 @@ class Graph {
       return true;
 
     visited[start] = true;
-    for (const neighbor in this.nodes[start]) {
-      if (!visited[neighbor] && this.isConnectedTo(neighbor, end, visited))
+
+    for (const neighbor of this.nodes[start]) {
+      if (!visited[neighbor.to] && this.isConnectedTo(neighbor.to, end, visited))
         return true;
     }
-    return false;
-  }
 
-  getMinNode(distances, nodes) {
-    let minDistance = Number.POSITIVE_INFINITY;
-    let minNode = null;
-    for (const node in nodes) {
-      if (distances[node] < minDistance) {
-        minDistance = distances[node];
-        minNode = node;
-      }
-    }
-    return minNode;
+    return false;
   }
 }
 

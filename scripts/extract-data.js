@@ -36,7 +36,7 @@ async function getStops() {
   });
 }
 
-async function getAdjacentStations() {
+async function getAdjacentStops() {
   return knex.with('stop_ids', (qb) => {
     qb.select('stop_id', 'routes.route_short_name')
       .distinct()
@@ -97,12 +97,12 @@ async function _verifyPath(dirPath) {
   }
 }
 
-async function fillPathsInAdjacentStation({ adjacentStations, stations, routePaths }) {
+async function fillPathsInAdjacentStop({ adjacentStops, stations, routePaths }) {
   const stationsMap = stations.reduce((acc, station) => {
     acc[station.stop_id] = station;
     return acc;
   }, {});
-  return adjacentStations.map((adjacentStation) => {
+  return adjacentStops.map((adjacentStation) => {
     const fromStation = stationsMap[adjacentStation.from_stop_id];
     const toStation = stationsMap[adjacentStation.to_stop_id];
 
@@ -176,28 +176,43 @@ async function getUniqueStops() {
 
 async function main() {
   const stops = await getStops();
-  const adjacentStations = await getAdjacentStations();
+  const adjacentStops = await getAdjacentStops();
   const routePaths = await getRoutesPaths();
   const routes = routePaths.map(_keepOnlyRouteProperties);
-  const adjacentStationsWithPath = await fillPathsInAdjacentStation({ adjacentStations, stations: stops, routePaths });
+  const adjacentStopsWithPath = await fillPathsInAdjacentStop({ adjacentStops, stations: stops, routePaths });
   const uniqueStops = await getUniqueStops();
   const normalizedStopName = stop => stop.stop_name.normalize('NFD').replace(/[\u0300-\u036F]/g, '').replace(/[\s-–_'’]/g, '').toLowerCase();
   const stopsWithUniqueId = stops.map((stop) => {
     const stopName = normalizedStopName(stop);
-    const uniqueStop = uniqueStops.find((uniqueStop) => {
+    const foundUniqueStops = uniqueStops.filter((uniqueStop) => {
       const uniqueStopName = normalizedStopName(uniqueStop);
       return new RegExp(stopName, 'i').test(uniqueStopName) || new RegExp(uniqueStopName, 'i').test(stopName);
     });
 
-    if (!uniqueStop)
+    if (!foundUniqueStops.length)
       throw new Error(`Stop ${stop.stop_name} not found in unique stops`);
+
+    if (foundUniqueStops.length > 1) {
+      const mostRelevantStop = foundUniqueStops.find((uniqueStop) => {
+        return stopName === normalizedStopName(uniqueStop);
+      });
+
+      if (mostRelevantStop) {
+        return {
+          ...stop,
+          stop_unique_id: mostRelevantStop.stop_unique_id,
+        };
+      }
+      console.log(`Not relevant stop for ${stop.stop_name} has been found: ${JSON.stringify(foundUniqueStops, null, 2)}`);
+    }
 
     return {
       ...stop,
-      stop_unique_id: uniqueStop.stop_unique_id,
+      stop_unique_id: foundUniqueStops[0].stop_unique_id,
     };
   });
-  const adjacentStationsWithPathAndWithUniqueId = adjacentStationsWithPath.map((adjacentStation) => {
+
+  const adjacentStopsWithPathAndWithUniqueId = adjacentStopsWithPath.map((adjacentStation) => {
     const fromStop = stopsWithUniqueId.find(stop => stop.stop_id === adjacentStation.from_stop_id);
     const toStop = stopsWithUniqueId.find(stop => stop.stop_id === adjacentStation.to_stop_id);
     return {
@@ -209,7 +224,7 @@ async function main() {
   await saveData({
     routes,
     stops: stopsWithUniqueId,
-    adjacentStations: adjacentStationsWithPathAndWithUniqueId,
+    adjacentStops: adjacentStopsWithPathAndWithUniqueId,
     uniqueStops,
   });
 }
@@ -242,4 +257,4 @@ const isLaunchedFromCommandLine = process.argv[1] === modulePath;
   }
 })();
 
-export { getRoutes, getStops, getAdjacentStations, getRoutesPaths, fillPathsInAdjacentStation };
+export { getRoutes, getStops, getAdjacentStops, getRoutesPaths, fillPathsInAdjacentStop };
