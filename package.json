@@ -37,6 +37,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
     "@parcel/transformer-sass": "^2.11.0",
+    "@parcel/transformer-vue": "^2.11.0",
     "d3": "^7.8.5",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
@@ -47,7 +48,8 @@
     "parcel-transformer-geojson": "^0.0.4",
     "pg": "^8.11.3",
     "puppeteer": "^22.4.1",
-    "vitest": "^1.3.1"
+    "vitest": "^1.3.1",
+    "vue": "^3.4.23"
   },
   "parcel": {
     "transformers": {
