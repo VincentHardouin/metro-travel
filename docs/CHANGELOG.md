@@ -1,3 +1,15 @@
+# [1.17.0](https://github.com/VincentHardouin/metro-travel/compare/v1.16.0...v1.17.0) (2024-04-23)
+
+
+### Bug Fixes
+
+* use version in release screenshot commit ([e54b28a](https://github.com/VincentHardouin/metro-travel/commit/e54b28ae2c876dbaa70605779dd5e43027c0b7a1))
+
+
+### Features
+
+* allow to toggle stop ([7e9a5d9](https://github.com/VincentHardouin/metro-travel/commit/7e9a5d924bb51554008792dbd898c11840c2914e))
+
 # [1.16.0](https://github.com/VincentHardouin/metro-travel/compare/v1.15.1...v1.16.0) (2024-04-20)
 
 
