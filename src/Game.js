@@ -83,4 +83,20 @@ export class Game {
       }),
     };
   }
+
+  getAddedStops() {
+    return [...this.addedStations.values()].filter(stop => stop.stop_name !== this.pick.start.stop_name && stop.stop_name !== this.pick.end.stop_name);
+  }
+
+  toggleStop(stopId) {
+    if (this.addedStations.has(stopId))
+      this.removeStation(stopId);
+    else
+      this.addStation({ station: stations.find(d => d.stop_unique_id === stopId).stop_name });
+  }
+
+  removeStation(stopId) {
+    this.addedStations.delete(stopId);
+    this.parisMap.removeStation(stopId);
+  }
 }

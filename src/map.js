@@ -88,6 +88,7 @@ class ParisMap {
       .attr('cx', this.#projection(point)[0])
       .attr('cy', this.#projection(point)[1])
       .attr('r', 3)
+      .attr('data-stop-id', station.stop_unique_id)
       .style('fill', color)
       .on('mouseover', () => {
         this.#tooltip.style('visibility', 'visible');
@@ -114,8 +115,14 @@ class ParisMap {
           .attr('d', d3.line()(adjacentStop.path.map(p => this.#projection(p))))
           .attr('stroke', `#${color}`)
           .attr('stroke-width', 2)
-          .attr('fill', 'none');
+          .attr('fill', 'none')
+          .attr('data-stop-ids', `${adjacentStop.from_stop_unique_id},${adjacentStop.to_stop_unique_id}`);
       });
+  }
+
+  removeStation(stopId) {
+    this.#stationsNode.selectAll(`[data-stop-id="${stopId}"]`).remove();
+    this.#stationsNode.selectAll(`[data-stop-ids*="${stopId}"]`).remove();
   }
 }
 

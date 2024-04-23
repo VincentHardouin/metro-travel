@@ -1,10 +1,10 @@
 <script setup>
-import {onMounted, ref} from 'vue';
+import { onMounted, ref } from 'vue';
 import * as bootstrap from 'bootstrap';
-import {Game} from '../Game.js';
+import { Game } from '../Game.js';
+import { getUniqueStops } from '../utils.js';
+import { searchStations } from '../utils.front.js';
 import RulesModal from './RulesModal.vue';
-import {getUniqueStops} from '../utils.js';
-import {searchStations} from '../utils.front.js';
 import FinishModal from './FinishModal.vue';
 
 const sortedStations = getUniqueStops().map(d => d.stop_name).sort();
@@ -22,19 +22,28 @@ const information = ref(null);
 const searchResults = ref([]);
 const dropdownIsVisible = ref(false);
 const isValid = ref(true);
+const addedStops = ref([]);
+
+onMounted(() => {
+  game.init();
+  instruction.value = game.instruction;
+});
 
 function tryStop() {
   const stationName = station.value;
   try {
-    const isFinish = game.addStation({station: stationName});
+    const isFinish = game.addStation({ station: stationName });
+    addedStops.value = game.getAddedStops();
     if (isFinish) {
       information.value = game.getInformation();
       const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
       modal.show();
     }
-  } catch (e) {
+  }
+  catch (e) {
     isValid.value = false;
-  } finally {
+  }
+  finally {
     station.value = '';
   }
 }
@@ -59,33 +68,33 @@ function addNameToInput(event) {
   station.value = event.target.textContent;
 }
 
-onMounted(() => {
-  game.init();
-  instruction.value = game.instruction;
-});
+function toggleStop(event) {
+  const stopId = event.target.id;
+  game.toggleStop(stopId);
+}
 </script>
 
 <template>
-  <RulesModal/>
-  <FinishModal :information="information"/>
+  <RulesModal />
+  <FinishModal :information="information" />
   <div class="container">
     <h1>{{ title }}</h1>
-    <p id="instruction" v-html="instruction"/>
-    <svg id="carte"/>
+    <p id="instruction" v-html="instruction" />
+    <svg id="carte" />
     <div class="dropdown">
       <label for="station" class="form-label">Nom d'une station</label>
       <input
-          id="station"
-          v-model="station"
-          class="form-control"
-          :class="{ show: dropdownIsVisible }"
-          type="text"
-          placeholder="Rechercher une station à ajouter"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          aria-describedby="station-validation"
-          @input="handleDropDownVisibility"
-          @click="handleDropDownVisibility"
+        id="station"
+        v-model="station"
+        class="form-control"
+        :class="{ show: dropdownIsVisible }"
+        type="text"
+        placeholder="Rechercher une station à ajouter"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        aria-describedby="station-validation"
+        @input="handleDropDownVisibility"
+        @click="handleDropDownVisibility"
       >
       <div id="station-validation" class="invalid-feedback" :class="{ 'is-invalid': !isValid }">
         {{ invalidFeedback }}
@@ -101,9 +110,33 @@ onMounted(() => {
     <button class="btn btn-primary" @click="tryStop">
       Essayer
     </button>
+    <div v-if="addedStops.length > 0" class="stop-list-section">
+      <p>Stations ajoutées</p>
+      <ul class="stop-list">
+        <li v-for="(stop, index) in addedStops" :key="index" class="form-check stop-list__item">
+          <input
+            :id="stop.stop_unique_id" class="form-check-input" type="checkbox" :value="stop.stop_unique_id" checked
+            @click="toggleStop"
+          >
+          <label class="form-check-label" :for="stop.stop_unique_id">
+            {{ stop.stop_name }}
+          </label>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.stop-list-section {
+  margin-top: 1rem;
+}
 
+.stop-list {
+  list-style-type: none;
+}
+
+.stop-list__item {
+  padding-left: 0;
+}
 </style>

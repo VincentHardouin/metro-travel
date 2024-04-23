@@ -5,9 +5,9 @@ import Game from './components/Game.vue';
 </script>
 
 <template>
-  <Navbar/>
-  <AboutModal/>
-  <Game/>
+  <Navbar />
+  <AboutModal />
+  <Game />
 </template>
 
 <style scoped>
