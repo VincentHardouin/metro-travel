@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/VincentHardouin/metro-travel/compare/v1.17.0...v1.18.0) (2024-04-24)
+
+
+### Features
+
+* add buttons to zoom in and out ([bdb13dc](https://github.com/VincentHardouin/metro-travel/commit/bdb13dc03b4f393753065f094f950d8d56748bad))
+
 # [1.17.0](https://github.com/VincentHardouin/metro-travel/compare/v1.16.0...v1.17.0) (2024-04-23)
 
 
