@@ -63,6 +63,13 @@ class ParisMap {
       const scale = delta > 0 ? 1.2 : 0.8; // Determine whether to zoom in or out based on the direction of the scroll
       this.#svg.transition().call(zoom.scaleBy, scale);
     });
+
+    d3.select('#map-zoom-in').on('click', () => {
+      zoom.scaleBy(this.#svg.transition().duration(750), 1.2);
+    });
+    d3.select('#map-zoom-out').on('click', () => {
+      zoom.scaleBy(this.#svg.transition().duration(750), 0.8);
+    });
   }
 
   #resize() {

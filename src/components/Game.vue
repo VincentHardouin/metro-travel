@@ -80,7 +80,17 @@ function toggleStop(event) {
   <div class="container">
     <h1>{{ title }}</h1>
     <p id="instruction" v-html="instruction" />
-    <svg id="carte" />
+    <div class="map">
+      <svg id="carte" />
+      <div class="btn-group-vertical map__actions">
+        <button id="map-zoom-in" type="button" class="btn btn-outline-primary" aria-label="Zoomer la carte">
+          +
+        </button>
+        <button id="map-zoom-out" type="button" class="btn btn-outline-primary" aria-label="Dézoomer la carte">
+          -
+        </button>
+      </div>
+    </div>
     <div class="dropdown">
       <label for="station" class="form-label">Nom d'une station</label>
       <input
@@ -138,5 +148,15 @@ function toggleStop(event) {
 
 .stop-list__item {
   padding-left: 0;
+}
+
+.map {
+  position: relative;
+}
+
+.map__actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 </style>
