@@ -83,10 +83,10 @@ function toggleStop(event) {
     <div class="map">
       <svg id="carte" />
       <div class="btn-group-vertical map__actions">
-        <button id="map-zoom-in" type="button" class="btn btn-outline-primary" aria-label="Zoomer la carte">
+        <button id="map-zoom-in" type="button" class="btn btn-outline-primary btn-sm" aria-label="Zoomer la carte">
           +
         </button>
-        <button id="map-zoom-out" type="button" class="btn btn-outline-primary" aria-label="Dézoomer la carte">
+        <button id="map-zoom-out" type="button" class="btn btn-outline-primary btn-sm" aria-label="Dézoomer la carte">
           -
         </button>
       </div>
