@@ -13,6 +13,14 @@ function verifyIfConnected({ start, end, adjacentStops, stationsToVerify }) {
   const filteredAdjacentStops = adjacentStops.filter((stop) => {
     return stationsToVerify.includes(stop.from_stop_unique_id) && stationsToVerify.includes(stop.to_stop_unique_id);
   });
+  if (filteredAdjacentStops.length === 0)
+    return false;
+  const uniqueIds = filteredAdjacentStops
+    .map(({ from_stop_unique_id, to_stop_unique_id }) => [from_stop_unique_id, to_stop_unique_id])
+    .flat();
+  if (!uniqueIds.includes(start) || !uniqueIds.includes(end))
+    return false;
+
   const graph = computeGraph(filteredAdjacentStops, start, end);
   return graph.isConnectedTo(start, end);
 }
