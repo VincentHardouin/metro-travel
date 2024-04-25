@@ -5,7 +5,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Métro Travel</a>
+      <RouterLink class="navbar-brand" to="/">
+        Métro Travel
+      </RouterLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -19,6 +21,11 @@
       </button>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li>
+            <RouterLink to="/practice" class="nav-link">
+              Entrainement
+            </RouterLink>
+          </li>
           <li class="nav-item">
             <button
               class="nav-link"

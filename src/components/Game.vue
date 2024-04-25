@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import * as bootstrap from 'bootstrap';
 import { Game } from '../Game.js';
 import { getUniqueStops } from '../utils.js';
@@ -7,11 +7,10 @@ import { searchStations } from '../utils.front.js';
 import RulesModal from './RulesModal.vue';
 import FinishModal from './FinishModal.vue';
 
-const sortedStations = getUniqueStops().map(d => d.stop_name).sort();
-const date = new Date();
-const dateToSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
+const props = defineProps(['seed']);
+let game = new Game(props.seed);
 
-const game = new Game(dateToSeed);
+const sortedStations = getUniqueStops().map(d => d.stop_name).sort();
 
 const title = 'Métro travel';
 const invalidFeedback = 'Le nom de station doit être valide.';
@@ -25,6 +24,12 @@ const isValid = ref(true);
 const addedStops = ref([]);
 
 onMounted(() => {
+  game.init();
+  instruction.value = game.instruction;
+});
+
+watch(() => props.seed, (newSeed) => {
+  game = new Game(newSeed);
   game.init();
   instruction.value = game.instruction;
 });

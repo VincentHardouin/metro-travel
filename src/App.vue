@@ -1,13 +1,8 @@
 <script setup>
-import Navbar from './components/Navbar.vue';
-import AboutModal from './components/AboutModal.vue';
-import Game from './components/Game.vue';
 </script>
 
 <template>
-  <Navbar />
-  <AboutModal />
-  <Game />
+  <router-view />
 </template>
 
 <style scoped>
