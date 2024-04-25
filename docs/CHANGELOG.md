@@ -1,3 +1,11 @@
+## [1.18.1](https://github.com/VincentHardouin/metro-travel/compare/v1.18.0...v1.18.1) (2024-04-25)
+
+
+### Bug Fixes
+
+* reduce buttons size ([3010e5c](https://github.com/VincentHardouin/metro-travel/commit/3010e5c01754a1d3239f78c2ad5b7114edcb4b4d))
+* start game ([5dfa50b](https://github.com/VincentHardouin/metro-travel/commit/5dfa50b618090feda21af6a818069af4ac41327f))
+
 # [1.18.0](https://github.com/VincentHardouin/metro-travel/compare/v1.17.0...v1.18.0) (2024-04-24)
 
 
