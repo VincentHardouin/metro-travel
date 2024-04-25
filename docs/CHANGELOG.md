@@ -5,6 +5,8 @@
 
 * add practice mode ([7e2ae0e](https://github.com/VincentHardouin/metro-travel/commit/7e2ae0ef5acf104f674b677b61bab5cc15a8512b))
 
+![1.19.0](./screenshots/1.19.0-desktop.png) ![1.19.0](./screenshots/1.19.0-mobile.png) 
+
 ## [1.18.1](https://github.com/VincentHardouin/metro-travel/compare/v1.18.0...v1.18.1) (2024-04-25)
 
 
