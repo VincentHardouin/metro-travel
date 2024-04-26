@@ -21,6 +21,7 @@ class ParisMap {
     this.#stations = stations;
     this.#lines = lines;
     this.#svg = d3.select('svg');
+    this.#remove();
     this.#g = this.#svg.append('g');
     this.#arrondissementsNode = this.#g.append('g');
     this.#stationsNode = this.#g.append('g');
@@ -34,6 +35,11 @@ class ParisMap {
   #draw() {
     this.#resize();
     this.#drawParis({ arrondissements: this.#arrondissements, projection: this.#projection, g: this.#g, svg: this.#svg });
+  }
+
+  #remove() {
+    this.#svg.selectAll('g').remove();
+    d3.select('.map-tooltip').remove();
   }
 
   #drawParis() {
