@@ -127,7 +127,7 @@ function toggleStop(event) {
     </button>
     <div v-if="addedStops.length > 0" class="stop-list-section">
       <p>Stations ajoutées</p>
-      <ul class="stop-list">
+      <TransitionGroup name="list" tag="ul" class="stop-list">
         <li v-for="(stop, index) in addedStops" :key="index" class="form-check stop-list__item">
           <input
             :id="stop.stop_unique_id" class="form-check-input" type="checkbox" :value="stop.stop_unique_id" checked
@@ -137,7 +137,7 @@ function toggleStop(event) {
             {{ stop.stop_name }}
           </label>
         </li>
-      </ul>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -163,5 +163,16 @@ function toggleStop(event) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
 }
 </style>
