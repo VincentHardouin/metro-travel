@@ -27,7 +27,7 @@ export class Game {
   constructor(seed) {
     this.pick = pickStations({ stations, adjacentStops, random: getSeededRandomStations(seed) });
     this.instruction = `Aujourd'hui, nous allons de <span class="start">${this.pick.start.stop_name}</span> jusqu'à <span class="end">${this.pick.end.stop_name}</span> en passant par le moins de stations possible.`;
-    this.addedStations = new Map();
+    this.currentState = new Map();
     this.adjacentStops = adjacentStops;
   }
 
@@ -42,23 +42,38 @@ export class Game {
     if (!foundStation)
       throw new NotFoundError(`Station ${station} not found`);
     const stationUniqueId = foundStation.stop_unique_id;
-    if (this.addedStations.has(stationUniqueId))
+    if (this.activeStations.has(stationUniqueId))
       throw new AlreadyAddedError(`Station ${station} already added`);
 
     const foundAdjacentStops = this.findAdjacentStops({
       pickStation: foundStation,
     });
     this.parisMap.addStation({ station: foundStation, color, adjacentStops: foundAdjacentStops });
-    this.addedStations.set(stationUniqueId, foundStation);
-    return this.isFinished({ addedStations: this.addedStations, pick: this.pick });
+
+    if (this.currentState.has(stationUniqueId)) {
+      this.currentState.get(stationUniqueId).isActive = true;
+      return this.isFinished({ addedStations: this.currentState, pick: this.pick });
+    }
+
+    this.currentState.set(stationUniqueId, { ...foundStation, isActive: true });
+    return this.isFinished({ addedStations: this.currentState, pick: this.pick });
+  }
+
+  get activeStations() {
+    return new Map([...this.currentState].filter(([_, stop]) => stop.isActive));
+  }
+
+  get addedStations() {
+    return [...this.currentState.values()].slice(2);
   }
 
   findAdjacentStops({ pickStation }) {
     const filteredAdjacentStationForPickedStation = this.adjacentStops.filter((adjacentStop) => {
       return adjacentStop.from_stop_unique_id === pickStation.stop_unique_id || adjacentStop.to_stop_unique_id === pickStation.stop_unique_id;
     });
+    const activeStations = this.activeStations;
     return filteredAdjacentStationForPickedStation.filter((adjacentStop) => {
-      return this.addedStations.has(adjacentStop.from_stop_unique_id) || this.addedStations.has(adjacentStop.to_stop_unique_id);
+      return activeStations.has(adjacentStop.from_stop_unique_id) || activeStations.has(adjacentStop.to_stop_unique_id);
     });
   }
 
@@ -66,7 +81,7 @@ export class Game {
     return verifyIfConnected({
       start: this.pick.start.stop_unique_id,
       end: this.pick.end.stop_unique_id,
-      stationsToVerify: [...this.addedStations.keys()],
+      stationsToVerify: [...this.activeStations.keys(), this.pick.start, this.pick.end],
       adjacentStops: this.adjacentStops,
     });
   }
@@ -74,7 +89,7 @@ export class Game {
   getInformation() {
     return {
       minTry: this.pick.path.length - 2,
-      try: this.addedStations.size - 2,
+      try: this.currentState.size - 2,
       stops: this.pick.path.map((stopId) => {
         const { stop_unique_id, route_id } = stops.find(d => d.stop_id === stopId);
         const stopName = stations.find(d => d.stop_unique_id === stop_unique_id).stop_name;
@@ -84,19 +99,15 @@ export class Game {
     };
   }
 
-  getAddedStops() {
-    return [...this.addedStations.values()].filter(stop => stop.stop_name !== this.pick.start.stop_name && stop.stop_name !== this.pick.end.stop_name);
-  }
-
   toggleStop(stopId) {
-    if (this.addedStations.has(stopId))
+    if (this.activeStations.has(stopId))
       this.removeStation(stopId);
     else
       this.addStation({ station: stations.find(d => d.stop_unique_id === stopId).stop_name });
   }
 
   removeStation(stopId) {
-    this.addedStations.delete(stopId);
+    this.currentState.get(stopId).isActive = false;
     this.parisMap.removeStation(stopId);
   }
 }

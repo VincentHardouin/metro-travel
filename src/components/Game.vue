@@ -38,7 +38,7 @@ function tryStop() {
   const stationName = station.value;
   try {
     const isFinish = game.addStation({ station: stationName });
-    addedStops.value = game.getAddedStops();
+    addedStops.value = game.addedStations;
     if (isFinish) {
       information.value = game.getInformation();
       const modal = new bootstrap.Modal(document.getElementById('finish-modal'));
@@ -76,6 +76,7 @@ function addNameToInput(event) {
 function toggleStop(event) {
   const stopId = event.target.id;
   game.toggleStop(stopId);
+  addedStops.value = game.addedStations;
 }
 </script>
 
@@ -128,9 +129,13 @@ function toggleStop(event) {
     <div v-if="addedStops.length > 0" class="stop-list-section">
       <p>Stations ajoutées</p>
       <TransitionGroup name="list" tag="ul" class="stop-list">
-        <li v-for="(stop, index) in addedStops" :key="index" class="form-check stop-list__item">
+        <li
+          v-for="(stop, index) in addedStops"
+          :key="index" class="form-check stop-list__item"
+        >
           <input
-            :id="stop.stop_unique_id" class="form-check-input" type="checkbox" :value="stop.stop_unique_id" checked
+            :id="stop.stop_unique_id" class="form-check-input" type="checkbox" :value="stop.stop_unique_id"
+            :checked="stop.isActive"
             @click="toggleStop"
           >
           <label class="form-check-label" :for="stop.stop_unique_id">
