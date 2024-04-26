@@ -80,7 +80,7 @@ class ParisMap {
 
   #resize() {
     const width = Number.parseInt(this.#svg.style('width'));
-    const height = width * 0.725;
+    const height = width * 0.625;
     this.#projection
       .center(PARIS_COORDINATES)
       .scale(this.#scale(height))
