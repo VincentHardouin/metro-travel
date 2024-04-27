@@ -1,3 +1,17 @@
+# [1.20.0](https://github.com/VincentHardouin/metro-travel/compare/v1.19.0...v1.20.0) (2024-04-27)
+
+
+### Bug Fixes
+
+* remove map before adding new one ([3ff6178](https://github.com/VincentHardouin/metro-travel/commit/3ff6178baa08137bba445bd63dfd600138b47a9e))
+* save all state in Game class ([3e59a4b](https://github.com/VincentHardouin/metro-travel/commit/3e59a4b4e81630c31deed919bdc61b318f26be82))
+
+
+### Features
+
+* add transition to list station ([38de427](https://github.com/VincentHardouin/metro-travel/commit/38de4270ed942798d61cdec8cf1593816fc082d2))
+* reduce map size ([7971247](https://github.com/VincentHardouin/metro-travel/commit/797124711f7e5545ea0c8376ac2ba215d3dd9948))
+
 # [1.19.0](https://github.com/VincentHardouin/metro-travel/compare/v1.18.1...v1.19.0) (2024-04-25)
 
 
