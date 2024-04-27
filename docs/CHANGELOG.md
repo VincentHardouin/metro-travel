@@ -12,6 +12,8 @@
 * add transition to list station ([38de427](https://github.com/VincentHardouin/metro-travel/commit/38de4270ed942798d61cdec8cf1593816fc082d2))
 * reduce map size ([7971247](https://github.com/VincentHardouin/metro-travel/commit/797124711f7e5545ea0c8376ac2ba215d3dd9948))
 
+![1.20.0](./screenshots/1.20.0-desktop.png) ![1.20.0](./screenshots/1.20.0-mobile.png) 
+
 # [1.19.0](https://github.com/VincentHardouin/metro-travel/compare/v1.18.1...v1.19.0) (2024-04-25)
 
 
