@@ -20,7 +20,7 @@ class ParisMap {
     this.#arrondissements = arrondissements;
     this.#stations = stations;
     this.#lines = lines;
-    this.#svg = d3.select('svg');
+    this.#svg = d3.select('svg#carte');
     this.#remove();
     this.#g = this.#svg.append('g');
     this.#arrondissementsNode = this.#g.append('g');
