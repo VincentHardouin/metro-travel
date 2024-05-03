@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/VincentHardouin/metro-travel/compare/v1.20.0...v1.21.0) (2024-05-03)
+
+
+### Features
+
+* add dark mode ([01f423d](https://github.com/VincentHardouin/metro-travel/commit/01f423dbcadf68515a71f62efa71c57a7e976c15))
+
 # [1.20.0](https://github.com/VincentHardouin/metro-travel/compare/v1.19.0...v1.20.0) (2024-04-27)
 
 
