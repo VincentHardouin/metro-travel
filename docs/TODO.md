@@ -1,7 +1,3 @@
 - [ ] UX - Map - Améliorer le responsive : se baser sur la hauteur de fenêtre aussi
-- [ ] UX - Ajouter les stations du joueur en dessous de la carte
 - [ ] Trouver un nom
-- [ ] Mode de Jeu - Ajouter un mode practice ?
-- [ ] UX - Ajouter les boutons pour le zoom : zoomer, dézoomer, reset
 - [ ] Mode de Jeu - Ajouter un mode par temps entre stations
-  - [ ] UX - Pouvoir activer/désactiver des stations
