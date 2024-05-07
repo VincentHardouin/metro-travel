@@ -5,6 +5,8 @@
 
 * add space between nav and title ([94ad9cd](https://github.com/VincentHardouin/metro-travel/commit/94ad9cd8b6e675e8dcdfc17da03bdf32498412b7))
 
+![1.23.0](./screenshots/1.23.0-desktop.png) ![1.23.0](./screenshots/1.23.0-mobile.png) 
+
 # [1.22.0](https://github.com/VincentHardouin/metro-travel/compare/v1.21.0...v1.22.0) (2024-05-03)
 
 
