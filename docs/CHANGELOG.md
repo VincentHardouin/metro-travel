@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/VincentHardouin/metro-travel/compare/v1.22.0...v1.23.0) (2024-05-07)
+
+
+### Features
+
+* add space between nav and title ([94ad9cd](https://github.com/VincentHardouin/metro-travel/commit/94ad9cd8b6e675e8dcdfc17da03bdf32498412b7))
+
 # [1.22.0](https://github.com/VincentHardouin/metro-travel/compare/v1.21.0...v1.22.0) (2024-05-03)
 
 
