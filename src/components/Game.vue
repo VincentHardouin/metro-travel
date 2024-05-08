@@ -4,7 +4,6 @@ import * as bootstrap from 'bootstrap';
 import { Game } from '../Game.js';
 import { getUniqueStops } from '../utils.js';
 import { searchStations } from '../utils.front.js';
-import RulesModal from './RulesModal.vue';
 import FinishModal from './FinishModal.vue';
 
 const props = defineProps(['seed']);
@@ -81,7 +80,6 @@ function toggleStop(event) {
 </script>
 
 <template>
-  <RulesModal />
   <FinishModal :information="information" />
   <div class="container index-page">
     <h1>{{ title }}</h1>

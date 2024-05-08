@@ -1,9 +1,9 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import Navbar from '../components/Navbar.vue';
-import AboutModal from '../components/AboutModal.vue';
 import Game from '../components/Game.vue';
+import AboutModal from '../components/AboutModal.vue';
+import RulesModal from '../components/RulesModal.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -49,8 +49,8 @@ watch(() => route.path, () => {
 </script>
 
 <template>
-  <Navbar />
   <AboutModal />
+  <RulesModal />
   <Game :seed="seed" />
 </template>
 
