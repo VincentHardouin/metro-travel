@@ -12,6 +12,8 @@
 * add footer ([4bf3a58](https://github.com/VincentHardouin/metro-travel/commit/4bf3a582ced0a9dc52ac1f59476f353c73edf6a8))
 * publish diary ([ddc93b2](https://github.com/VincentHardouin/metro-travel/commit/ddc93b205aebac2e5980b3234f9d039756058873))
 
+![1.24.0](./screenshots/1.24.0-desktop.png) ![1.24.0](./screenshots/1.24.0-mobile.png) 
+
 # [1.23.0](https://github.com/VincentHardouin/metro-travel/compare/v1.22.0...v1.23.0) (2024-05-07)
 
 
