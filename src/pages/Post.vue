@@ -1,16 +1,21 @@
 <script setup>
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { ref, watchEffect } from 'vue';
 
 import * as posts from '../../docs/diary/*.md';
 
 const route = useRoute();
+const router = useRouter();
 
 const slug = route.params.slug;
 const markdown = ref(null);
 
 watchEffect(async () => {
-  markdown.value = posts[slug].default;
+  const post = posts[slug];
+  if (!post)
+    return router.replace('/404');
+
+  markdown.value = post.default;
 });
 </script>
 
