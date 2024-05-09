@@ -22,6 +22,7 @@ function handleSeed() {
   else {
     const hexSeed = getRandomSeed();
     router.push({ query: { seed: hexSeed } });
+    seed.value = hexToSeed(hexSeed);
   }
 }
 
