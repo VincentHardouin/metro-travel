@@ -17,6 +17,10 @@ const sortedPosts = Object.entries(posts)
 <template>
   <div class="container main">
     <h1>Journal</h1>
+    <p>
+      Ceci est le journal de la construction de ce jeu. Il contient mes découvertes, mes choix et leurs explications
+      ainsi que les erreurs que j'ai pu faire.
+    </p>
     <ul class="slide-enter-content px-0">
       <li
         v-for="post in sortedPosts" :key="post"
