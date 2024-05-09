@@ -1,6 +1,10 @@
 const darkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
 
-darkModeMedia.addEventListener('change', setTheme);
+darkModeMedia.addEventListener('change', () => {
+  const theme = getCurrentTheme();
+  if (theme === 'auto')
+    setTheme('auto');
+});
 
 export function setTheme(theme) {
   const realTheme = theme === 'auto' ? (darkModeMedia.matches ? 'dark' : 'light') : theme;
