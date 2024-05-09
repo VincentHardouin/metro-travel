@@ -1,3 +1,17 @@
+# [1.24.0](https://github.com/VincentHardouin/metro-travel/compare/v1.23.0...v1.24.0) (2024-05-09)
+
+
+### Bug Fixes
+
+* handle correctly os change only when is set ([8fca980](https://github.com/VincentHardouin/metro-travel/commit/8fca9802c8903fddd579bad77da4798c82bc4e5e))
+* handle return to practice ([510f6e3](https://github.com/VincentHardouin/metro-travel/commit/510f6e3c5c549081fdb60954c513851fbaae77a5))
+
+
+### Features
+
+* add footer ([4bf3a58](https://github.com/VincentHardouin/metro-travel/commit/4bf3a582ced0a9dc52ac1f59476f353c73edf6a8))
+* publish diary ([ddc93b2](https://github.com/VincentHardouin/metro-travel/commit/ddc93b205aebac2e5980b3234f9d039756058873))
+
 # [1.23.0](https://github.com/VincentHardouin/metro-travel/compare/v1.22.0...v1.23.0) (2024-05-07)
 
 
