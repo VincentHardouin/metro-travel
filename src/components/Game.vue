@@ -81,7 +81,7 @@ function toggleStop(event) {
 
 <template>
   <FinishModal :information="information" />
-  <div class="container index-page">
+  <div class="container index-page main">
     <h1>{{ title }}</h1>
     <p id="instruction" v-html="instruction" />
     <div class="map">
@@ -146,10 +146,6 @@ function toggleStop(event) {
 </template>
 
 <style scoped>
-.index-page {
-  padding-top: 0.5rem;
-}
-
 .stop-list-section {
   margin-top: 1rem;
 }

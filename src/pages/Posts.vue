@@ -15,7 +15,7 @@ const sortedPosts = Object.entries(posts)
 </script>
 
 <template>
-  <div class="container">
+  <div class="container main">
     <h1>Journal</h1>
     <ul class="slide-enter-content px-0">
       <li

@@ -15,7 +15,7 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container main">
     <div v-if="markdown" class="slide-enter-content" v-html="markdown.__content" />
   </div>
 </template>
