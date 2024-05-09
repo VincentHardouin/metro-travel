@@ -6,6 +6,8 @@
 * add 404 ([41bb97b](https://github.com/VincentHardouin/metro-travel/commit/41bb97b50b651dcb336e8b40fac1632343d08b31))
 * add description ([707f58f](https://github.com/VincentHardouin/metro-travel/commit/707f58fbd4ad32f8c0ad7cb1d0e97e6ecbc0515a))
 
+![1.25.0](./screenshots/1.25.0-desktop.png) ![1.25.0](./screenshots/1.25.0-mobile.png) 
+
 # [1.24.0](https://github.com/VincentHardouin/metro-travel/compare/v1.23.0...v1.24.0) (2024-05-09)
 
 
