@@ -57,6 +57,7 @@ async function saveStops(stops) {
       stop_url: stop.stop_url,
       parent_station: stop.parent_station,
       platform_code: stop.platform_code,
+      location_type: stop.location_type,
     };
   });
   await knex.batchInsert('stops', filteredStops, 1000);

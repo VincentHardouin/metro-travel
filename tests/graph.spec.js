@@ -40,8 +40,8 @@ describe('graph', () => {
       const pickedUniqueStations = [
         'Notre-Dame-de-Lorette',
         'Brochant',
-        'Trinité d\'Estienne d\'Orves',
-        'Saint-Lazare',
+        'Trinité - d\'Estienne d\'Orves',
+        'Gare Saint-Lazare',
         'Liège',
         'Place de Clichy',
         'La Fourche',
@@ -75,8 +75,8 @@ describe('graph', () => {
       const pickedUniqueStations = [
         'Notre-Dame-de-Lorette',
         'Brochant',
-        'Trinité d\'Estienne d\'Orves',
-        'Saint-Lazare',
+        'Trinité - d\'Estienne d\'Orves',
+        'Gare Saint-Lazare',
         'Liège',
         'La Fourche',
       ];

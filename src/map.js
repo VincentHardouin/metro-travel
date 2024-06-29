@@ -95,7 +95,7 @@ class ParisMap {
   }
 
   #drawStation({ station, color = '#0d47a1' }) {
-    const point = [station.stop_lat, station.stop_lon];
+    const point = [station.stop_lon, station.stop_lat];
     this.#stationsNode.append('circle')
       .attr('class', 'metro-station')
       .attr('cx', this.#projection(point)[0])

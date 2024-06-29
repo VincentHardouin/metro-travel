@@ -142,6 +142,7 @@ describe('extract-data', () => {
           zone_id: '',
           stop_url: '',
           parent_station: 'IDFM:C01372',
+          location_type: 1,
           platform_code: '',
         },
         {
@@ -152,6 +153,7 @@ describe('extract-data', () => {
           stop_lon: 2.373273,
           zone_id: '',
           stop_url: '',
+          location_type: 0,
           parent_station: '',
           platform_code: '',
         },

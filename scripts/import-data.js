@@ -34,6 +34,7 @@ async function importData(dirPath, dataName, saveFunction) {
       chunks = [];
     }
   }
+  await saveFunction(chunks);
 
   console.log(`${dataName} saved`);
 }
