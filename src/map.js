@@ -34,7 +34,7 @@ class ParisMap {
 
   #draw() {
     this.#resize();
-    this.#drawParis({ arrondissements: this.#arrondissements, projection: this.#projection, g: this.#g, svg: this.#svg });
+    this.#drawParis();
   }
 
   #remove() {
@@ -81,7 +81,7 @@ class ParisMap {
   #resize() {
     const width = Number.parseInt(this.#svg.style('width'));
     const height = width * 0.625;
-    this.#projection
+    this.#projection = this.#projection
       .center(PARIS_COORDINATES)
       .scale(this.#scale(height))
       .translate([width / 2, height / 2]);
