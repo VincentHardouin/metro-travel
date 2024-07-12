@@ -5,6 +5,8 @@
 
 * update data with new extensions ([a03eed6](https://github.com/VincentHardouin/metro-travel/commit/a03eed62c7fb7eba4f4b617db951e19b5ac652d4))
 
+![1.26.0](./screenshots/1.26.0-desktop.png) ![1.26.0](./screenshots/1.26.0-mobile.png) 
+
 # [1.25.0](https://github.com/VincentHardouin/metro-travel/compare/v1.24.0...v1.25.0) (2024-05-09)
 
 
