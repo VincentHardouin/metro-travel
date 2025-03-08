@@ -1,7 +1,5 @@
-import arrondissements from '../assets/arrondissements.geojson';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { getAdjacentStops, getRoutes, getStops, getUniqueStops } from './utils.js';
-import { ParisMap } from './map.js';
 import { verifyIfConnected } from './graph.js';
 
 const stations = getUniqueStops();
@@ -91,8 +89,8 @@ export class Game {
       minTry: this.pick.path.length - 2,
       try: this.currentState.size - 2,
       stops: this.pick.path.map((stopId) => {
-        const { stop_unique_id, route_id } = stops.find(d => d.stop_id === stopId);
-        const stopName = stations.find(d => d.stop_unique_id === stop_unique_id).stop_name;
+        const { route_id, parent_station } = stops.find(d => d.stop_id === stopId);
+        const stopName = stations.find(d => d.stop_unique_id === parent_station).stop_name;
         const line = routes.find(d => d.route_id === route_id);
         return `${stopName} - Ligne ${line.route_short_name}`;
       }),
