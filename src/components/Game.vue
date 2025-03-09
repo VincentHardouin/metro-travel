@@ -7,7 +7,7 @@ import { searchStations } from '../utils.front.js';
 import FinishModal from './FinishModal.vue';
 
 const props = defineProps(['seed']);
-let game = new Game(props.seed);
+let game = new Game({ seed: props.seed, mode: 'station' });
 
 const sortedStations = getUniqueStops().map(d => d.stop_name).sort();
 
@@ -28,7 +28,7 @@ onMounted(() => {
 });
 
 watch(() => props.seed, (newSeed) => {
-  game = new Game(newSeed);
+  game = new Game({ seed: newSeed, mode: 'station' });
   game.init();
   instruction.value = game.instruction;
 });

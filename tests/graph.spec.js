@@ -30,6 +30,80 @@ describe('graph', () => {
         ],
       });
     });
+
+    describe('when provided mode is time', () => {
+      it('should return the smallest duration', () => {
+        const adjacentStops = getAdjacentStops();
+
+        const start = {
+          stop_unique_id: 'IDFM:412687',
+          stop_name: 'Pernety',
+        };
+        const end = {
+          stop_unique_id: 'IDFM:73653',
+          stop_name: 'Mouton-Duvernet',
+        };
+
+        const path = computeSmallestStationsPath({
+          start: start.stop_unique_id,
+          end: end.stop_unique_id,
+          adjacentStops,
+          mode: 'time',
+        });
+
+        expect(path).to.deep.equal({
+          distance: 437,
+          path: [
+            'IDFM:463229',
+            'IDFM:463184',
+            'IDFM:462954',
+            'IDFM:462955',
+            'IDFM:22172',
+            'IDFM:22155',
+            'IDFM:22158',
+            'IDFM:463103',
+            'IDFM:463104',
+            'IDFM:22144',
+          ],
+        });
+      });
+    });
+
+    describe('when provided mode is station', () => {
+      it('should return the smallest path', () => {
+        const adjacentStops = getAdjacentStops();
+
+        const start = {
+          stop_unique_id: 'IDFM:412687',
+          stop_name: 'Pernety',
+        };
+        const end = {
+          stop_unique_id: 'IDFM:73653',
+          stop_name: 'Mouton-Duvernet',
+        };
+
+        const path = computeSmallestStationsPath({
+          start: start.stop_unique_id,
+          end: end.stop_unique_id,
+          adjacentStops,
+          mode: 'station',
+        });
+
+        expect(path).to.deep.equal({
+          distance: 7,
+          path: [
+            'IDFM:22222',
+            'IDFM:22230',
+            'IDFM:22157',
+            'IDFM:22143',
+            'IDFM:463016',
+            'IDFM:22131',
+            'IDFM:463104',
+            'IDFM:22144',
+          ],
+        });
+      });
+    });
   });
 
   describe('#verifyIsConnected', () => {

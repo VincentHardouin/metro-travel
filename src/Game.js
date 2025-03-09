@@ -1,6 +1,8 @@
+import arrondissements from '../assets/arrondissements.json';
 import { getSeededRandomStations, pickStations } from './pick-stations.js';
 import { getAdjacentStops, getRoutes, getStops, getUniqueStops } from './utils.js';
 import { verifyIfConnected } from './graph.js';
+import { ParisMap } from './map.js';
 
 const stations = getUniqueStops();
 const adjacentStops = getAdjacentStops();
@@ -22,11 +24,12 @@ export class AlreadyAddedError extends Error {
 }
 
 export class Game {
-  constructor(seed) {
-    this.pick = pickStations({ stations, adjacentStops, random: getSeededRandomStations(seed) });
+  constructor({ seed, mode }) {
+    this.pick = pickStations({ stations, adjacentStops, random: getSeededRandomStations(seed), mode });
     this.instruction = `Aujourd'hui, nous allons de <span class="start">${this.pick.start.stop_name}</span> jusqu'à <span class="end">${this.pick.end.stop_name}</span> en passant par le moins de stations possible.`;
     this.currentState = new Map();
     this.adjacentStops = adjacentStops;
+    this.mode = mode;
   }
 
   init() {

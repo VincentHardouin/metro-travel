@@ -1,3 +1,4 @@
 - [ ] UX - Map - Améliorer le responsive : se baser sur la hauteur de fenêtre aussi
 - [ ] Trouver un nom
 - [ ] Mode de Jeu - Ajouter un mode par temps entre stations
+- [ ] Unique Stop - Renommer en station

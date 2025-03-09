@@ -1,11 +1,11 @@
-function computeSmallestStationsPath({ start, end, adjacentStops }) {
+function computeSmallestStationsPath({ start, end, adjacentStops, mode }) {
   if (!stopExists(adjacentStops, start))
     throw new Error('Start stop does not exist');
 
   if (!stopExists(adjacentStops, end))
     throw new Error('End stop does not exist');
 
-  const graph = computeGraph(adjacentStops, start, end);
+  const graph = computeGraph(adjacentStops, start, end, mode);
   return graph.dijkstra(start, end);
 }
 
@@ -25,13 +25,13 @@ function verifyIfConnected({ start, end, adjacentStops, stationsToVerify }) {
   return graph.isConnectedTo(start, end);
 }
 
-function computeGraph(adjacentStops, start, end) {
+function computeGraph(adjacentStops, start, end, mode = 'time') {
   const graph = new Graph();
 
   adjacentStops.forEach(({ from_stop_id, from_stop_unique_id, to_stop_id, to_stop_unique_id, duration }) => {
     graph.addNode(from_stop_id);
     graph.addNode(to_stop_id);
-    graph.addEdge(from_stop_id, to_stop_id, duration);
+    graph.addEdge(from_stop_id, to_stop_id, mode === 'time' ? duration : 1);
 
     if (from_stop_unique_id === start || from_stop_unique_id === end) {
       graph.addNode(from_stop_unique_id);

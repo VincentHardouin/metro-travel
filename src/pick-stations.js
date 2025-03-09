@@ -29,7 +29,7 @@ function makeRandom(seed) {
   return next;
 }
 
-function pickStations({ stations, adjacentStops, random = getRandomStations } = {}) {
+function pickStations({ stations, adjacentStops, random = getRandomStations, mode } = {}) {
   const MIN_DISTANCE = 5;
 
   let start = null;
@@ -38,7 +38,7 @@ function pickStations({ stations, adjacentStops, random = getRandomStations } = 
 
   do {
     [start, end] = random(stations);
-    path = computeSmallestStationsPath({ start: start.stop_unique_id, end: end.stop_unique_id, adjacentStops });
+    path = computeSmallestStationsPath({ start: start.stop_unique_id, end: end.stop_unique_id, adjacentStops, mode });
   } while (path.distance < MIN_DISTANCE);
 
   return {
