@@ -10,6 +10,8 @@
 
 * use station mode by default ([355b17b](https://github.com/VincentHardouin/metro-travel/commit/355b17b4cdedb8a0888260d8f72f52c3426a0006))
 
+![1.27.0](./screenshots/1.27.0-desktop.png) ![1.27.0](./screenshots/1.27.0-mobile.png) 
+
 # [1.26.0](https://github.com/VincentHardouin/metro-travel/compare/v1.25.0...v1.26.0) (2024-07-12)
 
 
