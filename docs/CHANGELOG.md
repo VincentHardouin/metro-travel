@@ -1,3 +1,15 @@
+# [1.27.0](https://github.com/VincentHardouin/metro-travel/compare/v1.26.0...v1.27.0) (2025-03-09)
+
+
+### Bug Fixes
+
+* get information for finish game ([5980e27](https://github.com/VincentHardouin/metro-travel/commit/5980e2757f2b0b6420e2a3af5cff006f16422f0b))
+
+
+### Features
+
+* use station mode by default ([355b17b](https://github.com/VincentHardouin/metro-travel/commit/355b17b4cdedb8a0888260d8f72f52c3426a0006))
+
 # [1.26.0](https://github.com/VincentHardouin/metro-travel/compare/v1.25.0...v1.26.0) (2024-07-12)
 
 
