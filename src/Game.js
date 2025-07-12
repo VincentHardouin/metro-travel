@@ -1,6 +1,6 @@
-import {getSeededRandomStations, pickStations} from './pick-stations.js';
-import {getAdjacentStops, getRoutes, getStops, getUniqueStops} from './utils.js';
-import {verifyIfConnected} from './graph.js';
+import { verifyIfConnected } from './graph.js';
+import { getSeededRandomStations, pickStations } from './pick-stations.js';
+import { getAdjacentStops, getRoutes, getStops, getUniqueStops } from './utils.js';
 
 const stations = getUniqueStops();
 const adjacentStops = getAdjacentStops();
@@ -22,22 +22,20 @@ export class AlreadyAddedError extends Error {
 }
 
 export class Game {
-  constructor({seed, mode}) {
-    this.pick = pickStations({stations, adjacentStops, random: getSeededRandomStations(seed), mode});
-    this.instruction = `Aujourd'hui, nous allons de <span class="inline-flex items-center gap-1 font-semibold text-green-700 dark:text-green-400">${this.pick.start.stop_name}</span> jusqu'à <span class="inline-flex items-center gap-1 font-semibold text-red-600 dark:text-red-400">${this.pick.end.stop_name}</span> en passant par le moins de stations possible.`;
+  constructor({ seed, mode }) {
+    this.pick = pickStations({ stations, adjacentStops, random: getSeededRandomStations(seed), mode });
+    this.startStation = this.pick.start;
+    this.endStation = this.pick.end;
     this.currentState = new Map();
     this.adjacentStops = adjacentStops;
     this.mode = mode;
     this.lines = routes;
-    this.visibleLines = []
+    this.visibleLines = [];
+    this.addStation(this.startStation.stop_name);
+    this.addStation(this.endStation.stop_name);
   }
 
-  init() {
-    this.addStation({station: this.pick.start.stop_name, color: '#008a22'});
-    this.addStation({station: this.pick.end.stop_name, color: '#e52228'});
-  }
-
-  addStation({station, color}) {
+  addStation(station) {
     const foundStation = stations.find(d => d.stop_name === station);
     if (!foundStation)
       throw new NotFoundError(`Station ${station} not found`);
@@ -50,15 +48,15 @@ export class Game {
     });
 
     const newLines = this.#findLineBetweenStation(foundAdjacentStops);
-    this.visibleLines.push(...newLines.map((line) => ({...line, stationUniqueId})));
+    this.visibleLines.push(...newLines.map(line => ({ ...line, stationUniqueId })));
 
     if (this.currentState.has(stationUniqueId)) {
       this.currentState.get(stationUniqueId).isActive = true;
-      return this.isFinished({addedStations: this.currentState, pick: this.pick});
+      return this.isFinished({ addedStations: this.currentState, pick: this.pick });
     }
 
-    this.currentState.set(stationUniqueId, {...foundStation, isActive: true});
-    return this.isFinished({addedStations: this.currentState, pick: this.pick});
+    this.currentState.set(stationUniqueId, { ...foundStation, isActive: true });
+    return this.isFinished({ addedStations: this.currentState, pick: this.pick });
   }
 
   get activeStations() {
@@ -69,7 +67,7 @@ export class Game {
     return [...this.currentState.values()].slice(2);
   }
 
-  #findAdjacentStops({pickStation}) {
+  #findAdjacentStops({ pickStation }) {
     const filteredAdjacentStationForPickedStation = this.adjacentStops.filter((adjacentStop) => {
       return adjacentStop.from_stop_unique_id === pickStation.stop_unique_id || adjacentStop.to_stop_unique_id === pickStation.stop_unique_id;
     });
@@ -83,9 +81,9 @@ export class Game {
     return adjacentStations
       .filter(station => station.path && station.route_id)
       .map((station) => {
-        const {route_color: color} = this.lines.find(line => line.route_id === station.route_id);
-        const newPath = station.path.map(([a, b]) => [b, a])
-        return {color, path: newPath, stations: [station.from_stop_unique_id, station.to_stop_unique_id]};
+        const { route_color: color } = this.lines.find(line => line.route_id === station.route_id);
+        const newPath = station.path.map(([a, b]) => [b, a]);
+        return { color, path: newPath, stations: [station.from_stop_unique_id, station.to_stop_unique_id] };
       });
   }
 
@@ -99,15 +97,24 @@ export class Game {
   }
 
   getInformation() {
+    const stationInformation = this.pick.path.map((stopId) => {
+      const { route_id, parent_station } = stops.find(d => d.stop_id === stopId);
+      const stopName = stations.find(d => d.stop_unique_id === parent_station).stop_name;
+      const line = routes.find(d => d.route_id === route_id);
+      return {
+        stop_unique_id: parent_station,
+        stop_name: stopName,
+        line: {
+          name: line.route_short_name,
+          color: `#${line.route_color}`,
+        },
+      };
+    });
     return {
-      minTry: this.pick.path.length - 2,
+      minTry: new Set(stationInformation.map(({ stop_unique_id }) => stop_unique_id)).size - 2,
       try: this.currentState.size - 2,
-      stops: this.pick.path.map((stopId) => {
-        const {route_id, parent_station} = stops.find(d => d.stop_id === stopId);
-        const stopName = stations.find(d => d.stop_unique_id === parent_station).stop_name;
-        const line = routes.find(d => d.route_id === route_id);
-        return `${stopName} - Ligne ${line.route_short_name}`;
-      }),
+      stops: stationInformation,
+
     };
   }
 
@@ -115,7 +122,7 @@ export class Game {
     if (this.activeStations.has(stopId))
       this.removeStation(stopId);
     else
-      this.addStation({station: stations.find(d => d.stop_unique_id === stopId).stop_name});
+      this.addStation(stations.find(d => d.stop_unique_id === stopId).stop_name);
   }
 
   removeStation(stationId) {

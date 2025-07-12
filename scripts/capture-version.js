@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import puppeteer from 'puppeteer';
-import packageJson from '../package.json' assert { type: 'json' };
+import packageJson from '../package.json';
 
 async function getPage() {
   const browser = await puppeteer.launch({

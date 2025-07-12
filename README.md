@@ -1,35 +1,75 @@
-# Metro travel
+# Nuxt Minimal Starter
 
-Challenge yourself daily to find the optimal route between two Paris Metro stations.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Development & Contribution
+## Setup
 
-This project is a personal project, but if you want to contribute, feel free to open an issue or a pull request.
-
-### Requirements
-
-- Node.js 20
-
-### Install
+Make sure to install dependencies:
 
 ```bash
-npm ci
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-### Start
+## Development Server
+
+Start the development server on `http://localhost:3000`:
 
 ```bash
-npm start
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-### Build
+## Production
+
+Build the application for production:
 
 ```bash
+# npm
 npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
-### Test
+Locally preview production build:
 
 ```bash
-npm test
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -1,8 +1,8 @@
 import { access, constants, readFile, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import os from 'node:os';
-import url from 'node:url';
+import path from 'node:path';
 import process from 'node:process';
+import url from 'node:url';
 import { disconnect, knex } from '../db/knex-database-connection.js';
 
 async function getRoutes() {
@@ -101,7 +101,7 @@ async function _verifyPath(dirPath) {
   try {
     await access(dirPath, constants.R_OK);
   }
-  catch (e) {
+  catch {
     throw new Error(`The path ${dirPath} is not accessible.`);
   }
 }
@@ -240,4 +240,4 @@ const isLaunchedFromCommandLine = process.argv[1] === modulePath;
   }
 })();
 
-export { getRoutes, getStops, getAdjacentStops, getRoutesPaths, fillPathsInAdjacentStop };
+export { fillPathsInAdjacentStop, getAdjacentStops, getRoutes, getRoutesPaths, getStops };

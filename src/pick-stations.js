@@ -49,6 +49,6 @@ function pickStations({ stations, adjacentStops, random = getRandomStations, mod
 }
 
 export {
-  pickStations,
   getSeededRandomStations,
+  pickStations,
 };

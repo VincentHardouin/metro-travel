@@ -1,9 +1,9 @@
-import {adjacentStops, routes, stops, uniqueStops} from '~~/assets/data';
+import { adjacentStops, routes, stops, uniqueStops } from '~~/assets/data.json';
 
 function getAdjacentStops() {
   return adjacentStops;
 }
-  
+
 function getUniqueStops() {
   return uniqueStops;
 }
@@ -19,6 +19,6 @@ function getStops() {
 export {
   getAdjacentStops,
   getRoutes,
-  getUniqueStops,
   getStops,
+  getUniqueStops,
 };
