@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import data from '../assets/data.json' assert {type: 'json'};
+import data from '../assets/data.json';
 
 describe('metro data', () => {
   describe('routes', () => {

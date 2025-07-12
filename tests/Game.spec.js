@@ -5,25 +5,74 @@ describe('game', () => {
   describe('#getInformation', () => {
     it('should return all stats for game', () => {
       const game = new Game({ seed: Number.parseInt('2eeea1', 16), mode: 'station' });
-      game.parisMap = {
-        addStation: () => {
-        },
-      };
-
-      game.addStation({ station: game.pick.start.stop_name, color: '#008a22' });
-      game.addStation({ station: game.pick.end.stop_name, color: '#e52228' });
 
       expect(game.getInformation()).to.deep.equal({
-        minTry: 6,
+        minTry: 5,
         stops: [
-          'Pernety - Ligne 13',
-          'Gaîté - Ligne 13',
-          'Gare Montparnasse - Ligne 13',
-          'Gare Montparnasse - Ligne 4',
-          'Vavin - Ligne 4',
-          'Raspail - Ligne 4',
-          'Denfert-Rochereau - Ligne 4',
-          'Mouton-Duvernet - Ligne 4',
+          {
+            line: {
+              color: '#6EC4E8',
+              name: '13',
+            },
+            stop_name: 'Pernety',
+            stop_unique_id: 'IDFM:412687',
+          },
+          {
+            line: {
+              color: '#6EC4E8',
+              name: '13',
+            },
+            stop_name: 'Gaîté',
+            stop_unique_id: 'IDFM:73675',
+          },
+          {
+            line: {
+              color: '#6EC4E8',
+              name: '13',
+            },
+            stop_name: 'Gare Montparnasse',
+            stop_unique_id: 'IDFM:71139',
+          },
+          {
+            line: {
+              color: '#A0006E',
+              name: '4',
+            },
+            stop_name: 'Gare Montparnasse',
+            stop_unique_id: 'IDFM:71139',
+          },
+          {
+            line: {
+              color: '#A0006E',
+              name: '4',
+            },
+            stop_name: 'Vavin',
+            stop_unique_id: 'IDFM:71117',
+          },
+          {
+            line: {
+              color: '#A0006E',
+              name: '4',
+            },
+            stop_name: 'Raspail',
+            stop_unique_id: 'IDFM:71088',
+          },
+          {
+            line: {
+              color: '#A0006E',
+              name: '4',
+            },
+            stop_name: 'Denfert-Rochereau',
+            stop_unique_id: 'IDFM:71056',
+          },
+          {
+            line: {
+              color: '#A0006E',
+              name: '4',
+            },
+            stop_name: 'Mouton-Duvernet',
+            stop_unique_id: 'IDFM:73653',
+          },
         ],
         try: 0,
       });

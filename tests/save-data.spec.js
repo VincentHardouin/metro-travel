@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { emptyAllTables, knex } from '../db/knex-database-connection.js';
-import { savePathways, saveRoutes, saveStopTimes, saveStops, saveTransfers, saveTrips } from '../scripts/save-data.js';
 import { parseData } from '../scripts/parse-data.js';
+import { savePathways, saveRoutes, saveStops, saveStopTimes, saveTransfers, saveTrips } from '../scripts/save-data.js';
 
 describe('save-data', () => {
   afterEach(async () => {

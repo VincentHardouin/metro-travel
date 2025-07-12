@@ -8,18 +8,26 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
     "@nuxtjs/leaflet": "^1.2.6",
     "@tailwindcss/vite": "^4.1.11",
     "better-sqlite3": "^12.2.0",
+    "canvas-confetti": "^1.9.3",
     "daisyui": "^5.0.46",
     "leaflet": "^1.9.4",
     "nuxt": "^3.17.6",
     "tailwindcss": "^4.1.11",
+    "vitest": "^3.2.4",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "eslint": "^9.31.0",
+    "eslint-plugin-format": "^1.0.1"
   }
 }
