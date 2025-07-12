@@ -1,9 +1,9 @@
-import { adjacentStops, routes, stops, uniqueStops } from '../assets/data';
+import {adjacentStops, routes, stops, uniqueStops} from '~~/assets/data';
 
 function getAdjacentStops() {
   return adjacentStops;
 }
-
+  
 function getUniqueStops() {
   return uniqueStops;
 }
