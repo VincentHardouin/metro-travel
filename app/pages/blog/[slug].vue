@@ -10,7 +10,7 @@ if (!post.value) {
 
 <template>
   <article
-    class="max-w-3xl mx-auto pt-34 py-12 px-4 prose prose-gray dark:prose-invert prose prose-lg dark:prose-invert leading-relaxed"
+    class="post max-w-3xl mx-auto pt-34 py-12 px-4 prose prose-gray dark:prose-invert prose prose-lg dark:prose-invert leading-relaxed"
   >
     <template v-if="post">
       <ContentRenderer :value="post" />
@@ -30,24 +30,24 @@ if (!post.value) {
 <style>
 @reference "~/assets/app.css";
 
-h1 {
+.post h1 {
   @apply text-4xl font-bold text-gray-900;
   padding-bottom: 2rem;
 }
 
-h2 {
+.post h2 {
   @apply text-3xl font-semibold text-gray-800;
 }
 
-p {
+.post p {
   @apply text-base text-gray-700 leading-relaxed;
 }
 
-ul {
+.post ul {
   @apply list-disc list-inside;
 }
 
-a {
+.post a {
   @apply text-blue-600 underline hover:text-blue-800;
 }
 </style>
