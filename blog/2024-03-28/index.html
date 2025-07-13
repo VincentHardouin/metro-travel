@@ -1,0 +1,181 @@
+<!DOCTYPE html><html  lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Metro Travel</title><style>/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */@layer properties{@supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,::backdrop,:after,:before{--tw-font-weight:initial;--tw-leading:initial}}}.post h1{font-size:var(--text-4xl,2.25rem);line-height:var(--tw-leading,var(--text-4xl--line-height,1.11111));--tw-font-weight:var(--font-weight-bold,700);color:var(--color-gray-900,oklch(21% .034 264.665));font-weight:var(--font-weight-bold,700);padding-bottom:2rem}.post h2{font-size:var(--text-3xl,1.875rem);line-height:var(--tw-leading,var(--text-3xl--line-height,1.2));--tw-font-weight:var(--font-weight-semibold,600);color:var(--color-gray-800,oklch(27.8% .033 256.848));font-weight:var(--font-weight-semibold,600)}.post p{font-size:var(--text-base,1rem);line-height:var(--tw-leading,var(--text-base--line-height,1.5));--tw-leading:var(--leading-relaxed,1.625);color:var(--color-gray-700,oklch(37.3% .034 259.733));line-height:var(--leading-relaxed,1.625)}.post ul{list-style-position:inside;list-style-type:disc}.post a{color:var(--color-blue-600,oklch(54.6% .245 262.881));text-decoration-line:underline}@media (hover:hover){.post a:hover{color:var(--color-blue-800,oklch(42.4% .199 265.638))}}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-leading{syntax:"*";inherits:false}</style><style>pre code .line{display:block}</style><link rel="stylesheet" href="/_nuxt/entry.Bjo9vf1p.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/blog/2024-03-28/_payload.json?55023d8b-0a13-42c3-a3db-38e51c1f7711"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/B_RUHvC5.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/p0j60SLX.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/0NVrhxl7.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/Dm4Az773.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CiQS8YBX.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BREgCDxA.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CF2n52tH.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/B2zXwtR0.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DV7jJGjX.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/55023d8b-0a13-42c3-a3db-38e51c1f7711.json"><script src="https://analytics.vincenthardouin.dev/js/script.js" defer data-domain="metro-travel.vincenthardouin.dev"></script><link rel="prefetch" as="script" crossorigin href="/_nuxt/KXfNCXKJ.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/B36WBLqQ.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/BwvhTdZ3.js"><meta hid="description" name="description" content="Défiez vos connaissances du métro parisien chaque jour en trouvant le trajet optimal."><meta name="keywords" content="metro, paris, travel, challenge, game, daily, GTFS"><meta name="author" content="Vincent Hardouin"><meta name="robots" content="index, follow"><meta name="og:title" content="Metro travel"><link rel="icon" type="image/png" href="/favicon.png"><script type="module" src="/_nuxt/B_RUHvC5.js" crossorigin></script><script id="unhead:payload" type="application/json">{"title":"Metro Travel"}</script></head><body><div id="__nuxt"><div><body class="bg-gray-100 dark:bg-gray-900 font-sans transition-colors duration-300"><header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg px-3 py-3 rounded-full shadow-lg flex justify-between items-center z-10 w-[calc(100%-2rem)] max-w-[640px] mx-auto transition-colors duration-300"><div class="text-lg font-bold text-gray-800 dark:text-gray-200 whitespace-nowrap px-3"> 🚇 Metro Travel </div><div class="flex items-center gap-6"><ul class="flex gap-4 items-center"><li><a href="/" class="text-base font-medium hover:text-primary no-underline"> Accueil </a></li><li><a href="/blog" class="text-base font-medium hover:text-primary no-underline"> Blog </a></li></ul><a href="/training" class="btn btn-primary btn-sm shadow-none px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"> S&#39;entraîner </a></div></header><!--[--><article class="post max-w-3xl mx-auto pt-34 py-12 px-4 prose prose-gray dark:prose-invert prose prose-lg dark:prose-invert leading-relaxed"><div><h1 id="_2024-03-28"><!--[-->2024-03-28<!--]--></h1><p><!--[-->Reprenons le problème d&#39;hier, j&#39;ai un voyage &#39;trip&#39; qui est un peu une anomalie dans les
+données
+<code><!--[-->Mairie de Montreuil -&gt; Porte de Montreuil<!--]--></code>, ça se produit uniquement 2 fois, sur un même service
+<code><!--[-->IDFM:100001<!--]--></code>
+un vendredi.<!--]--></p><p><!--[-->Je n&#39;arrive pas à le filtrer simplement, alors je me dis qu&#39;en me basant sur la durée du trajet entre deux stations, je
+pourrais écarter les durées trop longues (&gt; 5min), ça m&#39;embête pour la ré-utilisabilité du code.<!--]--></p><p><!--[-->J&#39;avais noté de former la donnée sous cette forme :<!--]--></p><pre class="language-json shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span class="sVt8B">{
+</span></span><span class="line" line="2"><span class="sj4cs">  &quot;adjacents&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="3"><span class="sVt8B">    {
+</span></span><span class="line" line="4"><span class="sj4cs">      &quot;from_stop_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;stop_id&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="5"><span class="sj4cs">      &quot;to_stop_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;adjacent_stop_id&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="6"><span class="sj4cs">      &quot;time&quot;</span><span class="sVt8B">: </span><span class="sj4cs">123</span><span class="sVt8B">,
+</span></span><span class="line" line="7"><span class="sj4cs">      &quot;path&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="8"><span class="sVt8B">        {
+</span></span><span class="line" line="9"><span class="sj4cs">          &quot;lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.123</span><span class="sVt8B">,
+</span></span><span class="line" line="10"><span class="sj4cs">          &quot;lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.123
+</span></span><span class="line" line="11"><span class="sVt8B">        }
+</span></span><span class="line" line="12"><span class="sVt8B">      ]
+</span></span><span class="line" line="13"><span class="sVt8B">    }
+</span></span><span class="line" line="14"><span class="sVt8B">  ]
+</span></span><span class="line" line="15"><span class="sVt8B">}
+</span></span></code><!--]--></pre><p><!--[-->J&#39;hésite avec directement la liste des adjacents depuis une station, sous cette forme :<!--]--></p><pre class="language-json shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span class="sVt8B">{
+</span></span><span class="line" line="2"><span class="sj4cs">  &quot;adjacents&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="3"><span class="sVt8B">    {
+</span></span><span class="line" line="4"><span class="sj4cs">      &quot;from_stop_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;stop_id&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="5"><span class="sj4cs">      &quot;adjacents&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="6"><span class="sVt8B">        {
+</span></span><span class="line" line="7"><span class="sj4cs">          &quot;to_stop_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;adjacent_stop_id&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="8"><span class="sj4cs">          &quot;time&quot;</span><span class="sVt8B">: </span><span class="sj4cs">123</span><span class="sVt8B">,
+</span></span><span class="line" line="9"><span class="sj4cs">          &quot;path&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="10"><span class="sVt8B">            {
+</span></span><span class="line" line="11"><span class="sj4cs">              &quot;lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.123</span><span class="sVt8B">,
+</span></span><span class="line" line="12"><span class="sj4cs">              &quot;lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.123
+</span></span><span class="line" line="13"><span class="sVt8B">            }
+</span></span><span class="line" line="14"><span class="sVt8B">          ]
+</span></span><span class="line" line="15"><span class="sVt8B">        }
+</span></span><span class="line" line="16"><span class="sVt8B">      ]
+</span></span><span class="line" line="17"><span class="sVt8B">    }
+</span></span><span class="line" line="18"><span class="sVt8B">  ]
+</span></span><span class="line" line="19"><span class="sVt8B">}
+</span></span></code><!--]--></pre><p><!--[-->Ce qui permet de faire un find au lieu d&#39;un filter, mais bon combien il y a de données ?<!--]--></p><pre class="language-sql shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span>postgres@localhost:idfm&gt; WITH stops_and_adjacents AS (
+</span></span><span class="line" line="2"><span>     SELECT DISTINCT
+</span></span><span class="line" line="3"><span>         st.stop_id AS from_stop_id,
+</span></span><span class="line" line="4"><span>         adjacent_stops.stop_id AS to_stop_id,
+</span></span><span class="line" line="5"><span>         CASE
+</span></span><span class="line" line="6"><span>             WHEN st.arrival_time::interval &lt;= adjacent_stops.arrival_time::interval
+</span></span><span class="line" line="7"><span>                 THEN (adjacent_stops.arrival_time::interval - st.arrival_time::interval)::TEXT
+</span></span><span class="line" line="8"><span>             ELSE (st.arrival_time::interval - adjacent_stops.arrival_time::interval)::TEXT
+</span></span><span class="line" line="9"><span>         END AS duration
+</span></span><span class="line" line="10"><span>     FROM
+</span></span><span class="line" line="11"><span>         stop_times AS st
+</span></span><span class="line" line="12"><span>     INNER JOIN
+</span></span><span class="line" line="13"><span>         stop_times AS adjacent_stops ON st.trip_id = adjacent_stops.trip_id
+</span></span><span class="line" line="14"><span>     INNER JOIN
+</span></span><span class="line" line="15"><span>         trips AS t ON st.trip_id = t.trip_id
+</span></span><span class="line" line="16"><span>     INNER JOIN
+</span></span><span class="line" line="17"><span>         routes AS r ON t.route_id = r.route_id
+</span></span><span class="line" line="18"><span>     WHERE
+</span></span><span class="line" line="19"><span>         ABS(st.stop_sequence - adjacent_stops.stop_sequence) = 1
+</span></span><span class="line" line="20"><span>         AND r.route_type = 1
+</span></span><span class="line" line="21"><span> ), &quot;rqt&quot; as (
+</span></span><span class="line" line="22"><span> SELECT
+</span></span><span class="line" line="23"><span>     from_stop_id,
+</span></span><span class="line" line="24"><span>     to_stop_id,
+</span></span><span class="line" line="25"><span>     MIN(duration) AS min_duration
+</span></span><span class="line" line="26"><span> FROM
+</span></span><span class="line" line="27"><span>     stops_and_adjacents
+</span></span><span class="line" line="28"><span> GROUP BY
+</span></span><span class="line" line="29"><span>     from_stop_id,
+</span></span><span class="line" line="30"><span>     to_stop_id
+</span></span><span class="line" line="31"><span> ORDER BY min_duration DESC) select count(*) from rqt;
+</span></span><span class="line" line="32"><span>+-------+
+</span></span><span class="line" line="33"><span>| count |
+</span></span><span class="line" line="34"><span>|-------|
+</span></span><span class="line" line="35"><span>| 1490  |
+</span></span><span class="line" line="36"><span>+-------+
+</span></span><span class="line" line="37"><span>SELECT 1
+</span></span></code><!--]--></pre><p><!--[-->On est sur 1490 adjacents, ça reste raisonnable, je vais partir sur la première forme, ça se modifie facilement au pire.<!--]--></p><p><!--[-->Il me reste du coup la deuxième partie à faire : adjacents, car c&#39;est une correspondance
+Exemple : Saint-Lazare : Je peux changer de la ligne 13 à la 12, 14, …
+Il faut donc récupérer les
+<code><!--[-->pathways<!--]--></code> et les
+<code><!--[-->stops<!--]--></code> pour avoir les correspondances.<!--]--></p><pre class="language-sql shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span>select from_stop_id, fs.stop_name, to_stop_id, ts.stop_name, pathways.traversal_time, fr.route_short_name, tr.route_short_name
+</span></span><span class="line" line="2"><span>from pathways
+</span></span><span class="line" line="3"><span>inner join stops fs on fs.stop_id = pathways.from_stop_id
+</span></span><span class="line" line="4"><span>inner join stops ts on ts.stop_id = pathways.to_stop_id
+</span></span><span class="line" line="5"><span>inner join stop_times fst on fst.stop_id = pathways.from_stop_id
+</span></span><span class="line" line="6"><span>inner join stop_times tst on tst.stop_id = pathways.to_stop_id
+</span></span><span class="line" line="7"><span>inner join trips ft on ft.trip_id = fst.trip_id
+</span></span><span class="line" line="8"><span>inner join trips tt on tt.trip_id = tst.trip_id
+</span></span><span class="line" line="9"><span>inner join routes fr on fr.route_id = ft.route_id
+</span></span><span class="line" line="10"><span>inner join routes tr on tr.route_id = tt.route_id
+</span></span><span class="line" line="11"><span>where fr.route_type = 1 and tr.route_type = 1;
+</span></span></code><!--]--></pre><p><!--[-->Oups, ça ne remonte rien. Ah oui, ce ne sont pas les pathways qui m&#39;intéressent, mais les
+<code><!--[-->transfers<!--]--></code>, seulement, je ne
+les ai pas importés.<!--]--></p><p><!--[-->Je modifie la migration, et j&#39;ajoute ce qu&#39;il faut pour importer les données.<!--]--></p><pre class="language-sql shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span>select from_stop_id, to_stop_id, transfers.min_transfer_time, fr.route_short_name, tr.route_short_name
+</span></span><span class="line" line="2"><span>from transfers
+</span></span><span class="line" line="3"><span>inner join stop_times fst on fst.stop_id = transfers.from_stop_id
+</span></span><span class="line" line="4"><span>inner join stop_times tst on tst.stop_id = transfers.to_stop_id
+</span></span><span class="line" line="5"><span>inner join trips ft on ft.trip_id = fst.trip_id
+</span></span><span class="line" line="6"><span>inner join trips tt on tt.trip_id = tst.trip_id
+</span></span><span class="line" line="7"><span>inner join routes fr on fr.route_id = ft.route_id
+</span></span><span class="line" line="8"><span>inner join routes tr on tr.route_id = tt.route_id
+</span></span><span class="line" line="9"><span>where fr.route_type = 1 and tr.route_type = 1;
+</span></span></code><!--]--></pre><p><!--[-->Bon la requête ne passe pas, c&#39;est le moment d&#39;ajouter des index, la plus grosse jointure est sûr
+<code><!--[-->stop_times<!--]--></code>, je vais
+ajouter un index sur
+<code><!--[-->stop_id<!--]--></code> dans la table
+<code><!--[-->transfers<!--]--></code> et
+<code><!--[-->stop_times<!--]--></code><!--]--></p><p><!--[-->Cela ne change pas grand-chose, bon en réalité je n&#39;ai pas besoin de tous les
+<code><!--[-->stop_times<!--]--></code>, c&#39;est un ridicule.
+Ce qu&#39;il faut faire c&#39;est de récupérer les
+<code><!--[-->stop_id<!--]--></code> qui sont sur les routes qui m&#39;intéressent.<!--]--></p><pre class="language-sql shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span>with stop_ids as (select
+</span></span><span class="line" line="2"><span>    distinct stop_id, route_short_name
+</span></span><span class="line" line="3"><span>    from stop_times
+</span></span><span class="line" line="4"><span>    inner join trips on stop_times.trip_id = trips.trip_id
+</span></span><span class="line" line="5"><span>    inner join routes on trips.route_id = routes.route_id
+</span></span><span class="line" line="6"><span>    where routes.route_type = 1)
+</span></span><span class="line" line="7"><span>select distinct from_stop_id, fst.stop_name, fs.route_short_name, to_stop_id, tst.stop_name, ts.route_short_name, transfers.min_transfer_time
+</span></span><span class="line" line="8"><span>from transfers
+</span></span><span class="line" line="9"><span>inner join stop_ids fs on fs.stop_id = transfers.from_stop_id
+</span></span><span class="line" line="10"><span>inner join stop_ids ts on ts.stop_id = transfers.to_stop_id
+</span></span><span class="line" line="11"><span>inner join stops fst on fst.stop_id = transfers.from_stop_id
+</span></span><span class="line" line="12"><span>inner join stops tst on tst.stop_id = transfers.to_stop_id
+</span></span></code><!--]--></pre><p><!--[-->Et voilà, j&#39;ai le résultat en 0.4s. En ajoutant les noms des stations, je retrouve bien le
+fameux
+<code><!--[-->Saint-Augustin -&gt; Saint-Lazare<!--]--></code> qui est une correspondance possible, ça fait plaisir.<!--]--></p><p><!--[-->Ah, mais il y a aussi les stations proches, du genre
+<code><!--[-->Stalingrad -&gt; Jaurès<!--]--></code>.<!--]--></p><p><!--[-->Bon, faisons le code pour récupérer les données. Ici, on a des secondes de l&#39;autre côté des duration en interval, va
+falloir harmoniser le tout.<!--]--></p><p><!--[-->Puis, on peut peut-être tout faire en un seul coup<!--]--></p><pre class="language-text"><!--[--><code>with stop_ids as (select
+    distinct stop_id, route_short_name
+    from stop_times
+    inner join trips on stop_times.trip_id = trips.trip_id
+    inner join routes on trips.route_id = routes.route_id
+    where routes.route_type = 1
+),
+adjacent_stops_in_transfers as (
+    select distinct from_stop_id, fst.stop_name, fs.route_short_name, to_stop_id, tst.stop_name, ts.route_short_name, transfers.min_transfer_time as duration
+    from transfers
+    inner join stop_ids fs on fs.stop_id = transfers.from_stop_id
+    inner join stop_ids ts on ts.stop_id = transfers.to_stop_id
+    inner join stops fst on fst.stop_id = transfers.from_stop_id
+    inner join stops tst on tst.stop_id = transfers.to_stop_id
+),
+ajacent_stops_by_routes as (
+    select distinct
+        st.stop_id as from_stop_id,
+        adjacent_stops.stop_id as to_stop_id,
+        case
+            when st.arrival_time::interval &lt;= adjacent_stops.arrival_time::interval
+                then extract(epoch from (adjacent_stops.arrival_time::interval - st.arrival_time::interval))::int
+            else extract(epoch from (st.arrival_time::interval - adjacent_stops.arrival_time::interval))::int
+        end as duration
+    from stop_times as st
+    inner join stop_times as adjacent_stops on st.trip_id = adjacent_stops.trip_id
+    inner join stop_ids as fs on st.stop_id = fs.stop_id
+    inner join stop_ids as ts on adjacent_stops.stop_id = ts.stop_id
+    where abs(st.stop_sequence - adjacent_stops.stop_sequence) = 1
+),
+adjacent_stops as (
+    select
+        from_stop_id,
+        to_stop_id,
+        duration
+    from ajacent_stops_by_routes
+    union
+    select
+        from_stop_id,
+        to_stop_id,
+        duration
+    from adjacent_stops_in_transfers
+)
+select
+    from_stop_id,
+    to_stop_id,
+    MIN(duration) AS min_duration
+from
+    adjacent_stops
+group by
+    from_stop_id,
+    to_stop_id
+</code><!--]--></pre><p><!--[-->Je vais m&#39;amuser à l&#39;écrire sous le format knex, je vais demander à Mistral en local.<!--]--></p><p><!--[-->J&#39;ai obtenu quelque chose de pas trop mal, il a voulu simplifier l&#39;union avec le group by de fin, je l&#39;ai retiré. Ça
+aide bien.<!--]--></p><p><!--[-->Il me manque d&#39;ajouter les paths dans les stations adjacentes, mais ça ne sera pas dans cette couche comme les paths ne
+sont pas en base de données.<!--]--></p><style>html .default .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}html .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}html .dark .shiki span {color: var(--shiki-dark);background: var(--shiki-dark-bg);font-style: var(--shiki-dark-font-style);font-weight: var(--shiki-dark-font-weight);text-decoration: var(--shiki-dark-text-decoration);}html.dark .shiki span {color: var(--shiki-dark);background: var(--shiki-dark-bg);font-style: var(--shiki-dark-font-style);font-weight: var(--shiki-dark-font-weight);text-decoration: var(--shiki-dark-text-decoration);}html pre.shiki code .sVt8B, html code.shiki .sVt8B{--shiki-default:#24292E;--shiki-dark:#E1E4E8}html pre.shiki code .sj4cs, html code.shiki .sj4cs{--shiki-default:#005CC5;--shiki-dark:#79B8FF}html pre.shiki code .sZZnC, html code.shiki .sZZnC{--shiki-default:#032F62;--shiki-dark:#9ECBFF}</style></div></article><!--]--><footer class="fixed bottom-2 left-1/2 transform -translate-x-1/2 text-gray-500 dark:text-gray-400 text-sm bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg px-4 py-1 rounded-full shadow max-w-[90%] w-fit z-10 transition-colors duration-300"> © 2025 <a href="https://github.com/VincentHardouin/metro-travel">Metro Travel</a> – par <a href="https://vincenthardouin.dev">Vincent Hardouin</a></footer></body></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/blog/2024-03-28/_payload.json?55023d8b-0a13-42c3-a3db-38e51c1f7711">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{"/blog/2024-03-28":-1},true,"/blog/2024-03-28",1752397954409]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{wsUrl:""},mdc:{components:{prose:true,map:{}},headings:{anchorLinks:{h1:false,h2:true,h3:true,h4:true,h5:false,h6:false}}}},app:{baseURL:"/",buildId:"55023d8b-0a13-42c3-a3db-38e51c1f7711",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>

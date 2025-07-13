@@ -1,0 +1,490 @@
+<!DOCTYPE html><html  lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Metro Travel</title><style>/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */@layer properties{@supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,::backdrop,:after,:before{--tw-font-weight:initial;--tw-leading:initial}}}.post h1{font-size:var(--text-4xl,2.25rem);line-height:var(--tw-leading,var(--text-4xl--line-height,1.11111));--tw-font-weight:var(--font-weight-bold,700);color:var(--color-gray-900,oklch(21% .034 264.665));font-weight:var(--font-weight-bold,700);padding-bottom:2rem}.post h2{font-size:var(--text-3xl,1.875rem);line-height:var(--tw-leading,var(--text-3xl--line-height,1.2));--tw-font-weight:var(--font-weight-semibold,600);color:var(--color-gray-800,oklch(27.8% .033 256.848));font-weight:var(--font-weight-semibold,600)}.post p{font-size:var(--text-base,1rem);line-height:var(--tw-leading,var(--text-base--line-height,1.5));--tw-leading:var(--leading-relaxed,1.625);color:var(--color-gray-700,oklch(37.3% .034 259.733));line-height:var(--leading-relaxed,1.625)}.post ul{list-style-position:inside;list-style-type:disc}.post a{color:var(--color-blue-600,oklch(54.6% .245 262.881));text-decoration-line:underline}@media (hover:hover){.post a:hover{color:var(--color-blue-800,oklch(42.4% .199 265.638))}}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-leading{syntax:"*";inherits:false}</style><style>pre code .line{display:block}</style><link rel="stylesheet" href="/_nuxt/entry.Bjo9vf1p.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/blog/2024-04-15/_payload.json?55023d8b-0a13-42c3-a3db-38e51c1f7711"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/B_RUHvC5.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/p0j60SLX.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/0NVrhxl7.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/Dm4Az773.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CiQS8YBX.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BREgCDxA.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CF2n52tH.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/B2zXwtR0.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DV7jJGjX.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/55023d8b-0a13-42c3-a3db-38e51c1f7711.json"><script src="https://analytics.vincenthardouin.dev/js/script.js" defer data-domain="metro-travel.vincenthardouin.dev"></script><link rel="prefetch" as="script" crossorigin href="/_nuxt/KXfNCXKJ.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/B36WBLqQ.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/BwvhTdZ3.js"><meta hid="description" name="description" content="Défiez vos connaissances du métro parisien chaque jour en trouvant le trajet optimal."><meta name="keywords" content="metro, paris, travel, challenge, game, daily, GTFS"><meta name="author" content="Vincent Hardouin"><meta name="robots" content="index, follow"><meta name="og:title" content="Metro travel"><link rel="icon" type="image/png" href="/favicon.png"><script type="module" src="/_nuxt/B_RUHvC5.js" crossorigin></script><script id="unhead:payload" type="application/json">{"title":"Metro Travel"}</script></head><body><div id="__nuxt"><div><body class="bg-gray-100 dark:bg-gray-900 font-sans transition-colors duration-300"><header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg px-3 py-3 rounded-full shadow-lg flex justify-between items-center z-10 w-[calc(100%-2rem)] max-w-[640px] mx-auto transition-colors duration-300"><div class="text-lg font-bold text-gray-800 dark:text-gray-200 whitespace-nowrap px-3"> 🚇 Metro Travel </div><div class="flex items-center gap-6"><ul class="flex gap-4 items-center"><li><a href="/" class="text-base font-medium hover:text-primary no-underline"> Accueil </a></li><li><a href="/blog" class="text-base font-medium hover:text-primary no-underline"> Blog </a></li></ul><a href="/training" class="btn btn-primary btn-sm shadow-none px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"> S&#39;entraîner </a></div></header><!--[--><article class="post max-w-3xl mx-auto pt-34 py-12 px-4 prose prose-gray dark:prose-invert prose prose-lg dark:prose-invert leading-relaxed"><div><h1 id="_2024-04-15"><!--[-->2024-04-15<!--]--></h1><p><!--[-->J&#39;ai commencé à migrer la class Map, cela avance tranquillement. Je n&#39;arrive pas à afficher le chemin entre 2 stations,
+pour au final me rendre compte que ce n&#39;est pas un problème de code, mais de données. Le moyen de lié les données entre
+les
+<code><!--[-->stops<!--]--></code> et les
+<code><!--[-->unique_stops<!--]--></code> a été un peu fatal. En effet, j&#39;ai fait en sorte que dès que le nom est contenu dans
+le nom d&#39;une station unique un match se fait. Mais, le problème :
+<code><!--[-->Villiers<!--]--></code> est contenu dans
+<code><!--[-->Fort d&#39;Aubervilliers&quot;<!--]--></code>.<!--]--></p><p><!--[-->Je suis bon pour faire en sorte de récupérer tous les cas comme ça pour pouvoir voir ce que je peux faire ensuite.
+J&#39;ai plus de cas que je ne le pensais (23 cas) :<!--]--></p><pre class="language-json shiki shiki-themes github-light github-dark" style=""><!--[--><code><span class="line" line="1"><span class="sVt8B">[
+</span></span><span class="line" line="2"><span class="sVt8B">  {
+</span></span><span class="line" line="3"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nation&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="4"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="5"><span class="sVt8B">      {
+</span></span><span class="line" line="6"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;339&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="7"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nation&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="8"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.848237109475654</span><span class="sVt8B">,
+</span></span><span class="line" line="9"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3958235888261252</span><span class="sVt8B">,
+</span></span><span class="line" line="10"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71673&quot;
+</span></span><span class="line" line="11"><span class="sVt8B">      },
+</span></span><span class="line" line="12"><span class="sVt8B">      {
+</span></span><span class="line" line="13"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;106047&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="14"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="15"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.83321671877524</span><span class="sVt8B">,
+</span></span><span class="line" line="16"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.362856399519012</span><span class="sVt8B">,
+</span></span><span class="line" line="17"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71043&quot;
+</span></span><span class="line" line="18"><span class="sVt8B">      },
+</span></span><span class="line" line="19"><span class="sVt8B">      {
+</span></span><span class="line" line="20"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112059&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="21"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Assemblée Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="22"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.86078696169296</span><span class="sVt8B">,
+</span></span><span class="line" line="23"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.320998191965805</span><span class="sVt8B">,
+</span></span><span class="line" line="24"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;73642&quot;
+</span></span><span class="line" line="25"><span class="sVt8B">      }
+</span></span><span class="line" line="26"><span class="sVt8B">    ]
+</span></span><span class="line" line="27"><span class="sVt8B">  },
+</span></span><span class="line" line="28"><span class="sVt8B">  {
+</span></span><span class="line" line="29"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Miromesnil&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="30"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="31"><span class="sVt8B">      {
+</span></span><span class="line" line="32"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114059&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="33"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Miromesnil&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="34"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.87368520970193</span><span class="sVt8B">,
+</span></span><span class="line" line="35"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3144679895687355</span><span class="sVt8B">,
+</span></span><span class="line" line="36"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71346&quot;
+</span></span><span class="line" line="37"><span class="sVt8B">      },
+</span></span><span class="line" line="38"><span class="sVt8B">      {
+</span></span><span class="line" line="39"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="40"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Rome&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="41"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88233342277264</span><span class="sVt8B">,
+</span></span><span class="line" line="42"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.321801731063168</span><span class="sVt8B">,
+</span></span><span class="line" line="43"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71408&quot;
+</span></span><span class="line" line="44"><span class="sVt8B">      }
+</span></span><span class="line" line="45"><span class="sVt8B">    ]
+</span></span><span class="line" line="46"><span class="sVt8B">  },
+</span></span><span class="line" line="47"><span class="sVt8B">  {
+</span></span><span class="line" line="48"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="49"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="50"><span class="sVt8B">      {
+</span></span><span class="line" line="51"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;117039&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="52"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="53"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88273813184986</span><span class="sVt8B">,
+</span></span><span class="line" line="54"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3701223122811044</span><span class="sVt8B">,
+</span></span><span class="line" line="55"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71940&quot;
+</span></span><span class="line" line="56"><span class="sVt8B">      },
+</span></span><span class="line" line="57"><span class="sVt8B">      {
+</span></span><span class="line" line="58"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;110025&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="59"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Boulogne - Jean Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="60"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.84200534636367</span><span class="sVt8B">,
+</span></span><span class="line" line="61"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.238887328515536</span><span class="sVt8B">,
+</span></span><span class="line" line="62"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71147&quot;
+</span></span><span class="line" line="63"><span class="sVt8B">      }
+</span></span><span class="line" line="64"><span class="sVt8B">    ]
+</span></span><span class="line" line="65"><span class="sVt8B">  },
+</span></span><span class="line" line="66"><span class="sVt8B">  {
+</span></span><span class="line" line="67"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Boulogne Jean Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="68"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="69"><span class="sVt8B">      {
+</span></span><span class="line" line="70"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;117039&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="71"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="72"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88273813184986</span><span class="sVt8B">,
+</span></span><span class="line" line="73"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3701223122811044</span><span class="sVt8B">,
+</span></span><span class="line" line="74"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71940&quot;
+</span></span><span class="line" line="75"><span class="sVt8B">      },
+</span></span><span class="line" line="76"><span class="sVt8B">      {
+</span></span><span class="line" line="77"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;110025&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="78"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Boulogne - Jean Jaurès&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="79"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.84200534636367</span><span class="sVt8B">,
+</span></span><span class="line" line="80"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.238887328515536</span><span class="sVt8B">,
+</span></span><span class="line" line="81"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71147&quot;
+</span></span><span class="line" line="82"><span class="sVt8B">      }
+</span></span><span class="line" line="83"><span class="sVt8B">    ]
+</span></span><span class="line" line="84"><span class="sVt8B">  },
+</span></span><span class="line" line="85"><span class="sVt8B">  {
+</span></span><span class="line" line="86"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="87"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="88"><span class="sVt8B">      {
+</span></span><span class="line" line="89"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107027&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="90"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Fort d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="91"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.91494975634199</span><span class="sVt8B">,
+</span></span><span class="line" line="92"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.4044090887818634</span><span class="sVt8B">,
+</span></span><span class="line" line="93"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;73695&quot;
+</span></span><span class="line" line="94"><span class="sVt8B">      },
+</span></span><span class="line" line="95"><span class="sVt8B">      {
+</span></span><span class="line" line="96"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107029&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="97"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Aubervilliers Pantin - Quatre Chemins&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="98"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.90378388011075</span><span class="sVt8B">,
+</span></span><span class="line" line="99"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.392221221171115</span><span class="sVt8B">,
+</span></span><span class="line" line="100"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72460&quot;
+</span></span><span class="line" line="101"><span class="sVt8B">      },
+</span></span><span class="line" line="102"><span class="sVt8B">      {
+</span></span><span class="line" line="103"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;117093&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="104"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="105"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.913710544615356</span><span class="sVt8B">,
+</span></span><span class="line" line="106"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3807356063950937</span><span class="sVt8B">,
+</span></span><span class="line" line="107"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72524&quot;
+</span></span><span class="line" line="108"><span class="sVt8B">      },
+</span></span><span class="line" line="109"><span class="sVt8B">      {
+</span></span><span class="line" line="110"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;103067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="111"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="112"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.881094426231876</span><span class="sVt8B">,
+</span></span><span class="line" line="113"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3147210047461946</span><span class="sVt8B">,
+</span></span><span class="line" line="114"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71403&quot;
+</span></span><span class="line" line="115"><span class="sVt8B">      }
+</span></span><span class="line" line="116"><span class="sVt8B">    ]
+</span></span><span class="line" line="117"><span class="sVt8B">  },
+</span></span><span class="line" line="118"><span class="sVt8B">  {
+</span></span><span class="line" line="119"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de la Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="120"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="121"><span class="sVt8B">      {
+</span></span><span class="line" line="122"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112085&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="123"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de la Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="124"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.898392952351074</span><span class="sVt8B">,
+</span></span><span class="line" line="125"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3593939011158835</span><span class="sVt8B">,
+</span></span><span class="line" line="126"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72064&quot;
+</span></span><span class="line" line="127"><span class="sVt8B">      },
+</span></span><span class="line" line="128"><span class="sVt8B">      {
+</span></span><span class="line" line="129"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102055&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="130"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;La Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="131"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88439967613092</span><span class="sVt8B">,
+</span></span><span class="line" line="132"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.360399500808731</span><span class="sVt8B">,
+</span></span><span class="line" line="133"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71434&quot;
+</span></span><span class="line" line="134"><span class="sVt8B">      }
+</span></span><span class="line" line="135"><span class="sVt8B">    ]
+</span></span><span class="line" line="136"><span class="sVt8B">  },
+</span></span><span class="line" line="137"><span class="sVt8B">  {
+</span></span><span class="line" line="138"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Marcadet - Poissonniers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="139"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="140"><span class="sVt8B">      {
+</span></span><span class="line" line="141"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112081&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="142"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Marcadet-Poissonniers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="143"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.89150083893872</span><span class="sVt8B">,
+</span></span><span class="line" line="144"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3496204845329847</span><span class="sVt8B">,
+</span></span><span class="line" line="145"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71511&quot;
+</span></span><span class="line" line="146"><span class="sVt8B">      },
+</span></span><span class="line" line="147"><span class="sVt8B">      {
+</span></span><span class="line" line="148"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107049&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="149"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Cadet&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="150"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.87600859287756</span><span class="sVt8B">,
+</span></span><span class="line" line="151"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.344572482089328</span><span class="sVt8B">,
+</span></span><span class="line" line="152"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71351&quot;
+</span></span><span class="line" line="153"><span class="sVt8B">      }
+</span></span><span class="line" line="154"><span class="sVt8B">    ]
+</span></span><span class="line" line="155"><span class="sVt8B">  },
+</span></span><span class="line" line="156"><span class="sVt8B">  {
+</span></span><span class="line" line="157"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Assemblée Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="158"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="159"><span class="sVt8B">      {
+</span></span><span class="line" line="160"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;339&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="161"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nation&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="162"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.848237109475654</span><span class="sVt8B">,
+</span></span><span class="line" line="163"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3958235888261252</span><span class="sVt8B">,
+</span></span><span class="line" line="164"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71673&quot;
+</span></span><span class="line" line="165"><span class="sVt8B">      },
+</span></span><span class="line" line="166"><span class="sVt8B">      {
+</span></span><span class="line" line="167"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;106047&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="168"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="169"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.83321671877524</span><span class="sVt8B">,
+</span></span><span class="line" line="170"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.362856399519012</span><span class="sVt8B">,
+</span></span><span class="line" line="171"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71043&quot;
+</span></span><span class="line" line="172"><span class="sVt8B">      },
+</span></span><span class="line" line="173"><span class="sVt8B">      {
+</span></span><span class="line" line="174"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112059&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="175"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Assemblée Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="176"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.86078696169296</span><span class="sVt8B">,
+</span></span><span class="line" line="177"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.320998191965805</span><span class="sVt8B">,
+</span></span><span class="line" line="178"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;73642&quot;
+</span></span><span class="line" line="179"><span class="sVt8B">      }
+</span></span><span class="line" line="180"><span class="sVt8B">    ]
+</span></span><span class="line" line="181"><span class="sVt8B">  },
+</span></span><span class="line" line="182"><span class="sVt8B">  {
+</span></span><span class="line" line="183"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Esplanade de la Défense&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="184"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="185"><span class="sVt8B">      {
+</span></span><span class="line" line="186"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;390&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="187"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;La Défense&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="188"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.89218707551516</span><span class="sVt8B">,
+</span></span><span class="line" line="189"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.2370180563950135</span><span class="sVt8B">,
+</span></span><span class="line" line="190"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71517&quot;
+</span></span><span class="line" line="191"><span class="sVt8B">      },
+</span></span><span class="line" line="192"><span class="sVt8B">      {
+</span></span><span class="line" line="193"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;101079&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="194"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Esplanade de la Défense&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="195"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88813847667783</span><span class="sVt8B">,
+</span></span><span class="line" line="196"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.249792769009765</span><span class="sVt8B">,
+</span></span><span class="line" line="197"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71485&quot;
+</span></span><span class="line" line="198"><span class="sVt8B">      }
+</span></span><span class="line" line="199"><span class="sVt8B">    ]
+</span></span><span class="line" line="200"><span class="sVt8B">  },
+</span></span><span class="line" line="201"><span class="sVt8B">  {
+</span></span><span class="line" line="202"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Rome&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="203"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="204"><span class="sVt8B">      {
+</span></span><span class="line" line="205"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114059&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="206"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Miromesnil&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="207"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.87368520970193</span><span class="sVt8B">,
+</span></span><span class="line" line="208"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3144679895687355</span><span class="sVt8B">,
+</span></span><span class="line" line="209"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71346&quot;
+</span></span><span class="line" line="210"><span class="sVt8B">      },
+</span></span><span class="line" line="211"><span class="sVt8B">      {
+</span></span><span class="line" line="212"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="213"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Rome&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="214"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88233342277264</span><span class="sVt8B">,
+</span></span><span class="line" line="215"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.321801731063168</span><span class="sVt8B">,
+</span></span><span class="line" line="216"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71408&quot;
+</span></span><span class="line" line="217"><span class="sVt8B">      }
+</span></span><span class="line" line="218"><span class="sVt8B">    ]
+</span></span><span class="line" line="219"><span class="sVt8B">  },
+</span></span><span class="line" line="220"><span class="sVt8B">  {
+</span></span><span class="line" line="221"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;La Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="222"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="223"><span class="sVt8B">      {
+</span></span><span class="line" line="224"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112085&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="225"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de la Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="226"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.898392952351074</span><span class="sVt8B">,
+</span></span><span class="line" line="227"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3593939011158835</span><span class="sVt8B">,
+</span></span><span class="line" line="228"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72064&quot;
+</span></span><span class="line" line="229"><span class="sVt8B">      },
+</span></span><span class="line" line="230"><span class="sVt8B">      {
+</span></span><span class="line" line="231"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102055&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="232"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;La Chapelle&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="233"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88439967613092</span><span class="sVt8B">,
+</span></span><span class="line" line="234"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.360399500808731</span><span class="sVt8B">,
+</span></span><span class="line" line="235"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71434&quot;
+</span></span><span class="line" line="236"><span class="sVt8B">      }
+</span></span><span class="line" line="237"><span class="sVt8B">    ]
+</span></span><span class="line" line="238"><span class="sVt8B">  },
+</span></span><span class="line" line="239"><span class="sVt8B">  {
+</span></span><span class="line" line="240"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="241"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="242"><span class="sVt8B">      {
+</span></span><span class="line" line="243"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107081&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="244"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Maison Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="245"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.82218265762191</span><span class="sVt8B">,
+</span></span><span class="line" line="246"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3585513482022034</span><span class="sVt8B">,
+</span></span><span class="line" line="247"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;70645&quot;
+</span></span><span class="line" line="248"><span class="sVt8B">      },
+</span></span><span class="line" line="249"><span class="sVt8B">      {
+</span></span><span class="line" line="250"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102063&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="251"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="252"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88355628923431</span><span class="sVt8B">,
+</span></span><span class="line" line="253"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3333796724221587</span><span class="sVt8B">,
+</span></span><span class="line" line="254"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71420&quot;
+</span></span><span class="line" line="255"><span class="sVt8B">      }
+</span></span><span class="line" line="256"><span class="sVt8B">    ]
+</span></span><span class="line" line="257"><span class="sVt8B">  },
+</span></span><span class="line" line="258"><span class="sVt8B">  {
+</span></span><span class="line" line="259"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="260"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="261"><span class="sVt8B">      {
+</span></span><span class="line" line="262"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;339&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="263"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nation&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="264"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.848237109475654</span><span class="sVt8B">,
+</span></span><span class="line" line="265"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3958235888261252</span><span class="sVt8B">,
+</span></span><span class="line" line="266"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71673&quot;
+</span></span><span class="line" line="267"><span class="sVt8B">      },
+</span></span><span class="line" line="268"><span class="sVt8B">      {
+</span></span><span class="line" line="269"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;106047&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="270"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="271"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.83321671877524</span><span class="sVt8B">,
+</span></span><span class="line" line="272"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.362856399519012</span><span class="sVt8B">,
+</span></span><span class="line" line="273"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71043&quot;
+</span></span><span class="line" line="274"><span class="sVt8B">      },
+</span></span><span class="line" line="275"><span class="sVt8B">      {
+</span></span><span class="line" line="276"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112059&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="277"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Assemblée Nationale&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="278"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.86078696169296</span><span class="sVt8B">,
+</span></span><span class="line" line="279"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.320998191965805</span><span class="sVt8B">,
+</span></span><span class="line" line="280"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;73642&quot;
+</span></span><span class="line" line="281"><span class="sVt8B">      }
+</span></span><span class="line" line="282"><span class="sVt8B">    ]
+</span></span><span class="line" line="283"><span class="sVt8B">  },
+</span></span><span class="line" line="284"><span class="sVt8B">  {
+</span></span><span class="line" line="285"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="286"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="287"><span class="sVt8B">      {
+</span></span><span class="line" line="288"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;430&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="289"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="290"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.90456638896682</span><span class="sVt8B">,
+</span></span><span class="line" line="291"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3226263683342263</span><span class="sVt8B">,
+</span></span><span class="line" line="292"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72126&quot;
+</span></span><span class="line" line="293"><span class="sVt8B">      },
+</span></span><span class="line" line="294"><span class="sVt8B">      {
+</span></span><span class="line" line="295"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114071&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="296"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="297"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.89737479459521</span><span class="sVt8B">,
+</span></span><span class="line" line="298"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3289428127798923</span><span class="sVt8B">,
+</span></span><span class="line" line="299"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72078&quot;
+</span></span><span class="line" line="300"><span class="sVt8B">      }
+</span></span><span class="line" line="301"><span class="sVt8B">    ]
+</span></span><span class="line" line="302"><span class="sVt8B">  },
+</span></span><span class="line" line="303"><span class="sVt8B">  {
+</span></span><span class="line" line="304"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Asnières - Gennevilliers Les Courtilles&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="305"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="306"><span class="sVt8B">      {
+</span></span><span class="line" line="307"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;113079&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="308"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Les Courtilles&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="309"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.930757002402125</span><span class="sVt8B">,
+</span></span><span class="line" line="310"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.2841744482832955</span><span class="sVt8B">,
+</span></span><span class="line" line="311"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72286&quot;
+</span></span><span class="line" line="312"><span class="sVt8B">      },
+</span></span><span class="line" line="313"><span class="sVt8B">      {
+</span></span><span class="line" line="314"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;103067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="315"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="316"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.881094426231876</span><span class="sVt8B">,
+</span></span><span class="line" line="317"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3147210047461946</span><span class="sVt8B">,
+</span></span><span class="line" line="318"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71403&quot;
+</span></span><span class="line" line="319"><span class="sVt8B">      }
+</span></span><span class="line" line="320"><span class="sVt8B">    ]
+</span></span><span class="line" line="321"><span class="sVt8B">  },
+</span></span><span class="line" line="322"><span class="sVt8B">  {
+</span></span><span class="line" line="323"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="324"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="325"><span class="sVt8B">      {
+</span></span><span class="line" line="326"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;430&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="327"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="328"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.90456638896682</span><span class="sVt8B">,
+</span></span><span class="line" line="329"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3226263683342263</span><span class="sVt8B">,
+</span></span><span class="line" line="330"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72126&quot;
+</span></span><span class="line" line="331"><span class="sVt8B">      },
+</span></span><span class="line" line="332"><span class="sVt8B">      {
+</span></span><span class="line" line="333"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114075&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="334"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="335"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.91258349677915</span><span class="sVt8B">,
+</span></span><span class="line" line="336"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3342940159066474</span><span class="sVt8B">,
+</span></span><span class="line" line="337"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72168&quot;
+</span></span><span class="line" line="338"><span class="sVt8B">      }
+</span></span><span class="line" line="339"><span class="sVt8B">    ]
+</span></span><span class="line" line="340"><span class="sVt8B">  },
+</span></span><span class="line" line="341"><span class="sVt8B">  {
+</span></span><span class="line" line="342"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Pont Marie (Cité des Arts)&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="343"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="344"><span class="sVt8B">      {
+</span></span><span class="line" line="345"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107065&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="346"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Pont Marie&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="347"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.85357547245371</span><span class="sVt8B">,
+</span></span><span class="line" line="348"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.357162568881775</span><span class="sVt8B">,
+</span></span><span class="line" line="349"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71217&quot;
+</span></span><span class="line" line="350"><span class="sVt8B">      },
+</span></span><span class="line" line="351"><span class="sVt8B">      {
+</span></span><span class="line" line="352"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;104055&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="353"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Cité&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="354"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.854936379230175</span><span class="sVt8B">,
+</span></span><span class="line" line="355"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.347321318407715</span><span class="sVt8B">,
+</span></span><span class="line" line="356"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71223&quot;
+</span></span><span class="line" line="357"><span class="sVt8B">      }
+</span></span><span class="line" line="358"><span class="sVt8B">    ]
+</span></span><span class="line" line="359"><span class="sVt8B">  },
+</span></span><span class="line" line="360"><span class="sVt8B">  {
+</span></span><span class="line" line="361"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Maison Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="362"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="363"><span class="sVt8B">      {
+</span></span><span class="line" line="364"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107081&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="365"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Maison Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="366"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.82218265762191</span><span class="sVt8B">,
+</span></span><span class="line" line="367"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3585513482022034</span><span class="sVt8B">,
+</span></span><span class="line" line="368"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;70645&quot;
+</span></span><span class="line" line="369"><span class="sVt8B">      },
+</span></span><span class="line" line="370"><span class="sVt8B">      {
+</span></span><span class="line" line="371"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;102063&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="372"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Blanche&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="373"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.88355628923431</span><span class="sVt8B">,
+</span></span><span class="line" line="374"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3333796724221587</span><span class="sVt8B">,
+</span></span><span class="line" line="375"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71420&quot;
+</span></span><span class="line" line="376"><span class="sVt8B">      }
+</span></span><span class="line" line="377"><span class="sVt8B">    ]
+</span></span><span class="line" line="378"><span class="sVt8B">  },
+</span></span><span class="line" line="379"><span class="sVt8B">  {
+</span></span><span class="line" line="380"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Cadet&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="381"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="382"><span class="sVt8B">      {
+</span></span><span class="line" line="383"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;112081&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="384"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Marcadet-Poissonniers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="385"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.89150083893872</span><span class="sVt8B">,
+</span></span><span class="line" line="386"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3496204845329847</span><span class="sVt8B">,
+</span></span><span class="line" line="387"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71511&quot;
+</span></span><span class="line" line="388"><span class="sVt8B">      },
+</span></span><span class="line" line="389"><span class="sVt8B">      {
+</span></span><span class="line" line="390"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107049&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="391"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Cadet&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="392"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.87600859287756</span><span class="sVt8B">,
+</span></span><span class="line" line="393"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.344572482089328</span><span class="sVt8B">,
+</span></span><span class="line" line="394"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71351&quot;
+</span></span><span class="line" line="395"><span class="sVt8B">      }
+</span></span><span class="line" line="396"><span class="sVt8B">    ]
+</span></span><span class="line" line="397"><span class="sVt8B">  },
+</span></span><span class="line" line="398"><span class="sVt8B">  {
+</span></span><span class="line" line="399"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Fort d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="400"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="401"><span class="sVt8B">      {
+</span></span><span class="line" line="402"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107027&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="403"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Fort d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="404"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.91494975634199</span><span class="sVt8B">,
+</span></span><span class="line" line="405"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.4044090887818634</span><span class="sVt8B">,
+</span></span><span class="line" line="406"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;73695&quot;
+</span></span><span class="line" line="407"><span class="sVt8B">      },
+</span></span><span class="line" line="408"><span class="sVt8B">      {
+</span></span><span class="line" line="409"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;103067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="410"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="411"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.881094426231876</span><span class="sVt8B">,
+</span></span><span class="line" line="412"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3147210047461946</span><span class="sVt8B">,
+</span></span><span class="line" line="413"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71403&quot;
+</span></span><span class="line" line="414"><span class="sVt8B">      }
+</span></span><span class="line" line="415"><span class="sVt8B">    ]
+</span></span><span class="line" line="416"><span class="sVt8B">  },
+</span></span><span class="line" line="417"><span class="sVt8B">  {
+</span></span><span class="line" line="418"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Aubervilliers-Pantin Quatre Chemins&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="419"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="420"><span class="sVt8B">      {
+</span></span><span class="line" line="421"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;107029&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="422"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Aubervilliers Pantin - Quatre Chemins&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="423"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.90378388011075</span><span class="sVt8B">,
+</span></span><span class="line" line="424"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.392221221171115</span><span class="sVt8B">,
+</span></span><span class="line" line="425"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72460&quot;
+</span></span><span class="line" line="426"><span class="sVt8B">      },
+</span></span><span class="line" line="427"><span class="sVt8B">      {
+</span></span><span class="line" line="428"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;103067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="429"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="430"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.881094426231876</span><span class="sVt8B">,
+</span></span><span class="line" line="431"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3147210047461946</span><span class="sVt8B">,
+</span></span><span class="line" line="432"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71403&quot;
+</span></span><span class="line" line="433"><span class="sVt8B">      }
+</span></span><span class="line" line="434"><span class="sVt8B">    ]
+</span></span><span class="line" line="435"><span class="sVt8B">  },
+</span></span><span class="line" line="436"><span class="sVt8B">  {
+</span></span><span class="line" line="437"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="438"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="439"><span class="sVt8B">      {
+</span></span><span class="line" line="440"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;430&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="441"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="442"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.90456638896682</span><span class="sVt8B">,
+</span></span><span class="line" line="443"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3226263683342263</span><span class="sVt8B">,
+</span></span><span class="line" line="444"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72126&quot;
+</span></span><span class="line" line="445"><span class="sVt8B">      },
+</span></span><span class="line" line="446"><span class="sVt8B">      {
+</span></span><span class="line" line="447"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114075&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="448"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="449"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.91258349677915</span><span class="sVt8B">,
+</span></span><span class="line" line="450"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3342940159066474</span><span class="sVt8B">,
+</span></span><span class="line" line="451"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72168&quot;
+</span></span><span class="line" line="452"><span class="sVt8B">      },
+</span></span><span class="line" line="453"><span class="sVt8B">      {
+</span></span><span class="line" line="454"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;114071&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="455"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Porte de Saint-Ouen&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="456"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.89737479459521</span><span class="sVt8B">,
+</span></span><span class="line" line="457"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3289428127798923</span><span class="sVt8B">,
+</span></span><span class="line" line="458"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72078&quot;
+</span></span><span class="line" line="459"><span class="sVt8B">      }
+</span></span><span class="line" line="460"><span class="sVt8B">    ]
+</span></span><span class="line" line="461"><span class="sVt8B">  },
+</span></span><span class="line" line="462"><span class="sVt8B">  {
+</span></span><span class="line" line="463"><span class="sj4cs">    &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="464"><span class="sj4cs">    &quot;foundUniqueStops&quot;</span><span class="sVt8B">: [
+</span></span><span class="line" line="465"><span class="sVt8B">      {
+</span></span><span class="line" line="466"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;117093&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="467"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Mairie d&#39;Aubervilliers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="468"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.913710544615356</span><span class="sVt8B">,
+</span></span><span class="line" line="469"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3807356063950937</span><span class="sVt8B">,
+</span></span><span class="line" line="470"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;72524&quot;
+</span></span><span class="line" line="471"><span class="sVt8B">      },
+</span></span><span class="line" line="472"><span class="sVt8B">      {
+</span></span><span class="line" line="473"><span class="sj4cs">        &quot;stop_unique_id&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;103067&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="474"><span class="sj4cs">        &quot;stop_name&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;Villiers&quot;</span><span class="sVt8B">,
+</span></span><span class="line" line="475"><span class="sj4cs">        &quot;stop_lon&quot;</span><span class="sVt8B">: </span><span class="sj4cs">48.881094426231876</span><span class="sVt8B">,
+</span></span><span class="line" line="476"><span class="sj4cs">        &quot;stop_lat&quot;</span><span class="sVt8B">: </span><span class="sj4cs">2.3147210047461946</span><span class="sVt8B">,
+</span></span><span class="line" line="477"><span class="sj4cs">        &quot;id_red_zdc&quot;</span><span class="sVt8B">: </span><span class="sZZnC">&quot;71403&quot;
+</span></span><span class="line" line="478"><span class="sVt8B">      }
+</span></span><span class="line" line="479"><span class="sVt8B">    ]
+</span></span><span class="line" line="480"><span class="sVt8B">  }
+</span></span><span class="line" line="481"><span class="sVt8B">]
+</span></span></code><!--]--></pre><style>html pre.shiki code .sVt8B, html code.shiki .sVt8B{--shiki-default:#24292E;--shiki-dark:#E1E4E8}html pre.shiki code .sj4cs, html code.shiki .sj4cs{--shiki-default:#005CC5;--shiki-dark:#79B8FF}html pre.shiki code .sZZnC, html code.shiki .sZZnC{--shiki-default:#032F62;--shiki-dark:#9ECBFF}html .default .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}html .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}html .dark .shiki span {color: var(--shiki-dark);background: var(--shiki-dark-bg);font-style: var(--shiki-dark-font-style);font-weight: var(--shiki-dark-font-weight);text-decoration: var(--shiki-dark-text-decoration);}html.dark .shiki span {color: var(--shiki-dark);background: var(--shiki-dark-bg);font-style: var(--shiki-dark-font-style);font-weight: var(--shiki-dark-font-weight);text-decoration: var(--shiki-dark-text-decoration);}</style></div></article><!--]--><footer class="fixed bottom-2 left-1/2 transform -translate-x-1/2 text-gray-500 dark:text-gray-400 text-sm bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg px-4 py-1 rounded-full shadow max-w-[90%] w-fit z-10 transition-colors duration-300"> © 2025 <a href="https://github.com/VincentHardouin/metro-travel">Metro Travel</a> – par <a href="https://vincenthardouin.dev">Vincent Hardouin</a></footer></body></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/blog/2024-04-15/_payload.json?55023d8b-0a13-42c3-a3db-38e51c1f7711">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{"/blog/2024-04-15":-1},true,"/blog/2024-04-15",1752397954408]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{wsUrl:""},mdc:{components:{prose:true,map:{}},headings:{anchorLinks:{h1:false,h2:true,h3:true,h4:true,h5:false,h6:false}}}},app:{baseURL:"/",buildId:"55023d8b-0a13-42c3-a3db-38e51c1f7711",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
