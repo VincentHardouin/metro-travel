@@ -10,7 +10,15 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "test": "vitest"
+    "test": "NODE_ENV=test npm run db:reset && NODE_ENV=test npm run db:migrate && vitest --no-file-parallelism vitest",
+    "db:new-migration": "npx knex --knexfile db/knexfile.js migrate:make $migrationname",
+    "db:create": "node scripts/database/create-database",
+    "db:delete": "node scripts/database/drop-database",
+    "db:empty": "node scripts/database/empty-database",
+    "db:reset": "npm run db:delete && npm run db:create",
+    "db:migrate": "knex --knexfile db/knexfile.js migrate:latest",
+    "db:rollback:latest": "knex --knexfile db/knexfile.js migrate:down",
+    "screenshots": "node scripts/capture-version.js"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",

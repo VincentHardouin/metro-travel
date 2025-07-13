@@ -5,12 +5,12 @@ permissions:
 
 on:
   workflow_run:
-    workflows: [ci]
-    branches: [main]
+    workflows: [ ci ]
+    branches: [ main ]
     types:
       - completed
   repository_dispatch:
-    types: [deploy]
+    types: [ deploy ]
   workflow_dispatch:
 
 jobs:
@@ -57,7 +57,7 @@ jobs:
       - name: Generate Screenshots
         id: screenshots
         if: steps.semantic.outputs.new_release_published == 'true' && steps.semantic.outputs.new_release_patch_version == '0'
-        run: (npm start &); npm run screenshots && echo "screenshots_generated=true" >> $GITHUB_OUTPUT
+        run: (npm run dev &); npm run screenshots && echo "screenshots_generated=true" >> $GITHUB_OUTPUT
 
       - name: Commit & push screenshots
         if: steps.screenshots.outputs.screenshots_generated == 'true'
