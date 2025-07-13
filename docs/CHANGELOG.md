@@ -1,3 +1,34 @@
+# [2.0.0](https://github.com/VincentHardouin/metro-travel/compare/v1.27.0...v2.0.0) (2025-07-13)
+
+
+### Bug Fixes
+
+* capture-version script to remove import json ([589557b](https://github.com/VincentHardouin/metro-travel/commit/589557b2fcccaeb031515ec67f8fef25fd82b672))
+* use generate command for deploy ([1f52035](https://github.com/VincentHardouin/metro-travel/commit/1f52035f9ef35124878dd0ab67907376684da19d))
+
+
+### Features
+
+* add blog pages and move in app/ ([8719923](https://github.com/VincentHardouin/metro-travel/commit/87199239e591a9b6129165fc5476cf7b9b564a20))
+* add congrats modal ([b1ebe81](https://github.com/VincentHardouin/metro-travel/commit/b1ebe81d7e1093ce386285d575ebecd1160dad79))
+* add default layout ([3ce9bb7](https://github.com/VincentHardouin/metro-travel/commit/3ce9bb7af5b9b86499de4bd6e5022f5a5d128a32))
+* add Instruction.vue ([71b6abc](https://github.com/VincentHardouin/metro-travel/commit/71b6abc84bc7176676a6cb9132fab9efc333b800))
+* add link in nav ([d48761e](https://github.com/VincentHardouin/metro-travel/commit/d48761e5ff22267dba26832d04c1e8f79af5d62e))
+* add ListAddedStations ([efdd91c](https://github.com/VincentHardouin/metro-travel/commit/efdd91c1e25ab32067b8b0ead24282ffc44d9f98))
+* add StationSearchInput.vue ([dd93298](https://github.com/VincentHardouin/metro-travel/commit/dd9329866cf135618ced5fd8e08362a52ea3bc8c))
+* add training page ([dec2f7b](https://github.com/VincentHardouin/metro-travel/commit/dec2f7bdb2c963a4a70df4b0d16875daf8c9ba6d))
+* improve navbar ([07cfb1c](https://github.com/VincentHardouin/metro-travel/commit/07cfb1cf00af32affb95a9a052360bde49aa0adc))
+* init nuxt v3 ([c08fd50](https://github.com/VincentHardouin/metro-travel/commit/c08fd5027964d008280998e70bfe4c9dc05e24ea))
+* prepare deploy nuxt3 ([e153069](https://github.com/VincentHardouin/metro-travel/commit/e153069ef38dec7c484eea206e433e73297ab240))
+* Refonte de l'UX ([5df7b84](https://github.com/VincentHardouin/metro-travel/commit/5df7b84e3ab157f49319a64df680da5b1ebe5b27))
+* refonte ux ([741b4b2](https://github.com/VincentHardouin/metro-travel/commit/741b4b2a62bad3415d53f28193464ab87f67d01e))
+* scope css for post content only ([1f564ca](https://github.com/VincentHardouin/metro-travel/commit/1f564ca6afd8006b4382a4b843c2bd715760caad))
+
+
+### BREAKING CHANGES
+
+* refonte ux
+
 # [1.27.0](https://github.com/VincentHardouin/metro-travel/compare/v1.26.0...v1.27.0) (2025-03-09)
 
 
