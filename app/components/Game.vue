@@ -44,12 +44,8 @@ function toggleStop(stopId) {
   </div>
   <Instruction :start="game.startStation.stop_name" :end="game.endStation.stop_name" />
   <aside
-    class="fixed top-40 left-4 right-auto md:right-auto
-         bg-white/80 dark:bg-gray-800/80
-         backdrop-blur-lg rounded-2xl shadow-xl
-         p-6 space-y-6
-         z-10
-         transition-colors duration-300"
+      class="fixed top-44 left-1/2 transform -translate-x-1/2 md:left-4 md:translate-x-0 w-[calc(100%-2rem)] max-w-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl shadow-lg p-3 space-y-3 md:p-6 md:space-y-6 z-10 transition-colors duration-300"
+
   >
     <StationSearchInput
       :stations="sortedStations"

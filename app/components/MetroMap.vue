@@ -24,6 +24,7 @@ const lightTiles = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}
 const darkTiles = 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png';
 
 const activeTiles = ref(null);
+const showZoomControl = ref(true)
 
 onMounted(() => {
   const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,7 +33,19 @@ onMounted(() => {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     activeTiles.value = e.matches ? darkTiles : lightTiles;
   });
+
+  checkScreenSize()
+  window.addEventListener('resize', checkScreenSize)
 });
+
+
+const checkScreenSize = () => {
+  showZoomControl.value = window.matchMedia('(min-width: 640px)').matches
+}
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkScreenSize)
+})
 </script>
 
 <template>
@@ -41,6 +54,7 @@ onMounted(() => {
       :zoom="12"
       :center="[48.8566, 2.3522]"
       :use-global-leaflet="false"
+      :options="{zoomControl: false}"
       style="position: relative;"
     >
       <LTileLayer
@@ -79,6 +93,8 @@ onMounted(() => {
       >
         <LPopup>{{ station.stop_name }}</LPopup>
       </LCircleMarker>
+
+      <LControlZoom v-if="showZoomControl" position="bottomright" />
     </LMap>
   </div>
 </template>

@@ -9,7 +9,6 @@ const props = defineProps<{
 const emit = defineEmits(['tryStop']);
 
 const dropdownId = 'station-dropdown';
-
 const station = ref('');
 const dropdownIsVisible = ref(false);
 const searchResults = ref<string[]>([]);
@@ -26,14 +25,14 @@ onBeforeUnmount(() => {
 function tryStop() {
   emit('tryStop', station.value);
   station.value = '';
+  hideDropdown();
 }
 
 function updateResults() {
   const value = station.value.trim();
   if (value.length > 0) {
     showDropdown(value);
-  }
-  else {
+  } else {
     hideDropdown();
   }
 }
@@ -52,18 +51,21 @@ function handleKeyDown(event: KeyboardEvent) {
   if (event.key === 'ArrowDown') {
     event.preventDefault();
     activeIndex.value = (activeIndex.value + 1) % searchResults.value.length;
-  }
-  else if (event.key === 'ArrowUp') {
+  } else if (event.key === 'ArrowUp') {
     event.preventDefault();
-    activeIndex.value
-        = (activeIndex.value - 1 + searchResults.value.length) % searchResults.value.length;
-  }
-  else if (event.key === 'Enter' && activeIndex.value >= 0) {
-    event.preventDefault();
-    addNameToInput(searchResults.value[activeIndex.value]);
-  }
-  else if (event.key === 'Escape') {
+    activeIndex.value = (activeIndex.value - 1 + searchResults.value.length) % searchResults.value.length;
+  } else if (event.key === 'Escape') {
     hideDropdown();
+  }
+}
+
+function handleSubmit(event: Event) {
+  event.preventDefault();
+  if (dropdownIsVisible.value && activeIndex.value >= 0) {
+    addNameToInput(searchResults.value[activeIndex.value]);
+    tryStop();
+  } else {
+    tryStop();
   }
 }
 
@@ -85,29 +87,26 @@ function addNameToInput(name: string) {
 </script>
 
 <template>
-  <div class="station-search-input relative w-full max-w-xl">
-    <div
-      class="w-full px-2 py-2 rounded-full border border-gray-300 dark:border-gray-600
-             focus:outline-none focus:ring focus:ring-blue-400
-             dark:bg-gray-700 dark:text-gray-200"
-    >
+  <form class="station-search-input max-w-xl" @submit="handleSubmit">
+    <div class="flex w-full px-1 md:px-2 py-1 md:py-2 items-center rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring focus:ring-blue-400 dark:bg-gray-700 dark:text-gray-200 relative">
       <input
-        v-model="station"
-        type="text"
-        placeholder="Rechercher une station..."
-        class="px-4 flex-grow bg-transparent focus:outline-none text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400"
-        role="combobox"
-        :aria-expanded="dropdownIsVisible.toString()"
-        :aria-controls="dropdownId"
-        :aria-activedescendant="activeIndex >= 0 ? `option-${activeIndex}` : null"
-        aria-autocomplete="list"
-        @input="updateResults"
-        @click="updateResults"
-        @keydown="handleKeyDown"
+          v-model="station"
+          type="text"
+          placeholder="Rechercher une station..."
+          class="flex-grow min-w-0 px-1 md:px-4 bg-transparent focus:outline-none text-m text-gray-900 dark:text-gray-100 placeholder-gray-400 sm:w-40 md:w-auto"
+          role="combobox"
+          :aria-expanded="dropdownIsVisible.toString()"
+          :aria-controls="dropdownId"
+          :aria-activedescendant="activeIndex >= 0 ? `option-${activeIndex}` : null"
+          aria-autocomplete="list"
+          aria-label="Rechercher une station"
+          @input="updateResults"
+          @click="updateResults"
+          @keydown="handleKeyDown"
       >
       <button
-        class="btn btn-primary shadow-none ml-2 px-4 py-1.5 text-white rounded-full text-sm font-medium"
-        @click="tryStop"
+          type="submit"
+          class="btn btn-sm btn-primary shadow-none ml-2 px-4 py-1.5 text-white rounded-full text-sm font-medium whitespace-nowrap"
       >
         Essayer
       </button>
@@ -115,26 +114,26 @@ function addNameToInput(name: string) {
 
     <Transition name="fade-slide">
       <ul
-        v-if="dropdownIsVisible && searchResults.length > 0"
-        :id="dropdownId"
-        role="listbox"
-        class="absolute w-full mt-1 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto"
+          v-if="dropdownIsVisible && searchResults.length > 0"
+          :id="dropdownId"
+          role="listbox"
+          class="absolute w-full mt-1 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto"
       >
         <li
-          v-for="(stop, index) in searchResults"
-          :id="`option-${index}`"
-          :key="index"
-          role="option"
-          :aria-selected="activeIndex === index"
-          class="px-4 py-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-800"
-          :class="{ 'bg-blue-200 dark:bg-blue-600 text-white': index === activeIndex }"
-          @click="addNameToInput(stop)"
+            v-for="(stop, index) in searchResults"
+            :id="`option-${index}`"
+            :key="index"
+            role="option"
+            :aria-selected="activeIndex === index"
+            class="px-4 py-2 cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-800"
+            :class="{ 'bg-blue-200 dark:bg-blue-600 text-white': index === activeIndex }"
+            @click="addNameToInput(stop)"
         >
           {{ stop }}
         </li>
       </ul>
     </Transition>
-  </div>
+  </form>
 </template>
 
 <style scoped>
