@@ -1,6 +1,6 @@
 import process from 'node:process';
-import pg from 'pg';
 import Knex from 'knex';
+import pg from 'pg';
 import * as knexConfigs from './knexfile.js';
 
 /*

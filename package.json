@@ -3,63 +3,36 @@
   "type": "module",
   "version": "1.27.0",
   "private": true,
-  "description": "",
-  "source": "index.html",
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://github.com/VincentHardouin/metro-travel#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VincentHardouin/metro-travel.git"
-  },
-  "bugs": {
-    "url": "https://github.com/VincentHardouin/metro-travel/issues"
-  },
-  "keywords": [],
   "scripts": {
-    "db:new-migration": "npx knex --knexfile db/knexfile.js migrate:make $migrationname",
-    "db:create": "node scripts/database/create-database",
-    "db:delete": "node scripts/database/drop-database",
-    "db:empty": "node scripts/database/empty-database",
-    "db:reset": "npm run db:delete && npm run db:create",
-    "db:migrate": "knex --knexfile db/knexfile.js migrate:latest",
-    "db:rollback:latest": "knex --knexfile db/knexfile.js migrate:down",
-    "start": "parcel index.html",
-    "build": "parcel build",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "test": "NODE_ENV=test npm run db:reset && NODE_ENV=test npm run db:migrate && vitest --no-file-parallelism",
-    "screenshots": "node scripts/capture-version.js"
+    "test": "vitest"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "vue-router": "^4.2.5"
+    "@nuxt/content": "^3.6.3",
+    "@nuxtjs/leaflet": "^1.2.6",
+    "@tailwindcss/vite": "^4.1.11",
+    "better-sqlite3": "^12.2.0",
+    "canvas-confetti": "^1.9.3",
+    "daisyui": "^5.0.46",
+    "leaflet": "^1.9.4",
+    "nuxt": "^3.17.6",
+    "tailwindcss": "^4.1.11",
+    "vitest": "^3.2.4",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.0",
-    "@parcel/resolver-glob": "^2.12.0",
-    "@parcel/transformer-sass": "^2.12.0",
-    "@parcel/transformer-vue": "^2.12.0",
-    "d3": "^7.8.5",
-    "dotenv": "^16.4.5",
-    "eslint": "^8.57.0",
-    "eslint-plugin-format": "^0.1.0",
+    "@antfu/eslint-config": "^4.16.2",
+    "eslint": "^9.31.0",
+    "eslint-plugin-format": "^1.0.1",
     "knex": "^3.1.0",
-    "marked-gfm-heading-id": "^3.1.3",
-    "papaparse": "^5.4.1",
-    "parcel": "^2.12.0",
-    "parcel-reporter-static-files-copy": "^1.5.3",
-    "parcel-transformer-geojson": "^0.0.4",
-    "parcel-transformer-markdown-front-matter": "^3.0.1",
-    "pg": "^8.11.3",
-    "puppeteer": "^22.4.1",
-    "vitest": "^1.3.1",
-    "vue": "^3.4.23"
-  },
-  "staticFiles": [
-    {
-      "staticPath": "./docs/diary/assets",
-      "staticOutPath": "/posts/assets"
-    }
-  ]
+    "papaparse": "^5.5.3",
+    "pg": "^8.16.3",
+    "puppeteer": "^24.12.1"
+  }
 }

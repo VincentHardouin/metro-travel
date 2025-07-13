@@ -1,7 +1,7 @@
-import 'dotenv/config';
 import process from 'node:process';
 import { PGSQL_DUPLICATE_DATABASE_ERROR } from '../../db/pgsql-errors.js';
 import { PgClient } from '../PgClient.js';
+import 'dotenv/config';
 
 const dbUrl = process.env.NODE_ENV === 'test' ? process.env.TEST_DATABASE_URL : process.env.DATABASE_URL;
 

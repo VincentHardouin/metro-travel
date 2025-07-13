@@ -96,10 +96,10 @@ function saveTransfers(transfers) {
 }
 
 export {
-  saveRoutes,
-  saveTrips,
-  saveStopTimes,
-  saveStops,
   savePathways,
+  saveRoutes,
+  saveStops,
+  saveStopTimes,
   saveTransfers,
+  saveTrips,
 };

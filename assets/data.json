@@ -6596,7 +6596,7 @@
     },
     {
       "stop_id": "IDFM:490833",
-      "stop_name": "Thiais - Orly​ (Pont de Rungis​)",
+      "stop_name": "Thiais - Orly (Pont de Rungis)",
       "stop_lat": 48.746835369386844,
       "stop_lon": 2.3723847511214924,
       "route_id": "IDFM:C01384",
@@ -6604,7 +6604,7 @@
     },
     {
       "stop_id": "IDFM:490835",
-      "stop_name": "Chevilly-Larue​ (Marché International​)",
+      "stop_name": "Chevilly-Larue (Marché International)",
       "stop_lat": 48.758492915434516,
       "stop_lon": 2.3674425092258047,
       "route_id": "IDFM:C01384",
@@ -6660,7 +6660,7 @@
     },
     {
       "stop_id": "IDFM:490851",
-      "stop_name": "Chevilly-Larue​ (Marché International​)",
+      "stop_name": "Chevilly-Larue (Marché International)",
       "stop_lat": 48.75848356146962,
       "stop_lon": 2.367374604185919,
       "route_id": "IDFM:C01384",
@@ -6668,7 +6668,7 @@
     },
     {
       "stop_id": "IDFM:490852",
-      "stop_name": "Thiais - Orly​ (Pont de Rungis​)",
+      "stop_name": "Thiais - Orly (Pont de Rungis)",
       "stop_lat": 48.74684479207573,
       "stop_lon": 2.372466241689093,
       "route_id": "IDFM:C01384",
@@ -52276,7 +52276,7 @@
   "uniqueStops": [
     {
       "stop_unique_id": "IDFM:69677",
-      "stop_name": "Thiais - Orly​ (Pont de Rungis​)",
+      "stop_name": "Thiais - Orly (Pont de Rungis)",
       "stop_lat": 48.747229547076934,
       "stop_lon": 2.3712307511079094
     },
@@ -53080,7 +53080,7 @@
     },
     {
       "stop_unique_id": "IDFM:73753",
-      "stop_name": "Chevilly-Larue​ (Marché International​)",
+      "stop_name": "Chevilly-Larue (Marché International)",
       "stop_lat": 48.75904993918238,
       "stop_lon": 2.3664766903800145
     },

@@ -1,11 +1,11 @@
-import process from 'node:process';
-import { access, constants } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
-import * as url from 'node:url';
+import { access, constants } from 'node:fs/promises';
 import * as path from 'node:path';
+import process from 'node:process';
+import * as url from 'node:url';
 import { disconnect } from '../db/knex-database-connection.js';
 import { parseDataStream } from './parse-data.js';
-import { savePathways, saveRoutes, saveStopTimes, saveStops, saveTransfers, saveTrips } from './save-data.js';
+import { savePathways, saveRoutes, saveStops, saveStopTimes, saveTransfers, saveTrips } from './save-data.js';
 
 async function main(dirPath) {
   if (!dirPath)
@@ -43,7 +43,7 @@ async function _verifyPath(dirPath) {
   try {
     await access(path.resolve(dirPath), constants.R_OK);
   }
-  catch (e) {
+  catch {
     throw new Error(`The path ${dirPath} is not accessible.`);
   }
 }
