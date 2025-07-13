@@ -1,6 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import puppeteer from 'puppeteer';
-import packageJson from '../package.json';
 
 async function getPage() {
   const browser = await puppeteer.launch({
@@ -22,7 +21,9 @@ async function closePage(browser, page) {
   await browser.close();
 }
 
-function getVersion() {
+async function getVersion() {
+  const file = await readFile('package.json', 'utf-8');
+  const packageJson = JSON.parse(file);
   return packageJson.version;
 }
 
@@ -32,10 +33,10 @@ export async function captureVersion(version) {
     { name: 'prefers-reduced-motion', value: 'reduce' },
   ]);
   await page.setViewport({ width: 1200, height: 630 });
-  await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' });
   await page.screenshot({ path: `docs/screenshots/${version}-desktop.png`, fullPage: true });
   await page.setViewport({ width: 390, height: 630 });
-  await page.goto('http://localhost:1234', { waitUntil: 'networkidle0' });
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' });
   await page.screenshot({ path: `docs/screenshots/${version}-mobile.png`, fullPage: true });
   await closePage(browser, page);
 }
@@ -63,7 +64,7 @@ async function updateChangelog(version) {
 }
 
 async function main() {
-  const version = getVersion();
+  const version = await getVersion();
   await captureVersion(version);
   await updateChangelog(version);
 }
