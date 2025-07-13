@@ -9,6 +9,8 @@
            z-10
            transition-colors duration-300"
   >
-    © 2025 Metro Travel – par Vincent Hardouin
+    © 2025 <a href="https://github.com/VincentHardouin/metro-travel">Metro Travel</a> – par <a
+      href="https://vincenthardouin.dev"
+    >Vincent Hardouin</a>
   </footer>
 </template>
