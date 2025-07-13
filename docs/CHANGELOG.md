@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/VincentHardouin/metro-travel/compare/v2.0.0...v2.1.0) (2025-07-13)
+
+
+### Features
+
+* improve responsive and a11y ([2724d9f](https://github.com/VincentHardouin/metro-travel/commit/2724d9f763bc89c16cec1e9b1e5ae0e33341045c))
+
 # [2.0.0](https://github.com/VincentHardouin/metro-travel/compare/v1.27.0...v2.0.0) (2025-07-13)
 
 
